@@ -1,0 +1,74 @@
+body {
+  background: #0b0f1e;
+  color: white;
+  font-family: system-ui;
+  margin: 0;
+}
+
+.appWrap {
+  padding: 16px;
+}
+
+.screen {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.subtitle {
+  opacity: 0.6;
+  margin-bottom: 20px;
+}
+
+.subjectsGrid,
+.unitsGrid {
+  display: grid;
+  gap: 12px;
+}
+
+.subjectCard,
+.unitCard,
+.optBtn,
+.primary,
+.ghost {
+  padding: 14px;
+  background: #111a38;
+  border: 1px solid rgba(255, 255, 255, .1);
+  border-radius: 12px;
+  color: white;
+  width: 100%;
+  text-align: left;
+}
+
+.optBtn {
+  display: flex;
+  gap: 10px;
+}
+
+.optIndex {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, .1);
+  display: grid;
+  place-items: center;
+  font-weight: bold;
+}
+
+.primary {
+  background: linear-gradient(90deg, #6366f1, #8b5cf6);
+  border: none;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.ghost {
+  margin-top: 12px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, .3);
+}
