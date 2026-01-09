@@ -3373,6 +3373,339 @@ const SUBJECT = {
     }
   ]
 },
+{
+  id: "ap-final",
+  title: "⭐ AP · Prueba final · 40 preguntas",
+  isFinal: true,
+  questions: [
+    {
+      q: "¿Cómo conocemos a la intervención quirúrgica en la que se realiza una abertura u orificio artificial (estoma) en el tejido para poner una víscera en contacto con el exterior?",
+      options: ["Estomía", "Orificimía", "Ostomía", "Celotomía"],
+      correct: 2,
+      explain:
+        "La ostomía es la intervención en la que se crea un estoma para comunicar una víscera (intestino, vejiga, etc.) con el exterior. 'Estomía' y 'orificimía' no son términos correctos en este contexto y la celotomía es una apertura de la cavidad abdominal, pero no implica necesariamente la creación de un orificio permanente hacia el exterior."
+    },
+    {
+      q: "¿Cómo debe actuar el personal sanitario ante la presencia inadvertida de personas dentro del búnker durante la irradiación?",
+      options: [
+        "Sellar inmediatamente las salidas de la sala",
+        "Entrar lo antes posible, antes de desactivar los equipos",
+        "Activar el botón de parada de emergencia y comunicar la incidencia",
+        "Dar medicación a los pacientes y mandarlos a casa a la espera de que su condición mejore"
+      ],
+      correct: 2,
+      explain:
+        "Ante una irradiación accidental, la prioridad es detener la emisión de radiación: se pulsa el botón de parada de emergencia y se comunica la incidencia. Sellar salidas o entrar sin detener el equipo es peligroso y dar medicación sin resolver la causa no tiene sentido en seguridad radiológica."
+    },
+    {
+      q: "¿Cómo denominamos a la recreación fingida de una emergencia como si fuera real que sirven para entrenar, ensayar y aplicar los protocolos de emergencia y formar al personal del centro?",
+      options: ["Simulación", "Escenificación", "Simulacro", "Recreación"],
+      correct: 2,
+      explain:
+        "En el ámbito sanitario y de emergencias, un simulacro es el ejercicio práctico que reproduce una situación de emergencia para entrenar al personal. 'Simulación' es más genérico, 'escenificación' o 'recreación' no son los términos técnicos usados en los planes de emergencia."
+    },
+    {
+      q: "¿Cuál de las siguientes alteraciones de la personalidad se caracteriza por una profunda tristeza o apatía, que afectan a cómo la persona se relaciona con las demás y con su entorno?",
+      options: [
+        "Personalidad narcisista",
+        "Personalidad depresiva",
+        "Personalidad esquizoide",
+        "Personalidad antisocial"
+      ],
+      correct: 1,
+      explain:
+        "La personalidad depresiva se caracteriza por tristeza persistente, apatía y visión pesimista, que dificultan las relaciones. La narcisista se centra en la autoimportancia, la esquizoide en el aislamiento emocional y la antisocial en el desprecio por las normas."
+    },
+    {
+      q: "¿Cuál de las siguientes características del consentimiento informado consiste en la utilización de un lenguaje que evite tecnicismos y lo más sencillo posible?",
+      options: ["Voluntariedad", "Información", "Comprensibilidad", "Decisión"],
+      correct: 2,
+      explain:
+        "La comprensibilidad exige que la información se dé en un lenguaje claro y adaptado al paciente. Voluntariedad se refiere a que no haya coacción, 'información' a que reciba datos suficientes y 'decisión' al acto final de aceptar o rechazar."
+    },
+    {
+      q: "¿Cuál de las siguientes características no es necesario que cumpla un radiofármaco?",
+      options: [
+        "Afinidad por la zona de estudio",
+        "Periodo de semidesintegración corto",
+        "Eficiencia y estabilidad",
+        "Todas son correctas"
+      ],
+      correct: 3,
+      explain:
+        "Un radiofármaco debe concentrarse en el órgano de interés, tener una semivida adecuada (suele ser corta para reducir dosis) y ser estable y eficaz. Por tanto, todas las características son deseables y necesarias, de ahí que la opción correcta sea 'todas son correctas'."
+    },
+    {
+      q: "¿Cuál de las siguientes es una emergencia de tipo general?",
+      options: [
+        "Paradas cardiorrespiratorias",
+        "Irradiación",
+        "Contaminaciones",
+        "Todas son correctas."
+      ],
+      correct: 0,
+      explain:
+        "Las paradas cardiorrespiratorias pueden ocurrir en cualquier punto del hospital y no dependen de un área concreta, por eso se consideran emergencias generales. Irradiaciones y contaminaciones se relacionan específicamente con áreas con radiaciones ionizantes."
+    },
+    {
+      q: "¿Cuál de las siguientes escalas no se utiliza para evaluar la consciencia de los pacientes?",
+      options: ["Glasgow", "Barthel", "Celsius", "Karnofsky"],
+      correct: 2,
+      explain:
+        "Glasgow, Barthel y Karnofsky se usan para evaluar diferentes aspectos del estado del paciente (nivel de consciencia, autonomía, estado funcional). Celsius es una escala de temperatura, no una escala clínica de consciencia."
+    },
+    {
+      q: "¿Cuál de los siguientes factores no afecta a la absorción de los fármacos?",
+      options: [
+        "La vía de administración",
+        "El grado de vascularización",
+        "La temperatura corporal",
+        "Las características del organismo"
+      ],
+      correct: 2,
+      explain:
+        "La vía de administración, la vascularización y las características del organismo (pH, integridad de mucosas, etc.) influyen claramente en la absorción. La temperatura corporal, salvo situaciones extremas, tiene un impacto mucho menor y no es un factor determinante en condiciones normales."
+    },
+    {
+      q: "¿Cuál de los siguientes no es un aspecto cultural que debamos tener en cuenta en la mediación con los pacientes?",
+      options: ["Género", "Religión", "Origen", "Todos son aspectos culturales"],
+      correct: 3,
+      explain:
+        "Género, religión y origen forman parte del contexto cultural del paciente y condicionan creencias y preferencias sanitarias. Por tanto, todos son aspectos culturales relevantes a tener en cuenta en la relación asistencial."
+    },
+    {
+      q: "¿Cuál de los siguientes no es un tipo de catéter intravenoso?",
+      options: ["Palomita", "Abbocath", "Venocath", "Todas son correctas."],
+      correct: 3,
+      explain:
+        "Palomita, Abbocath y Venocath son nombres comerciales o tipos de catéter intravenoso periférico. Como las tres opciones son ejemplos válidos, la única respuesta correcta es 'todas son correctas'."
+    },
+    {
+      q: "¿Cuál de los siguientes no es un tipo de comunicación verbal?",
+      options: ["Oral", "Escrita", "Signada", "Todas las indicadas son comunicaciones verbales"],
+      correct: 3,
+      explain:
+        "La comunicación verbal incluye cualquier forma que use un código lingüístico: hablado, escrito o signado. Por eso oral, escrita y lengua de signos son formas de comunicación verbal; ninguna de las tres es 'no verbal'."
+    },
+    {
+      q: "¿Cuál de los siguientes no se incluye dentro de los equipos básicos de cualquier unidad?",
+      options: ["De oxigenoterapia", "Aspiradores", "Sondas", "Tubos de rayos X"],
+      correct: 3,
+      explain:
+        "Los equipos básicos de la mayoría de unidades incluyen oxigenoterapia, aspiradores y sondas. Los tubos de rayos X son específicos de equipos radiológicos y no se consideran equipamiento básico general."
+    },
+    {
+      q: "¿Cuáles de los siguientes profesionales son los principales encargados de preparar a los pacientes para la realización de pruebas?",
+      options: ["Médicos responsables", "Radiofísicos", "Enfermería", "Técnicos especializados"],
+      correct: 2,
+      explain:
+        "El personal de enfermería suele encargarse de la preparación del paciente (información básica, canalización de vías, higiene, etc.). Los médicos prescriben y supervisan, los técnicos manejan equipos y los radiofísicos se centran en la parte física-dosimétrica."
+    },
+    {
+      q: "¿En qué documento se resumen las vías de entrada de los haces aplicados en la radioterapia (para radioterapia externa) o la posición de las fuentes (cuando se trata de braquiterapia)?",
+      options: ["Dosimetría", "Radioinforme", "Hoja de tratamiento", "Hoja de citación"],
+      correct: 0,
+      explain:
+        "La dosimetría registra cómo se distribuye la dosis de radiación, las vías de entrada de los haces y la colocación de fuentes en braquiterapia. El radioinforme es el informe médico, la hoja de tratamiento recoge pautas generales y la hoja de citación solo datos de la cita."
+    },
+    {
+      q: "¿En qué tipo de atención del sistema sanitario español se incluye la atención sanitaria de mayor complejidad?",
+      options: ["Atención primaria", "Atención especializada", "Atención personalizada", "Atención patológica"],
+      correct: 1,
+      explain:
+        "La atención especializada se presta en hospitales y centros de especialidades e incluye procedimientos de mayor complejidad que la atención primaria. 'Atención personalizada' y 'patológica' no son niveles reales del SNS."
+    },
+    {
+      q: "¿En qué unidad se aplican técnicas para obtener imágenes que se utilizarán para obtener un diagnóstico?",
+      options: [
+        "Medicina nuclear y radiodiagnóstico",
+        "Radioterapia",
+        "Quimioterapia",
+        "Ninguna de las anteriores es correcta."
+      ],
+      correct: 0,
+      explain:
+        "Las imágenes diagnósticas se realizan en los servicios de radiodiagnóstico y medicina nuclear. Radioterapia y quimioterapia son tratamientos, no unidades de diagnóstico por imagen."
+    },
+    {
+      q: "¿Para qué tipo de pacientes se debe evitar el uso de radiaciones ionizantes salvo en casos de emergencia?",
+      options: ["Pacientes embarazadas", "Pacientes no colaboradores", "Pacientes pediátricos", "Pacientes politraumatizados"],
+      correct: 0,
+      explain:
+        "En embarazadas se evita al máximo la exposición a radiaciones ionizantes por el riesgo teratogénico y carcinogénico para el feto. En pediatría también se tiene precaución, pero el embarazo es el principal caso de contraindicación relativa."
+    },
+    {
+      q: "¿Qué componente de la comunicación no verbal incluye los movimientos que se realizan más allá de la comunicación verbal?",
+      options: ["Quinesia", "Prosémica", "Paralenguaje", "Ontogenia"],
+      correct: 0,
+      explain:
+        "La quinesia estudia los movimientos del cuerpo (gestos, postura, expresión facial). La prosémica se refiere al uso del espacio, el paralenguaje a aspectos de la voz y 'ontogenia' no pertenece a la clasificación de la comunicación no verbal."
+    },
+    {
+      q: "¿Qué contenedor debe utilizarse para el material cortante y punzante?",
+      options: ["Bolsas de color rojo", "Bolsas de color verde", "Contenedores amarillos con tapa roja o verde", "Cajas de cartón esterilizadas"],
+      correct: 2,
+      explain:
+        "El material cortante y punzante se elimina en contenedores rígidos amarillos con tapa (roja o verde), diseñados para evitar pinchazos. Las bolsas no son seguras y las cajas de cartón no cumplen la normativa de bioseguridad."
+    },
+    {
+      q: "¿Qué material se utiliza para realizar ventiloterapia de manera manual?",
+      options: ["Ambú", "Cánula respiratoria", "Ostomía", "Respirador manométrico"],
+      correct: 0,
+      explain:
+        "El balón autohinchable (Ambú) permite realizar ventilación manual al paciente. La cánula solo mantiene la vía aérea, la ostomía no tiene relación y el respirador manométrico es un equipo mecánico, no manual."
+    },
+    {
+      q: "¿Qué nombre reciben los pacientes con lesiones de origen traumático que afectan a dos o más órganos o sistemas, de las que al menos uno presenta riesgo vital?",
+      options: ["Pediátricos", "Especiales", "No colaboradores", "Politraumatizados"],
+      correct: 3,
+      explain:
+        "Los pacientes politraumatizados presentan múltiples lesiones traumáticas en diferentes órganos o sistemas, con al menos una de ellas potencialmente mortal. 'Pediátrico', 'especial' o 'no colaborador' describen otras características, no esta situación concreta."
+    },
+    {
+      q: "¿Qué parte de los sistemas de administración de oxígeno permite regular el flujo de oxígeno que se administra?",
+      options: ["Humidificador", "Caudalímetro", "Manómetro", "Bombona"],
+      correct: 1,
+      explain:
+        "El caudalímetro regula y muestra el flujo de oxígeno en litros/minuto. El humidificador solo humidifica el gas, el manómetro mide presión de la bombona y la bombona es el depósito de oxígeno."
+    },
+    {
+      q: "¿Qué personal de las unidades de oncología radioterápica, medicina nuclear y radiodiagnóstico se encargan del mantenimiento, calibración y comprobación del buen funcionamiento de los equipos que se utilizan?",
+      options: ["Personal accesorio", "Radiofísicos", "Técnicos especializados", "Médicos responsables"],
+      correct: 1,
+      explain:
+        "Los radiofísicos hospitalarios son los especialistas en física médica encargados de calibrar, verificar y controlar los equipos de radiación. Los técnicos los operan, pero no realizan la verificación física-dosimétrica."
+    },
+    {
+      q: "¿Qué término incluye todas aquellas medidas que tienen como finalidad prevenir y evitar las infecciones nosocomiales propias de los centros sanitarios?",
+      options: ["Prevención", "Higiene", "Mantenimiento", "Planificación"],
+      correct: 1,
+      explain:
+        "La higiene hospitalaria reúne las normas y procedimientos para evitar infecciones nosocomiales: lavado de manos, desinfección, esterilización, etc. La prevención es más general y mantenimiento o planificación no se centran específicamente en la infección."
+    },
+    {
+      q: "¿Qué término usamos para referirnos al conjunto de personas que pueden beneficiarse de los servicios ofrecidos por un sistema sanitario?",
+      options: ["Población susceptible", "Pacientes potenciales", "Cobertura poblacional", "Individuos asistibles"],
+      correct: 2,
+      explain:
+        "La cobertura poblacional indica qué parte de la población está incluida y puede utilizar un sistema sanitario. 'Población susceptible' se usa más en epidemiología y las otras expresiones no son términos técnicos habituales."
+    },
+    {
+      q: "¿Qué tipo de aislamiento es común para la protección de personas inmunodeprimidas?",
+      options: [
+        "Aislamiento protector o inverso",
+        "Aislamiento de contacto",
+        "Aislamiento entérico",
+        "Aislamiento estricto"
+      ],
+      correct: 0,
+      explain:
+        "En el aislamiento protector o inverso se intenta proteger al paciente inmunodeprimido de los microorganismos del entorno. El de contacto, entérico o estricto están más orientados a evitar la transmisión desde el paciente hacia otros."
+    },
+    {
+      q: "¿Qué tipo de aislamiento está diseñado para prevención de enfermedades infecciosas por contacto directo o indirecto con heces o restos de estas?",
+      options: ["Entérico", "Respiratorio", "Digestivo", "De contacto"],
+      correct: 0,
+      explain:
+        "El aislamiento entérico se emplea cuando el principal mecanismo de transmisión es fecal-oral, por contaminación con heces. El respiratorio se usa para aerosoles o gotas y el de contacto es más genérico."
+    },
+    {
+      q: "¿Qué tipo de contrastes son el aire y otros gases inertes?",
+      options: ["Positivos", "Negativos", "Neutros", "No son contrastes"],
+      correct: 1,
+      explain:
+        "Los contrastes negativos disminuyen la atenuación de los rayos X y se ven más oscuros; el ejemplo típico es el aire o gases inertes. Los positivos (bario, yodo) aumentan la densidad radiológica."
+    },
+    {
+      q: "¿Qué tipo de contrastes son el sulfato de bario, derivados del yodo y compuestos de gadolinio?",
+      options: ["Positivos", "Neutros", "Negativos", "Todas son incorrectas"],
+      correct: 0,
+      explain:
+        "Estos compuestos aumentan la atenuación y se visualizan blancos en la imagen, por lo que se llaman contrastes positivos. Los negativos son aire o CO2."
+    },
+    {
+      q: "¿Qué tipo de fuentes de infección consisten en agentes infecciosos que ya se encuentran en el organismo, pero que al cambiar las condiciones ambientales pasan a ser infecciosos?",
+      options: ["Exógenas", "Exoendógenas", "Endógenas", "Xenógenas"],
+      correct: 2,
+      explain:
+        "En las infecciones endógenas, el agente ya vive en el organismo como flora habitual, pero al cambiar determinadas condiciones (bajada de defensas, rotura de barreras) se vuelve patógeno. Exógenas vienen del exterior."
+    },
+    {
+      q: "¿Qué tipo de necesidad es la pertenencia a un grupo (familiar, amistoso o laboral)?",
+      options: ["Fisiológica", "De seguridad", "Social", "De autoestima"],
+      correct: 2,
+      explain:
+        "Según Maslow, la pertenencia a un grupo corresponde a las necesidades sociales: afecto, amistad, integración. Las fisiológicas son las más básicas (comer, dormir) y la seguridad se refiere a estabilidad y protección."
+    },
+    {
+      q: "¿Qué tipo de necesidades se sitúan en el primer nivel de la pirámide de Maslow?",
+      options: ["Autorrealización", "Necesidades sociales", "Seguridad", "Necesidades fisiológicas"],
+      correct: 3,
+      explain:
+        "En la base de la pirámide están las necesidades fisiológicas (respirar, comer, beber, dormir). Solo cuando estas se cubren de forma razonable se buscan la seguridad, las sociales, la autoestima y la autorrealización."
+    },
+    {
+      q: "¿Qué tipo de sonda se utiliza principalmente para realizar lavados gástricos?",
+      options: ["Sonda de Salem", "Sonda Levin", "Sonda nasoentérica", "Sonda de gastrostomía"],
+      correct: 1,
+      explain:
+        "La sonda Levin es una sonda nasogástrica de gran calibre que se utiliza con frecuencia para lavados gástricos. La de Salem es de doble luz para aspiración, la nasoentérica llega al intestino y la de gastrostomía entra directamente al estómago por la pared abdominal."
+    },
+    {
+      q: "A la hora de movilizar pacientes, debemos tener en cuenta...",
+      options: [
+        "Los principios de ergonomía y mecánica corporal",
+        "Al personal cuidador",
+        "Las necesidades de la persona a movilizar",
+        "Todo lo anterior"
+      ],
+      correct: 3,
+      explain:
+        "Una movilización segura exige proteger la espalda del profesional (ergonomía), valorar la ayuda disponible (personal cuidador) y adaptar la técnica a la situación y capacidad del paciente. Por eso la respuesta correcta integra todos los elementos."
+    },
+    {
+      q: "En la administración organizativa del Sistema Nacional de Salud español, ¿Qué organismo realiza la gestión a nivel central?",
+      options: ["Comunidades autónomas", "Ministerio de Sanidad", "Hospitales centrales", "Ninguna es correcta"],
+      correct: 1,
+      explain:
+        "El Ministerio de Sanidad es el responsable de la coordinación y planificación general del SNS a nivel estatal. Las comunidades autónomas gestionan sus servicios regionales, pero el nivel central corresponde al Ministerio."
+    },
+    {
+      q: "En la cadena epidemiológica, ¿Qué tipo de vectores son los animales?",
+      options: ["Pasivos", "Activos", "Mixtos", "Inertes"],
+      correct: 1,
+      explain:
+        "Los vectores activos, como muchos animales y artrópodos, participan activamente en la transmisión del agente (picadura, mordedura, etc.). Los pasivos solo transportan el agente sin que este se multiplique en ellos."
+    },
+    {
+      q: "Indica la opción correcta sobre la citación de pacientes:",
+      options: [
+        "El horario disponible debe estar cubierto completamente",
+        "No es necesario programar las pruebas, pues los pacientes se organizan de manera autónoma",
+        "Deben dejarse espacios sin citación por la posibilidad de que surjan imprevistos",
+        "Ninguna es correcta."
+      ],
+      correct: 2,
+      explain:
+        "Dejar huecos libres permite absorber urgencias, retrasos o incidencias sin colapsar la agenda. Cubrir todo el horario sin margen hace que cualquier imprevisto genere largas esperas."
+    },
+    {
+      q: "La alteración del pulso por encima de 80 ppm se conoce como...:",
+      options: ["Taquicardia", "Bradicardia", "Notocardia", "Asincrocardia"],
+      correct: 0,
+      explain:
+        "La taquicardia es el aumento de la frecuencia cardíaca por encima de los valores normales de reposo. La bradicardia es pulso lento; las otras opciones no son términos clínicos habituales."
+    },
+    {
+      q: "La situación (o circunstancias) en las que se produce la comunicación y que puede afectar a cómo se interpreta el mensaje se conoce como...:",
+      options: ["Contexto", "Casuística", "Ambiente", "Todas son incorrectas."],
+      correct: 0,
+      explain:
+        "El contexto incluye lugar, momento, relación entre interlocutores y estado emocional, y condiciona cómo se entiende el mensaje. 'Ambiente' es más genérico y 'casuística' se refiere al conjunto de casos, no al marco comunicativo."
+    }
+  ]
+},
+
 
   
     /* ================== ANATOMÍA ================== */
@@ -4030,663 +4363,1429 @@ const SUBJECT = {
     },
   ],
 },
+{
+  id: "an-final",
+  title: "⭐ AN · Prueba final · 40 preguntas",
+  isFinal: true,
+  questions: [
+    {
+      q: "¿Cuál de las siguientes afirmaciones describe correctamente la posición de los brazos en la posición anatómica básica?",
+      options: [
+        "Brazos extendidos hacia adelante, con los puños cerrados.",
+        "Brazos extendidos a los lados del cuerpo, con las palmas hacia adelante.",
+        "Brazos flexionados a la altura de los hombros, con las palmas hacia atrás.",
+        "Brazos cruzados sobre el pecho, con las palmas hacia arriba."
+      ],
+      correct: 1,
+      explain:
+        "En la posición anatómica básica la persona está de pie, con los brazos estirados a los lados del cuerpo y las palmas mirando al frente; esto sirve como referencia estándar para describir posiciones y movimientos."
+    },
+    {
+      q: "¿Cuál de las siguientes afirmaciones es correcta en cuanto al uso de términos \"craneal\" y \"caudal\"?",
+      options: [
+        "La rodilla es más craneal que la cadera.",
+        "La cabeza es más craneal que el cuello.",
+        "El pie es más craneal que la rodilla.",
+        "El cuello es más caudal que la pierna."
+      ],
+      correct: 1,
+      explain:
+        "Craneal significa más cercano a la cabeza y caudal más cercano a la cola (o parte inferior del tronco). La cabeza está por encima del cuello, así que es más craneal que este."
+    },
+    {
+      q: "¿Cuál de las siguientes afirmaciones es correcta respecto al plano frontal (coronal)?",
+      options: [
+        "Divide el cuerpo en partes superior e inferior.",
+        "Se extiende en dirección lateral, dividiendo en derecha e izquierda.",
+        "Divide el cuerpo en partes anterior (ventral) y posterior (dorsal).",
+        "Es un eje, no un plano."
+      ],
+      correct: 2,
+      explain:
+        "El plano frontal o coronal divide el cuerpo en parte anterior (delantera) y parte posterior (trasera). El que divide en derecha e izquierda es el sagital y el que divide en superior e inferior es el transversal."
+    },
+    {
+      q: "¿Cuál de las siguientes marcas óseas NO es articular?",
+      options: ["Cóndilo", "Epicóndilo", "Espina", "Tróclea"],
+      correct: 2,
+      explain:
+        "Cóndilo y tróclea forman parte de superficies articulares. El epicóndilo está muy relacionado con la articulación, pero la espina es una prolongación ósea puntiaguda de inserción muscular, no articular."
+    },
+    {
+      q: "¿Cuál de las siguientes NO es una función del sistema urinario?",
+      options: [
+        "Expulsión de sustancias de desecho.",
+        "Filtrado de la sangre.",
+        "Formación de la orina.",
+        "Digestión de los nutrientes."
+      ],
+      correct: 3,
+      explain:
+        "El sistema urinario filtra la sangre, forma la orina y elimina desechos. La digestión de nutrientes es función principal del sistema digestivo, no del urinario."
+    },
+    {
+      q: "¿Cuál de las siguientes técnicas de imagen apenas es empleada en el estudio del aparato genital masculino?",
+      options: [
+        "Ecografía",
+        "Tomografía computarizada",
+        "Resonancia magnética",
+        "El aparato genital masculino no se estudia mediante ninguna técnica de imagen"
+      ],
+      correct: 1,
+      explain:
+        "El aparato genital masculino se estudia sobre todo con ecografía (testículos, próstata) y, en casos específicos, con resonancia magnética. La tomografía computarizada se usa muy poco para este sistema."
+    },
+    {
+      q: "¿Cuál de las siguientes técnicas de imagen se caracteriza por depender en gran medida de la habilidad del operador que maneja el equipo, ya que es el único método en el que la adquisición de las imágenes no está estandarizada y se realiza en tiempo real durante la exploración?",
+      options: [
+        "Resonancia magnética",
+        "Ecografía",
+        "Tomografía computarizada",
+        "Radiología convencional"
+      ],
+      correct: 1,
+      explain:
+        "La ecografía es muy operador-dependiente: el técnico decide dónde y cómo coloca el transductor y las imágenes se obtienen en tiempo real, sin un protocolo tan rígido como en TC o RM."
+    },
+    {
+      q: "¿Cuál de las siguientes técnicas imagenológicas no hace uso de rayos X?",
+      options: [
+        "Ecografía",
+        "Radiología convencional",
+        "Tomografía computarizada",
+        "Radiología con contraste"
+      ],
+      correct: 0,
+      explain:
+        "La ecografía utiliza ondas de ultrasonido, no radiación ionizante. La radiología convencional, la TC y la radiología con contraste sí emplean rayos X."
+    },
+    {
+      q: "¿Cuál de los siguientes compartimentos se encuentra lleno de líquido cefalorraquídeo?",
+      options: [
+        "Espacio epidural",
+        "Espacio subdural",
+        "Espacio subaracnoideo",
+        "Espacio subpiamadral"
+      ],
+      correct: 2,
+      explain:
+        "El líquido cefalorraquídeo circula por el espacio subaracnoideo (entre aracnoides y piamadre) y por los ventrículos. El espacio epidural está fuera de la duramadre y el subdural es un espacio potencial."
+    },
+    {
+      q: "¿Cuál de los siguientes ejemplos describe correctamente un movimiento de abducción?",
+      options: [
+        "Bajar el brazo desde una posición elevada hacia el cuerpo.",
+        "Separar el brazo del cuerpo lateralmente.",
+        "Flexionar el codo para acercar la mano al hombro.",
+        "Girar la cabeza hacia la derecha."
+      ],
+      correct: 1,
+      explain:
+        "La abducción es el movimiento que separa un segmento del cuerpo de la línea media, como cuando abrimos el brazo hacia fuera. El movimiento contrario es la aducción."
+    },
+    {
+      q: "¿Cuál es la técnica de imagen más utilizada para el estudio del tejido mamario?",
+      options: ["Ecografía", "Resonancia magnética", "Mamografía", "Tomografía computarizada"],
+      correct: 2,
+      explain:
+        "La mamografía es la técnica de cribado y estudio principal de la mama en radiología. La ecografía y la RM se usan como complementos según el caso."
+    },
+    {
+      q: "¿Para qué sirven las microvellosidades características del intestino delgado?",
+      options: [
+        "Para secretar jugos digestivos y descomponer proteínas.",
+        "Para aumentar la superficie de absorción de nutrientes hacia la sangre.",
+        "Para impulsar el bolo alimenticio mediante contracciones.",
+        "Para almacenar los nutrientes antes de su distribución al organismo."
+      ],
+      correct: 1,
+      explain:
+        "Las microvellosidades aumentan muchísimo la superficie de contacto del intestino delgado con el contenido intestinal, facilitando una absorción eficiente de nutrientes."
+    },
+    {
+      q: "¿Qué muestra la siguiente imagen?",
+      options: [
+        "Una tomografía computarizada cerebral, en la que se observan calcificaciones.",
+        "Una tomografía computarizada cerebral, en la que se observan quistes en ambos hemisferios.",
+        "Una resonancia magnética cerebral, en la que se observan calcificaciones.",
+        "Una resonancia magnética cerebral, en la que se observan quistes en ambos hemisferios."
+      ],
+      correct: 3,
+      explain:
+        "El enunciado indica que se trata de una RM cerebral con imágenes compatibles con quistes en ambos hemisferios (lesiones llenas de líquido, bien delimitadas). Las calcificaciones se ven mejor en TC."
+    },
+    {
+      q: "¿Qué prueba de imagen se emplea habitualmente para valorar los vasos cerebrales en una isquemia cerebral?",
+      options: [
+        "Resonancia magnética sin contraste.",
+        "Radiografía simple de cráneo.",
+        "Angio-TC con contraste.",
+        "Ecografía transabdominal."
+      ],
+      correct: 2,
+      explain:
+        "La angio-TC con contraste permite visualizar el árbol arterial cerebral y localizar estenosis u oclusiones en contexto de ictus isquémico."
+    },
+    {
+      q: "Atendiendo a la clasificación morfológica de los huesos, se considera un hueso largo:",
+      options: ["El fémur.", "La vértebra T3.", "El escafoides.", "El maxilar."],
+      correct: 0,
+      explain:
+        "Los huesos largos tienen una diáfisis y dos epífisis; un ejemplo típico es el fémur. Las vértebras son irregulares, el escafoides es corto y el maxilar es plano/irregular."
+    },
+    {
+      q: "Conecta la aurícula izquierda con el ventrículo izquierdo:",
+      options: [
+        "Válvula mitral",
+        "Válvula pulmonar",
+        "Válvula aórtica",
+        "Válvula tricúspide"
+      ],
+      correct: 0,
+      explain:
+        "La válvula mitral (o bicúspide) se sitúa entre la aurícula izquierda y el ventrículo izquierdo. La tricúspide está entre aurícula y ventrículo derechos."
+    },
+    {
+      q: "Considerando la organización de las estructuras del cuerpo en cavidades corporales, el mediastino se localiza:",
+      options: [
+        "En la cavidad dorsal. Concretamente, en la cavidad torácica.",
+        "En la cavidad ventral. Concretamente, en la cavidad torácica.",
+        "En la cavidad dorsal. Concretamente, en la cavidad abdominal.",
+        "En la cavidad ventral. Concretamente, en la cavidad abdominal."
+      ],
+      correct: 1,
+      explain:
+        "El mediastino es la región central de la cavidad torácica (parte de la cavidad ventral) donde se sitúan el corazón, grandes vasos, tráquea, etc."
+    },
+    {
+      q: "Constituye la unidad funcional básica del pulmón:",
+      options: ["Alveolos.", "Epiglotis.", "Bronquios.", "Células ciliadas."],
+      correct: 0,
+      explain:
+        "Los alveolos son los sacos microscópicos donde se realiza el intercambio gaseoso. Los bronquios son conductos de mayor calibre que solo conducen el aire."
+    },
+    {
+      q: "Debido a su ubicación profunda, el páncreas no se visualiza correctamente con:",
+      options: [
+        "Tomografía computarizada.",
+        "Resonancia magnética.",
+        "Ecografía abdominal.",
+        "Endoscopia."
+      ],
+      correct: 2,
+      explain:
+        "El páncreas está muy profundo y queda tapado por gas intestinal, lo que dificulta verlo bien con ecografía convencional. TC y RM son mucho más útiles."
+    },
+    {
+      q: "El ligamento falciforme:",
+      options: [
+        "Une el hígado a la pared abdominal.",
+        "Une el estómago a la pared abdominal.",
+        "Une el bazo a la pared abdominal.",
+        "Une el páncreas a la pared abdominal."
+      ],
+      correct: 0,
+      explain:
+        "El ligamento falciforme es un pliegue peritoneal que fija el hígado a la pared anterior del abdomen."
+    },
+    {
+      q: "El tejido muscular del corazón se conoce como:",
+      options: ["Endocardio", "Miocardio", "Epicardio", "Pericardio"],
+      correct: 1,
+      explain:
+        "El miocardio es la capa muscular del corazón y la responsable de la contracción. Endocardio recubre por dentro, epicardio recubre por fuera y el pericardio es el saco fibroso externo."
+    },
+    {
+      q: "En el diagnóstico por imagen de patologías digestivas, es frecuente recurrir a:",
+      options: [
+        "Estudios baritados.",
+        "Estudios sulfatados.",
+        "Estudios nitrogenados.",
+        "Estudios hidrogenados."
+      ],
+      correct: 0,
+      explain:
+        "En radiología digestiva se usan contrastes baritados (sulfato de bario) para opacificar el tubo digestivo y visualizarlo con rayos X."
+    },
+    {
+      q: "En el estudio imagenológico de los pulmones, es frecuente el uso de:",
+      options: [
+        "Radiología simple como primera aproximación, y tomografía computarizada para realizar estudios más detallados.",
+        "Ecografía como primera aproximación, y tomografía computarizada para realizar estudios más detallados.",
+        "Ecografía como primera aproximación, y resonancia magnética para realizar estudios más detallados.",
+        "Radiología simple como primera aproximación, y resonancia magnética para realizar estudios más detallados."
+      ],
+      correct: 0,
+      explain:
+        "Lo habitual es comenzar con radiografía simple de tórax y, si hace falta, complementar con TC para estudiar mejor parénquima y mediastino."
+    },
+    {
+      q: "En la siguiente ilustración, ¿qué región abdominal está marcada con una X?",
+      options: ["Hipocondrio derecho", "Hipogastrio", "Epigastrio", "Fosa ilíaca derecha"],
+      correct: 2,
+      explain:
+        "El epigastrio es la región central superior del abdomen, por encima del ombligo y por debajo del esternón."
+    },
+    {
+      q: "Enfermedad metabólica cuantitativa, en la que el hueso pierde densidad o masa ósea debido a la disminución del recambio óseo por falta de calcio:",
+      options: [
+        "Osteoporosis",
+        "Tumor óseo",
+        "Osteomielitis",
+        "Osteogénesis imperfecta"
+      ],
+      correct: 0,
+      explain:
+        "La osteoporosis se caracteriza por una disminución de la densidad mineral ósea, que hace el hueso más frágil y propenso a fracturas."
+    },
+    {
+      q: "Estructura encargada de regular funciones corporales a través de la síntesis y liberación de hormonas:",
+      options: ["Enzimaterio.", "Glándula endocrina.", "Receptosoma.", "Agitador biológico."],
+      correct: 1,
+      explain:
+        "Las glándulas endocrinas liberan hormonas a la sangre para regular funciones como el metabolismo, el crecimiento o la respuesta al estrés."
+    },
+    {
+      q: "Falta de riego sanguíneo en el miocardio por obstrucción completa de las arterias coronarias y consecuente necrosis del miocardio:",
+      options: [
+        "Infarto agudo de miocardio",
+        "Angina de pecho",
+        "Pericarditis",
+        "Miocardiopatía dilatada"
+      ],
+      correct: 0,
+      explain:
+        "En el infarto agudo de miocardio una arteria coronaria se ocluye por completo y el tejido cardíaco dependiente de ella se necrosa."
+    },
+    {
+      q: "La aldosterona, el cortisol y la adrenalina son producidos en:",
+      options: [
+        "Los testículos u ovarios.",
+        "La glándula tiroides.",
+        "Las glándulas suprarrenales.",
+        "El paratiroides."
+      ],
+      correct: 2,
+      explain:
+        "Las glándulas suprarrenales, situadas sobre los riñones, producen corticoides (cortisol, aldosterona) y catecolaminas (adrenalina)."
+    },
+    {
+      q: "La hematopoyesis consiste en:",
+      options: [
+        "La producción de células sanguíneas en la médula ósea amarilla.",
+        "La producción de células sanguíneas en la médula ósea roja.",
+        "La destrucción de células sanguíneas en la médula ósea amarilla.",
+        "La destrucción de células sanguíneas en la médula ósea roja."
+      ],
+      correct: 1,
+      explain:
+        "La hematopoyesis es la formación de células sanguíneas (glóbulos rojos, blancos y plaquetas) en la médula ósea roja."
+    },
+    {
+      q: "La posición más habitual del paciente en estudios de resonancia magnética es:",
+      options: ["Bipedestación", "Sedestación", "Decúbito supino", "Decúbito prono"],
+      correct: 2,
+      explain:
+        "En la mayoría de estudios de RM el paciente se coloca en decúbito supino, tumbado boca arriba dentro del imán."
+    },
+    {
+      q: "La radiología simple resulta muy útil en el estudio por imagen de:",
+      options: ["Músculos", "Tendones", "Huesos", "Ligamentos"],
+      correct: 2,
+      explain:
+        "La radiografía simple es excelente para estudiar estructuras óseas: fracturas, alineación, artrosis, etc. Para tendones y ligamentos se prefieren ecografía o RM."
+    },
+    {
+      q: "La siguiente imagen corresponde con:",
+      options: [
+        "Una resonancia magnética en T1, pues el humor vítreo y el líquido subaracnoideo en torno al nervio óptico se observan hiperintensos.",
+        "Una resonancia magnética en T2, pues el humor vítreo y el líquido subaracnoideo en torno al nervio óptico se observan hiperintensos.",
+        "Una resonancia magnética en T1, pues el humor vítreo y el líquido subaracnoideo en torno al nervio óptico se observan hipointensos.",
+        "Una resonancia magnética en T2, pues el humor vítreo y el líquido subaracnoideo en torno al nervio óptico se observan hipointensos."
+      ],
+      correct: 1,
+      explain:
+        "En las secuencias T2 los líquidos (LCR, humor vítreo) se ven hiperintensos (blancos). Por eso, si estas estructuras brillan, hablamos de una RM en T2."
+    },
+    {
+      q: "La siguiente imagen de cabeza y cuello obtenida mediante resonancia magnética:",
+      options: [
+        "Es un plano sagital, donde en color azul se sombrea el lóbulo occipital.",
+        "Es un plano sagital, donde en color azul se sombrea el lóbulo parietal.",
+        "Es un plano coronal, donde en color azul se sombrea el lóbulo parietal.",
+        "Es un plano coronal, donde en color azul se sombrea el lóbulo occipital."
+      ],
+      correct: 0,
+      explain:
+        "En un corte sagital vemos el cuerpo de lado; el lóbulo occipital se localiza en la parte posterior del cráneo, tal y como indica el sombreado."
+    },
+    {
+      q: "Las suturas entre huesos del cráneo:",
+      options: [
+        "Son articulaciones de tipo sinartrosis.",
+        "Son articulaciones de tipo anfiartrosis.",
+        "Son articulaciones de tipo diatrosis.",
+        "No son articulaciones."
+      ],
+      correct: 0,
+      explain:
+        "Las suturas craneales son articulaciones fibrosas inmóviles, clasificadas como sinartrosis, que unen firmemente los huesos del cráneo."
+    },
+    {
+      q: "Los contrastes más empleados en el estudio de radiología convencional del aparato excretor son:",
+      options: [
+        "Contrastes de bario",
+        "Contrastes de yodo",
+        "Contrastes de gadolinio",
+        "Contrastes de berilio"
+      ],
+      correct: 1,
+      explain:
+        "Para estudiar riñones, uréteres y vejiga con rayos X se utilizan contrastes yodados hidrosolubles, que se excretan por vía urinaria."
+    },
+    {
+      q: "No forma parte del sistema nervioso central:",
+      options: [
+        "Médula espinal",
+        "Tronco encefálico",
+        "Cerebelo",
+        "Nervios craneales"
+      ],
+      correct: 3,
+      explain:
+        "El sistema nervioso central está formado por encéfalo (cerebro, cerebelo, tronco) y médula espinal. Los nervios craneales y espinales forman parte del sistema nervioso periférico."
+    },
+    {
+      q: "Por lo general, las radiografías de tórax se realizan preferentemente en:",
+      options: ["Bipedestación.", "Sedestación.", "Decúbito supino.", "Decúbito prono."],
+      correct: 0,
+      explain:
+        "La proyección estándar de tórax se hace con el paciente en bipedestación, porque permite mejor expansión pulmonar y valoración de niveles líquidos."
+    },
+    {
+      q: "Tras la realización de una ecografía de tobillo, queremos explorar con mayor detalle un hallazgo patológico complejo localizado en los tejidos blandos de la articulación. Emplearemos:",
+      options: [
+        "Radiología simple.",
+        "Tomografía computarizada.",
+        "Resonancia magnética.",
+        "Ecografía (por segunda vez)."
+      ],
+      correct: 2,
+      explain:
+        "La resonancia magnética es la técnica de elección para valorar tejidos blandos (ligamentos, tendones, cartílago) con alto detalle, mejor que TC o radiografía."
+    },
+    {
+      q: "Un paciente se realiza una radiografía de tórax posteroanterior. Se le calcula el índice cardiotorácico correspondiente. ¿En cuál de los siguientes valores se consideraría que hay un aumento anómalo de la silueta cardíaca (cardiomegalia)?",
+      options: ["0.354", "0.432", "0.457", "0.60"],
+      correct: 3,
+      explain:
+        "El índice cardiotorácico se considera patológico cuando es mayor de 0,5 en radiografía PA; un valor de 0,60 indica cardiomegalia."
+    },
+    {
+      q: "Uno de los principales patógenos responsables de la gastritis y la aparición de úlceras gástricas es:",
+      options: [
+        "Klebsiella pneumoniae.",
+        "Helicobacter pylori.",
+        "Escherichia coli.",
+        "Staphylococcus aureus."
+      ],
+      correct: 1,
+      explain:
+        "Helicobacter pylori coloniza la mucosa gástrica y está fuertemente asociado a gastritis crónica y úlceras pépticas."
+    }
+  ]
+},
+
 
 
     /* ============ FUNDAMENTOS FÍSICOS Y EQUIPOS ============ */
 
    {
-  id: "an-u1",
-  title: "AN · U1 · Posición anatómica, planos y cavidades",
+  id: "ff-u1",
+  title: "FF · U1 · Radiaciones y física básica",
   questions: [
     {
-      q: "¿Cuál corresponde a la posición anatómica básica?",
-      options: [
-        "Persona de pie, pies paralelos y dedos hacia adelante, brazos a los lados con palmas hacia adelante, cabeza erecta y mirada al frente",
-        "Persona sentada, pies juntos, brazos cruzados sobre el pecho, cabeza inclinada hacia un lado y ojos cerrados",
-        "Persona de pie, pies separados, brazos flexionados hacia adelante con palmas hacia abajo, cabeza inclinada hacia atrás",
-        "Persona acostada, brazos extendidos hacia arriba, piernas separadas y cabeza girada hacia un lado",
-      ],
-      correct: 0,
+      q: "¿Cuál de las siguientes no es un tipo de radiación ionizante?",
+      options: ["Rayos gamma", "Rayos X", "Ultravioleta", "Infrarroja"],
+      correct: 3,
       explain:
-        "La posición anatómica de referencia es de pie, con los pies paralelos y dirigidos hacia delante, brazos a los lados del cuerpo con las palmas mirando al frente, y la cabeza erecta mirando al frente. Esta postura sirve como estándar para describir la localización y relación entre estructuras del cuerpo. La opción B describe una posición de reposo sentada, no la de referencia anatómica. La opción C muestra brazos y cabeza en posiciones no estándar, y la D es una posición en decúbito (acostado), que tampoco es la posición anatómica básica."
+        "En el contexto de la protección radiológica sanitaria, los rayos gamma y los rayos X son claramente radiaciones ionizantes, capaces de arrancar electrones de los átomos y producir cambios químicos importantes. La radiación ultravioleta de alta energía (especialmente UVC) puede comportarse de forma ionizante y se trata como radiación de riesgo para tejidos superficiales. La radiación infrarroja, en cambio, se asocia sobre todo al calor y no tiene energía suficiente para ionizar átomos, por eso se considera no ionizante y es la opción correcta."
     },
     {
-      q: "¿Qué plano anatómico divide el cuerpo en mitades derecha e izquierda?",
-      options: ["Plano coronal", "Plano sagital", "Plano transversal", "Plano axial"],
-      correct: 1,
-      explain:
-        "El plano sagital es el que divide el cuerpo en derecha e izquierda; si pasa exactamente por la mitad se le llama plano medio o mediano. El plano coronal (opción A) divide el cuerpo en una parte anterior (frontal) y otra posterior (dorsal). El plano transversal o axial (opciones C y D, que en clínica se usan casi como sinónimos) divide el cuerpo en una parte superior (cefálica) y otra inferior (caudal), no en derecha e izquierda."
-    },
-    {
-      q: "¿Cuál afirmación sobre posición relativa es correcta?",
-      options: [
-        "El tobillo es más proximal que la rodilla",
-        "El codo es más distal que la muñeca",
-        "El hombro es más proximal que el codo",
-        "La mano es más proximal que el antebrazo",
-      ],
+      q: "¿Qué comportamiento de las ondas consiste en la superposición de dos ondas?",
+      options: ["Reflexión", "Refracción", "Interferencia", "Efecto Doppler"],
       correct: 2,
       explain:
-        "En los miembros, proximal significa más cerca del tronco y distal, más lejos. El hombro está más cercano al tronco que el codo, por eso el hombro es más proximal que el codo (correcta). El tobillo es más distal que la rodilla, no más proximal (opción A, errónea). El codo está más proximal que la muñeca, no más distal (opción B, errónea). La mano es la parte más distal del miembro superior respecto al antebrazo, por lo que la opción D también es incorrecta."
+        "La interferencia ocurre cuando dos ondas se superponen en el espacio y tiempo, produciendo zonas de refuerzo (interferencia constructiva) o de cancelación (destructiva). La reflexión (opción A) es el rebote de una onda al llegar a una superficie. La refracción (opción B) es el cambio de dirección al pasar de un medio a otro. El efecto Doppler (opción D) es el cambio aparente de frecuencia por movimiento relativo emisor-receptor."
     },
     {
-      q: "¿Cuál afirmación sobre movimientos articulares es correcta?",
+      q: "¿Qué dispositivo se utiliza para generar campos magnéticos?",
       options: [
-        "La extensión disminuye el ángulo entre dos segmentos corporales",
-        "La aducción acerca un miembro hacia la línea media del cuerpo",
-        "La rotación interna aleja una estructura del eje central del cuerpo",
-        "La protrusión es el movimiento hacia atrás de una parte corporal",
+        "Tubo de rayos catódicos",
+        "Solenoides",
+        "Filamentos de neodimio",
+        "Ninguna",
       ],
       correct: 1,
       explain:
-        "La aducción es el movimiento que aproxima un segmento corporal hacia la línea media del cuerpo, por eso la opción B es correcta. La extensión aumenta el ángulo entre dos segmentos óseos (por ejemplo, extender el codo lo abre), no lo disminuye como dice la opción A. La rotación interna lleva una estructura hacia el eje central, no la aleja, por lo que la opción C es incorrecta. La protrusión es el movimiento hacia adelante (por ejemplo, protruir la mandíbula); el movimiento hacia atrás se llama retrusión, de modo que la opción D también es falsa."
+        "Un solenoide es una bobina de hilo conductor arrollado; al circular corriente eléctrica por él, genera un campo magnético intenso y relativamente uniforme, por eso se usa para crear campos magnéticos controlados. El tubo de rayos catódicos (opción A) utiliza campos eléctricos y magnéticos, pero no es el dispositivo básico para generarlos. 'Filamentos de neodimio' (opción C) no es un término correcto: el neodimio se usa en imanes permanentes, pero no como filamento generador de campos. La opción D es falsa porque sí existe un dispositivo claro: el solenoide."
     },
     {
-      q: "¿En qué posición se encuentra el paciente (imagen)?",
-      options: ["Sims", "Trendelemburg invertida", "Trendelemburg", "Sims invertida"],
-      correct: 1,
+      q: "Número de veces que se repite una onda en una unidad de tiempo:",
+      options: ["Longitud de onda", "Periodo", "Intensidad", "Frecuencia"],
+      correct: 3,
       explain:
-        "En Trendelemburg invertida, el cuerpo está en decúbito supino pero con la cabeza más alta que los pies, es decir, la camilla inclinada hacia abajo en dirección a los pies. En la posición de Trendelemburg clásica (opción C) es al revés: la cabeza queda más baja que los pies. La posición de Sims (opción A) es en decúbito lateral con ligera flexión de cadera y rodilla, utilizada mucho en exploración rectal o enemas. La denominada 'Sims invertida' (opción D) no es un término estándar en la nomenclatura habitual."
+        "La frecuencia es el número de ciclos completos de una onda que se producen por unidad de tiempo (por ejemplo, hercios = ciclos por segundo). La longitud de onda (opción A) es la distancia entre dos crestas o dos valles consecutivos. El periodo (opción B) es el tiempo que tarda en completarse un ciclo. La intensidad (opción C) se relaciona con la energía transportada por la onda, no con el número de repeticiones por segundo."
     },
     {
-      q: "Parte superior del tronco entre base del cuello y diafragma:",
-      options: ["Tórax", "Abdomen", "Pelvis", "Dorso"],
-      correct: 0,
-      explain:
-        "El tórax es la región del tronco situada entre la base del cuello y el diafragma y contiene órganos como pulmones y corazón. El abdomen (opción B) se encuentra por debajo del diafragma hasta la pelvis. La pelvis (opción C) es la región inferior del tronco donde se alojan vísceras urinarias y parte de las reproductoras. El dorso (opción D) hace referencia a la región posterior del tronco, no específicamente a la zona superior anterior donde está el tórax."
-    },
-    {
-      q: "El encéfalo se sitúa:",
-      options: [
-        "En la cavidad dorsal, en la cavidad craneal",
-        "En la cavidad ventral, en la cavidad craneal",
-        "En la cavidad dorsal, en la cavidad espinal",
-        "En la cavidad ventral, en la cavidad espinal",
-      ],
-      correct: 0,
-      explain:
-        "El encéfalo (cerebro, cerebelo y tronco encefálico) se localiza en la cavidad craneal, que forma parte de la cavidad dorsal. La cavidad ventral incluye la cavidad torácica y abdominopélvica, donde se sitúan corazón y vísceras, por lo que las opciones B y D son erróneas. La cavidad espinal (u vertebral) contiene la médula espinal, no el encéfalo, por lo que la opción C también es incorrecta."
-    },
-    {
-      q: "¿Cuántas líneas claviculares existen?",
-      options: [
-        "Solo una, por la línea media del esternón",
-        "Dos, cada una en el punto medio de cada clavícula",
-        "Dos, cada una en el extremo distal de cada clavícula",
-        "Tres, en escápulas y columna vertebral",
-      ],
-      correct: 1,
-      explain:
-        "Se describen dos líneas claviculares: una derecha y otra izquierda, que pasan aproximadamente por el punto medio de cada clavícula y descienden verticalmente por el tórax, por eso la opción B es correcta. No hay una sola línea clavicular en la línea media esternal (opción A confunde con la línea media anterior). Tampoco se definen por el extremo distal de la clavícula (opción C). La opción D mezcla otros puntos anatómicos (escápulas y columna) que no corresponden a líneas claviculares."
-    },
-    {
-      q: "¿Qué cuadrante abdominal está marcado con una X (imagen)?",
-      options: [
-        "Cuadrante superior derecho",
-        "Cuadrante superior izquierdo",
-        "Cuadrante inferior derecho",
-        "Cuadrante inferior izquierdo",
-      ],
-      correct: 1,
-      explain:
-        "En la división en cuatro cuadrantes, el cuadrante superior izquierdo se sitúa por encima de la línea horizontal umbilical y a la izquierda de la línea vertical media. Es la zona donde se localizan, por ejemplo, parte del estómago y el bazo. El cuadrante superior derecho (opción A) está a la derecha (hígado, vesícula). Los cuadrantes inferiores derecho e izquierdo (opciones C y D) se sitúan por debajo de la línea umbilical, por tanto no corresponden al área descrita."
-    },
-    {
-      q: "En 9 regiones abdominales, la vejiga se localiza principalmente en:",
-      options: ["Hipocondrio derecho", "Epigastrio", "Hipogastrio", "Fosa ilíaca izquierda"],
+      q: "Partícula subatómica con carga negativa:",
+      options: ["Protones", "Neutrones", "Electrones", "Bosones"],
       correct: 2,
       explain:
-        "En la división en nueve regiones, la vejiga urinaria se sitúa fundamentalmente en la región hipogástrica o suprapúbica, por debajo del ombligo y sobre la sínfisis del pubis, por eso la opción correcta es el hipogastrio. El hipocondrio derecho (opción A) aloja sobre todo al hígado y vesícula. El epigastrio (opción B) se sitúa por encima del ombligo, centrado, y contiene parte del estómago. La fosa ilíaca izquierda (opción D) se asocia más al colon sigmoide y ovario izquierdo en la mujer."
+        "El electrón es la partícula subatómica con carga eléctrica negativa y se encuentra orbitando alrededor del núcleo. Los protones (opción A) tienen carga positiva y se localizan en el núcleo. Los neutrones (opción B) no tienen carga (son neutros). Los bosones (opción D) son un tipo de partículas fundamentales relacionadas con fuerzas, pero no se identifican como la partícula cargada negativa típica del átomo."
+    },
+    {
+      q: "Rama de la física que estudia las radiaciones y su efecto en la materia:",
+      options: ["Física cuántica", "Física clínica", "Física radiológica", "Fisicoquímica"],
+      correct: 2,
+      explain:
+        "La física radiológica se centra en el estudio de las radiaciones ionizantes y no ionizantes, su producción, interacción con la materia y efectos biológicos, especialmente en el ámbito médico. La física cuántica (opción A) estudia el comportamiento de la materia y la energía a escala muy pequeña, pero no se limita a radiaciones médicas. 'Física clínica' (opción B) no es una rama formal como tal, y la fisicoquímica (opción D) trata la relación entre química y física, no específicamente las radiaciones."
+    },
+    {
+      q: "Tipo de energía asociada al movimiento:",
+      options: ["Potencial", "Cinética", "Calorífica", "Todas"],
+      correct: 1,
+      explain:
+        "La energía cinética es la energía que posee un cuerpo debido a su movimiento. La energía potencial (opción A) está asociada a la posición o configuración de un sistema (por ejemplo, gravedad, elástica). La energía calorífica (opción C) se relaciona con la agitación térmica de las partículas, pero el término concreto para la energía del movimiento macroscópico es cinética, por lo que la opción D ('todas') no es correcta."
+    },
+    {
+      q: "Radiaciones que producen cambios químicos en la materia:",
+      options: ["No ionizantes", "Ionizantes", "Alterantes", "Modulantes"],
+      correct: 1,
+      explain:
+        "Las radiaciones ionizantes tienen energía suficiente para arrancar electrones de los átomos, formando iones y produciendo cambios químicos en la materia (por ejemplo, en el ADN). Las radiaciones no ionizantes (opción A) pueden excitar moléculas o producir calor, pero no suelen producir ionización directa. 'Alterantes' y 'modulantes' (opciones C y D) no son categorías físicas estándar de radiación."
+    },
+    {
+      q: "Terapia que implanta material radioactivo en el paciente:",
+      options: ["Teleterapia", "Irradiación terapéutica", "Braquiterapia", "Radiología convencional"],
+      correct: 2,
+      explain:
+        "La braquiterapia consiste en colocar fuentes radioactivas en el interior o muy cerca del tumor, de forma que la radiación actúa localmente. La teleterapia (opción A) aplica la radiación desde una fuente externa a distancia. 'Irradiación terapéutica' (opción B) es un término genérico que puede referirse a cualquier terapia con radiación. La radiología convencional (opción D) se utiliza para diagnóstico, no para terapia."
+    },
+    {
+      q: "Material que no puede magnetizarse artificialmente:",
+      options: ["Paramagnético", "Diamagnético", "Ferromagnético", "Ninguno"],
+      correct: 1,
+      explain:
+        "Los materiales diamagnéticos se oponen débilmente a los campos magnéticos y no se magnetizan de forma apreciable, ni siquiera al aplicarles un campo externo fuerte. Los materiales paramagnéticos (opción A) sí pueden ser magnetizados débilmente en presencia de un campo externo. Los ferromagnéticos (opción C) se magnetizan con facilidad y pueden conservar magnetización. La opción D ('ninguno') es errónea porque los diamagnéticos son precisamente los que prácticamente no se magnetizan."
     },
   ],
 },
 
 {
-  id: "an-u2",
-  title: "AN · U2 · Técnicas de imagen básicas",
+  id: "ff-u2",
+  title: "FF · U2 · Interacción radiación-materia",
   questions: [
     {
-      q: "¿Qué técnica NO usa rayos X?",
-      options: ["Ecografía", "Radiología convencional", "Tomografía computarizada", "Radiología con contraste"],
+      q: "¿Qué factor NO afecta a la absorción de la radiación?",
+      options: ["Número atómico", "Espesor", "Energía de los rayos X", "Todos afectan"],
+      correct: 3,
+      explain:
+        "La absorción de los rayos X en un material depende del número atómico (a mayor Z, mayor absorción), del espesor (más material, más atenuación) y de la energía de la radiación (energías distintas interactúan de forma diferente). Por tanto, todos los factores listados influyen. La pregunta pide cuál NO afecta, y la respuesta correcta es 'Todos afectan', indicando que ninguno de ellos puede considerarse irrelevante."
+    },
+    {
+      q: "Los materiales más densos se observan en radiografía como:",
+      options: ["Más claros (blancos)", "Muy oscuros", "Azules", "Todas"],
       correct: 0,
       explain:
-        "La ecografía utiliza ondas de ultrasonido (ondas mecánicas de alta frecuencia), no radiación ionizante, y por eso es la técnica que no usa rayos X. La radiología convencional (opción B) se basa directamente en rayos X para generar la imagen. La tomografía computarizada (opción C) también usa rayos X rotando alrededor del paciente. La radiología con contraste (opción D) sigue siendo radiología con rayos X, solo que se añade un medio de contraste para mejorar la visualización de estructuras."
+        "En una radiografía, los materiales más densos y con mayor número atómico absorben más rayos X, de modo que menos radiación llega al detector en esas zonas. Esto produce áreas más claras o blancas en la imagen (por ejemplo, hueso). Las zonas muy oscuras (opción B) corresponden a estructuras poco densas (como el aire en pulmones). Las opciones C y D no son correctas porque el color azul no forma parte de la escala de grises estándar de la radiografía."
     },
     {
-      q: "Técnica dependiente del operador y en tiempo real:",
-      options: ["Resonancia magnética", "Ecografía", "Tomografía computarizada", "Radiología convencional"],
-      correct: 1,
-      explain:
-        "La ecografía es una técnica muy dependiente del operador: la calidad de la exploración y las ventanas que se consigan dependen mucho de cómo el profesional maneje el transductor. Además, ofrece imágenes en tiempo real, lo que permite ver movimiento, flujo, etc. La resonancia magnética (opción A) también puede mostrar secuencias dinámicas, pero los protocolos suelen ser más estandarizados y menos dependientes del operador. La TC (opción C) y la radiología convencional (opción D) producen imágenes más fijas, no tan interactivas en tiempo real como la eco."
-    },
-    {
-      q: "Técnica con exploración larga y posible claustrofobia:",
-      options: ["Resonancia magnética", "Ecografía", "Tomografía computarizada", "Radiología convencional"],
-      correct: 0,
-      explain:
-        "La resonancia magnética es una exploración relativamente larga, ruidosa y dentro de un imán que rodea al paciente, lo que puede provocar sensación de claustrofobia. La ecografía (opción B) suele ser rápida y se realiza en espacios abiertos, sin túnel. La TC (opción C) también usa un gantry, pero el tiempo de adquisición es mucho más corto, por lo que el efecto claustrofóbico es menor. La radiología convencional (opción D) se realiza de forma casi instantánea y no implica meter al paciente en un túnel cerrado."
-    },
-    {
-      q: "La mayoría de estudios de TC se obtienen en plano:",
-      options: ["Sagital", "Coronal", "Axial", "Frontal"],
-      correct: 2,
-      explain:
-        "La adquisición original de la tomografía computarizada se realiza tradicionalmente en plano axial, es decir, cortes transversales perpendiculares al eje longitudinal del cuerpo. Luego, mediante reconstrucciones, se pueden obtener cortes sagitales o coronales. El plano sagital (opción A) divide en derecha e izquierda, pero no es el plano de adquisición principal. El plano coronal o frontal (opciones B y D) divide en anterior y posterior, también obtenible por reconstrucción, pero no es el habitual de adquisición."
-    },
-    {
-      q: "Posición más habitual en RM:",
-      options: ["Bipedestación", "Sedestación", "Decúbito supino", "Decúbito prono"],
-      correct: 2,
-      explain:
-        "La posición más frecuente para exploraciones en resonancia magnética es el decúbito supino (boca arriba), porque es cómoda, estable y permite colocar bobinas y centrados de forma estándar. Bipedestación (opción A) y sedestación (opción B) se usan solo en equipos especiales. El decúbito prono (opción D) se emplea para algunos estudios concretos, como mama en determinadas configuraciones, pero no es la posición estándar general."
-    },
-    {
-      q: "Estudio del SNC suele realizarse con:",
+      q: "Fragmentación del núcleo atómico:",
       options: [
-        "Radiología simple o ecografía",
-        "Ecografía o TC",
-        "RM o ecografía",
-        "TC o RM",
+        "Efecto fotoeléctrico",
+        "Efecto Compton",
+        "Dispersión clásica",
+        "Desintegración fotónica",
       ],
       correct: 3,
       explain:
-        "El sistema nervioso central (encéfalo y médula espinal) se estudia fundamentalmente con tomografía computarizada (TC) y resonancia magnética (RM), que ofrecen buena visualización de parénquima, vascularización y lesiones. La radiología simple y la ecografía (opciones A y B) tienen un papel muy limitado para el SNC por la barrera ósea y la baja resolución de estructuras profundas. La opción C mezcla RM con ecografía, pero la eco apenas se usa para SNC salvo en neonatos por fontanelas."
+        "La pregunta alude a un proceso en el que el núcleo atómico se fragmenta o cambia a otro estado nuclear, lo que se asocia con fenómenos de desintegración nuclear. 'Desintegración fotónica' se usa aquí como término relacionado con cambios en el núcleo. El efecto fotoeléctrico (opción A) implica la absorción total del fotón por un electrón ligado, que es expulsado del átomo, sin fragmentar el núcleo. El efecto Compton (opción B) es una dispersión inelástica del fotón con un electrón. La dispersión clásica (opción C) describe desvío de fotones con poca energía, sin cambios nucleares."
     },
     {
-      q: "En pulmones es frecuente usar:",
+      q: "Rango de longitud de onda de los rayos X:",
+      options: ["0,01–10 nm", "0,1–100 nm", "1 nm–1 mm", "Ninguna"],
+      correct: 0,
+      explain:
+        "Los rayos X tienen longitudes de onda muy cortas, aproximadamente en el rango de 0,01 a 10 nanómetros, lo que les confiere alta energía y capacidad ionizante. El rango 0,1–100 nm (opción B) mezcla parte de ultravioleta y parte de rayos X, por lo que es demasiado amplio. El rango 1 nm–1 mm (opción C) ya entra en microondas y otras regiones. Por eso, la mejor aproximación para rayos X en la pregunta es 0,01–10 nm."
+    },
+    {
+      q: "Radiación que supone el 70–85% de la producción:",
       options: [
-        "Radiología simple primero y TC para detalle",
-        "Ecografía primero y TC para detalle",
-        "Ecografía primero y RM para detalle",
-        "Radiología simple primero y RM para detalle",
+        "Característica",
+        "De frenado",
+        "Cuántica",
+        "No ionizante",
+      ],
+      correct: 1,
+      explain:
+        "En un tubo de rayos X, la mayor parte de la radiación generada (aprox. 70–85%) es radiación de frenado o bremsstrahlung: se produce cuando los electrones son desacelerados por el campo eléctrico de los núcleos del ánodo. La radiación característica (opción A) surge cuando un electrón del ánodo es expulsado y otro ocupa su lugar, emitiendo fotones con energías específicas, pero su proporción es menor. 'Cuántica' (opción C) no es un tipo específico de radiación aquí. 'No ionizante' (opción D) no describe la producción típica del tubo de rayos X."
+    },
+    {
+      q: "Tiempo de preparación calentando el filamento:",
+      options: ["Primer tiempo", "Segundo tiempo", "Tercer tiempo", "Fase previa"],
+      correct: 0,
+      explain:
+        "En el funcionamiento del tubo de rayos X se suele hablar de un primer tiempo en el que se calienta el filamento (mA) para generar nubes de electrones por emisión termoiónica. El segundo tiempo (opción B) suele ser la aplicación de la alta tensión (kV) y exposición. 'Tercer tiempo' (opción C) y 'fase previa' (opción D) no corresponden a la terminología estándar usada para describir esta secuencia."
+    },
+    {
+      q: "Alteración de trayectoria de la radiación:",
+      options: ["Transmisión", "Refracción", "Absorción", "Dispersión"],
+      correct: 3,
+      explain:
+        "La dispersión implica que la radiación cambia de dirección tras interactuar con la materia, desviándose de su trayectoria original. La transmisión (opción A) significa que la radiación atraviesa el material sin cambiar su dirección ni ser absorbida. La refracción (opción B) es cambio de dirección al pasar de un medio a otro por cambio de velocidad, pero en radioprotección radiológica se usa más el concepto de dispersión. La absorción (opción C) implica que la energía del fotón se deposita en el material, sin continuar su viaje."
+    },
+    {
+      q: "Radiación que atraviesa la materia sin cambiar trayectoria:",
+      options: ["Absorción", "Dispersión", "Transmisión", "Ninguna"],
+      correct: 2,
+      explain:
+        "Cuando la radiación atraviesa un material sin cambiar su trayectoria ni ser desviada, hablamos de transmisión. La absorción (opción A) supone que la radiación pierde energía depositándola en el medio. En la dispersión (opción B) la trayectoria se altera. Por tanto, 'ninguna' (opción D) no es correcta porque sí existe un término específico: transmisión."
+    },
+    {
+      q: "La radiación infrarroja se produce al interactuar con:",
+      options: [
+        "Capas externas de electrones",
+        "Capas internas",
+        "Núcleo",
+        "Ninguna",
       ],
       correct: 0,
       explain:
-        "En patología pulmonar, el enfoque habitual es comenzar con radiografía simple de tórax (técnica barata, rápida y accesible) y recurrir a TC cuando se necesita más detalle anatómico o caracterización de lesiones. La ecografía pulmonar (opciones B y C) tiene su papel sobre todo a nivel pleural y en UCI, pero no es la primera prueba general para pulmón. La RM (opciones C y D) se utiliza mucho menos en pulmones por problemas de aire y movimiento, no es la prueba de detalle estándar."
+        "La radiación infrarroja se asocia con cambios de energía relativamente bajos, relacionados con vibraciones y rotaciones moleculares y transiciones en electrones más externos. No implica cambios en capas internas de electrones (opción B) ni en el núcleo (opción C), que corresponden a radiaciones de mayor energía (rayos X, gamma). Por eso, la interacción relevante está ligada a las capas externas."
     },
     {
-      q: "Contrastes usados en tubo digestivo con rayos X:",
-      options: ["Gadolinio", "Bario", "Yodo", "Berilio"],
+      q: "Los rayos X duros tienen longitud de onda:",
+      options: ["Más larga", "Más corta", "Más potente", "Menos potente"],
       correct: 1,
       explain:
-        "Para estudios del tubo digestivo con rayos X se usan principalmente contrastes a base de sulfato de bario, ya que son muy opacos a los rayos X y recubren la mucosa intest inal. El gadolinio (opción A) es el contraste típico de resonancia magnética. El yodo (opción C) se usa sobre todo como contraste intravascular o para TC de distintas estructuras, y también puede usarse por vía oral en determinadas situaciones, pero el clásico del tubo digestivo es el bario. El berilio (opción D) no se emplea como contraste radiológico."
-    },
-    {
-      q: "Contrastes usados en radiología convencional del aparato excretor:",
-      options: ["Bario", "Yodo", "Gadolinio", "Berilio"],
-      correct: 1,
-      explain:
-        "En los estudios radiológicos del aparato urinario (urografías, pielografías, etc.) se usan contrastes yodados hidrosolubles que se eliminan por vía renal, permitiendo opacificar riñones, uréteres y vejiga. El bario (opción A) se reserva para tubo digestivo y no debe usarse en vía urinaria. El gadolinio (opción C) es para RM, no para radiología convencional. El berilio (opción D) no es un contraste médico utilizado."
-    },
-    {
-      q: "Radiología simple es útil para estudiar:",
-      options: ["Músculos", "Tendones", "Huesos", "Ligamentos"],
-      correct: 2,
-      explain:
-        "La radiología simple (radiografías) es especialmente útil para estudiar estructuras óseas: fracturas, alineaciones, deformidades, densidad, etc. Músculos, tendones y ligamentos (opciones A, B y D) son tejidos blandos que se ven muy mal en radiografía simple y requieren técnicas como RM o ecografía para su valoración detallada. Por eso, la opción correcta es 'huesos'."
+        "Los rayos X duros son los de mayor energía, lo que se corresponde con una frecuencia más alta y, por tanto, una longitud de onda más corta. Decir 'más potente' (opción C) es impreciso: lo correcto es hablar de energía y longitud de onda. Los rayos X blandos, en cambio, tienen mayor longitud de onda y menor energía. Por eso, la característica clave es 'más corta', no 'más larga' ni 'menos potente'."
     },
   ],
 },
 
 {
-  id: "an-u3",
-  title: "AN · U3 · Sistema locomotor",
+  id: "ff-u3",
+  title: "FF · U3 · Imagen radiológica",
   questions: [
     {
-      q: "¿Cuál NO es una función de los huesos?",
+      q: "¿Cuál NO es una ventaja de los medios digitales?",
       options: [
-        "Proteger órganos vitales",
-        "Regular niveles de calcio en sangre",
-        "Producir células sanguíneas",
-        "Regular presión arterial mediante vasodilatación",
+        "Menor coste",
+        "Simplificación técnica",
+        "Manipulación de imágenes",
+        "Todas son ventajas",
       ],
       correct: 3,
       explain:
-        "Los huesos protegen órganos vitales (por ejemplo, cráneo y caja torácica), actúan como reservorio de minerales como el calcio y participan en la hematopoyesis (producción de células sanguíneas) en la médula ósea, por lo que las opciones A, B y C son funciones reales. La regulación directa de la presión arterial mediante vasodilatación (opción D) es función del sistema cardiovascular y del endotelio, no un papel propio de los huesos."
+        "La radiología digital ofrece varias ventajas: facilita la manipulación de la imagen (contraste, zoom, filtros), simplifica procesos técnicos (sin revelado químico) y, a largo plazo, puede reducir costes de almacenamiento y material. Las tres primeras opciones enumeran ventajas reales. La pregunta pide cuál NO es una ventaja, pero como todas lo son, la respuesta correcta es 'Todas son ventajas', indicando que ninguna de ellas es un inconveniente."
     },
     {
-      q: "¿Qué estructura ósea es una elevación articular?",
-      options: ["Trocánter", "Epicóndilo", "Cresta ilíaca", "Espina"],
-      correct: 1,
-      explain:
-        "El epicóndilo es una prominencia ósea asociada a una articulación, donde se insertan ligamentos y tendones; por eso se considera una elevación articular. El trocánter (opción A) es una gran apófisis del fémur, más relacionada con inserción muscular. La cresta ilíaca (opción C) es un borde prominente del ilion, no una elevación articular en sí. La espina (opción D) es una prominencia puntiaguda (como la espina de la escápula), también más de inserción muscular que articular."
-    },
-    {
-      q: "Estructura ósea con forma de polea:",
-      options: ["Trocánter", "Apófisis", "Tróclea", "Tuberosidad"],
-      correct: 2,
-      explain:
-        "La tróclea es una estructura articular con forma de polea que permite deslizamiento de otra superficie, como en la tróclea humeral. El trocánter (opción A) es una gran prominencia ósea, no con forma de polea. Apófisis (opción B) es un término genérico para una prolongación ósea, sin indicar forma concreta. La tuberosidad (opción D) es una región rugosa de inserción muscular o ligamentosa, tampoco con morfología de polea."
-    },
-    {
-      q: "Hueso en zona posterior del cráneo:",
-      options: ["Temporal", "Occipital", "Parietal", "Frontal"],
-      correct: 1,
-      explain:
-        "El hueso occipital se sitúa en la región posterior e inferior del cráneo, formando la base y la parte de atrás de la cabeza. El hueso temporal (opción A) se localiza en los laterales del cráneo, donde está el oído medio e interno. El parietal (opción C) ocupa gran parte de la bóveda craneal superior y lateral. El frontal (opción D) está en la parte anterior del cráneo, donde se localiza la frente."
-    },
-    {
-      q: "La columna vertebral está formada por:",
+      q: "Tecnología que NO pertenece a radiografía digital directa:",
       options: [
-        "8C, 11T, 5L, sacro y coxis",
-        "7C, 12T, 5L, sacro y coxis",
-        "8C, 12T, 6L, sacro y coxis",
-        "7C, 11T, 6L, sacro y coxis",
+        "Detectores conversión directa",
+        "CCD",
+        "Detectores recuento de fotones",
+        "Películas radiográficas",
       ],
-      correct: 1,
-      explain:
-        "La columna vertebral humana típica está formada por 7 vértebras cervicales, 12 torácicas y 5 lumbares, más el sacro y el coxis fusionados, de ahí que la opción correcta sea 7C, 12T, 5L. Las demás combinaciones (opciones A, C y D) alteran ese número estándar, añadiendo o restando vértebras cervicales, torácicas o lumbares, por lo que no son correctas en anatomía normal."
-    },
-    {
-      q: "La articulación acromioclavicular:",
-      options: [
-        "Entre escápula y clavícula",
-        "Entre húmero y clavícula",
-        "Entre C3 y clavícula",
-        "Entre T1 y clavícula",
-      ],
-      correct: 0,
-      explain:
-        "La articulación acromioclavicular se establece entre el acromion (parte de la escápula) y el extremo lateral de la clavícula, por eso la opción A es la correcta. El húmero con la clavícula (opción B) no forman una articulación directa; el húmero articula con la escápula en la glenohumeral. Las opciones C y D mencionan vértebras cervicales y torácicas que no articulan directamente con la clavícula."
-    },
-    {
-      q: "No es articulación de cintura pélvica:",
-      options: ["Coxofemoral", "Sacroilíaca", "Sínfisis púbica", "Femororrotuliana"],
       correct: 3,
       explain:
-        "Forman parte del complejo pélvico las articulaciones sacroilíacas (unión sacro-hueso ilíaco), la sínfisis púbica (unión entre ramas púbicas) y la coxofemoral (cadera, unión entre acetábulo y fémur), por lo que A, B y C sí son articulaciones de la cintura pélvica. La femororrotuliana (opción D) pertenece a la rodilla, entre el fémur y la rótula, no a la pelvis."
+        "La radiografía digital directa utiliza detectores electrónicos (de conversión directa o indirecta, CCD, detectores de recuento de fotones, etc.) para transformar la radiación en señales digitales. Las películas radiográficas (opción D) pertenecen al sistema analógico clásico, donde la imagen se forma en una película que luego debe revelarse químicamente, por lo que no forman parte de la radiografía digital directa."
     },
     {
-      q: "Traumatismo óseo complejo 3D con interés óseo:",
-      options: ["Radiología simple", "TC", "RM", "Ecografía"],
+      q: "¿Qué NO es un factor geométrico?",
+      options: ["Magnificación", "Distorsión", "Desenfoque", "Artefactos"],
+      correct: 3,
+      explain:
+        "Los factores geométricos se refieren a cómo influyen la distancia foco-objeto, foco-película y tamaño del foco en la magnificación, la distorsión y el desenfoque de la imagen, por lo que A, B y C sí son factores geométricos. Los artefactos (opción D) son errores o elementos no deseados en la imagen debidos a problemas técnicos, de procesamiento o del paciente (objetos metálicos, movimiento, etc.), pero no se consideran un factor geométrico en sí."
+    },
+    {
+      q: "Última fase del revelado analógico:",
+      options: ["Exposición", "Fijación", "Revelado", "Adhesión"],
       correct: 1,
       explain:
-        "La tomografía computarizada (TC) es la técnica de elección para valorar traumatismos óseos complejos en tres dimensiones, ya que permite reconstrucciones multiplanares y 3D muy precisas del hueso. La radiología simple (opción A) puede ser insuficiente en fracturas complejas o articulares. La RM (opción C) es excelente para tejidos blandos, pero menos para detalle cortical óseo fino. La ecografía (opción D) solo valora de forma muy limitada algunas estructuras óseas superficiales."
+        "En el proceso químico de revelado analógico, las fases clave son revelado, baño de paro, fijación, lavado y secado. La fijación es la fase en la que se fijan las sales de plata no expuestas para que la imagen sea estable y se pueda ver con luz ambiente, por ello se considera la fase crucial final del proceso químico. La exposición (opción A) ocurre antes de entrar al cuarto oscuro. El revelado (opción C) es la primera fase química. 'Adhesión' (opción D) no corresponde a una fase típica de revelado."
     },
     {
-      q: "Músculo involuntario visceral:",
-      options: ["Esquelético", "Cardíaco", "Liso", "Rugoso"],
-      correct: 2,
-      explain:
-        "El músculo liso es el que forma parte de la pared de vísceras huecas (intestino, vasos sanguíneos, vejiga, etc.) y es involuntario, controlado por el sistema nervioso autónomo. El músculo esquelético (opción A) es voluntario y se inserta en huesos para el movimiento. El músculo cardíaco (opción B) es involuntario pero específico del corazón, no 'visceral' general. La opción D (rugoso) no es una clasificación válida de tipo de músculo."
-    },
-    {
-      q: "Artritis vs artrosis:",
+      q: "Principio de la película radiográfica:",
       options: [
-        "Artritis inflamatoria y artrosis degenerativa",
-        "Artritis degenerativa y artrosis inflamatoria",
-        "Ambas degenerativas",
-        "Ambas inflamatorias",
+        "Dispersión diferencial",
+        "Absorción diferencial",
+        "Refracción diferencial",
+        "Reflexión diferencial",
       ],
+      correct: 1,
+      explain:
+        "La formación de la imagen en una película radiográfica se basa en la absorción diferencial de los rayos X por los distintos tejidos: algunas zonas absorben más y aparecen más claras, otras absorben menos y se ven más oscuras. La dispersión (opción A) es un fenómeno que puede degradar la calidad de la imagen. La refracción y la reflexión (opciones C y D) no son el principio básico que explica la diferencia de tonos en radiografía."
+    },
+    {
+      q: "Imagen con valores continuos de gris:",
+      options: ["Analógica", "Digital", "Mixta", "Todas"],
       correct: 0,
       explain:
-        "La artritis es un proceso inflamatorio de la articulación, mientras que la artrosis es una enfermedad degenerativa del cartílago articular y estructuras adyacentes. Por eso, la opción correcta es que la artritis es inflamatoria y la artrosis degenerativa. La opción B invierte los conceptos, y las opciones C y D asumen que ambas son del mismo tipo (ambas degenerativas o ambas inflamatorias), lo cual es falso."
+        "Una imagen analógica (como la generada en película) puede representar los tonos de gris de forma continua, sin límites discretos. En una imagen digital (opción B), los valores de gris están cuantizados en niveles (por ejemplo, 256 niveles), por lo que no son matemáticamente continuos. La opción C ('mixta') y D ('todas') no son correctas porque la definición de continuidad de tonos encaja específicamente con el formato analógico."
+    },
+    {
+      q: "Soporte rígido de película radiográfica:",
+      options: ["Estuche", "Funda", "Caja", "Chasis"],
+      correct: 3,
+      explain:
+        "El chasis es el soporte rígido donde se coloca la película radiográfica (y, si procede, las pantallas intensificadoras), protegiéndola de la luz y asegurando un buen contacto. Un estuche, funda o caja (opciones A, B y C) pueden servir para transporte o almacenamiento, pero no son el soporte técnico que interviene directamente en la exposición radiográfica."
+    },
+    {
+      q: "Receptores de radiología computarizada:",
+      options: [
+        "Película",
+        "Láminas fotoestimulables",
+        "Detectores fotónicos",
+        "Ninguna",
+      ],
+      correct: 1,
+      explain:
+        "La radiología computarizada (CR) utiliza láminas fotoestimulables (placas de fósforo) que almacenan la información de la exposición y luego se leen mediante un láser para generar la imagen digital. Las películas (opción A) son propias de radiología analógica. Los detectores fotónicos (opción C) se emplean en sistemas de radiografía digital directa (DR), no en CR. Por tanto, la respuesta correcta son las láminas fotoestimulables."
+    },
+    {
+      q: "Granulado fino en imagen:",
+      options: ["Ruido", "Artefactos", "Distorsión", "Ninguna"],
+      correct: 0,
+      explain:
+        "El ruido en imagen radiológica se percibe como un granulado fino o textura irregular que dificulta ver detalles, especialmente en áreas homogéneas. Los artefactos (opción B) son defectos más localizados o específicos (sombras, líneas, halos) debidos a fallos técnicos o de paciente. La distorsión (opción C) es una alteración geométrica de la forma. 'Ninguna' (opción D) es incorrecta porque el granulado se asocia claramente con ruido."
+    },
+    {
+      q: "Capacidad de distinguir detalles próximos:",
+      options: ["Latitud", "Contraste", "Resolución", "Sensibilidad"],
+      correct: 2,
+      explain:
+        "La resolución espacial es la capacidad de un sistema de imagen para distinguir como separados dos objetos que están muy próximos. La latitud (opción A) se relaciona con el rango de exposiciones en que el sistema produce imágenes útiles. El contraste (opción B) es la diferencia de densidad o brillo entre estructuras. La sensibilidad (opción D) indica la capacidad de registrar señales débiles, pero no la nitidez de los detalles."
     },
   ],
 },
 
 {
-  id: "an-u4",
-  title: "AN · U4 · Sistema nervioso",
+  id: "ff-u4",
+  title: "FF · U4 · Tomografía computarizada",
   questions: [
     {
-      q: "No forma parte del SNC:",
-      options: ["Médula espinal", "Tronco encefálico", "Cerebelo", "Nervios craneales"],
+      q: "Método de obtención en TC convencional:",
+      options: ["Helicoidal", "Espiral", "Discreto", "Secuencial"],
       correct: 3,
       explain:
-        "El sistema nervioso central (SNC) está formado por encéfalo (cerebro, cerebelo y tronco encefálico) y médula espinal, por lo que opciones A, B y C sí pertenecen al SNC. Los nervios craneales (opción D) se consideran parte del sistema nervioso periférico, ya que son prolongaciones que salen del encéfalo hacia órganos y estructuras periféricas."
+        "En la TC convencional clásica, la obtención de imágenes se realiza de forma secuencial: el gantry adquiere un corte, la mesa se desplaza, y se adquiere el siguiente, y así sucesivamente. La TC helicoidal o espiral (opciones A y B) corresponde a equipos más modernos en los que el tubo gira continuamente mientras la mesa se mueve, generando una trayectoria helicoidal. 'Discreto' (opción C) no es el término estándar usado para describir este modo."
     },
     {
-      q: "Interviene en huida/lucha:",
-      options: ["Somático", "Simpático", "Parasimpático", "Entérico"],
+      q: "El factor de desplazamiento indica:",
+      options: [
+        "Nitidez",
+        "Solapamiento de cortes",
+        "Velocidad",
+        "Profundidad",
+      ],
       correct: 1,
       explain:
-        "La respuesta de lucha o huida (fight or flight) está mediada por el sistema nervioso simpático, que aumenta frecuencia cardíaca, dilata bronquios y moviliza energía. El sistema somático (opción A) controla sobre todo movimientos voluntarios de músculo esquelético. El parasimpático (opción C) se asocia a reposo y digestión (rest and digest). El sistema entérico (opción D) se encarga principalmente de la motilidad y funciones del tracto gastrointestinal."
+        "El factor de desplazamiento (o pitch) en TC helicoidal relaciona el avance de la mesa por rotación con el grosor del corte; cuanto menor es, mayor es el solapamiento entre cortes y mejor la resolución en Z. No indica directamente la 'nitidez' de la imagen (opción A), aunque la afecta de forma indirecta. Tampoco es simplemente la velocidad (opción C) ni la profundidad (opción D); se interpreta sobre todo como grado de solapamiento o separación entre cortes."
     },
     {
-      q: "Espacio epidural:",
+      q: "Construcción apilando cortes axiales:",
       options: [
-        "Entre hueso y duramadre",
-        "Entre duramadre y aracnoides",
-        "Entre aracnoides y piamadre",
-        "Entre piamadre y corteza",
+        "Reconstrucción multiplanar",
+        "Animación",
+        "Integración",
+        "Ninguna",
       ],
       correct: 0,
       explain:
-        "El espacio epidural se localiza entre el hueso (por ejemplo, el canal vertebral) y la duramadre, y es donde se realiza la anestesia epidural. Entre duramadre y aracnoides (opción B) se hablaría del espacio subdural, que en condiciones normales es virtual. Entre aracnoides y piamadre (opción C) está el espacio subaracnoideo, donde circula el líquido cefalorraquídeo (LCR). La opción D no describe un espacio anatómico estándar."
+        "La reconstrucción multiplanar (MPR) consiste en usar un volumen de datos (generalmente cortes axiales) para generar imágenes en otros planos (coronal, sagital, oblicuo) apilando y reorientando la información. 'Animación' (opción B) se refiere a mostrar imágenes en secuencia, pero no es el término técnico. 'Integración' (opción C) tampoco es la palabra específica en TC. Por tanto, la opción correcta es la MPR."
     },
     {
-      q: "Compartimento lleno de LCR:",
-      options: ["Epidural", "Subdural", "Subaracnoideo", "Subpiamadral"],
+      q: "Algoritmos que corrigen borrosidad:",
+      options: [
+        "Filtros de reconstrucción",
+        "Fórmulas correctoras",
+        "Cálculos",
+        "Ninguna",
+      ],
+      correct: 0,
+      explain:
+        "En TC se utilizan filtros de reconstrucción (kernels) que modifican la imagen reconstruida para mejorar el detalle, reducir el ruido o corregir borrosidad en función de la aplicación (ósea, de partes blandas, etc.). 'Fórmulas correctoras' y 'cálculos' (opciones B y C) son términos genéricos pero no el nombre concreto que se usa. 'Ninguna' (opción D) es falsa porque sí existen filtros específicos para este fin."
+    },
+    {
+      q: "Sustancia con UH = 0:",
+      options: ["Hueso", "Sangre", "Agua", "Aire"],
       correct: 2,
       explain:
-        "El líquido cefalorraquídeo (LCR) se encuentra en el espacio subaracnoideo, entre la aracnoides y la piamadre, protegiendo y amortiguando el SNC. El espacio epidural (opción A) contiene principalmente grasa y plexos venosos. El espacio subdural (opción B) es virtual y solo se hace evidente en patologías como hematomas. El término 'subpiamadral' (opción D) no se utiliza como compartimento anatómico real."
+        "En la escala de Hounsfield (UH), el agua se define arbitrariamente con un valor de 0 UH. El aire (opción D) se establece en torno a −1000 UH. Los tejidos blandos y la sangre (opción B) tienen valores ligeramente positivos, y el hueso (opción A) valores mucho más altos (centenares a miles de UH). Por eso, el material de referencia con 0 es el agua."
     },
     {
-      q: "Zona azul en axial RM corresponde a:",
-      options: [
-        "Lóbulo frontal izquierdo",
-        "Lóbulo temporal",
-        "Lóbulo occipital",
-        "Lóbulo parietal derecho",
-      ],
-      correct: 0,
+      q: "En imagen 3D la matriz se divide en:",
+      options: ["Cuadrados", "Píxeles", "Cubos", "Vóxeles"],
+      correct: 3,
       explain:
-        "En un corte axial de RM, la región anterior del cráneo corresponde a los lóbulos frontales. Si la marca se sitúa en la parte delantera izquierda del paciente (que en la imagen suele verse a la derecha del observador), se trata del lóbulo frontal izquierdo. El lóbulo temporal (opción B) se ve más lateral e inferior. El occipital (opción C) se ubica en la parte posterior. El parietal (opción D) es más superior y posterior que el frontal."
+        "En una imagen 2D, la matriz está formada por píxeles (elementos de imagen en dos dimensiones). En 3D, cada 'bloque' de información tiene ancho, alto y profundidad, y se denomina vóxel (volumetric pixel). 'Cuadrados' (opción A) y 'cubos' (opción C) describen formas geométricas pero el término técnico es vóxel. La opción B (píxeles) se queda en 2D."
     },
     {
-      q: "Prueba para vasos cerebrales en isquemia:",
-      options: ["RM sin contraste", "Rx cráneo", "Angio-TC con contraste", "Eco transabdominal"],
+      q: "Uso principal de TC en radioterapia:",
+      options: [
+        "Localizar lesiones",
+        "Aplicar tratamiento",
+        "Simular tratamiento",
+        "Todas",
+      ],
       correct: 2,
       explain:
-        "La angio-TC con contraste permite visualizar con gran detalle las arterias cerebrales, detectar estenosis, oclusiones y aneurismas, y es muy útil en el contexto de isquemia. La RM sin contraste (opción A) puede mostrar el infarto como tal, pero no es la mejor para valorar la luz vascular en todos los casos. La Rx de cráneo (opción B) casi no aporta información sobre vasos. La ecografía transabdominal (opción D) se usa para abdomen, no para vasos cerebrales."
+        "En radioterapia, la TC de planificación se usa sobre todo para simular el tratamiento: permite delimitar el volumen tumoral y órganos de riesgo, calcular dosis y planificar los campos antes de aplicar la radiación real. Localizar lesiones (opción A) también es útil, pero su función clave en el contexto radioterápico es la simulación. La aplicación del tratamiento (opción B) se realiza con aceleradores y otros equipos, no con la TC. Por eso, la opción D ('todas') no es precisa en esta pregunta."
     },
     {
-      q: "Imagen (calcificaciones) corresponde a:",
+      q: "Unidad de medida de atenuación:",
+      options: ["Faraday", "Hermann", "Hounsfield", "Todas"],
+      correct: 2,
+      explain:
+        "En tomografía computarizada, la atenuación de los tejidos se mide en unidades Hounsfield (UH), basadas en la atenuación relativa del tejido frente al agua. 'Faraday' (opción A) se asocia a carga eléctrica. 'Hermann' (opción B) no es una unidad estándar en este contexto. La opción D ('todas') es incorrecta porque solo Hounsfield es la unidad usada."
+    },
+    {
+      q: "CTDI significa:",
       options: [
-        "TC cerebral con calcificaciones",
-        "TC cerebral con quistes grasos",
-        "RM cerebral con calcificaciones",
-        "RM cerebral con quistes grasos",
+        "Dosis en TC",
+        "Producto dosis-longitud",
+        "Nivel de ventana",
+        "Ninguna",
       ],
       correct: 0,
       explain:
-        "Las calcificaciones se ven muy bien en TC como zonas hiperdensas (blancas intensas), por lo que la imagen descrita suele corresponder a una TC cerebral con calcificaciones. La TC con quistes grasos (opción B) tendría densidades grasas típicas, no de calcio. En RM (opciones C y D), las calcificaciones pueden ser difíciles de distinguir o aparecer hipointensas; además, la descripción clásica de calcificación densa es más típica de TC."
+        "El CTDI (Computed Tomography Dose Index) es un índice que describe la dosis de radiación en TC para un conjunto estándar de condiciones. El producto dosis-longitud se conoce como DLP (Dose Length Product), por lo que la opción B mezcla conceptos. El nivel de ventana (opción C) se refiere al centrado del rango de grises en la imagen, no a dosis. Por tanto, CTDI está claramente relacionado con dosis en TC."
     },
     {
-      q: "Lesión hiperintensa en RM T2:",
-      options: ["Hiperintenso en T1", "Hiperintenso en T2", "Hiperdenso en TC", "Todas"],
-      correct: 1,
-      explain:
-        "La pregunta hace referencia a una lesión hiperintensa en secuencias T2, por lo que la respuesta correcta es precisamente que es hiperintensa en T2 (opción B). Hiperintenso en T1 (opción A) es otro patrón de señal distinto y no se puede asumir automáticamente a partir de T2. Hiperdenso en TC (opción C) describe un hallazgo en otra técnica (TC), no en RM. Por tanto, no se puede decir que 'todas' sean ciertas (opción D)."
-    },
-    {
-      q: "Diagnóstico por imagen del canal lagrimal con contraste y Rx:",
-      options: ["Dacriocistografía", "Sialografía", "Colangiografía", "Cistografía"],
-      correct: 0,
-      explain:
-        "La dacriocistografía es el estudio radiológico del sistema lagrimal mediante la inyección de contraste y la realización de radiografías, por eso es la opción correcta. La sialografía (opción B) estudia glándulas salivales. La colangiografía (opción C) se centra en las vías biliares. La cistografía (opción D) es el estudio de la vejiga urinaria, no del canal lagrimal."
-    },
-    {
-      q: "En estudio del oído:",
+      q: "Cantidad de radiación que puede producir daño:",
       options: [
-        "TC para oído externo y medio; RM para oído interno",
-        "RM para oído externo y medio; TC para oído interno",
-        "TC para todo el oído",
-        "RM para todo el oído",
+        "Dosis efectiva",
+        "Dosis letal",
+        "Dosis de radiación",
+        "Dosis regenerable",
       ],
-      correct: 0,
+      correct: 2,
       explain:
-        "En general, la TC es muy útil para valorar estructuras óseas finas como las del oído externo y medio (conducto, cadena osicular, mastoides), mientras que la RM es mejor para estructuras neurosensoriales del oído interno (laberinto membranoso, nervio auditivo). Por eso la combinación correcta es TC para externo/medio y RM para interno. La opción B invierte el uso. Las opciones C y D se quedan cojas porque cada técnica tiene ventajas diferentes según la parte del oído."
+        "En general, la dosis de radiación es la cantidad de energía depositada por unidad de masa en un tejido, y si es suficientemente alta puede producir daño biológico. La dosis efectiva (opción A) es un concepto más refinado que pondera la sensibilidad de los tejidos y el riesgo global, pero la pregunta está formulada de forma genérica. 'Dosis letal' (opción B) se refiere específicamente a la dosis que causa la muerte. 'Dosis regenerable' (opción D) no es un término estándar. La respuesta que encaja con la definición general es 'dosis de radiación'."
     },
   ],
 },
 
 {
-  id: "an-u5",
-  title: "AN · U5 · Sistema cardiopulmonar",
+  id: "ff-u5",
+  title: "FF · U5 · Resonancia magnética",
   questions: [
     {
-      q: "Conecta aurícula derecha con ventrículo derecho:",
-      options: ["Mitral", "Pulmonar", "Aórtica", "Tricúspide"],
+      q: "Cantidad de protones de hidrógeno en un volumen:",
+      options: [
+        "Número atómico",
+        "Número másico",
+        "Densidad protónica",
+        "Protoabundancia",
+      ],
+      correct: 2,
+      explain:
+        "En RM, la señal depende en gran medida de la densidad de protones de hidrógeno presentes en un determinado volumen de tejido, por lo que se habla de densidad protónica. El número atómico (opción A) es el número de protones del núcleo de un elemento químico, pero no se refiere directamente a cuántos hay en un volumen de tejido. El número másico (opción B) es la suma de protones y neutrones. 'Protoabundancia' (opción D) no es un término estándar en RM clínica."
+    },
+    {
+      q: "Dispositivo incompatible con RM:",
+      options: ["Audífonos", "DIU", "Marcapasos", "Prótesis"],
+      correct: 2,
+      explain:
+        "Los marcapasos (especialmente los no diseñados como 'compatibles con RM') pueden verse muy afectados por el campo magnético intenso, alterando su funcionamiento o incluso dañando el dispositivo y poniendo en riesgo al paciente, por lo que tradicionalmente se consideran incompatibles. Audífonos, determinados DIU y prótesis (opciones A, B y D) pueden ser compatibles según su composición (no ferromagnética) y homologaciones, aunque siempre hay que comprobarlo. Por eso, la respuesta claramente problemática es el marcapasos."
+    },
+    {
+      q: "Gradiente que NO se aplica:",
+      options: ["Gz", "Gy", "Gx", "Gw"],
       correct: 3,
       explain:
-        "La válvula tricúspide separa la aurícula derecha del ventrículo derecho y evita el reflujo de sangre cuando el ventrículo se contrae. La válvula mitral (opción A) conecta aurícula izquierda y ventrículo izquierdo. Las válvulas pulmonar (opción B) y aórtica (opción C) son semilunares y se sitúan a la salida de los ventrículos hacia la arteria pulmonar y la aorta respectivamente, no entre aurícula y ventrículo derechos."
+        "En RM se emplean tres gradientes magnéticos principales, orientados en los tres ejes del espacio: Gx, Gy y Gz, para seleccionar cortes, codificar fase y frecuencia en distintas direcciones. 'Gw' (opción D) no es un gradiente real utilizado en la práctica; no se define un cuarto gradiente con esa nomenclatura."
     },
     {
-      q: "Cavidad que recibe sangre rica en CO2 de la vena cava:",
-      options: ["Aurícula izquierda", "Ventrículo izquierdo", "Aurícula derecha", "Ventrículo derecho"],
+      q: "Componentes ortogonales del espín:",
+      options: ["Longitudinal", "Transversal", "Ambos", "Ninguno"],
       correct: 2,
       explain:
-        "La aurícula derecha recibe la sangre venosa sistémica con alto contenido en CO2 procedente de la vena cava superior e inferior. La aurícula izquierda (opción A) recibe sangre oxigenada procedente de las venas pulmonares. El ventrículo derecho (opción D) recibe sangre de la aurícula derecha pero ya es la cámara que la impulsa hacia la arteria pulmonar. El ventrículo izquierdo (opción B) bombea sangre oxigenada a la aorta."
+        "La magnetización de espín se puede descomponer en dos componentes ortogonales: una longitudinal (paralela al campo principal B0) y otra transversal (perpendicular a B0). Por tanto, el espín en RM se describe habitualmente con ambos componentes. Elegir solo 'longitudinal' (opción A) o solo 'transversal' (opción B) sería incompleto. 'Ninguno' (opción D) es claramente erróneo."
     },
     {
-      q: "Falta de riego por obstrucción parcial coronaria:",
-      options: ["IAM", "Angina de pecho", "Pericarditis", "Miocardiopatía dilatada"],
+      q: "Contraste utilizado en RM:",
+      options: ["Bario", "Yodo", "Neodimio", "Gadolinio"],
+      correct: 3,
+      explain:
+        "El gadolinio es el metal que se utiliza como base para la mayoría de los contrastes paramagnéticos en RM, aumentando la señal en determinadas secuencias (sobre todo T1). El bario (opción A) se usa en estudios del tubo digestivo con rayos X. El yodo (opción B) es típico de contrastes en radiología convencional y TC. El neodimio (opción C) se usa en imanes permanentes, pero no como contraste intravenoso."
+    },
+    {
+      q: "Fenómeno que emite la señal:",
+      options: ["Excitación", "Relajación", "Compresión", "Emisión"],
       correct: 1,
       explain:
-        "La angina de pecho se debe a una isquemia miocárdica transitoria por obstrucción parcial o disminución del flujo en las arterias coronarias, sin llegar necesariamente a necrosis. El infarto agudo de miocardio (IAM, opción A) implica una obstrucción más completa y duradera, con muerte del tejido. La pericarditis (opción C) es inflamación del pericardio. La miocardiopatía dilatada (opción D) afecta al músculo cardíaco y su capacidad de contracción, pero no se define principalmente por una obstrucción parcial coronaria."
+        "En RM, tras aplicar el pulso de radiofrecuencia (excitación), los protones vuelven a su estado de equilibrio liberando energía, proceso que se llama relajación. Durante la relajación (T1, T2) se induce una señal de radiofrecuencia en las bobinas receptoras, que es lo que se mide. La excitación (opción A) es el proceso de aporte de energía, no de emisión. 'Compresión' y 'emisión' (opciones C y D) son términos demasiado genéricos o no específicos en este contexto; la clave física de la señal es la relajación."
     },
     {
-      q: "Alteración del ritmo cardíaco:",
-      options: ["Arritmia", "Isquemia", "Hipertrofia ventricular", "Insuficiencia cardíaca"],
+      q: "RM usada en estudios de actividad cerebral:",
+      options: ["Intervencionista", "Funcional", "Espectroscopía", "Ninguna"],
+      correct: 1,
+      explain:
+        "La RM funcional (fRM o fMRI) mide cambios en la oxigenación sanguínea relacionados con la actividad neuronal, permitiendo localizar regiones activas del cerebro durante tareas o en reposo. La RM intervencionista (opción A) se usa para guiar procedimientos dentro del imán. La espectroscopía (opción C) analiza la composición química de los tejidos. 'Ninguna' (opción D) es falsa porque la RM funcional es precisamente la técnica usada para actividad cerebral."
+    },
+    {
+      q: "Magnetización por diferencia de espines:",
+      options: ["Longitudinal", "Transversal", "Oblicua", "Transcendental"],
       correct: 0,
       explain:
-        "Una arritmia es cualquier alteración del ritmo normal del corazón (frecuencia o regularidad), por eso es la respuesta correcta. La isquemia (opción B) es falta de aporte sanguíneo adecuado a un tejido. La hipertrofia ventricular (opción C) es aumento del grosor de la pared ventricular. La insuficiencia cardíaca (opción D) es la incapacidad del corazón para bombear sangre suficiente, y aunque puede asociarse a arritmias, no es lo mismo que una alteración del ritmo."
+        "La magnetización longitudinal representa el componente neto de magnetización paralelo al campo principal B0 y está determinado por la ligera diferencia entre el número de espines alineados a favor y en contra del campo. La magnetización transversal (opción B) surge cuando los espines se sincronizan en fase, pero la pregunta se refiere a la 'diferencia de espines' alineados, que define el vector longitudinal. 'Oblicua' y 'transcendental' (opciones C y D) no son términos usados en esta descripción."
     },
     {
-      q: "Pruebas de medicina nuclear cardíaca más usadas:",
-      options: [
-        "Ventriculografía y perfusión cardíaca",
-        "Eco y RM",
-        "Angiografía y ECG",
-        "Cateterismo y Rx tórax",
-      ],
-      correct: 0,
-      explain:
-        "En medicina nuclear cardiaca son típicas la ventriculografía isotópica (para valorar función ventricular) y los estudios de perfusión miocárdica (para ver irrigación del corazón). La ecocardiografía y la RM (opción B) son imagen cardíaca pero no de medicina nuclear. Angiografía y ECG (opción C) se basan en contraste radiológico y registro eléctrico respectivamente. Cateterismo y Rx de tórax (opción D) tampoco son técnicas de medicina nuclear."
-    },
-    {
-      q: "Procedimientos para visualizar vasos sanguíneos:",
-      options: ["Angiografías", "Ecocardiografías", "Electrocardiogramas", "Colangiografías"],
-      correct: 0,
-      explain:
-        "Las angiografías son procedimientos específicamente destinados a visualizar vasos sanguíneos mediante la inyección de contraste y técnicas de imagen (Rx, TC, RM). La ecocardiografía (opción B) se centra en la imagen del corazón, aunque pueda ver algo de grandes vasos. El ECG (opción C) registra la actividad eléctrica, no la anatomía vascular. La colangiografía (opción D) estudia las vías biliares, no los vasos sanguíneos."
-    },
-    {
-      q: "Estructura pulmones:",
-      options: [
-        "Ambos 2 lóbulos",
-        "Ambos 3 lóbulos",
-        "Derecho 3 e izquierdo 2",
-        "Derecho 2 e izquierdo 3",
-      ],
+      q: "Efecto proyectil ocurre en objetos:",
+      options: ["Paramagnéticos", "Diamagnéticos", "Ferromagnéticos", "Ninguno"],
       correct: 2,
       explain:
-        "El pulmón derecho tiene 3 lóbulos (superior, medio e inferior) y el izquierdo tiene 2 (superior e inferior), debido al espacio que ocupa el corazón en el lado izquierdo. Por tanto, la opción correcta es 'derecho 3 e izquierdo 2'. Las opciones A y B igualan el número de lóbulos en ambos pulmones y la D invierte la distribución real."
+        "El efecto proyectil en RM se produce cuando un objeto ferromagnético es atraído con gran fuerza hacia el imán, pudiendo convertirse en un proyectil peligroso. Los materiales paramagnéticos (opción A) tienen una débil atracción y no suelen causar este fenómeno con la misma intensidad. Los diamagnéticos (opción B) incluso se oponen débilmente al campo. Por tanto, el riesgo serio está en objetos ferromagnéticos."
     },
     {
-      q: "Función de la pleura:",
-      options: [
-        "Producir oxígeno",
-        "Amortiguar movimientos y proteger del roce",
-        "Bombear aire",
-        "Almacenar aire",
-      ],
-      correct: 1,
+      q: "SAR nivel III se considera:",
+      options: ["Normal", "Controlado", "Investigación experimental", "Ninguno"],
+      correct: 2,
       explain:
-        "La pleura es una membrana serosa que recubre los pulmones y la cavidad torácica; su líquido permite que las superficies se deslicen suavemente, amortiguando y evitando fricción durante la respiración. No produce oxígeno (opción A), ya que la oxigenación ocurre en los alvéolos. No bombea aire (opción C), esa es función de los músculos respiratorios y la mecánica pulmonar. Tampoco almacena aire (opción D); el aire se almacena en los pulmones, no en la pleura."
-    },
-    {
-      q: "Volumen de aire normal en una inspiración/espiración:",
-      options: ["Volumen corriente", "VRI", "Capacidad vital", "Volumen residual"],
-      correct: 0,
-      explain:
-        "El volumen corriente es el volumen de aire que entra y sale en una respiración normal en reposo, por eso es la respuesta correcta. El volumen de reserva inspiratoria (VRI, opción B) es el aire adicional que se puede inspirar tras una inspiración normal. La capacidad vital (opción C) es la suma de varios volúmenes y representa el máximo aire que se puede movilizar entre una inspiración y una espiración forzadas. El volumen residual (opción D) es el aire que queda en los pulmones tras una espiración forzada."
-    },
-    {
-      q: "Disminución del tamaño de bronquios por alergias:",
-      options: ["Asma", "EPOC", "Neumonía", "Rinitis"],
-      correct: 0,
-      explain:
-        "El asma se caracteriza por una obstrucción reversible de las vías aéreas, con broncoconstricción (disminución del calibre bronquial), frecuentemente desencadenada por alergias o irritantes. La EPOC (opción B) suele ser una obstrucción crónica y menos reversible, relacionada con tabaco y otros factores. La neumonía (opción C) es una infección del parénquima pulmonar, no un estrechamiento bronquial alérgico. La rinitis (opción D) afecta a la mucosa nasal, no directamente a los bronquios."
+        "El SAR (Specific Absorption Rate) indica la tasa de energía de RF absorbida por unidad de masa de tejido. Los niveles I y II se asocian a modos normal y controlado; un nivel III se reserva para condiciones de investigación experimental, donde se permiten valores más altos bajo controles estrictos. Por eso, la opción correcta es 'investigación experimental'. 'Normal' y 'controlado' (opciones A y B) corresponden a niveles más bajos, y 'ninguno' (D) es falso."
     },
   ],
 },
 
 {
-  id: "an-u6",
-  title: "AN · U6 · Sistema digestivo y urinario",
+  id: "ff-u6",
+  title: "FF · U6 · Ecografía",
   questions: [
     {
-      q: "Órgano en cavidad pélvica:",
-      options: ["Riñones", "Vejiga", "Bazo", "Hígado"],
-      correct: 1,
-      explain:
-        "La vejiga urinaria se localiza principalmente en la cavidad pélvica, por detrás del pubis. Los riñones (opción A) se sitúan en el retroperitoneo, en la región lumbar, no en la pelvis. El bazo (opción C) se encuentra en el hipocondrio izquierdo, en la parte alta del abdomen. El hígado (opción D) está en el hipocondrio derecho y epigastrio, también en la parte superior del abdomen."
-    },
-    {
-      q: "Ligamento falciforme:",
+      q: "Aplicación que NO es del Doppler:",
       options: [
-        "Une hígado a pared abdominal",
-        "Une estómago a pared abdominal",
-        "Une bazo a pared abdominal",
-        "Une páncreas a pared abdominal",
-      ],
-      correct: 0,
-      explain:
-        "El ligamento falciforme es una estructura peritoneal que une la cara anterior del hígado a la pared anterior del abdomen y al diafragma, y contiene el ligamento redondo. No une el estómago (opción B), ni el bazo (opción C), ni el páncreas (opción D) a la pared abdominal; esas estructuras se relacionan con otros ligamentos peritoneales diferentes."
-    },
-    {
-      q: "Microvellosidades del intestino delgado sirven para:",
-      options: [
-        "Secretar jugos digestivos",
-        "Aumentar superficie de absorción",
-        "Impulsar bolo alimenticio",
-        "Almacenar nutrientes",
-      ],
-      correct: 1,
-      explain:
-        "Las microvellosidades son pequeñas prolongaciones de la membrana de los enterocitos que aumentan enormemente la superficie de absorción del intestino delgado, facilitando el paso de nutrientes a la sangre. La secreción de jugos digestivos (opción A) la realizan glándulas y células específicas, no las microvellosidades en sí. El impulso del bolo alimenticio (opción C) se debe a la musculatura lisa y al peristaltismo. El almacenamiento de nutrientes (opción D) se realiza sobre todo en hígado, tejido adiposo y otros tejidos, no en las microvellosidades."
-    },
-    {
-      q: "Jugos biliares producidos en:",
-      options: ["Hígado", "Vesícula biliar", "Páncreas", "Duodeno"],
-      correct: 0,
-      explain:
-        "La bilis se produce en el hígado y después se almacena y concentra en la vesícula biliar, que la libera al duodeno cuando es necesario. La vesícula (opción B) no produce bilis, solo la almacena. El páncreas (opción C) produce jugos pancreáticos y hormonas, pero no bilis. El duodeno (opción D) es la primera porción del intestino delgado donde se vierte la bilis, pero tampoco la fabrica."
-    },
-    {
-      q: "En TC, zona azul corresponde a (imagen):",
-      options: ["Hígado", "Estómago", "Vejiga", "Páncreas"],
-      correct: 0,
-      explain:
-        "En una TC abdominal típica, el hígado ocupa la mayor parte del hipocondrio derecho y parte del epigastrio, y suele verse como una gran masa homogénea. El estómago (opción B) se sitúa más hacia la izquierda y puede contener aire o contraste. La vejiga (opción C) está en la pelvis, mucho más inferior. El páncreas (opción D) es una estructura más pequeña y retroperitoneal, situada en el epigastrio y región central posterior."
-    },
-    {
-      q: "Patógeno frecuente en gastritis y úlceras:",
-      options: ["Klebsiella", "Helicobacter pylori", "E. coli", "Staphylococcus"],
-      correct: 1,
-      explain:
-        "Helicobacter pylori es una bacteria que coloniza la mucosa gástrica y se asocia fuertemente a gastritis crónica, úlceras gástricas y duodenales, e incluso a mayor riesgo de cáncer gástrico. Klebsiella (opción A) y E. coli (opción C) se relacionan más con infecciones urinarias y otras infecciones hospitalarias. Staphylococcus (opción D) se asocia a infecciones cutáneas, óseas, etc., pero no es el patógeno típico de gastritis/úlceras."
-    },
-    {
-      q: "En diagnóstico digestivo es frecuente usar:",
-      options: ["Estudios baritados", "Sulfatados", "Nitrogenados", "Hidrogenados"],
-      correct: 0,
-      explain:
-        "Los estudios baritados son exploraciones del tubo digestivo en las que se administra sulfato de bario para opacificar la luz intestinal y visualizarla con rayos X. 'Sulfatados' (opción B) no es un término concreto para estudios radiológicos. 'Nitrogenados' e 'hidrogenados' (opciones C y D) hacen referencia a tipos de compuestos químicos, pero no son nombres de estudios diagnósticos habituales en digestivo."
-    },
-    {
-      q: "Unidad funcional del riñón:",
-      options: ["Cápsula de Bowman", "Nefrona", "Glomérulo", "Asa de Henle"],
-      correct: 1,
-      explain:
-        "La nefrona es la unidad funcional del riñón e incluye el glomérulo, la cápsula de Bowman, el túbulo contorneado proximal, el asa de Henle, el túbulo contorneado distal y el túbulo colector. La cápsula de Bowman (opción A) y el glomérulo (opción C) son partes de la nefrona, pero no la unidad completa. El asa de Henle (opción D) es solo un segmento del túbulo renal dentro de esa unidad."
-    },
-    {
-      q: "Sangre en la orina:",
-      options: ["Oliguria", "Glucosuria", "Hematuria", "Nicturia"],
-      correct: 2,
-      explain:
-        "La hematuria es la presencia de sangre en la orina, visible macroscópicamente o solo al microscopio. Oliguria (opción A) significa disminución de la cantidad de orina emitida. Glucosuria (opción B) es presencia de glucosa en la orina. Nicturia (opción D) es el aumento de la necesidad de orinar durante la noche."
-    },
-    {
-      q: "NO es función del sistema urinario:",
-      options: [
-        "Expulsión desechos",
-        "Filtrado sangre",
-        "Formación orina",
-        "Digestión nutrientes",
+        "Distinguir sistema arterial y venoso",
+        "Detectar patologías",
+        "Cuantificar velocidad",
+        "Todas son correctas",
       ],
       correct: 3,
       explain:
-        "El sistema urinario se encarga de filtrar la sangre (riñones), formar orina y expulsar productos de desecho y exceso de agua/electrolitos, así que las opciones A, B y C sí son funciones suyas. La digestión de nutrientes (opción D) es función del sistema digestivo, no del urinario."
+        "El Doppler en ecografía sirve para diferenciar flujos arteriales y venosos por su patrón y dirección, para cuantificar la velocidad del flujo y para detectar patologías vasculares (estenosis, trombos, insuficiencias), de modo que las opciones A, B y C describen aplicaciones reales. La pregunta pide una que NO lo sea, pero en realidad todas lo son, por eso la respuesta correcta es 'Todas son correctas'."
+    },
+    {
+      q: "Efecto NO terapéutico de ultrasonidos:",
+      options: [
+        "Aumento temperatura",
+        "Efecto mecánico",
+        "Reducción del estrés",
+        "Todas",
+      ],
+      correct: 2,
+      explain:
+        "Los ultrasonidos terapéuticos producen efectos térmicos (aumento de temperatura) y efectos mecánicos (micro masaje, cavitación controlada), lo que se utiliza en rehabilitación y fisioterapia. La reducción del estrés (opción C) no es un efecto físico directo del ultrasonido, aunque el tratamiento pueda tener beneficios subjetivos. Por eso, el efecto que no se considera terapéutico directo desde el punto de vista físico es la 'reducción del estrés'."
+    },
+    {
+      q: "Modo para estudiar movimiento cardíaco:",
+      options: ["A", "B", "M", "Doppler"],
+      correct: 2,
+      explain:
+        "El modo M (motion mode) representa el movimiento de estructuras a lo largo del tiempo en una sola línea de exploración, muy útil para estudiar válvulas y paredes cardíacas. El modo A (opción A) muestra amplitud en función de la profundidad, y casi no se usa en clínica moderna. El modo B (opción B) es el modo bidimensional habitual. El Doppler (opción D) evalúa velocidad y dirección del flujo sanguíneo, no exactamente el movimiento de las paredes."
+    },
+    {
+      q: "Parámetro definido por el brillo:",
+      options: ["Ecogenicidad", "Resolución", "Contraste", "Luminosidad"],
+      correct: 0,
+      explain:
+        "La ecogenicidad describe la capacidad de un tejido para reflejar los ultrasonidos y, por tanto, el grado de brillo con el que aparece en la imagen (hiperecoico, hipoecoico, anecoico). La resolución (opción B) indica la capacidad de distinguir estructuras próximas. El contraste (opción C) es la diferencia de brillo entre estructuras. 'Luminosidad' (opción D) no es el término técnico específico en ecografía."
+    },
+    {
+      q: "Tiempo entre pulsos del transductor:",
+      options: [
+        "Frecuencia repetición",
+        "Periodo repetición",
+        "Tiempo repetición",
+        "Ninguna",
+      ],
+      correct: 1,
+      explain:
+        "El periodo de repetición es el intervalo de tiempo entre dos pulsos sucesivos emitidos por el transductor. La frecuencia de repetición de pulsos (PRF, opción A) es el número de pulsos por unidad de tiempo, que es la inversa del periodo. 'Tiempo de repetición' (opción C) es una denominación ambigua y no la más usada aquí. Por eso, la expresión más correcta para el 'tiempo entre pulsos' es periodo de repetición."
+    },
+    {
+      q: "Qué se mide en elastografía:",
+      options: [
+        "Recuperación",
+        "Deformación",
+        "Daño crónico",
+        "Absorción",
+      ],
+      correct: 1,
+      explain:
+        "La elastografía es una técnica que mide la deformación de los tejidos (su elasticidad o rigidez) cuando se aplica un estímulo mecánico; los tejidos más rígidos se deforman menos. 'Recuperación' (opción A) no es el parámetro principal. 'Daño crónico' (opción C) puede inferirse clínicamente de la rigidez, pero no es lo que se mide directamente. 'Absorción' (opción D) se refiere a la atenuación de la onda, que no es el objetivo principal de la elastografía."
+    },
+    {
+      q: "Técnica basada en ultrasonidos reflejados:",
+      options: ["Sonografía", "Dopplergrafía", "Ecografía", "Reflexografía"],
+      correct: 2,
+      explain:
+        "La ecografía médica se basa en la emisión de ultrasonidos y la recepción de su eco (reflexión) al encontrarse con interfaces de distintos tejidos, formando la imagen. 'Sonografía' (opción A) se utiliza a veces como sinónimo, pero el término estándar en ámbito sanitario es ecografía. 'Dopplergrafía' (opción B) es un uso concreto del efecto Doppler. 'Reflexografía' (opción D) no es el nombre correcto de la técnica."
+    },
+    {
+      q: "Tipo de transductor:",
+      options: ["Termoeléctrico", "Piezoeléctrico", "Mecanoeléctrico", "Isoeléctrico"],
+      correct: 1,
+      explain:
+        "Los transductores de ecografía se basan en el efecto piezoeléctrico: ciertos cristales se deforman al aplicarles un campo eléctrico y, a la inversa, generan señal eléctrica cuando reciben una onda mecánica. 'Termoeléctrico' (opción A) se refiere a fenómenos de conversión calor-electricidad, no a ultrasonidos. 'Mecanoeléctrico' (opción C) es una descripción vaga, pero no el término clásico. 'Isoeléctrico' (opción D) se usa más en química/proteínas, no en transductores."
+    },
+    {
+      q: "Estructuras poco brillantes:",
+      options: ["Anecoicas", "Hipoecoicas", "Hiperecoicas", "Metaecoicas"],
+      correct: 1,
+      explain:
+        "Las estructuras hipoecoicas tienen menor ecogenicidad que los tejidos de referencia y, por tanto, se ven más oscuras (poco brillantes). Las anecoicas (opción A) prácticamente no reflejan sonido y se ven negras (por ejemplo, líquido claro). Las hiperecoicas (opción C) reflejan mucho y se ven muy brillantes. 'Metaecoicas' (opción D) no es un término estándar en ecografía."
+    },
+    {
+      q: "Artefacto de señal brusca de color:",
+      options: ["Flash", "Espejo", "Movimiento tisular", "Borde"],
+      correct: 0,
+      explain:
+        "En Doppler color, el artefacto tipo 'flash' aparece como destellos o manchas bruscas de color debidas a movimientos rápidos del transductor o del paciente, sin representar flujo real. El artefacto de espejo (opción B) produce duplicación de estructuras. El de movimiento tisular (opción C) se relaciona con el movimiento del propio tejido. 'Borde' (opción D) describe otros artefactos asociados a límites de estructuras, no a un flash de color."
     },
   ],
 },
 
 {
-  id: "an-u7",
-  title: "AN · U7 · Sistema endocrino y reproductor",
+  id: "ff-u7",
+  title: "FF · U7 · Sistemas de información sanitaria",
   questions: [
     {
-      q: "Estructura que regula funciones con síntesis y liberación de hormonas:",
-      options: ["Enzimaterio", "Glándula endocrina", "Receptosoma", "Agitador biológico"],
+      q: "Registro de eventos de una aplicación:",
+      options: ["Mooc", "Log", "Backup", "Timeline"],
       correct: 1,
       explain:
-        "Las glándulas endocrinas son las estructuras especializadas en sintetizar y liberar hormonas directamente al torrente sanguíneo para regular funciones del organismo. 'Enzimaterio' (opción A) no es un término anatómico real. 'Receptosoma' (opción C) tampoco es un concepto anatómico estándar. 'Agitador biológico' (opción D) no describe ninguna estructura específica del sistema endocrino."
+        "Un log es un registro estructurado de eventos, acciones o errores que va generando una aplicación o sistema, fundamental para auditoría y resolución de problemas. 'Mooc' (opción A) son cursos online masivos. 'Backup' (opción C) es una copia de seguridad de datos. 'Timeline' (opción D) describe una línea temporal, pero no es el término técnico estándar para el fichero interno de eventos."
     },
     {
-      q: "Prueba de elección en tiroides y paratiroides:",
-      options: ["Rx simple", "Ecografía", "RM", "TC"],
-      correct: 1,
-      explain:
-        "La ecografía es la prueba de imagen de elección para estudiar tiroides y paratiroides porque permite ver su tamaño, estructura y nódulos sin radiación ionizante y con gran resolución. La radiografía simple (opción A) casi no aporta información de estas glándulas. La RM (opción C) y la TC (opción D) se reservan para casos complejos o cuando la ecografía no es concluyente."
-    },
-    {
-      q: "Hiperfunción ocasiona acromegalia o gigantismo:",
-      options: ["Hormona de crecimiento", "Aldosterona", "Prolactina", "Vasopresina"],
-      correct: 0,
-      explain:
-        "La hiperproducción de hormona de crecimiento (GH) en la hipófisis causa gigantismo si ocurre antes del cierre de las epífisis y acromegalia si sucede en adultos. La aldosterona (opción B) regula sodio y agua. La prolactina (opción C) se relaciona con la secreción de leche. La vasopresina o ADH (opción D) regula la reabsorción de agua en el riñón."
-    },
-    {
-      q: "Técnica más usada para estudio mamario:",
-      options: ["Ecografía", "RM", "Mamografía", "TC"],
-      correct: 2,
-      explain:
-        "La mamografía es la técnica de cribado y estudio principal de la mama en la mayoría de protocolos, especialmente en mujeres mayores de cierta edad. La ecografía (opción A) es un complemento muy útil, sobre todo en mamas densas o en mujeres jóvenes. La RM (opción B) se usa en casos especiales (alto riesgo, valoración prequirúrgica). La TC (opción D) no es la técnica estándar para estudiar la mama."
-    },
-    {
-      q: "Por ubicación profunda, el páncreas NO se visualiza bien con:",
-      options: ["TC", "RM", "Ecografía abdominal", "Endoscopia"],
-      correct: 2,
-      explain:
-        "El páncreas se sitúa profundo en el retroperitoneo y con frecuencia queda oculto por gas intestinal, lo que dificulta su visualización por ecografía abdominal. En cambio, la TC (opción A) y la RM (opción B) lo muestran con mucho más detalle. La endoscopia (opción D) sirve sobre todo para ver la luz del tubo digestivo, no para visualizar directamente el páncreas como órgano sólido."
-    },
-    {
-      q: "En RM sagital, zona resaltada contiene (imagen):",
+      q: "NO es ventaja de sistemas informáticos:",
       options: [
-        "Hipotálamo e hipófisis",
-        "Tiroides y paratiroides",
-        "Riñones y suprarrenales",
-        "Útero y trompas",
+        "Facilidad",
+        "Modularidad",
+        "Interoperabilidad",
+        "Todas son ventajas",
+      ],
+      correct: 3,
+      explain:
+        "Los sistemas informáticos sanitarios buscan ser fáciles de usar (facilidad), modulares (permiten ampliar o modificar partes) e interoperables (capaces de comunicarse con otros sistemas), así que A, B y C describen ventajas reales. La pregunta exige seleccionar cuál NO es una ventaja, pero como las tres lo son, la respuesta correcta es 'Todas son ventajas'."
+    },
+    {
+      q: "Requisito de un SIS:",
+      options: [
+        "Acceso público",
+        "Diagnóstico automático",
+        "Convertir datos en información",
+        "Ninguna",
+      ],
+      correct: 2,
+      explain:
+        "Un Sistema de Información Sanitaria (SIS) debe ser capaz de transformar datos crudos (mediciones, registros) en información útil para la gestión, la asistencia y la toma de decisiones, por eso la opción C es clave. No es requisito que el acceso sea público (opción A) ya que suele estar restringido y protegido. Tampoco es obligatorio que haga diagnóstico automático (opción B); eso puede pertenecer a sistemas de ayuda a la decisión, pero no define a todo SIS. 'Ninguna' (D) es incorrecta porque sí hay un requisito claro."
+    },
+    {
+      q: "Formato estándar de imagen médica:",
+      options: ["HL7", "IHE", "DICOM", "HTML"],
+      correct: 2,
+      explain:
+        "DICOM (Digital Imaging and Communications in Medicine) es el estándar internacional para el almacenamiento, intercambio y visualización de imágenes médicas y su información asociada. HL7 (opción A) es un estándar de mensajería clínica para datos administrativos y clínicos. IHE (opción B) es una iniciativa que define perfiles de integración, no un formato de imagen. HTML (opción D) es un lenguaje de marcado para páginas web, no un estándar de imagen médica."
+    },
+    {
+      q: "Reglamento europeo de protección de datos:",
+      options: ["LOPD", "SGAE", "RGPD", "RIP"],
+      correct: 2,
+      explain:
+        "El Reglamento General de Protección de Datos (RGPD) es la normativa europea que regula la protección de datos personales, incluida la información sanitaria. La LOPD (opción A) es la Ley Orgánica de Protección de Datos española, adaptada al RGPD. SGAE (opción B) es una entidad de gestión de derechos de autor, nada que ver con datos sanitarios. 'RIP' (opción D) no corresponde a una norma de protección de datos."
+    },
+    {
+      q: "Sistema habitual de almacenamiento de imágenes:",
+      options: ["HIS", "RIS", "PACS", "Ninguno"],
+      correct: 2,
+      explain:
+        "El PACS (Picture Archiving and Communication System) es el sistema específico para almacenar, recuperar y distribuir imágenes médicas en formato DICOM. El HIS (Hospital Information System, opción A) gestiona información general del hospital (administrativa, clínica). El RIS (Radiology Information System, opción B) maneja la gestión de la actividad radiológica (citas, informes). 'Ninguno' (D) es falso porque el PACS es el sistema habitual de imágenes."
+    },
+    {
+      q: "Conjunto de personas, procesos y equipos de información:",
+      options: [
+        "Sistema de información sanitaria",
+        "Archivo sanitario",
+        "Sistema de informes",
+        "Sistema de pacientes",
       ],
       correct: 0,
       explain:
-        "En un corte sagital de la región central craneal, la zona resaltada cerca de la base del cráneo suele corresponder a la región hipotálamo-hipofisaria, que se sitúa por encima de la silla turca. Tiroides y paratiroides (opción B) se localizan en el cuello. Riñones y suprarrenales (opción C) están en el retroperitoneo abdominal. Útero y trompas (opción D) se sitúan en la pelvis, muy inferiores a la fosa craneal."
+        "Un sistema de información sanitaria incluye personas, procesos, tecnologías y recursos que se coordinan para recoger, procesar, almacenar y difundir información de salud. Un archivo sanitario (opción B) es solo un componente (el lugar donde se guardan documentos). Un sistema de informes (opción C) se centra en generar reportes. 'Sistema de pacientes' (opción D) no es un término estandarizado."
     },
     {
-      q: "Aldosterona, cortisol y adrenalina se producen en:",
-      options: ["Testículos/ovarios", "Tiroides", "Suprarrenales", "Paratiroides"],
-      correct: 2,
+      q: "Red de intercambio mundial:",
+      options: ["MAN", "SWAN", "LAN", "WAN"],
+      correct: 3,
       explain:
-        "Las glándulas suprarrenales producen mineralocorticoides como la aldosterona, glucocorticoides como el cortisol y catecolaminas como la adrenalina. Los testículos y ovarios (opción A) producen hormonas sexuales. La tiroides (opción B) produce T3 y T4. Las paratiroides (opción D) secretan hormona paratiroidea para la regulación del calcio."
+        "Una WAN (Wide Area Network) es una red de gran extensión geográfica que puede abarcar países o continentes, como Internet. Una LAN (opción C) es una red de área local (por ejemplo, dentro de un hospital). Una MAN (opción A) es una red metropolitana. 'SWAN' (opción B) no es un tipo estándar reconocido en esta clasificación."
     },
     {
-      q: "BIRADS: hallazgo altamente sospechoso de malignidad:",
-      options: ["BIRADS-1", "BIRADS-3", "BIRADS-5", "BIRADS-7"],
-      correct: 2,
-      explain:
-        "En la clasificación BIRADS para estudios de mama, BIRADS-5 indica un hallazgo altamente sospechoso de malignidad, con alta probabilidad de cáncer. BIRADS-1 (opción A) es un estudio normal. BIRADS-3 (opción B) indica probablemente benigno, pero requiere control. BIRADS-7 (opción D) no forma parte de la escala oficial (va de 0 a 6)."
-    },
-    {
-      q: "Técnica apenas empleada en aparato genital masculino:",
-      options: ["Ecografía", "Tomografía computarizada", "RM", "No se estudia con imagen"],
-      correct: 1,
-      explain:
-        "La TC se usa poco de forma específica para estudio del aparato genital masculino; se recurre más a ecografía (por ejemplo, testicular, prostática transrectal) y en algunos casos a RM. Por eso, la técnica 'apenas empleada' es la TC. La opción A (ecografía) sí se usa mucho. La opción C (RM) también se usa en casos concretos. La opción D es falsa porque el aparato genital masculino sí se estudia con imagen."
-    },
-    {
-      q: "Radiología especial con contraste para útero y trompas:",
-      options: ["Histerosalpingografía", "Eco transvaginal", "TC", "RM"],
+      q: "Datos con mismos criterios:",
+      options: ["Estandarizados", "Validados", "Jerarquizados", "Centralizados"],
       correct: 0,
       explain:
-        "La histerosalpingografía es un estudio radiológico del útero y las trompas de Falopio mediante la introducción de contraste y posterior radiografía, muy utilizado para valorar permeabilidad tubárica. La ecografía transvaginal (opción B) es una técnica ecográfica, no una radiología con contraste intrauterino. La TC y la RM (opciones C y D) pueden valorar la pelvis, pero no son la radiología contrastada específica para trompas y útero que describe la pregunta."
+        "Datos estandarizados son aquellos que se registran siguiendo los mismos formatos, códigos y normas, lo que permite compararlos y combinarlos entre distintos sistemas. Datos validados (opción B) han sido comprobados, pero no necesariamente estandarizados. Jerarquizados (opción C) indica que están ordenados según una estructura. Centralizados (opción D) significa que se guardan en un único punto, pero no implica homogeneidad de criterios."
+    },
+    {
+      q: "Acceso a largo plazo en bases sanitarias:",
+      options: ["5–20 segundos", "Varios minutos", "7–15 días", "Ninguna"],
+      correct: 1,
+      explain:
+        "Cuando se habla de acceso a largo plazo en bases de datos sanitarias se suele asumir que la recuperación puede tardar más, varios minutos, porque implica consultar sistemas de archivo más profundos o copias históricas. Los accesos de 5–20 segundos (opción A) corresponden a acceso casi inmediato (online). '7–15 días' (opción C) sería un plazo de archivo físico o trámites, no de acceso informático. 'Ninguna' (opción D) no encaja porque 'varios minutos' sí refleja un acceso más lento propio de largo plazo."
     },
   ],
 },
+{
+  id: "ff-final",
+  title: "⭐ FF · Prueba final · 40 preguntas",
+  isFinal: true,
+  questions: [
+    {
+      q: "¿Cuál de las siguientes estructuras es más ecogénica?",
+      options: ["Sangre", "Orina", "Cartílago", "Hueso"],
+      correct: 3,
+      explain:
+        "En ecografía, las estructuras más densas y reflectantes, como el hueso, devuelven más ecos y aparecen muy brillantes (hiperecogénicas) en la imagen."
+    },
+    {
+      q: "¿Cuál de las siguientes no es un tipo de radiación ionizante?",
+      options: ["Rayos gamma", "Rayos X", "Ultravioleta", "Infrarroja"],
+      correct: 3,
+      explain:
+        "Las radiaciones ionizantes tienen energía suficiente para arrancar electrones de los átomos: rayos X, gamma y parte del ultravioleta. La radiación infrarroja es no ionizante."
+    },
+    {
+      q: "¿Cuál de las siguientes no es una aplicación de la ecografía Doppler?",
+      options: [
+        "Distinguir entre sistema arterial y venoso",
+        "Detectar patologías vasculares",
+        "Cuantificar la velocidad de flujo",
+        "Todas son aplicaciones válidas"
+      ],
+      correct: 3,
+      explain:
+        "El Doppler permite ver dirección del flujo, diferenciar arterias/venas y medir velocidades, por lo que todas las opciones anteriores son aplicaciones válidas."
+    },
+    {
+      q: "¿Cuál de los siguientes dispositivos es totalmente incompatible con la Resonancia Magnética?",
+      options: ["Audífonos", "Dispositivo intrauterino", "Marcapasos", "Prótesis"],
+      correct: 2,
+      explain:
+        "Los marcapasos (especialmente los no RM-compatibles) pueden verse gravemente afectados por el campo magnético, por lo que son una contraindicación clásica."
+    },
+    {
+      q: "¿Cuál de los siguientes dispositivos se utiliza para generas campos magnéticos?",
+      options: [
+        "Tubo de rayos catódicos",
+        "Solenoides",
+        "Filamentos de neodimio",
+        "Ninguna es correcta."
+      ],
+      correct: 1,
+      explain:
+        "Un solenoide es una bobina de hilo conductor; cuando pasa corriente eléctrica por ella genera un campo magnético controlado."
+    },
+    {
+      q: "¿Cuál de los siguientes factores está relacionado con la distorsión de la imagen obtenida en radiología convencional?",
+      options: ["Grosor", "Orientación", "Posición", "Todas están relacionadas"],
+      correct: 3,
+      explain:
+        "El grosor del objeto, su orientación y su posición respecto al tubo y al receptor influyen en la magnificación y la distorsión de la imagen radiográfica."
+    },
+    {
+      q: "¿Cuál de los siguientes factores no afecta a la absorción de la radiación de la materia?",
+      options: [
+        "Número atómico",
+        "Espesor del tejido",
+        "Energía de los rayos X",
+        "Todos afectan a la absorción"
+      ],
+      correct: 3,
+      explain:
+        "La probabilidad de absorción depende del número atómico del material, del espesor atravesado y de la energía del haz, por lo que todos influyen."
+    },
+    {
+      q: "¿Cuál de los siguientes no es un factor geométrico que pueda afectar a la imagen radiográfica obtenida?",
+      options: ["Magnificación", "Distorsión", "Desenfoque", "Artefactos"],
+      correct: 3,
+      explain:
+        "Magnificación, distorsión y desenfoque dependen de la geometría (distancias foco–objeto–placa). Los artefactos son defectos de otra naturaleza (técnica, paciente, equipo)."
+    },
+    {
+      q: "¿Cuál de los siguientes no es un principio básico de protección radiológica?",
+      options: ["Optimización", "Reducción", "Justificación", "Limitación"],
+      correct: 1,
+      explain:
+        "Los tres principios clásicos de protección radiológica son: justificación, optimización (ALARA) y limitación de dosis. ‘Reducción’ no es el término formal."
+    },
+    {
+      q: "¿Cuál es el método de obtención de imagen en tomografía computarizada convencional?",
+      options: ["Helicoidal", "Espiral", "Discreto", "Secuencial"],
+      correct: 3,
+      explain:
+        "La TC convencional obtenía cortes de forma secuencial: el gantry se detiene, se adquiere un corte, la camilla se desplaza y se toma el siguiente."
+    },
+    {
+      q: "¿Cuál es el reglamento europeo que establece cómo deben salvaguardarse los datos para garantizar la intimidad de las personas?",
+      options: ["LOPD", "SGAE", "RGPD", "RIP"],
+      correct: 2,
+      explain:
+        "El Reglamento General de Protección de Datos (RGPD) es la norma europea que regula el tratamiento y protección de datos personales."
+    },
+    {
+      q: "¿Cuál es el sistema más habitual para el almacenamiento de archivos médicos digitales en centros sanitarios?",
+      options: ["HIS", "RIS", "PACS", "Todas son incorrectas."],
+      correct: 2,
+      explain:
+        "PACS (Picture Archiving and Communication System) es el sistema usado para almacenar, gestionar y visualizar imágenes médicas digitales."
+    },
+    {
+      q: "¿Cuál es el tipo de radiación más energética del espectro electromagnético?",
+      options: ["Rayos X", "Ultravioleta", "Rayos Gamma", "Ondas de radio"],
+      correct: 2,
+      explain:
+        "Los rayos gamma tienen la frecuencia más alta y, por tanto, la energía más elevada dentro del espectro electromagnético."
+    },
+    {
+      q: "¿Cuál fue el primer sistema mediante el cual se produjeron rayos X?",
+      options: [
+        "Tubo de rayos X",
+        "Tubo de Crookes",
+        "Tubo de producción ionizadora",
+        "Diencéfalo"
+      ],
+      correct: 1,
+      explain:
+        "Históricamente, los primeros rayos X se obtuvieron con tubos de Crookes, un antecedente de los tubos de rayos X modernos."
+    },
+    {
+      q: "¿En qué generación de Tomografía computarizada se incorporó la rotación continua con detectores en hileras en forma de arco?",
+      options: ["1ª", "2ª", "3ª", "4ª"],
+      correct: 2,
+      explain:
+        "En la 3ª generación se utilizó un tubo de rayos X y un arco de múltiples detectores que rotan juntos de forma continua alrededor del paciente."
+    },
+    {
+      q: "¿En qué técnica de imagen para el diagnóstico puede producirse el efecto proyectil?",
+      options: [
+        "Tomografía computarizada",
+        "Radiología convencional",
+        "Ecografía",
+        "Resonancia magnética"
+      ],
+      correct: 3,
+      explain:
+        "En Resonancia Magnética, el potente campo magnético puede atraer violentamente objetos ferromagnéticos, produciendo el llamado efecto proyectil."
+    },
+    {
+      q: "¿Mediante qué elemento ajustamos los parámetros de la manera que deseamos, permitiéndonos aplicar la radiación de manera controlada en la obtención de imágenes a partir de rayos X?",
+      options: [
+        "Consola de mandos",
+        "Sistema de telecontrol",
+        "Mecanismo de ajuste",
+        "Dispositivo de radiocontrol"
+      ],
+      correct: 0,
+      explain:
+        "La consola de mandos es el panel desde el que el técnico ajusta kV, mA, tiempo de exposición y otros parámetros del equipo de rayos X."
+    },
+    {
+      q: "¿Qué contraste es el que se utiliza en Resonancia Magnética?",
+      options: ["Sulfato de bario", "Yoduro de potasio", "Neodimio", "Gadolinio"],
+      correct: 3,
+      explain:
+        "Los contrastes de uso habitual en RM son quelatos de gadolinio, que modifican los tiempos de relajación de los tejidos y alteran su intensidad de señal."
+    },
+    {
+      q: "¿Qué elemento se utiliza para reducir la radiación del haz disperso transmitido al obtener imágenes a partir de rayos X?",
+      options: ["Colimadores", "Rejillas antidifusoras", "Conos", "Cilindros"],
+      correct: 1,
+      explain:
+        "Las rejillas antidifusoras se colocan entre el paciente y el receptor para absorber gran parte de la radiación dispersa y mejorar el contraste de la imagen."
+    },
+    {
+      q: "¿Qué fenómeno se representa en la siguiente imagen?",
+      options: [
+        "Radiación de frenado",
+        "Radiación característica",
+        "Dispersión clásica coherente",
+        "Producción de radiación infrarroja"
+      ],
+      correct: 0,
+      explain:
+        "La radiación de frenado (Bremsstrahlung) se produce cuando un electrón es frenado o desviado por el campo del núcleo, emitiendo fotones de rayos X continuos."
+    },
+    {
+      q: "¿Qué modo de obtención de imagen se utiliza principalmente para estudiar el movimiento cardiaco?",
+      options: ["A", "B", "M", "Doppler"],
+      correct: 2,
+      explain:
+        "El modo M (motion) de la ecografía representa el movimiento de las estructuras a lo largo del tiempo, por eso es muy útil en cardiología."
+    },
+    {
+      q: "¿Qué parámetro de la imagen ecográfica viene definido por la Intensidad del brillo?",
+      options: ["Ecogenicidad", "Resolución", "Contraste", "Luminosidad"],
+      correct: 0,
+      explain:
+        "La ecogenicidad describe la capacidad de un tejido para reflejar el ultrasonido; a mayor ecogenicidad, mayor brillo en la imagen."
+    },
+    {
+      q: "¿Qué sistema de información es especializado para los servicios de radiología?",
+      options: ["RIS", "HIS", "PACS", "LIS"],
+      correct: 0,
+      explain:
+        "RIS (Radiology Information System) es el sistema de información específico para gestionar citas, informes y flujo de trabajo en radiología."
+    },
+    {
+      q: "¿Qué sustancia tiene un valor de Unidades Hounsfield (UH)=0?",
+      options: ["Hueso compacto", "Sangre líquida", "Agua", "Aire"],
+      correct: 2,
+      explain:
+        "En la escala de Hounsfield, el agua se usa como referencia y se le asigna un valor de 0 UH; el aire es -1000 UH y el hueso valores positivos elevados."
+    },
+    {
+      q: "¿Qué tipo de radiación ionizante está compuesta por electrones y positrones libres?",
+      options: ["Alfa", "Beta", "Gamma", "Ninguna es correcta"],
+      correct: 1,
+      explain:
+        "La radiación beta está formada por electrones (β−) o positrones (β+) emitidos desde el núcleo en ciertos procesos radiactivos."
+    },
+    {
+      q: "¿Qué tipo de radiación se utiliza en resonancia magnética para inducir la emisión de la señal que medimos?",
+      options: ["Infrarroja", "Radiofrecuencias", "Ultravioleta", "Gamma"],
+      correct: 1,
+      explain:
+        "En RM se aplica un campo de radiofrecuencia específico que excita los protones. Al relajarse, estos emiten la señal que se detecta."
+    },
+    {
+      q: "¿Qué tipo de radiaciones producen cambios químicos en la materia?",
+      options: ["No ionizantes", "Ionizantes", "Alterantes", "Modulantes"],
+      correct: 1,
+      explain:
+        "Las radiaciones ionizantes tienen energía suficiente para ionizar átomos y moléculas, produciendo cambios químicos en los tejidos."
+    },
+    {
+      q: "¿Qué tipo de red permite el intercambio de información a nivel mundial?",
+      options: ["MAN", "SWAN", "LAN", "WAN"],
+      correct: 3,
+      explain:
+        "WAN (Wide Area Network) es una red de área amplia, capaz de conectar redes locales en grandes distancias, como ocurre con Internet."
+    },
+    {
+      q: "¿Qué tipo de transductor se utiliza en las técnicas de ultrasonido?",
+      options: ["Termoeléctrico", "Piezoeléctrico", "Mecanoeléctrico", "Isoeléctrico"],
+      correct: 1,
+      explain:
+        "Los cristales piezoeléctricos convierten la energía eléctrica en vibraciones mecánicas (ultrasonidos) y viceversa, base del transductor ecográfico."
+    },
+    {
+      q: "Cuando encontramos un fino granulado en la imagen, nos encontramos ante…",
+      options: ["Ruido", "Artefactos", "Distorsión", "Todas las anteriores son incorrectas"],
+      correct: 0,
+      explain:
+        "El ruido se manifiesta como un granulado fino que empeora la calidad de la imagen y dificulta la apreciación de detalles."
+    },
+    {
+      q: "Cuando la radiación atraviesa la materia sin cambiar su trayectoria, ¿Qué fenómeno se ha producido?",
+      options: ["Absorción", "Dispersión", "Transmisión", "Todas son incorrectas."],
+      correct: 2,
+      explain:
+        "Si el haz atraviesa el material sin desviarse ni perder energía significativa, hablamos de transmisión."
+    },
+    {
+      q: "Cuando realizamos ecografías, ¿Cuál es el rango ideal del ángulo Doppler?",
+      options: ["30-60º", "40-70º", "50-80º", "60-90º"],
+      correct: 0,
+      explain:
+        "Para obtener medidas fiables de velocidad en Doppler, se recomienda un ángulo respecto al flujo entre 30º y 60º."
+    },
+    {
+      q: "Cuando trabajamos con imágenes tridimensionales en TC, la matriz está dividida en…:",
+      options: ["Cuadrados", "Píxeles", "Cubos", "Vóxeles"],
+      correct: 3,
+      explain:
+        "En 3D, cada elemento de volumen es un vóxel (volumetric pixel), un pequeño cubo que representa un valor de atenuación en el espacio."
+    },
+    {
+      q: "Cuando una carga eléctrica se desplaza, se genera un…",
+      options: ["Campo eléctrico", "Campo magnético", "Campo radiactivo", "Todas son correctas"],
+      correct: 1,
+      explain:
+        "Una carga en movimiento constituye una corriente eléctrica y genera un campo magnético asociado a su alrededor."
+    },
+    {
+      q: "En los sistemas de información ¿cómo se denominan los registros de eventos que ocurren en un tiempo concreto en ellos?",
+      options: ["Lag", "Log", "Leg", "Ninguna es correcta"],
+      correct: 1,
+      explain:
+        "Un ‘log’ es un registro cronológico de eventos que ocurren en un sistema informático, útil para auditoría y diagnóstico."
+    },
+    {
+      q: "En radiología convencional, ¿cómo se conoce el proceso químico por el que se detiene el revelado y se eliminan los cristales de haluros no revelados o expuestos?",
+      options: ["Exposición", "Revelado", "Fijación", "Visibilización"],
+      correct: 2,
+      explain:
+        "La fijación detiene el revelado, elimina los cristales no expuestos y hace estable la imagen en la película radiográfica."
+    },
+    {
+      q: "En resonancia magnética, la frecuencia de Larmor se conoce también como…",
+      options: [
+        "Frecuencia de precesión",
+        "Frecuencia de precisión",
+        "Frecuencia de procesión",
+        "Frecuencia de propensión"
+      ],
+      correct: 0,
+      explain:
+        "La frecuencia de Larmor es la frecuencia de precesión de los espines en el campo magnético de la RM."
+    },
+    {
+      q: "En tomografía computarizada, ¿a qué corresponden las siglas FOV?",
+      options: [
+        "Campo de visión (scan field of view)",
+        "Campo de reconstrucción (field of view)",
+        "Campo de verificación (field of verification)",
+        "Todas son incorrectas"
+      ],
+      correct: 1,
+      explain:
+        "En TC, el FOV (Field Of View) es el campo de reconstrucción, es decir, el área de la imagen que se reconstruye a partir de los datos adquiridos."
+    },
+    {
+      q: "En tomografía computarizada, ¿Cómo afectan a la imagen los valores de pitch >1?",
+      options: [
+        "Se produce solapamiento entre cortes",
+        "La calidad de la imagen disminuye",
+        "Se obtienen imágenes de alta resolución",
+        "Todas son correctas."
+      ],
+      correct: 1,
+      explain:
+        "Un pitch mayor que 1 implica que la mesa avanza más rápido y hay menos solapamiento de datos, lo que reduce la dosis pero también la calidad de la imagen."
+    },
+    {
+      q: "Los rayos X duros son aquellos que tienen una longitud de onda…",
+      options: ["Más larga", "Más corta", "Más potente", "Menos potente"],
+      correct: 1,
+      explain:
+        "Los rayos X ‘duros’ son de mayor energía, lo que equivale a una longitud de onda más corta dentro del espectro de rayos X."
+    }
+  ]
+},
+
   ],
 };
 // Agrupación de asignaturas por prefijo de id
