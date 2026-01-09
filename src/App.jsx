@@ -1,4 +1,7 @@
 import React, { useEffect, useMemo, useState } from "react";
+// ...
+import { registerSession, getSubjectStats } from "./statsStorage";
+
 
 /* =========================================================
    SUBJECT ÚNICO
@@ -5856,25 +5859,31 @@ function percent(ok, total) {
    APP
    ========================= */
 
-   export default function App() {
-    const [progress, setProgress] = useState(() => loadProgress());
-  
-    // home | subject | unit | quiz | result
-    const [screen, setScreen] = useState("home");
-    const [subjectId, setSubjectId] = useState(null);
-    const [unitId, setUnitId] = useState(progress.lastUnitId || null);
-  
+  export default function App() {
+  const [progress, setProgress] = useState(() => loadProgress());
+
+  // home | subject | unit | quiz | result
+  const [screen, setScreen] = useState("home");
+  const [subjectId, setSubjectId] = useState(null);
+  const [unitId, setUnitId] = useState(progress.lastUnitId || null);
+
+  // 👇 MUY IMPORTANTE: este estado TIENE que existir
+ const [quizResult, setQuizResult] = useState(null);
+
+
   const [qIndex, setQIndex] = useState(0);
   const [picked, setPicked] = useState([]);
-  const [currentChoice, setCurrentChoice] = useState(null); // índice elegido en la pregunta actual
-  const [feedback, setFeedback] = useState(null);  // indices elegidos
+  const [currentChoice, setCurrentChoice] = useState(null);
+  const [feedback, setFeedback] = useState(null);
   const [showExplain, setShowExplain] = useState(false);
-  
 
   const unit = useMemo(
     () => SUBJECT.units.find((u) => u.id === unitId) || null,
     [unitId]
   );
+
+  // ⬇⬇ aquí irán startQuiz, goHome, answer, nextQuestion, etc…
+
   const currentSubject = useMemo(
     () => SUBJECT_GROUPS.find((s) => s.id === subjectId) || null,
     [subjectId]
@@ -5928,46 +5937,82 @@ function answer(i) {
     setShowExplain(true);
   }
 }
-function nextQuestion() {
-  if (!unit || !question || currentChoice === null) return;
+  function nextQuestion() {
+    if (!unit || !question || currentChoice === null) return;
 
-  // Guardamos la respuesta elegida para esta pregunta
-  const newPicked = [...picked];
-  newPicked[qIndex] = currentChoice;
+    // Guardamos la respuesta elegida para esta pregunta
+    const newPicked = [...picked];
+    newPicked[qIndex] = currentChoice;
 
-  const isCorrect = currentChoice === question.correct;
+    const isLast = qIndex + 1 >= unit.questions.length;
 
-  // Calculamos si era la última
-  const isLast = qIndex + 1 >= unit.questions.length;
+    if (!isLast) {
+      // Todavía quedan preguntas -> pasamos a la siguiente
+      setPicked(newPicked);
+      setQIndex(qIndex + 1);
+      setCurrentChoice(null);
+      setFeedback(null);
+      setShowExplain(false);
+    } else {
+      // ✅ Última pregunta: calculamos el resultado completo
+      const total = unit.questions.length;
+      let ok = 0;
+      const wrong = [];
 
-  if (!isLast) {
-    setPicked(newPicked);
-    setQIndex(qIndex + 1);
-    setCurrentChoice(null);
-    setFeedback(null);
-    setShowExplain(false);
-  } else {
-    // Última pregunta: calculamos el resultado y guardamos progreso
-    const ok = unit.questions.reduce(
-      (acc, q, idx) => acc + (newPicked[idx] === q.correct ? 1 : 0),
-      0
-    );
-    const score = percent(ok, unit.questions.length);
+      unit.questions.forEach((q, idx) => {
+        const userIndex = newPicked[idx];
 
-    setPicked(newPicked); // guardamos todas las respuestas
+        if (userIndex === q.correct) {
+          ok++;
+        } else {
+          wrong.push({
+            q: q.q,
+            userLetter:
+              userIndex !== undefined
+                ? String.fromCharCode(65 + userIndex)
+                : "-",
+            userText:
+              userIndex !== undefined ? q.options[userIndex] : "Sin responder",
+            correctLetter: String.fromCharCode(65 + q.correct),
+            correctText: q.options[q.correct],
+            explain: q.explain || null,
+          });
+        }
+      });
 
-    setProgress((p) => {
-      const prevBest = p.best[unit.id] ?? 0;
-      const best = Math.max(prevBest, score);
-      const completed = { ...p.completed, [unit.id]: score >= 60 };
+      const score = percent(ok, total);
 
-      // 👇 aquí ya podríamos también ir acumulando fallos por asignatura para el "test de fallos global"
-      return { ...p, best: { ...p.best, [unit.id]: best }, completed };
-    });
+      setPicked(newPicked); // guardamos todas las respuestas
 
-    setScreen("result");
+      // 🔹 Progreso por unidad
+      setProgress((p) => {
+        const prevBest = p.best[unit.id] ?? 0;
+        const best = Math.max(prevBest, score);
+        const completed = { ...p.completed, [unit.id]: score >= 60 };
+
+        return { ...p, best: { ...p.best, [unit.id]: best }, completed };
+      });
+
+      // 🔹 Guardar sesión en statsStorage
+      if (subjectId) {
+        registerSession(subjectId, unit.id, score, ok, total);
+      }
+
+      // 🔹 Guardamos el resultado para la pantalla "result"
+    // 🔹 Guardamos el resultado para la pantalla "result"
+setQuizResult({
+  score,
+  ok,
+  total,
+  wrong,
+});
+
+
+      setScreen("result");
+    }
   }
-}
+
+
 
 
   function computeResult() {
@@ -6258,24 +6303,25 @@ function nextQuestion() {
         </main>
       )}
 
-     {/* RESULT */}
-{screen === "result" && unit && (
+ {/* RESULT */}
+{screen === "result" && unit && quizResult && (
   <main className="main">
     <div className="resultCard">
-      <div className="resultScore">{result.score}%</div>
+      <div className="resultScore">{quizResult.score}%</div>
+
       <div className="resultMeta">
-        Aciertos: <b>{result.ok}</b> / <b>{result.total}</b>
+        Aciertos: <b>{quizResult.ok}</b> / <b>{quizResult.total}</b>
       </div>
 
       <div className="bar big">
         <div
           className="barFill"
-          style={{ width: `${result.score}%` }}
+          style={{ width: `${quizResult.score}%` }}
         />
       </div>
 
       <div className="resultHint">
-        {result.score >= 60
+        {quizResult.score >= 60
           ? "✅ Unidad superada (≥ 60%)"
           : "⚠️ No superada (repite para subir nota)"}
       </div>
@@ -6286,71 +6332,71 @@ function nextQuestion() {
       <button className="ghost" onClick={goHome}>
         Volver a unidades
       </button>
-{/* 🔽 Lista de preguntas falladas */}
-{result.wrong && result.wrong.length > 0 && (
-  <div className="wrongList">
-    <div className="wrongTitle">Preguntas que has fallado</div>
 
-    {result.wrong.map((item, idx) => (
-      <div key={idx} className="wrongItem">
-        <div className="wrongQ">
-          {idx + 1}. {item.q}
+      {/* 🔽 Lista de preguntas falladas */}
+      {quizResult.wrong && quizResult.wrong.length > 0 && (
+        <div className="wrongList">
+          <div className="wrongTitle">Preguntas que has fallado</div>
+
+          {quizResult.wrong.map((item, idx) => (
+            <div key={idx} className="wrongItem">
+              <div className="wrongQ">
+                {idx + 1}. {item.q}
+              </div>
+
+              <div className="wrongRow">
+                <span className="tag wrong">
+                  Tu respuesta: {item.userLetter} · {item.userText}
+                </span>
+              </div>
+
+              <div className="wrongRow">
+                <span className="tag correct">
+                  Correcta: {item.correctLetter} · {item.correctText}
+                </span>
+              </div>
+
+              {item.explain && (
+                <div className="wrongExplain">
+                  {typeof item.explain === "string" ? (
+                    <p>{item.explain}</p>
+                  ) : (
+                    <>
+                      {item.explain.detail && <p>{item.explain.detail}</p>}
+
+                      {item.explain.whyCorrect && (
+                        <p>
+                          <strong>
+                            Por qué es correcta la {item.correctLetter}:
+                          </strong>{" "}
+                          {item.explain.whyCorrect}
+                        </p>
+                      )}
+
+                      {item.explain.whyWrong && (
+                        <ul className="whyWrongList">
+                          {Object.entries(item.explain.whyWrong).map(
+                            ([letter, text]) => (
+                              <li key={letter}>
+                                <strong>{letter}:</strong> {text}
+                              </li>
+                            )
+                          )}
+                        </ul>
+                      )}
+                    </>
+                  )}
+                </div>
+              )}
+            </div>
+          ))}
         </div>
-
-        <div className="wrongRow">
-          <span className="tag wrong">
-            Tu respuesta: {item.userLetter} · {item.userText}
-          </span>
-        </div>
-
-        <div className="wrongRow">
-          <span className="tag correct">
-            Correcta: {item.correctLetter} · {item.correctText}
-          </span>
-        </div>
-
-        {item.explain && (
-          <div className="wrongExplain">
-            {typeof item.explain === "string" ? (
-              // 💬 Para AP, AN, FF… donde explain es un texto
-              <p>{item.explain}</p>
-            ) : (
-              // 💬 Para FOL, donde explain es un objeto { detail, whyCorrect, whyWrong }
-              <>
-                {item.explain.detail && (
-                  <p>{item.explain.detail}</p>
-                )}
-
-                {item.explain.whyCorrect && (
-                  <p>
-                    <strong>Por qué es correcta la {item.correctLetter}:</strong>{" "}
-                    {item.explain.whyCorrect}
-                  </p>
-                )}
-
-                {item.explain.whyWrong && (
-                  <ul className="whyWrongList">
-                    {Object.entries(item.explain.whyWrong).map(
-                      ([letter, text]) => (
-                        <li key={letter}>
-                          <strong>{letter}:</strong> {text}
-                        </li>
-                      )
-                    )}
-                  </ul>
-                )}
-              </>
-            )}
-          </div>
-        )}
-      </div>
-    ))}
-  </div>
-)}
-
+      )}
     </div>
   </main>
 )}
+
+
     </div>
   );
 }
