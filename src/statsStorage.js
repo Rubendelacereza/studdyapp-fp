@@ -1,103 +1,81 @@
 // src/statsStorage.js
-
 const STATS_KEY = "studyapp_stats_v1";
 
-// Cargamos la estructura básica del storage
-function loadStatsRaw() {
-  if (typeof window === "undefined") return { sessions: [] };
-
+export function loadStats() {
+  const raw = localStorage.getItem(STATS_KEY);
   try {
-    const raw = window.localStorage.getItem(STATS_KEY);
-    if (!raw) return { sessions: [] };
-
-    const parsed = JSON.parse(raw);
-    // Nos aseguramos de que tenga la forma que esperamos
-    if (!parsed.sessions || !Array.isArray(parsed.sessions)) {
-      return { sessions: [] };
-    }
-    return parsed;
-  } catch (err) {
-    console.error("Error leyendo stats:", err);
-    return { sessions: [] };
+    return raw ? JSON.parse(raw) : [];
+  } catch (e) {
+    console.error("Error cargando stats:", e);
+    return [];
   }
 }
 
-// Guardar de nuevo
-function saveStatsRaw(stats) {
-  if (typeof window === "undefined") return;
-  try {
-    window.localStorage.setItem(STATS_KEY, JSON.stringify(stats));
-  } catch (err) {
-    console.error("Error guardando stats:", err);
-  }
+export function saveStats(stats) {
+  localStorage.setItem(STATS_KEY, JSON.stringify(stats));
 }
 
-/**
- * Se llama al terminar un test.
- * Guarda una "sesión" con la info básica.
- */
 export function registerSession(subjectId, unitId, score, ok, total) {
-  const stats = loadStatsRaw();
+  const stats = loadStats();
 
-  stats.sessions.push({
+  stats.push({
+    id: Date.now(),
     subjectId,
     unitId,
     score,
     ok,
     total,
-    // ISO para luego poder ordenar
     date: new Date().toISOString(),
   });
 
-  saveStatsRaw(stats);
+  saveStats(stats);
 }
 
-/**
- * Devuelve estadísticas resumidas de una asignatura.
- *
- * - attempts: nº total de intentos
- * - lastScore: última nota (por fecha)
- * - bestScore: mejor nota
- * - avgScore: media de todas las notas
- * - lastDate: fecha de la última sesión (string ISO)
- */
-export function getSubjectStats(subjectId) {
-  const stats = loadStatsRaw();
-  const sessions = stats.sessions.filter(
-    (s) => s.subjectId === subjectId
-  );
+export function getSubjectStats(subjectId, SUBJECTS, progress) {
+  const stats = loadStats().filter((s) => s.subjectId === subjectId);
 
-  if (sessions.length === 0) {
+  if (stats.length === 0) {
     return {
-      attempts: 0,
-      lastScore: null,
-      bestScore: null,
-      avgScore: null,
-      lastDate: null,
+      totalSessions: 0,
+      sessions: [],
+      avgScore: 0,
+      bestScore: 0,
+      bestUnitTitle: null,
+      lastScore: 0,
+      lastDateFormatted: "",
+      passedUnits: 0,
+      totalUnits: 0,
     };
   }
 
-  // Ordenamos por fecha para coger la última
-  const sorted = [...sessions].sort((a, b) =>
-    a.date.localeCompare(b.date)
+  const totalSessions = stats.length;
+  const avgScore =
+    stats.reduce((acc, s) => acc + s.score, 0) / totalSessions;
+
+  const bestSession = stats.reduce((a, b) =>
+    a.score > b.score ? a : b
   );
-  const last = sorted[sorted.length - 1];
 
-  let sum = 0;
-  let best = 0;
+  const lastSession = stats[stats.length - 1];
 
-  sessions.forEach((s) => {
-    sum += s.score;
-    if (s.score > best) best = s.score;
-  });
+  const subject = SUBJECTS.find((s) => s.id === subjectId);
+  const units = subject?.units || [];
 
-  const avg = Math.round(sum / sessions.length);
+  const passedUnits = units.filter(
+    (u) => (progress.best[u.id] ?? 0) >= 60
+  ).length;
+  const totalUnits = units.length;
 
   return {
-    attempts: sessions.length,
-    lastScore: last.score,
-    bestScore: best,
-    avgScore: avg,
-    lastDate: last.date,
+    totalSessions,
+    sessions: stats,
+    avgScore,
+    bestScore: bestSession.score,
+    bestUnitTitle:
+      units.find((u) => u.id === bestSession.unitId)?.title ?? "",
+    lastScore: lastSession.score,
+    lastDateFormatted: new Date(lastSession.date).toLocaleString(),
+    passedUnits,
+    totalUnits,
   };
 }

@@ -5854,6 +5854,27 @@ function percent(ok, total) {
   if (!total) return 0;
   return Math.round((ok / total) * 100);
 }
+const STATS_KEY = "studyapp_stats_v1";
+
+function loadStats() {
+  if (typeof localStorage === "undefined") return [];
+  try {
+    const raw = localStorage.getItem(STATS_KEY);
+    return raw ? JSON.parse(raw) : [];
+  } catch (e) {
+    console.error("Error loading stats", e);
+    return [];
+  }
+}
+
+function saveStats(list) {
+  if (typeof localStorage === "undefined") return;
+  try {
+    localStorage.setItem(STATS_KEY, JSON.stringify(list));
+  } catch (e) {
+    console.error("Error saving stats", e);
+  }
+}
 
 /* =========================
    APP
@@ -5861,6 +5882,9 @@ function percent(ok, total) {
 
   export default function App() {
   const [progress, setProgress] = useState(() => loadProgress());
+  // 👉 Estadísticas globales de tests
+const [stats, setStats] = useState(() => loadStats());
+
 
   // home | subject | unit | quiz | result
   const [screen, setScreen] = useState("home");
@@ -5881,6 +5905,23 @@ function percent(ok, total) {
     () => SUBJECT.units.find((u) => u.id === unitId) || null,
     [unitId]
   );
+  // 👉 Todas las sesiones de la asignatura seleccionada
+const subjectSessions = useMemo(
+  () => stats.filter((s) => s.subjectId === subjectId),
+  [stats, subjectId]
+);
+
+const bestSubjectScore = subjectSessions.length
+  ? Math.max(...subjectSessions.map((s) => s.score))
+  : 0;
+
+const avgSubjectScore = subjectSessions.length
+  ? Math.round(
+      subjectSessions.reduce((sum, s) => sum + s.score, 0) /
+        subjectSessions.length
+    )
+  : 0;
+
 
   // ⬇⬇ aquí irán startQuiz, goHome, answer, nextQuestion, etc…
 
@@ -5938,79 +5979,84 @@ function answer(i) {
   }
 }
   function nextQuestion() {
-    if (!unit || !question || currentChoice === null) return;
+  if (!unit || !question || currentChoice === null) return;
 
-    // Guardamos la respuesta elegida para esta pregunta
-    const newPicked = [...picked];
-    newPicked[qIndex] = currentChoice;
+  const newPicked = [...picked];
+  newPicked[qIndex] = currentChoice;
 
-    const isLast = qIndex + 1 >= unit.questions.length;
+  const isLast = qIndex + 1 >= unit.questions.length;
 
-    if (!isLast) {
-      // Todavía quedan preguntas -> pasamos a la siguiente
-      setPicked(newPicked);
-      setQIndex(qIndex + 1);
-      setCurrentChoice(null);
-      setFeedback(null);
-      setShowExplain(false);
-    } else {
-      // ✅ Última pregunta: calculamos el resultado completo
-      const total = unit.questions.length;
-      let ok = 0;
-      const wrong = [];
-
-      unit.questions.forEach((q, idx) => {
-        const userIndex = newPicked[idx];
-
-        if (userIndex === q.correct) {
-          ok++;
-        } else {
-          wrong.push({
-            q: q.q,
-            userLetter:
-              userIndex !== undefined
-                ? String.fromCharCode(65 + userIndex)
-                : "-",
-            userText:
-              userIndex !== undefined ? q.options[userIndex] : "Sin responder",
-            correctLetter: String.fromCharCode(65 + q.correct),
-            correctText: q.options[q.correct],
-            explain: q.explain || null,
-          });
-        }
-      });
-
-      const score = percent(ok, total);
-
-      setPicked(newPicked); // guardamos todas las respuestas
-
-      // 🔹 Progreso por unidad
-      setProgress((p) => {
-        const prevBest = p.best[unit.id] ?? 0;
-        const best = Math.max(prevBest, score);
-        const completed = { ...p.completed, [unit.id]: score >= 60 };
-
-        return { ...p, best: { ...p.best, [unit.id]: best }, completed };
-      });
-
-      // 🔹 Guardar sesión en statsStorage
-      if (subjectId) {
-        registerSession(subjectId, unit.id, score, ok, total);
-      }
-
-      // 🔹 Guardamos el resultado para la pantalla "result"
-    // 🔹 Guardamos el resultado para la pantalla "result"
-setQuizResult({
-  score,
-  ok,
-  total,
-  wrong,
-});
-
-
-      setScreen("result");
-    }
+  if (!isLast) {
+    setPicked(newPicked);
+    setQIndex(qIndex + 1);
+    setCurrentChoice(null);
+    setFeedback(null);
+    setShowExplain(false);
+    return;
   }
+
+  // ✅ Última pregunta
+  const total = unit.questions.length;
+  let ok = 0;
+  const wrong = [];
+
+  unit.questions.forEach((q, idx) => {
+    const userIndex = newPicked[idx];
+
+    if (userIndex === q.correct) {
+      ok++;
+    } else {
+      wrong.push({
+        q: q.q,
+        userLetter:
+          userIndex !== undefined ? String.fromCharCode(65 + userIndex) : "-",
+        userText:
+          userIndex !== undefined ? q.options[userIndex] : "Sin responder",
+        correctLetter: String.fromCharCode(65 + q.correct),
+        correctText: q.options[q.correct],
+        explain: q.explain || null,
+      });
+    }
+  });
+
+  const score = percent(ok, total);
+
+  setPicked(newPicked);
+
+  // Progreso por unidad (lo que ya tenías)
+  setProgress((p) => {
+    const prevBest = p.best[unit.id] ?? 0;
+    const best = Math.max(prevBest, score);
+    const completed = { ...p.completed, [unit.id]: score >= 60 };
+
+    return { ...p, best: { ...p.best, [unit.id]: best }, completed };
+  });
+
+  // 👉 NUEVO: guardamos la sesión en stats
+  setStats((prev) => {
+    // si aún no se ha elegido asignatura por lo que sea, no hacemos nada
+    if (!subjectId) return prev;
+
+    const next = [
+      ...prev,
+      {
+        id: Date.now(),
+        subjectId,
+        unitId: unit.id,
+        score,
+        ok,
+        total,
+        date: new Date().toISOString(),
+      },
+    ];
+    saveStats(next);
+    return next;
+  });
+
+  setQuizResult({ score, ok, total, wrong });
+  setScreen("result");
+}
+
 
 
 
@@ -6154,6 +6200,13 @@ setQuizResult({
               </div>
             </div>
           </div>
+          <button
+      className="ghost"
+      style={{ marginTop: 10, marginBottom: 10 }}
+      onClick={() => setScreen("stats")}
+    >
+      📊 Ver estadísticas
+    </button>
 
           <div className="grid" style={{ marginTop: 10 }}>
             {getSubjectUnits(currentSubject.id).map((u) => {
@@ -6223,6 +6276,78 @@ setQuizResult({
           </div>
         </main>
       )}
+      {/* STATS → estadísticas de la asignatura actual */}
+{screen === "stats" && currentSubject && (
+  <main className="main">
+    <div className="panel">
+      <div className="panelHead">
+        <div className="panelTitle">
+          📊 Estadísticas · {currentSubject.name}
+        </div>
+      </div>
+    </div>
+
+    {subjectSessions.length === 0 ? (
+      <div className="empty">
+        Aún no has hecho ningún test de esta asignatura. Haz algún test y
+        vuelve aquí 😉
+      </div>
+    ) : (
+      <>
+        <div className="panel" style={{ marginTop: 10 }}>
+          <p>
+            Intentos totales: <b>{subjectSessions.length}</b>
+          </p>
+          <p>
+            Nota media: <b>{avgSubjectScore}%</b>
+          </p>
+          <p>
+            Mejor nota: <b>{bestSubjectScore}%</b>
+          </p>
+        </div>
+
+        <h2 style={{ marginTop: 20 }}>Por unidad</h2>
+        <ul className="statsUnits">
+          {getSubjectUnits(currentSubject.id).map((u) => {
+            const sessions = subjectSessions.filter(
+              (s) => s.unitId === u.id
+            );
+
+            if (!sessions.length) {
+              return (
+                <li key={u.id} className="statsUnitItem">
+                  <strong>{u.title}</strong>
+                  <span>Sin intentos todavía.</span>
+                </li>
+              );
+            }
+
+            const bestUnit = Math.max(...sessions.map((s) => s.score));
+            const attempts = sessions.length;
+
+            return (
+              <li key={u.id} className="statsUnitItem">
+                <strong>{u.title}</strong>
+                <span>
+                  {attempts} intento(s) · mejor <b>{bestUnit}%</b>
+                </span>
+              </li>
+            );
+          })}
+        </ul>
+      </>
+    )}
+
+    <button
+      className="ghost"
+      style={{ marginTop: 20 }}
+      onClick={() => setScreen("subject")}
+    >
+      ⬅ Volver a unidades
+    </button>
+  </main>
+)}
+
 
       {/* QUIZ */}
       {screen === "quiz" && unit && question && (
