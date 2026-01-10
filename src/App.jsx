@@ -20,6 +20,19 @@ const SUBJECT = {
 {
   id: "fol-u1",
   title: "FOL · U1 · Mercado laboral",
+   summary: [
+    "1️⃣ Visión general\nEsta unidad explica cómo es el mercado laboral actual, las distintas opciones profesionales (trabajo por cuenta ajena, trabajo por cuenta propia y empleo público) y qué competencias necesitas para mantener tu empleabilidad. También insiste en la importancia de la formación continua y del autoconocimiento para tomar buenas decisiones sobre tu futuro profesional.",
+
+    "2️⃣ Mercado laboral y sectores\nLa inserción laboral es complicada, especialmente para los jóvenes: hay mucho desempleo, precariedad y sobrecualificación. La automatización y la IA sustituyen tareas repetitivas, así que es clave reciclarse y aprender cosas nuevas. Crece el sector cuaternario (conocimiento, I+D, TIC, ciberseguridad, marketing digital, sostenibilidad…), mientras que faltan perfiles en oficios técnicos (soldadores, electricistas, fontaneros, mantenimiento, construcción), que son esenciales y deben revalorizarse.",
+
+    "3️⃣ Vías de inserción laboral\n• Trabajo por cuenta ajena: trabajas para una empresa, con contrato de trabajo y normativa laboral. La empresa organiza la actividad y asume el riesgo; tú aportas tu trabajo a cambio de salario.\n• Trabajo por cuenta propia (autónomos): tú organizas tu actividad y asumes el riesgo económico. Incluye autónomo tradicional, profesional autónomo, autónomo económicamente dependiente (TRADE, ≥75 % facturación de un cliente), autónomo colaborador (familiar que trabaja en el negocio) y autónomo societario (administra una sociedad).\n• Empleo público: trabajas para la Administración (Estado, CCAA, ayuntamientos…). El acceso se hace por procesos selectivos que respetan mérito y capacidad.",
+
+    "4️⃣ Empleo público y grupos de titulación\nEn el empleo público hay varias figuras: funcionario de carrera (plaza fija), personal laboral (fijo o temporal) y funcionarios interinos (cubren necesidades temporales, suelen venir de bolsas). Los sistemas de selección pueden ser oposición, concurso o concurso-oposición. Los grupos se organizan por titulación: Grupo A (títulos universitarios), Grupo B (Técnico Superior de FP), Grupo C1 (Bachillerato o Grado Medio) y Grupo C2 (ESO).",
+
+    "5️⃣ Aprendizaje y empleo en Europa\nLa UE ofrece herramientas para estudiar, trabajar y hacer voluntariado en otros países: el Portal Europeo de la Juventud y «Tu Europa» dan información actualizada. Europass unifica el formato del CV y otros documentos para que se entiendan mejor las cualificaciones en toda Europa. Erasmus+ (2021–2027) financia movilidad y cooperación educativa, y la red EURES facilita la libre circulación de trabajadores (ofertas, condiciones laborales, asesoramiento, etc.).",
+
+    "6️⃣ Competencias clave y Zona de Desarrollo Próximo\nNo basta con un título: las empresas valoran actitudes, aptitudes y competencias personales y sociales.\n• Actitudes: proactividad, compromiso, responsabilidad, flexibilidad, positividad.\n• Aptitudes: conocimientos técnicos, resolución de problemas, aprendizaje continuo, buena comunicación.\n• Competencias personales y sociales: trabajo en equipo, empatía, buena gestión del tiempo y liderazgo.\nLa Zona de Desarrollo Próximo (ZDP) es la distancia entre lo que puedes hacer solo y lo que puedes hacer con ayuda. Trabajar tu ZDP implica: evaluar tus competencias, definir objetivos realistas, buscar recursos/ayuda y practicar en situaciones reales. Esto mejora tu adaptabilidad y tu empleabilidad a largo plazo."
+  ],
   questions: [
     {
       q: "¿Cuáles son los tres elementos que componen el mercado laboral?",
@@ -132,6 +145,29 @@ const SUBJECT = {
 {
   id: "fol-u2",
   title: "FOL · U2 · Condiciones de trabajo, salud y riesgos",
+  summary: [
+    "1️⃣ Relación entre trabajo y salud\nLa salud es bienestar físico, mental y social (OMS). El trabajo puede mejorar o perjudicar estas áreas. Las condiciones de trabajo incluyen locales, iluminación, ventilación, equipos, sustancias, horarios y organización. La cultura preventiva consiste en identificar riesgos, evaluarlos y tomar medidas para evitarlos o reducirlos.",
+
+    "2️⃣ Daños derivados del trabajo\nSon enfermedades, lesiones o patologías causadas por el trabajo.\n• Enfermedad profesional: deterioro de salud por exposición repetida a agentes del cuadro oficial.\n• Accidente de trabajo: lesión corporal por consecuencia del trabajo. Incluye in itinere, actos de salvamento, tareas ordenadas por el empresario y enfermedades agravadas por accidente.\nNo cuentan: fuerza mayor ajena al trabajo o imprudencia temeraria. Sí cuenta la imprudencia profesional (confianza por experiencia).",
+
+    "3️⃣ Patologías psicosociales\n• Estrés laboral: demandas > capacidad percibida. Síntomas físicos, psicológicos y conductuales.\n• Fatiga laboral: agotamiento físico o mental por carga excesiva.\n• Mobbing: acoso psicológico continuado (humillaciones, aislamiento, burlas). Puede venir de jefes o compañeros.\n• Burnout: agotamiento emocional + despersonalización + baja realización personal.",
+
+    "4️⃣ Riesgos laborales y medidas preventivas\nUn riesgo laboral es la probabilidad de que las condiciones de trabajo causen daño. Es grave e inminente si puede suceder pronto y con gran impacto.",
+
+    "5️⃣ Condiciones de seguridad — Lugares de trabajo\nRiesgos: caídas, golpes, atrapamientos, resbalones.\nMedidas: suelos antideslizantes, buena iluminación, altura mínima, espacio adecuado, pasillos amplios, salidas de emergencia señalizadas.",
+
+    "6️⃣ Factores de riesgo físicos\nIncluyen: ruido, vibraciones, radiaciones, temperatura, humedad e iluminación.\nEfectos: pérdida auditiva, lesiones musculares, quemaduras, cáncer, golpe de calor, fatiga visual.\nMedidas: máquinas menos ruidosas, aislamiento acústico, ventilación, control de clima, EPIs (tapones, gafas), revisiones médicas.",
+
+    "7️⃣ Factores químicos y biológicos\n• Químicos: tóxicos, corrosivos, irritantes, inflamables, explosivos, carcinógenos.\n• Biológicos: bacterias, virus, hongos, parásitos.\nMedidas: sustituir sustancias peligrosas, aislar procesos, ventilación, extracción localizada, EPIs (guantes, mascarillas, gafas), higiene y vacunación cuando corresponda.",
+
+    "8️⃣ Factores psicosociales\nRiesgos derivados de la organización: carga de trabajo, turnos, monotonía, falta de autonomía, mal liderazgo.\nMedidas: rediseño de tareas, buena planificación, mejorar comunicación, rotación de tareas, apoyo psicológico y mediación.",
+
+    "9️⃣ Factores ergonómicos\nMala ergonomía → dolores musculares, lesiones, fatiga.\nMedidas: postura correcta, manipulación segura de cargas, herramientas adecuadas, pausas frecuentes, rotación de tareas, uso de ayudas mecánicas.",
+
+    "🔌 10️⃣ Riesgo eléctrico\nLa corriente puede causar quemaduras, fibrilación, paro respiratorio o muerte.\nMedidas: instalaciones seguras, puesta a tierra, diferenciales, aislamiento de cables, señalización y formación específica.",
+
+    "🧾 11️⃣ Conclusión\nEvaluar riesgos permite identificar peligros y planificar medidas preventivas. Comprender daños físicos, químicos, biológicos, psicosociales, ergonómicos y eléctricos es básico para crear trabajos seguros y una auténtica cultura preventiva."
+  ],
   questions: [
     {
       q: "¿Qué son las condiciones de trabajo?",
@@ -234,6 +270,37 @@ const SUBJECT = {
 {
   id: "fol-u3",
   title: "FOL · U3 · Prevención, protección y primeros auxilios",
+  summary: [
+    "1️⃣ Visión general\nLa unidad explica cómo se organiza la prevención en una empresa: marco legal, derechos y deberes, responsables, gestión, señalización, medidas colectivas/individuales y actuación en emergencias y primeros auxilios.",
+
+    "2️⃣ Marco normativo básico\n• Constitución Española: garantiza seguridad y salud en el trabajo.\n• Ley 31/1995: base de la PRL en España.\n• Reglamento de los Servicios de Prevención: define cómo se organiza la actividad preventiva.\n• Derecho comunitario/UE: directivas y normativa europea que España adapta.",
+
+    "3️⃣ Derechos y deberes\nEmpresa debe: informar, formar, evaluar riesgos, entregar EPIs, plan de prevención, vigilar la salud.\nTrabajador tiene derecho a: información, formación, protección, participación y a parar en caso de riesgo grave.\nResponsabilidad compartida entre trabajador y empresa.",
+
+    "4️⃣ Responsabilidades y sanciones\nEmpresario: responsabilidad administrativa, civil y penal. Sanciones: multas, cierre, incluso prisión.\nTrabajador: responsabilidades disciplinarias, civiles y penales si incumple normas de seguridad.\nLas sanciones las aplican Inspección de Trabajo y tribunales.",
+
+    "5️⃣ Representación en prevención\n• Delegados de prevención: representan a los trabajadores en PRL.\n• Comité de Seguridad y Salud: obligatorio en empresas de +50 trabajadores.\nFunciones: participar en evaluación, planificación, formación y seguimiento de medidas preventivas.",
+
+    "6️⃣ Organización de la prevención\nModalidades:\n• El propio empresario (cuando hay muy pocos trabajadores y bajo riesgo).\n• Trabajador designado.\n• Servicio de prevención propio.\n• Servicio de prevención ajeno.\nLa elección depende del tamaño y riesgos de la empresa.",
+
+    "7️⃣ Sistema de gestión preventiva\nIncluye: política, planificación, evaluación de riesgos, medidas de control, coordinación entre empresas, documentación y auditorías.\nObjetivo: mejora continua y revisión periódica del sistema de prevención.",
+
+    "8️⃣ Principios y técnicas preventivas\nPrincipios básicos: evitar riesgos, evaluar los inevitables, actuar en origen, priorizar protección colectiva > individual, formar e informar.\nTécnicas: seguridad, higiene industrial, ergonomía, psicosociología y medicina del trabajo.",
+
+    "9️⃣ Medidas de protección\n• Colectivas: protegen a todos (barandillas, extractores, ventilación, resguardos, señalización).\n• Individuales (EPIs): casco, guantes, gafas, mascarillas, arnés…\nLos EPIs deben estar homologados y ser usados correctamente.",
+
+    "🔰 10️⃣ Señalización de seguridad\nFunción: advertir, prohibir, obligar, evacuar y ayudar en emergencias.\nTipos:\n• Prohibición: rojo.\n• Obligación: azul.\n• Advertencia: amarillo.\n• Emergencia/salvamento: verde.\n• Extinción de incendios: rojo.\nPueden ser ópticas, acústicas, gestuales o táctiles.",
+
+    "🚨 11️⃣ Plan de autoprotección y emergencias\nRegulado por RD 393/2007.\nIncluye: identificación de riesgos, medidas preventivas, organización de equipos, protocolos de actuación y simulacros periódicos.\nDebe revisarse cada 3 años.",
+
+    "🚑 12️⃣ Respuesta en emergencias\nPasos: activar alarma, coordinar evacuación, primeros auxilios, relación con bomberos y servicios sanitarios.\nEquipos: jefe de emergencia, equipos de intervención, primeros auxilios y evacuación.",
+
+    "➡️ 13️⃣ Plan de evacuación\nFases: detección → alarma → evacuación → punto de reunión.\nObjetivo: evacuar rápido y sin pánico.\nSe mejora mediante simulacros.",
+
+    "❤️ 14️⃣ Técnicas básicas de primeros auxilios\nProtocolo PAS: Proteger → Avisar → Socorrer.\nActuación: comprobar consciencia y respiración, controlar hemorragias, inmovilizar si hay fracturas, usar botiquín correctamente.\nRCP: 30 compresiones + 2 ventilaciones si no respira.",
+
+    "🩺 15️⃣ Técnicas según lesiones\nHeridas leves: limpiar, desinfectar y cubrir.\nHeridas graves: controlar hemorragia, no retirar objetos clavados, avisar a emergencias.\nQuemaduras: enfriar con agua, cubrir, nunca usar hielo ni cremas caseras.\nHemorragias: presión directa, torniquete solo en casos extremos.\nFracturas: inmovilizar y no mover al herido salvo peligro."
+  ],
   questions: [
     {
       q: "En prevención y protección, empresario y trabajadores tienen una responsabilidad:",
@@ -356,6 +423,31 @@ const SUBJECT = {
 {
   id: "fol-u4",
   title: "FOL · U4 · Normativa laboral, principios y representación",
+  summary: [
+    "1️⃣ Visión general\nLa unidad explica el marco legal del trabajo, la relación laboral individual, los derechos y deberes de trabajadores y empresarios, la representación colectiva, los convenios y la resolución de conflictos laborales.",
+
+    "2️⃣ Derecho del trabajo: fuentes y principios\n• Regula las relaciones trabajador–empresa.\n• Nace tras la Revolución Industrial para proteger al trabajador.\n• Principios: protección, irrenunciabilidad, norma más favorable, condición más beneficiosa, norma mínima y primacía de la realidad.\n• Fuentes internas: Constitución, leyes, reglamentos y convenios.\n• Fuentes externas: Derecho europeo, tratados internacionales y OIT.",
+
+    "3️⃣ Relación laboral individual\nCaracterísticas de una relación laboral real:\n• Voluntaria\n• Personal (solo la persona contratada)\n• Dependiente (obedece órdenes)\n• Por cuenta ajena (para una empresa)\n• Remunerada\nNo son relaciones laborales: autónomos, funcionarios, trabajos familiares, voluntarios o actividades sin salario.",
+
+    "4️⃣ Derechos del trabajador\nDerechos básicos:\n• Igualdad y no discriminación\n• Seguridad y salud laboral\n• Información y formación\n• Percibir salario puntual\n• Descansos, vacaciones y registro horario\n• Protección ante despidos injustificados\nDerivan del contrato y de la ley laboral.",
+
+    "5️⃣ Inspección de Trabajo y jurisdicción social\nInspección:\n• Vigila el cumplimiento de las leyes laborales.\n• Puede investigar, entrar en centros de trabajo y pedir documentación.\n• Impone sanciones.\n• Cualquier trabajador puede denunciar irregularidades.\nJurisdicción social:\n• Resuelve conflictos que no se solucionan en la empresa.\n• Interpreta y aplica la ley en juicios laborales.",
+
+    "6️⃣ Representación de los trabajadores\nFormas de participación:\n• Información y consulta\n• Representantes unitarios y sindicales\nGarantías de los representantes:\n• Prioridad en permanencia\n• No despido por ejercer el cargo\n• Libertad de expresión en temas laborales",
+
+    "7️⃣ Representación unitaria\n• Delegados de personal: empresas de 10–49 trabajadores.\n• Comité de empresa: a partir de 50 trabajadores.\nFunciones:\n• Recibir información económica y laboral.\n• Participar en la prevención de riesgos.\n• Negociar y plantear mejoras.",
+
+    "8️⃣ Representación sindical\n• Los sindicatos defienden derechos laborales.\n• Pueden crear secciones sindicales en la empresa.\n• Delegados sindicales según tamaño y representatividad.\n• La representatividad (estatal/autonómica) da derecho a negociar convenios.",
+
+    "9️⃣ Convenio colectivo\n• Acuerdo escrito entre empresa(s) y representantes de trabajadores.\n• Regula salarios, horarios, descansos, permisos, prevención y organización del trabajo.\n• Tiene fuerza de ley dentro de su ámbito y es superior al contrato individual.\n• Puede denunciarse, renovarse o prorrogarse según lo pactado.",
+
+    "📌 Diferencia convenio vs acuerdo individual\n• Convenio: afecta a todos los trabajadores del ámbito → tiene valor normativo.\n• Acuerdo individual: solo afecta a un trabajador concreto → no tiene fuerza de ley y nunca puede empeorar lo que dice el convenio.",
+
+    "🔧 10️⃣ Conflictos laborales\nTipos:\n• Individuales: afectan a un solo trabajador.\n• Colectivos: afectan a un grupo.\nHuelga:\n• Suspensión colectiva del trabajo.\n• Requiere declaración formal, comunicación y comité de huelga.\nCierre patronal:\n• El empresario suspende la actividad.\n• Solo en casos legales: violencia, ocupación del centro o riesgo grave.",
+
+    "🤝 11️⃣ Resolución extrajudicial de conflictos\n• Diálogo social\n• Negociación\n• Mediación\n• Conciliación\n• Arbitraje\nObjetivo: evitar procedimientos judiciales y llegar a acuerdos voluntarios."
+  ],
   questions: [
     {
       q: "Orden jerárquico correcto de normas (de mayor a menor):",
@@ -468,6 +560,43 @@ const SUBJECT = {
 {
   id: "fol-u5",
   title: "FOL · U5 · Contratos y despidos",
+  summary: [
+
+"1️⃣ Visión general de la unidad\nLa unidad analiza el contrato de trabajo: qué es, cómo se formaliza, qué requisitos debe cumplir para ser válido, qué modalidades existen y cómo se modifican, suspenden o extinguen. También explica el fraude de ley en la contratación y la importancia del finiquito y derechos del trabajador.",
+
+"2️⃣ Concepto de contrato de trabajo\n• Acuerdo entre trabajador y empresario.\n• El trabajador presta servicios por cuenta ajena, de forma personal y remunerada.\n• El empresario organiza y dirige la actividad.\nPartes del contrato:\n• Empresa (persona física o jurídica)\n• Persona trabajadora (mayor de 16 años y con capacidad legal)",
+
+"3️⃣ Elementos esenciales del contrato\nPara que sea válido debe tener:\n• Consentimiento: ambas partes aceptan libremente.\n• Objeto: la prestación de servicios.\n• Causa: el trabajo a cambio de salario.\nSi falta alguno → contrato nulo o anulable.",
+
+"4️⃣ Forma del contrato\nPuede ser:\n• Verbal (solo indefinido y jornada completa en general)\n• Escrito (obligatorio en temporales, formativos, prácticas, parcial, relevo, ETT, etc.)\nEl contrato debe registrar:\n• Datos de empresa y trabajador\n• Jornada\n• Salario\n• Categoría profesional\n• Duración\n• Periodo de prueba\n• Convenio aplicable\n• Lugar de trabajo",
+
+"5️⃣ Cláusulas adicionales del contrato\nPueden incluir:\n• Confidencialidad\n• No competencia\n• Permanencia en la empresa\n• Movilidad funcional/geográfica\n• Horas complementarias (en tiempo parcial)",
+
+"6️⃣ Modalidades de contratación (post reforma laboral 2021)\nLa reforma prioriza el contrato indefinido y limita el uso de temporales.\nTipos principales:\n• Indefinido (ordinario y fijo discontinuo)\n• Temporales (circunstancias de la producción, sustitución)\n• Formativos (alternancia y práctica profesional)\n• Otros: relevo, tiempo parcial, ETT…",
+
+"7️⃣ Contratos indefinidos\n7.1 Ordinario\n• Sin límite de duración.\n• Puede ser verbal o escrito.\n7.2 Fijo discontinuo\n• Actividad intermitente con periodos de inactividad.\n• Obligatorio por escrito.\n• Debe especificar forma de llamamiento y orden de antigüedad.",
+
+"8️⃣ Contratos temporales\n8.1 Circunstancias de la producción\n• Justificado por aumento ocasional de trabajo.\n• Duración máxima: 6 a 12 meses.\n8.2 Sustitución\n• Para reemplazar a un trabajador con reserva de puesto.\n• Debe identificar a la persona sustituida y la causa.\n❌ Si no existe causa real → fraude de ley → se convierte en indefinido.",
+
+"9️⃣ Contratos formativos\n9.1 Formación en alternancia\n• Combina trabajo + formación.\n• Edad máxima: 30 años.\n9.2 Práctica profesional\n• Tras estudios (FP superior, grado, máster…)\n• Debe formalizarse en los 3 años siguientes al título.",
+
+"🔧 10️⃣ Otras modalidades\n• Tiempo parcial: menos horas que la jornada completa.\n• Horas complementarias: pactadas por escrito.\n• Relevo: vinculado a jubilación parcial.\n• ETT: relación triangular (empresa–ETT–trabajador).",
+
+"11️⃣ Modificación del contrato\nLa empresa puede modificar condiciones si existe causa objetiva y justificada:\n• Jornada\n• Horario\n• Sistemas de remuneración\n• Funciones (movilidad funcional)\nProceso:\n• Notificación previa\n• Trabajador puede reclamar o extinguir con indemnización según caso.",
+
+"12️⃣ Suspensión del contrato\nEl contrato se detiene temporalmente sin extinguirse.\nCausas:\n• Incapacidad temporal\n• Maternidad/paternidad\n• ERTE\n• Excedencias\n• Huelga\nDurante la suspensión se mantiene el vínculo laboral pero se pausa la prestación de servicios.",
+
+"13️⃣ Extinción del contrato\nFormas principales:\n• Mutuo acuerdo\n• Fin de contrato temporal\n• Renuncia del trabajador\n• Dimisión o abandono\n• Jubilación o incapacidad\n• Muerte del trabajador\n• Despido disciplinario\n• Despido objetivo\n• Despido colectivo (ERE)\n• Fuerza mayor",
+
+"14️⃣ Despido disciplinario\nCausas:\n• Indisciplina\n• Faltas repetidas de asistencia\n• Ofensas verbales o físicas\n• Disminución voluntaria del rendimiento\n• Embriaguez o toxicomanía que afecte al trabajo\nNo hay indemnización, solo finiquito.\nEl trabajador puede impugnar.",
+
+"15️⃣ Despido objetivo\nCausas económicas, organizativas, técnicas o productivas.\nIndemnización: 20 días por año.\nRequiere comunicación escrita y preaviso.",
+
+"16️⃣ Finiquito\nDocumento que resume:\n• Salarios pendientes\n• Vacaciones no disfrutadas\n• Pagas extra\n• Indemnizaciones si proceden\nDebe entregarse siempre al finalizar la relación laboral.",
+
+"17️⃣ Impugnación de despidos\nVías:\n• Conciliación laboral\n• Mediación\n• Demanda en jurisdicción social\nSentencias posibles:\n• Procedente\n• Improcedente (indemnización mayor o readmisión)\n• Nulo (readmisión + salarios de tramitación)"
+  ],
+
   questions: [
     {
       q: "En contratos de formación en alternancia:",
@@ -585,6 +714,32 @@ const SUBJECT = {
 {
   id: "fol-u6",
   title: "FOL · U6 · Jornada, descanso, vacaciones y entorno digital",
+  summary: [
+
+"1️⃣ Visión general de la unidad\nLa unidad trata los principales elementos de la jornada laboral: horas máximas, descansos, permisos, vacaciones, periodos de prueba y modelos actuales de organización del trabajo (teletrabajo, flexibilidad, conciliación). También introduce el derecho procesal social para la resolución de conflictos laborales.",
+
+"2️⃣ Jornada de trabajo y horarios\n• Jornada: tiempo trabajado.\n• Horario: distribución de la jornada.\nLímites legales:\n• Máximo 40 h/semanales de promedio anual.\n• Máximo 9 h/día (salvo pacto en convenio).\n• Prohibiciones: menores tienen límites especiales.\n• Obligatorio el registro de jornada diario para todos los trabajadores.",
+
+"3️⃣ Horas extraordinarias\n• Son horas que exceden la jornada establecida.\n• Carácter general: voluntarias.\n• Obligatorias solo en fuerza mayor.\n• Límite: 80 horas/año.\n• Compensación: dinero o descanso.\nProhibidas para:\n• Menores.\n• Trabajadores a tiempo parcial.\n• Turno nocturno.\n• Maternidad/paternidad (salvo fuerza mayor).",
+
+"4️⃣ Organización especial del trabajo\n4.1 Trabajo nocturno\n• Considerado nocturno si al menos 3 h o 1/3 del turno es entre 22:00 y 06:00.\n• Limitaciones en jornada y horas extra.\n4.2 Trabajo a turnos\n• Rotación entre distintos horarios.\n• El turno de noche no puede exceder 15 días continuos salvo consentimiento del trabajador.",
+
+"5️⃣ Descansos y días festivos\n• Descanso diario: mínimo 12 horas entre jornadas.\n• Pausas dentro de la jornada según duración.\n• Descanso semanal: 1 día y medio ininterrumpido.\n• Festivos: máximo 14 al año.\n• Vacaciones: derecho mínimo de 30 días naturales al año.\nReglas clave:\n• No sustituibles por dinero.\n• Deben fijarse por acuerdo entre empresa y trabajador.\n• Deben disfrutarse dentro del año natural.",
+
+"6️⃣ Permisos retribuidos\nSe conceden con aviso y justificación.\nIncluyen:\n• Matrimonio (15 días).\n• Nacimiento de hijo.\n• Defunción de familiares.\n• Traslado de domicilio.\n• Deber público.\n• Exámenes.\n• Fenómenos meteorológicos.\nLa duración exacta depende del Estatuto y del convenio.",
+
+"7️⃣ Reducción de jornada\nMotivos principales:\n• Cuidado de hijos.\n• Cuidado de familiares.\n• Enfermedades graves.\n• Violencia de género o terrorismo.\nAfecta al salario proporcionalmente pero mantiene derechos esenciales.",
+
+"8️⃣ Periodo de prueba\n• Etapa inicial para valorar adaptación.\n• Puede extinguirse sin indemnización.\nDuración máxima orientativa:\n• 1 a 6 meses según categoría y convenio.\n• 2 meses habitual para técnicos.\n• Debe constar por escrito y ser recíproco.",
+
+"9️⃣ Entornos laborales actuales\nTendencias modernas:\n• Teletrabajo.\n• Horarios flexibles.\n• Conciliación vida laboral/personal.\n• Trabajo por objetivos.\nRequisitos del teletrabajo:\n• Acuerdo escrito.\n• Medios proporcionados por la empresa.\n• Compensación de gastos.\n• Control horario compatible con privacidad.",
+
+"🔟 Derechos digitales del trabajador\nDerechos clave:\n• Desconexión digital (fuera del horario).\n• Privacidad y protección de datos.\n• Limitación del uso de dispositivos personales.\n• Regulación del control empresarial (cámaras, GPS, software).",
+
+"1️⃣1️⃣ Igualdad, diversidad e inclusión\nLas empresas deben promover:\n• Igualdad de trato.\n• No discriminación por género, edad, origen o discapacidad.\n• Políticas inclusivas para mejorar creatividad y productividad.",
+
+"1️⃣2️⃣ Derecho procesal social\nProceso para resolver conflictos laborales:\n1. Mediación/conciliación previa.\n2. Demanda ante el Juzgado de lo Social.\n3. Juicio.\n4. Sentencia.\n5. Recursos.\nPermite resolver:\n• Despidos.\n• Reclamaciones salariales.\n• Sanciones.\n• Modificaciones de contrato.\n• Conflictos colectivos."
+  ],
   questions: [
     {
       q: "Durante el período de prueba:",
@@ -702,6 +857,34 @@ const SUBJECT = {
 {
   id: "fol-u7",
   title: "FOL · U7 · Salario, nómina y Seguridad Social",
+  summary: [
+
+"1️⃣ Resumen general de la unidad\nLa unidad explica cómo funciona el salario, qué partes componen la nómina, qué deducciones se aplican y cómo se calculan. También detalla el sistema de Seguridad Social y sus prestaciones: incapacidad temporal, desempleo, nacimiento y cuidado del menor, incapacidad permanente, jubilación, muerte y supervivencia, además del ingreso mínimo vital. Incluye la protección por desempleo y requisitos para acceder a ella.",
+
+"2️⃣ La nómina y el salario\n• El salario es la retribución por el trabajo prestado.\n• Existe un salario mínimo obligatorio: SMI (1.184 €/mes en 2025).\n• El salario puede tener:\n  - Salario base.\n  - Complementos (antigüedad, peligrosidad, nocturnidad...).\n  - Horas extra.\n  - Salario en especie.\n  - Percepciones no salariales (dietas, transporte, indemnizaciones).",
+  
+"2.1 Componentes de la nómina\n• Devengos: todo lo que el trabajador gana.\n• Deducciones: restan del salario (cotización y IRPF).\n• Salario bruto: total antes de deducciones.\n• Salario neto: cantidad final a recibir.\n• Base de cotización: se usa para calcular prestaciones.\n• Tipo de IRPF: depende de salario, situación familiar y contrato.",
+
+"3️⃣ Seguridad Social y sus coberturas\nLa Seguridad Social protege al trabajador ante contingencias económicas y de salud.\nIncluye prestaciones por:\n• Incapacidad Temporal (IT).\n• Riesgo embarazo/lactancia.\n• Nacimiento y cuidado del menor.\n• Incapacidad Permanente.\n• Jubilación.\n• Muerte y supervivencia.\n• Lesiones permanentes no invalidantes.\n• Ingreso mínimo vital.\n• Desempleo.",
+
+"3.1 Incapacidad Temporal (IT)\n• Duración máxima: 365 días, prorrogable.\n• Puede ser por contingencias comunes o profesionales.\n• La prestación depende del tipo:\n  - Enfermedad común: % de base reguladora tras los primeros días.\n  - Accidente laboral: desde el día siguiente al 75% de la base reguladora.",
+
+"3.2 Nacimiento y cuidado de menor\n• Sustituye maternidad y paternidad desde 2019.\n• 16 semanas para cada progenitor.\n• Permiso obligatorio mínimo inicial.\n• Prestación económica según base reguladora.",
+
+"3.3 Incapacidad permanente\nGrados:\n• Parcial.\n• Total.\n• Absoluta.\n• Gran invalidez.\nCada grado determina:\n• Derecho a indemnización o pensión vitalicia.\n• Cantidad proporcional a la base reguladora y grado de afectación.",
+
+"3.4 Jubilación\nRequisitos:\n• Edad legal (variable según año y cotización).\n• Periodos mínimos cotizados.\n• Posible jubilación anticipada o demorada.\nLa prestación depende de:\n• Años cotizados.\n• Bases de cotización.\n• Edad de retiro.",
+
+"3.5 Muerte y supervivencia\nIncluye:\n• Pensión de viudedad.\n• Orfandad.\n• Prestaciones a favor de familiares.\nEn caso de accidente laboral, se incluyen indemnizaciones adicionales.",
+
+"4️⃣ Desempleo: requisitos y prestaciones\nClasificación:\n• Desempleo total.\n• Desempleo parcial.\nRequisitos generales para contributiva:\n• Haber cotizado mínimo 12 meses en los últimos 6 años.\n• Estar inscrito como demandante de empleo.\n• No haber rechazado ofertas adecuadas.\nLa cuantía depende de:\n• Base reguladora.\n• Hijos a cargo.\n• Situación familiar.",
+  
+"4.1 Duración de la prestación\n• Depende del tiempo cotizado.\n• De 4 meses hasta 2 años.",
+  
+"4.2 Subsidio por desempleo\n• Para quienes no cumplen los requisitos de la contributiva.\n• Cuantía reducida y tiempo limitado.\n• Existen subsidios especiales: mayores de 45, cargas familiares, mayores de 52, etc.",
+
+"5️⃣ Conclusión de la unidad\nEsta unidad explica de forma completa cómo se calcula la nómina, cuál es el valor real del salario neto y qué protecciones existen dentro de la Seguridad Social. También aclara los requisitos de desempleo y el funcionamiento de las prestaciones en España, garantizando derechos ante enfermedad, maternidad, vejez o falta de empleo."
+  ],
   questions: [
     {
       q: "El Salario Mínimo Interprofesional (SMI):",
@@ -824,6 +1007,24 @@ const SUBJECT = {
 {
   id: "fol-u8",
   title: "FOL · U8 · Orientación profesional y formación",
+  summary: [
+
+"1️⃣ Resumen general de la unidad\nEsta unidad trata sobre el autoconocimiento y la importancia de analizar tus intereses, habilidades, valores y motivaciones para construir tu trayectoria profesional. Explica cómo definir metas realistas, establecer un proyecto de carrera y elegir itinerarios formativos adecuados. También trabaja la autoestima, resiliencia, análisis DAFO personal e identificación de hitos vitales que influyen en tus decisiones laborales.",
+
+"2️⃣ Autoconocimiento y evaluación personal\n• El autoconocimiento consiste en saber quién eres, qué te gusta, qué te motiva y qué quieres conseguir.\n• Se evalúan intereses, valores y motivaciones.\n• Herramientas como el Test de Holland ayudan a identificar perfiles profesionales.\n• Reflexionar sobre habilidades y destrezas permite crear un plan de mejora personal.",
+
+"3️⃣ Cualidades y competencias personales\n• Cualidades: responsabilidad, iniciativa, resiliencia, adaptabilidad, autoconfianza.\n• Competencias: comunicación, trabajo en equipo, resolución de problemas, gestión del tiempo.\n• Hard skills: habilidades técnicas específicas.\n• Soft skills: habilidades sociales y personales.\n• Las soft skills marcan la diferencia en la empleabilidad actual.",
+
+"4️⃣ Preferencias profesionales y metas\n• Las preferencias se basan en intereses, valores, habilidades y experiencias.\n• Las metas se dividen en:\n  - Corto plazo (0–1 años)\n  - Medio plazo (1–3 años)\n  - Largo plazo (3–5+ años)\n• El proyecto profesional debe incluir investigación del mercado laboral y acciones concretas.\n• Revisar las metas de forma periódica es imprescindible para avanzar.",
+
+"5️⃣ Autoestima y búsqueda de empleo\n• La autoestima influye en la motivación, seguridad y desempeño en entrevistas.\n• Una autoestima fuerte ayuda a manejar rechazos y mantener el enfoque.\n• La autoconfianza permite defender tus capacidades y crear una marca personal positiva.",
+
+"6️⃣ Análisis DAFO personal\n• Fortalezas: puntos fuertes personales.\n• Debilidades: aspectos a mejorar.\n• Oportunidades: tendencias del mercado, formaciones, nichos.\n• Amenazas: competencia, cambios económicos.\n• El DAFO ayuda a planificar estrategias para maximizar fortalezas y minimizar debilidades.",
+
+"7️⃣ Hitos importantes en la trayectoria vital\n• Los hitos son experiencias clave que definen tu crecimiento personal y profesional.\n• Pueden ser logros, cambios vitales, experiencias educativas o retos superados.\n• Ayudan a entender tu evolución y a reforzar la motivación y la confianza.",
+
+"8️⃣ Elección de itinerarios formativos\n• La formación profesional para el empleo ayuda a mejorar habilidades y adaptarse al mercado.\n• Los ciclos formativos permiten acceder a estudios superiores o al empleo.\n• El sistema universitario europeo (Bolonia) organiza estudios en Grado, Máster y Doctorado.\n• Elegir el itinerario correcto depende de tus metas y fortalezas personales."
+  ],
   questions: [
     {
       q: "Capacidad de comprender intereses, valores, motivaciones, habilidades y destrezas:",
@@ -951,6 +1152,29 @@ const SUBJECT = {
 {
   id: "fol-u9",
   title: "FOL · U9 · Habilidades, resiliencia e identidad digital",
+  summary: [
+
+"1️⃣ Resumen general de la unidad\nLa unidad trata la importancia del aprendizaje continuo, el desarrollo de competencias y el uso de herramientas digitales para mejorar la empleabilidad. Explica cómo elaborar un Plan de Desarrollo Individual (PDI), gestionar la identidad digital y adaptarse al entorno laboral moderno. Se destacan habilidades blandas, técnicas y estrategias de autoaprendizaje.",
+
+"2️⃣ Importancia del aprendizaje permanente\n• El aprendizaje continuo permite adaptarse a cambios tecnológicos y nuevas demandas del empleo.\n• Favorece la empleabilidad, innovación, motivación y resiliencia.\n• Incluye habilidades duras (hard skills) y blandas (soft skills).\n• Actualizar conocimientos es clave para mantenerse competitivo en el mercado laboral actual.",
+
+"3️⃣ Estrategias para el desarrollo de competencias\n• Formación formal (ciclos, cursos, certificados, universidad).\n• Desarrollo de soft skills: comunicación, liderazgo, inteligencia emocional.\n• Networking: crear relaciones profesionales que generen oportunidades.\n• Para el aprendizaje autónomo se recomienda disciplina, metas claras y autoevaluaciones frecuentes.\n• Las herramientas digitales facilitan el seguimiento y organización del aprendizaje.",
+
+"4️⃣ Adaptación al entorno laboral actual\n• El mundo laboral cambia con la transformación digital, IA y automatización.\n• Nuevas formas de empleo: remoto, híbrido, flexible, freelance, gig economy.\n• Habilidades técnicas clave: programación, ciberseguridad, análisis de datos.\n• Habilidades blandas clave: liderazgo, comunicación, gestión del tiempo.\n• La sostenibilidad y RSC condicionan cada vez más las expectativas laborales.",
+
+"5️⃣ Adaptación, flexibilidad y resiliencia\n• Adaptarse a nuevos roles, cambios de horario o herramientas tecnológicas.\n• La resiliencia permite superar dificultades, gestionar el estrés y mantener la motivación.\n• Características del trabajador resiliente: optimismo, autocontrol emocional, iniciativa, pensamiento crítico y redes de apoyo.",
+
+"6️⃣ Mundo digital y empleabilidad\n• La digitalización genera oportunidades y exige nuevas competencias tecnológicas.\n• La identidad digital (2.0) es la presencia que proyectamos online.\n• La marca personal ayuda a destacar, conectar con empleadores y mostrar talento.\n• Importante cuidar seguridad, privacidad y reputación digital.\n• Mantener perfiles actualizados en LinkedIn, portfolio y redes profesionales.",
+
+"7️⃣ Entorno Personal de Aprendizaje (EPA)\n• Es un conjunto de herramientas, recursos, personas y actividades que ayudan a aprender.\n• Incluye apps, cursos online, redes profesionales, blogs, podcasts, comunidades.\n• Permite definir metas, gestionar contenido y evaluar progreso.\n• Ejemplos de EPA: YouTube educativo, Duolingo, cursos MOOC, LinkedIn Learning.",
+
+"8️⃣ Plan de Desarrollo Individual (PDI)\n• Es una hoja de ruta para organizar tu crecimiento profesional.\n• Fases del PDI:\n  1. Autoevaluación.\n  2. Metas claras.\n  3. Acciones concretas.\n  4. Seguimiento.\n• Permite alinear objetivos personales con oportunidades laborales reales.\n• Debe ser flexible y revisarse periódicamente.",
+
+"9️⃣ Elaboración y seguimiento del PDI\n• Metas SMART: específicas, medibles, alcanzables, relevantes y con fecha.\n• Definir indicadores para medir progreso.\n• Revisar resultados y ajustar según nuevas metas o cambios del entorno.\n• Permitir modificaciones continuas para evitar estancamiento.",
+
+"🔟 Conclusión final\n• La adaptabilidad es clave para el éxito profesional.\n• Actualización constante + herramientas digitales = empleabilidad sostenible.\n• La autoevaluación continua, disciplina y proactividad fortalecen la carrera profesional.\n• El PDI debe evolucionar según las necesidades del mercado y tus objetivos personales."
+  ],
+
   questions: [
     {
       q: "El aprendizaje permanente proporciona:",
@@ -1919,6 +2143,27 @@ const SUBJECT = {
 {
   id: "ap-u1",
   title: "AP · U1 · Sistema sanitario y recursos",
+  summary: [
+
+"1️⃣ Visión general de la unidad\nLa unidad explica cómo está organizado el sistema sanitario en España (público y privado), la estructura del SNS, la función de hospitales y centros de salud, las unidades de imagen médica y la importancia de la gestión de almacén, economía sanitaria y calidad asistencial. Se centra en comprender el funcionamiento global del sistema para mejorar el trabajo en equipo y la atención al paciente.",
+
+"2️⃣ Estructura del sistema sanitario\n• Diferentes modelos sanitarios: nacional, seguros sociales y liberal.\n• Todos comparten objetivos: equidad, accesibilidad, eficiencia y legitimidad.\n• España utiliza un Sistema Nacional de Salud (SNS): universal, financiado con impuestos, descentralizado en comunidades autónomas.\n• Organización administrativa:\n  - Nivel central: Ministerio de Sanidad (coordinación general).\n  - Nivel autonómico: Consejerías (gestión sanitaria regional).\n  - Nivel local: Áreas y zonas básicas de salud.",
+
+"3️⃣ Características del sistema sanitario español\n• Universalidad: cobertura para todos los ciudadanos.\n• Financiación pública: vía impuestos.\n• Atención integral: primaria + especializada.\n• Participación ciudadana en la gestión.\n• Eficiencia y calidad como objetivos principales.\n• Atención primaria: puerta de entrada al sistema, prevención y seguimiento.\n• Atención hospitalaria: diagnóstico especializado, cirugías, urgencias y tratamientos complejos.",
+
+"4️⃣ Unidades de radiodiagnóstico, medicina nuclear y radioterapia\n• Radiodiagnóstico: RX, TAC, RM, ecografías.\n• Medicina nuclear: gammagrafías, PET, uso de radiofármacos.\n• Radioterapia: tratamientos con radiación ionizante para tumores.\n• Organización jerárquica:\n  - Médicos especialistas.\n  - Radiofísicos.\n  - Técnicos Superiores en Imagen para el Diagnóstico y Medicina Nuclear.\n  - Enfermería.\n  - Personal auxiliar.\n• Cada profesional tiene funciones específicas en prescripción, preparación, control, mantenimiento y asistencia al paciente.",
+
+"5️⃣ Gestión del almacén en centro sanitario\n• Objetivo: garantizar disponibilidad, seguridad y orden.\n• Tipos de almacenes: central, general y pequeño almacén.\n• Clasificación del stock por:\n  - Uso.\n  - Caducidad.\n  - Peligrosidad.\n  - Conservación (temperatura, humedad, luz).\n• Control de inventarios, revisión de fechas y reposición periódica.\n• Evitar errores y faltantes que afecten al paciente.",
+
+"6️⃣ Economía sanitaria\n• Estudia cómo se gestionan recursos y gastos en sanidad.\n• Factores clave:\n  - Oferta y demanda.\n  - Coste de la tecnología.\n  - Necesidades de la población.\n  - Políticas y presupuestos.\n• Una buena gestión garantiza sostenibilidad y calidad asistencial.\n• La demanda sanitaria no siempre es voluntaria: depende de enfermedades y envejecimiento poblacional.",
+
+"7️⃣ Niveles de gestión sanitaria\n• Macrogestión: Estado → legislación, financiación, planificación.\n• Mesogestión: Comunidades autónomas → organización territorial.\n• Microgestión: hospitales, centros de salud y sus profesionales → atención directa.\n• Una buena coordinación entre niveles mejora resultados asistenciales.",
+
+"8️⃣ Calidad en los servicios sanitarios\n• Calidad asistencial = servicios seguros, eficaces y centrados en el paciente.\n• Herramientas de calidad:\n  - ISO: estándares de gestión.\n  - EFQM: modelo de excelencia.\n• EFQM utiliza REDER:\n  - Resultados.\n  - Enfoque.\n  - Despliegue.\n  - Evaluación y Revisión.\n• Objetivo: mejora continua, eficiencia y satisfacción del paciente.",
+
+"9️⃣ Resumen final\n• La unidad proporciona una visión completa del sistema sanitario español.\n• Explica estructura, niveles de gestión, unidades de imagen médica y calidad.\n• Recalca la importancia de una organización eficaz, gestión del stock y sostenibilidad del sistema.\n• Estos conceptos son esenciales para trabajar como técnico en cualquier hospital o centro sanitario."
+  ],
+
   questions: [
     {
       q: "¿Cómo conocemos al conjunto de recursos de titularidad pública y/o privada de un país para atender las necesidades de salud de sus ciudadanos?",
@@ -2101,6 +2346,25 @@ const SUBJECT = {
 {
   id: "ap-u2",
   title: "AP · U2 · Documentación, citación y LOPD",
+  summary: [
+
+"1️⃣ Visión general de la unidad\nLa unidad trata sobre cómo recibir al paciente, gestionar su documentación administrativa y clínica, garantizar su correcta identificación y aplicar principios éticos como la confidencialidad y la protección de datos. Explica paso a paso el protocolo de citación, registro, información y manejo de documentos en centros sanitarios.",
+
+"2️⃣ Protocolo de citación, registro e identificación\n• La citación organiza la agenda y evita retrasos, mejorando la eficiencia.\n• El registro incluye datos personales, poblacionales y económicos.\n• Identificar al paciente correctamente evita errores clínicos graves.\n• El centro debe verificar identidad mediante DNI, tarjeta sanitaria o documento válido.\n• La información debe ser clara, ordenada y protegida de accesos no autorizados.",
+
+"3️⃣ Gestión de datos del paciente\n• Los datos administrativos permiten acceso al servicio (nombre, dirección, CIP, aseguradora).\n• Los datos clínicos permiten diagnóstico y tratamiento.\n• Todo dato sanitario es considerado “dato especialmente protegido”.\n• Errores en identificación pueden generar diagnósticos incorrectos, duplicación de pruebas o fallos en tratamiento.",
+
+"4️⃣ Documentos clínicos\n• La historia clínica es el documento central, contiene:\n  - Datos personales.\n  - Antecedentes.\n  - Exploraciones.\n  - Informes de pruebas.\n  - Diagnósticos.\n• Documentos específicos por área:\n  - Radiodiagnóstico: informes RX, TAC, RM.\n  - Medicina Nuclear: informes con radiofármacos.\n  - Radioterapia: planificación, dosimetría y controles.\n• Su gestión debe ser rigurosa, ordenada y accesible solo al personal autorizado.",
+
+"5️⃣ Documentos no clínicos\n• Hoja de citación: indica día, hora y preparaciones (ayuno, hidratación, retirada de objetos metálicos, etc.).\n• Consentimiento previo para pruebas con contraste, sedación o radiación.\n• Encuestas de satisfacción: ayudan a evaluar calidad del servicio desde la perspectiva del paciente.\n• La correcta gestión mejora la organización y reduce errores administrativos.",
+
+"6️⃣ Documentación informativa y protección de datos (LOPD / RGPD)\n• Los pacientes deben recibir información clara sobre:\n  - Procedimiento.\n  - Riesgos.\n  - Beneficios.\n  - Preparación previa.\n• El consentimiento informado es obligatorio:\n  - Para procedimientos invasivos.\n  - Para menores de 16 años requiere autorización del tutor.\n  - Puede ser revocado en cualquier momento.\n• La LOPD/RGPD obliga a proteger la información sanitaria:\n  - Almacenamiento seguro.\n  - Minimizar accesos.\n  - Confidencialidad absoluta.",
+
+"7️⃣ Principios éticos y responsabilidad social del profesional\n• La salud es un derecho fundamental.\n• El trato debe ser humano, respetuoso, empático y confidencial.\n• La atención centrada en el paciente implica:\n  - Escuchar.\n  - Informar de forma clara.\n  - Responder dudas.\n  - Respetar decisiones.\n• Importancia del apoyo emocional en situaciones de ansiedad.\n• Las instrucciones previas (testamento vital) deben respetarse.\n• El profesional debe actuar con responsabilidad, ética y compromiso social.",
+
+"8️⃣ Resumen final\n• La acogida correcta del paciente es esencial para su seguridad.\n• La identificación y documentación adecuada evita errores graves.\n• La historia clínica y documentos no clínicos deben gestionarse con máxima confidencialidad.\n• La relación profesional-paciente se basa en ética, respeto, apoyo emocional y derecho a la información.\n• La protección de datos y el consentimiento informado son obligaciones legales imprescindibles."
+  ],
+
   questions: [
     {
       q: "¿Cómo conocemos a los primeros pasos que se toman cuando un paciente acude a nuestro centro para recibir un servicio sanitario?",
@@ -2288,6 +2552,38 @@ const SUBJECT = {
 {
   id: "ap-u3",
   title: "AP · U3 · Comunicación y relación con el paciente",
+  summary: [
+
+"1️⃣ Introducción general\nLa unidad explica cómo debe comunicarse un profesional sanitario con los pacientes, entendiendo tanto el lenguaje verbal como el no verbal, los aspectos psicológicos implicados en la enfermedad y la importancia del apoyo emocional. Se busca interpretar señales, mejorar la interacción y atender situaciones especiales con empatía y respeto.",
+
+"2️⃣ Elementos básicos de la comunicación\n• Emisor, receptor, mensaje, canal, código y contexto forman el proceso comunicativo.\n• La comunicación eficaz implica transmitir y comprender correctamente.\n• Una buena comunicación previene conflictos, mejora la relación terapéutica y aumenta la seguridad del paciente.",
+
+"3️⃣ Obstáculos en la comunicación\n• Obstáculos semánticos: palabras ambiguas o mal interpretadas.\n• Obstáculos psicológicos: ansiedad, miedo, prejuicios.\n• Obstáculos fisiológicos: problemas auditivos o visuales.\n• Obstáculos físicos: ruido, distancia, barreras.\n• Obstáculos socioculturales: idioma, valores, religión.\nSuperarlos requiere claridad, empatía y adaptación.",
+
+"4️⃣ Características del proceso comunicativo eficaz\n• Retroalimentación clara (feedback).\n• Empatía equilibrada sin sobreimplicarse emocionalmente.\n• Asertividad para comunicar con respeto y firmeza.\n• Claridad en el mensaje.\n• Cortesía y respeto como base de la interacción clínica.",
+
+"5️⃣ Técnicas de comunicación verbal\n• Puede ser oral, escrita o signada.\n• La comunicación verbal requiere:\n  - Preparar el mensaje.\n  - Adaptarlo al nivel del paciente.\n  - Valorar emociones.\n  - Hablar claro y pausado.\n• Ventajas: rápida, directa.\n• Problemas: puede malinterpretarse si el paciente está nervioso o no comprende bien.",
+
+"6️⃣ Comunicación no verbal\n• Incluye gestos, postura, tonos, miradas y distancia.\n• Componentes clave:\n  - Paralenguaje (tono, ritmo, volumen).\n  - Expresión facial.\n  - Proxemia (distancia adecuada).\n• Es esencial para transmitir confianza y detectar emociones ocultas.",
+
+"7️⃣ Fases de atención al paciente (comunicación terapéutica)\n1. Acogida: saludo cortés, presentación y explicación inicial.\n2. Exploración: preguntas abiertas, escucha activa.\n3. Información: explicar procedimiento, riesgos y preparación.\n4. Finalización: despedida, recordar instrucciones y resolver dudas.\n• Protocolos en imagen y radioterapia incluyen recepción, preparación y acompañamiento durante todo el proceso, manteniendo información clara y respeto constante.",
+
+"8️⃣ Situaciones especiales en la atención\n• Pacientes agresivos: mantener calma, llamar apoyo, establecer límites.\n• Pacientes mayores: hablar lento, usar frases simples, revisar comprensión.\n• Pacientes pediátricos: lenguaje infantil, apoyo emocional, presencia del familiar.\n• Pacientes con limitaciones físicas o cognitivas: adaptar ritmo, simplificar instrucciones, apoyar con gestos o demostraciones.",
+
+"9️⃣ Mediación cultural en el entorno sanitario\n• Respetar diversidad cultural, religiosa y de género.\n• Evitar prejuicios y estereotipos.\n• Usar intérpretes cuando sea necesario.\n• Garantizar comunicación efectiva en pacientes que no hablan el idioma.",
+
+"🔟 Desarrollo de la personalidad y conductas\n• La personalidad influye en la forma en que un paciente afronta enfermedad.\n• Factores que la forman: crianza, genética, cultura, experiencias.\n• Tipos de personalidad desadaptativa (dependiente, obsesiva, narcisista, paranoica, etc.).\n• El profesional NO debe diagnosticar ni discutir patologías psicológicas.",
+
+"1️⃣1️⃣ Cambios psicológicos relacionados con la enfermedad\n• Fases emocionales: diagnóstico, tratamiento, remisión, recaída, paliativos.\n• Emociones frecuentes: miedo, tristeza, ansiedad, negación.\n• Requiere apoyo psicológico, comprensión y comunicación clara.",
+
+"1️⃣2️⃣ Psicología del paciente crónico\n• El paciente crónico vive estrés prolongado.\n• Puede sentir frustración, angustia y pérdida de autonomía.\n• La atención psicológica continua es clave para facilitar adaptación y aceptación.",
+
+"1️⃣3️⃣ Mecanismos de defensa ante la enfermedad\n• Negación: rechazar realidad.\n• Proyección: atribuir a otros sentimientos propios.\n• Racionalización: justificar emociones.\n• Aislamiento emocional.\n• Disociación.\n• Regresión.\n• Estos mecanismos ayudan temporalmente, pero deben gestionarse con apoyo adecuado.",
+
+"1️⃣4️⃣ Relación de ayuda (counselling)\n• Implica escuchar activamente, acompañar emocionalmente y facilitar estrategias.\n• Objetivos:\n  - Reducir ansiedad.\n  - Favorecer adaptación.\n  - Mejorar comunicación.\n  - Dar soporte emocional.\n• El profesional debe controlar su propio estrés y mantener límites saludables.",
+
+"1️⃣5️⃣ Resumen final\n• La comunicación efectiva es esencial en la atención sanitaria.\n• El profesional debe dominar comunicación verbal y no verbal.\n• La empatía, el respeto y la claridad mejoran la experiencia del paciente.\n• Comprender aspectos psicológicos permite un trato más humano y profesional.\n• Es clave adaptarse a situaciones especiales y diversidad cultural."
+  ],
   questions: [
     {
       q: "¿Cómo se denomina la capacidad de expresar de manera clara, directa y honesta aquello que se necesita compartir, sin que ello produzca una mala reacción en el interlocutor?",
@@ -2460,6 +2756,35 @@ const SUBJECT = {
 {
   id: "ap-u4",
   title: "AP · U4 · Protocolos, emergencias y pacientes especiales",
+  summary: [
+
+"1️⃣ Introducción general\nLa unidad se enfoca en la importancia de seguir procedimientos estandarizados en servicios de diagnóstico por imagen, medicina nuclear y radioterapia. El objetivo es garantizar seguridad, calidad asistencial y respuesta correcta ante emergencias, incluyendo el manejo de pacientes con necesidades especiales.",
+
+"2️⃣ Protocolos y planes de emergencia\n• Los protocolos estandarizan el comportamiento del personal.\n• Aseguran calidad, legalidad y protección radiológica.\n• Proporcionan instrucciones claras para equipos, accesos, organización y emergencias.\n• Incluyen dos tipos: generales y específicos.",
+
+"3️⃣ Protocolos de funcionamiento general\n• Describen la organización del personal.\n• Establecen las normas internas de la unidad.\n• Regulan accesos, circulación y vestimenta.\n• Incluyen la estructura física: salas, zonas controladas, blindajes, señalización.\n• Definen los sistemas de protección radiológica.",
+
+"4️⃣ Protocolos específicos\n• Identifican procedimientos para cada equipo o técnica.\n• Instrucciones de uso, calibración y verificación previa.\n• Actuaciones ante fallos, averías o incidentes.\n• Permiten resultados homogéneos y seguros en cada estudio o tratamiento.",
+
+"5️⃣ Protocolos por unidad: oncología radioterápica\n• Regulan braquiterapia, teleterapia y aceleradores lineales.\n• Incluyen tiempos de irradiación, posicionamiento, inmovilización y planificación.\n• Procedimientos ante fugas, fallos mecánicos o pérdida de fuente radiactiva.",
+
+"6️⃣ Protocolos por unidad: diagnóstico por imagen\n• Radiología simple: proyecciones, factores técnicos y posicionamientos.\n• Mamografía: compresión, proyecciones estándar y control de calidad.\n• TC: cortes, contraste, planificación y control del movimiento.\n• RM: selección de secuencias, seguridad ante implantes y claustrofobia.\n• Ecografía: gel, posiciones y exploración por áreas.\n• Intervencionista: esterilidad, guía radiológica y soporte urgente.",
+
+"7️⃣ Protocolos por unidad: medicina nuclear\n• Uso de gammacámaras y PET.\n• Preparación y administración de isótopos.\n• Control, registro y almacenamiento de residuos radiactivos.\n• Medidas de protección para manipulación segura.\n• Protocolos ante contaminación o fuga.",
+
+"8️⃣ Planes de emergencia generales\n• Parada cardiorrespiratoria: activar código, soporte vital básico, aviso al equipo.\n• Incendios: evacuación, cortar electricidad y gases, seguir rutas seguras.\n• Inundaciones: proteger equipos y desconectar instalaciones.\n• Catástrofes: priorizar pacientes críticos, comunicación con emergencias externas.",
+
+"9️⃣ Emergencias específicas en radioterapia y diagnóstico\n• Fallo de acelerador o equipo.\n• Pérdida de fuente radiactiva.\n• Fuga o contaminación radiactiva.\n• Exposición accidental.\nActuación: detener tratamiento, desalojar sala, activar alarmas y revisar blindajes.",
+
+"1️⃣0️⃣ Simulacros y acciones en emergencias\n• Los simulacros entrenan al personal para responder correctamente.\n• Se realizan periódicamente para evaluar tiempos, rutas y coordinación.\n• Acciones clave: desconectar equipos, aislar zonas, proteger personal, registrar incidencias.",
+
+"1️⃣1️⃣ Valoración del nivel de consciencia\n• Es esencial antes de cualquier procedimiento para garantizar seguridad.\n• Escala de Glasgow: valora apertura ocular, respuesta verbal y motora.\n• Escala de Karnofsky: valora capacidad funcional general.\n• Permite adaptar posicionamiento, preparación y vigilancia.",
+
+"1️⃣2️⃣ Atención a pacientes con necesidades especiales\n• Politraumatizados: inmovilización estricta y monitorización.\n• Pediátricos: acompañamiento familiar, lenguaje sencillo, contención emocional.\n• Embarazadas: evitar radiación siempre que sea posible; protocolos estrictos.\n• No colaboradores: sedación ligera o inmovilización según protocolo.\n• Claustrofobia: RM abierta, música, acompañamiento o sedación ligera.",
+
+"1️⃣3️⃣ Consideraciones finales en la atención segura\n• La cooperación del paciente es crucial.\n• Informar siempre antes del procedimiento.\n• Protección radiológica para paciente y personal.\n• Verificar identidad, estudio y parámetros antes de comenzar.\n• Mantener comunicación constante y supervisión durante la prueba."  
+  ],
+
   questions: [
     {
       q: "¿Cómo conocemos al procedimiento o conjunto de procedimientos cuya finalidad consiste en estandarizar un comportamiento o actividad ante una situación específica con el fin de obtener resultados similares independientemente de la persona que lo lleve a cabo?",
@@ -2637,6 +2962,45 @@ const SUBJECT = {
 {
   id: "ap-u5",
   title: "AP · U5 · Atención al paciente y necesidades humanas",
+  summary: [
+
+"1️⃣ Introducción general\nLa unidad explica las necesidades humanas aplicadas al ámbito sanitario y cómo el personal debe atenderlas mediante higiene, confort, comunicación y técnicas seguras de movilización. Incluye valoración fisiológica y apoyo emocional para garantizar bienestar y seguridad del paciente.",
+
+"2️⃣ Necesidades y factores determinantes de la salud\n• Se basan en la pirámide de Maslow: fisiológicas, seguridad, afecto, autoestima y autorrealización.\n• Ayudan a priorizar cuidados según el grado de dependencia.\n• La enfermería y técnicos deben identificar necesidades no cubiertas rápidamente.",
+
+"3️⃣ Necesidades fisiológicas\n• Incluyen respirar, hidratarse, alimentarse, eliminar, moverse, descanso y ausencia de dolor.\n• Requieren monitorización constante por parte del personal.\n• Alteraciones pueden ser signos precoces de enfermedad.",
+
+"4️⃣ Monitorización de constantes vitales\n• Pulso: radial, carotídeo, femoral; normal 60-100 lpm.\n• Tensión arterial: variaciones por volemia, rigidez arterial, estrés y patologías.\n• Temperatura: normal 36º–37º; fiebre > 37,5º; hipotermia < 35º.\n• Respiración: 18–20 rpm; alteraciones: apnea, disnea, ortopnea.",
+
+"5️⃣ Necesidad de seguridad\n• Se basa en reducir incertidumbre, miedo y estrés.\n• Implica explicar procedimientos, responder dudas y transmitir confianza.\n• Especialmente importante en pacientes graves o en pruebas invasivas.",
+
+"6️⃣ Comunicación y empatía\n• La comunicación verbal y no verbal es clave.\n• Permite detectar preocupaciones, miedos y necesidades afectivas.\n• Mejora la cooperación del paciente en pruebas diagnósticas.",
+
+"7️⃣ Necesidad de afecto y relación social\n• Los pacientes pueden sentirse solos, perdidos o dependientes.\n• El personal debe brindar apoyo emocional y cercanía.\n• Mantener respeto, escucha activa y trato humano.",
+
+"8️⃣ Autoestima y enfermedad\n• La pérdida de autonomía o cambios corporales la afectan.\n• Es esencial fomentar la independencia del paciente.\n• Tratar siempre con dignidad y respeto.",
+
+"9️⃣ Etapas psicológicas ante la enfermedad\n• Negación → Ira → Negociación → Depresión → Aceptación.\n• Identificar la fase ayuda a adaptar el trato y la comunicación.",
+
+"1️⃣0️⃣ Necesidad de autorrealización\n• Representa la búsqueda de bienestar integral.\n• Puede ser limitada por la enfermedad, pero se trabaja para mejorar calidad de vida.\n• Motivación y apoyo emocional son clave.",
+
+"1️⃣1️⃣ Higiene y confort en la unidad\n• Evita infecciones nosocomiales.\n• Incluye lavado de manos, limpieza de superficies y manejo adecuado de materiales.\n• En diagnóstico y radioterapia se aplican protocolos estrictos por riesgo biológico y radiológico.",
+
+"1️⃣2️⃣ Técnicas de movilización y traslado\n• Requieren mecánica corporal correcta para evitar lesiones.\n• Usar piernas, mantener espalda recta y acercar la carga al cuerpo.\n• Evaluar capacidad del paciente antes de moverlo.",
+
+"1️⃣3️⃣ Movilización del paciente\n• Valorar fuerza, equilibrio, dolor y nivel de consciencia.\n• Mantener comunicación constante durante el movimiento.\n• Utilizar técnicas seguras y movimientos coordinados.",
+
+"1️⃣4️⃣ Procedimientos desde la mesa al borde\n• Reducir fricción.\n• Flexionar piernas del paciente.\n• Guiar tronco y caderas hacia el borde.\n• Asegurar estabilidad antes de incorporarlo.",
+
+"1️⃣5️⃣ Incorporación desde un lado de la mesa\n• Solicitar colaboración del paciente.\n• Acompañar movimiento de tronco y piernas.\n• Aprovechar peso corporal y gravedad para facilitar giro.",
+
+"1️⃣6️⃣ Transferencias silla–mesa–camilla\n• Usar sábanas deslizantes o transfer.\n• Hacerlo en equipo si el paciente no colabora.\n• Controlar la cabeza, cuello y extremidades.",
+
+"1️⃣7️⃣ Movilización mesa ↔ camilla\n• Usar técnicas coordinadas.\n• Evitar tirones bruscos.\n• Utilizar dispositivos adaptados si el paciente tiene alta dependencia.",
+
+"1️⃣8️⃣ Conclusión\nLa unidad resume cómo preparar al paciente física y emocionalmente, valorar constantes vitales, cubrir necesidades básicas, aplicar higiene y ejecutar movilizaciones seguras basadas en ergonomía y comunicación empática."
+
+  ],
   questions: [
     {
       q: "¿Cómo denominamos a las necesidades más básicas del ser humano, imprescindibles para el mantenimiento de la vida?",
@@ -2814,6 +3178,38 @@ const SUBJECT = {
 {
   id: "ap-u6",
   title: "AP · U6 · Material sanitario y equipos",
+  summary: [
+
+"1️⃣ Introducción general\nLa unidad trata los protocolos específicos, la actuación del personal técnico, el manejo de material desechable y reutilizable y el uso seguro de equipos como oxigenoterapia, ventilación, aspiración, monitorización, sondas, drenajes y ostomías.",
+
+"2️⃣ Protocolos de la unidad\n• Son procedimientos estandarizados para garantizar resultados uniformes y seguros.\n• Especialmente importantes en servicios con radiaciones ionizantes y no ionizantes.\n• Incluyen normas de operación de equipos, protección radiológica y documentación.\n• Su objetivo es asegurar calidad, legalidad y facilitar el trabajo técnico.",
+
+"3️⃣ Actuación del personal técnico\n• Verifica que el procedimiento se realice correctamente.\n• Prepara la sala, equipos, medicación y material necesario.\n• Explica el procedimiento al paciente y asegura su correcta colocación.\n• Debe conocer protocolos, riesgos y normativa de seguridad.",
+
+"4️⃣ Material desechable y reutilizable\n• Desechable (fungible): agujas, jeringas, catéteres, guantes, gasas, medicación, mascarillas.\n• Reutilizable (no fungible): material quirúrgico, EPIs, protectores radiológicos.\n• Requieren limpieza, desinfección, mantenimiento y control de caducidad.\n• En radioterapia existen materiales reutilizables por persona como máscaras termoplásticas y bolus.",
+
+"5️⃣ Equipos de oxigenoterapia\n• Usados en insuficiencia respiratoria.\n• Componentes: botellas de O2, central, manómetros, caudalímetro y humidificador.\n• Vías de administración: gafas nasales y mascarillas.\n• Obligatorio verificar presión, flujo y humidificación antes de usar.",
+
+"6️⃣ Ventiloterapia\n• Sustituye temporalmente la función respiratoria.\n• Tipos: manual (Ambú) o automática (respiradores).\n• Usada en emergencias, apnea, paradas, insuficiencia respiratoria grave.\n• Deben comprobarse conexiones, válvulas y funcionamiento previo.",
+
+"7️⃣ Aspiradores y equipos de monitorización\n• Aspiradores: mantienen vía aérea permeable.\n  - Quirúrgico: más potente.\n  - Central: en paredes de quirófano/hospital.\n• Monitorización: ECG, frecuencia respiratoria, saturación O2, TA.\n• Perfusión: administran sueros y medicación mediante vías periféricas.",
+
+"8️⃣ Acceso venoso y perfusión\n• Catéteres comunes: palomita, Abbocath®, Venocath®.\n• Usos: perfusión continua, medicación, extracción.\n• Requiere técnica aséptica y control del flujo.",
+
+"9️⃣ Sondas\n• Dispositivos para explorar, drenar o administrar sustancias.\n• Tipos frecuentes:\n  - Digestivas: Levin, Salem, nasogástricas.\n  - Nasoentéricas: Nutrición enteral.\n  - Gastrostomía: comunicación directa al estómago.\n• Su colocación requiere comprobación de posición.",
+
+"🔟 Drenajes\n• Evacúan líquidos, sangre o aire.\n• Tipos:\n  - Torácicos (neumotórax/derrame).\n  - Vesicales (sondas urinarias).\n  - Rectales.\n• Requiere fijación, control de caudal y vigilancia de infección.",
+
+"1️⃣1️⃣ Ostomías\n• Aberturas quirúrgicas para evacuar o conectar cavidades.\n• Tipos:\n  - Estoma digestivo: gastrostomía, ileostomía, colostomía.\n  - Respiratorio: traqueostomía.\n• El personal debe realizar higiene, control de piel y manejo del dispositivo.",
+
+"1️⃣2️⃣ Resolución de contingencias\n• Fallos de equipo: detener procedimiento, informar, revisar conexiones.\n• Contaminaciones: aplicar protocolos de asepsia y aislamiento.\n• Incidencias respiratorias: administrar O2 o ventilar según necesidad.\n• Evacuación o traslado: seguir plan de emergencia del servicio.",
+
+"1️⃣3️⃣ Técnicas de limpieza y asepsia\n• Limpieza → eliminación de suciedad.\n• Desinfección → eliminación de microorganismos.\n• Esterilización → eliminación total de vida microbiana.\n• Uso correcto de EPIs y separación de material limpio/sucio.",
+
+"1️⃣4️⃣ Conclusión\nLa unidad resume cómo actuar ante contingencias, manejar equipos y aplicar protocolos de seguridad para garantizar una atención eficaz, aséptica y segura en servicios de diagnóstico, radioterapia y medicina nuclear."
+
+  ],
+
   questions: [
     {
       q: "¿Cómo conocemos a la intervención quirúrgica en la que se realiza una abertura u orificio artificial (estoma) en el tejido para poner una víscera en contacto con el exterior?",
@@ -2996,6 +3392,37 @@ const SUBJECT = {
 {
   id: "ap-u7",
   title: "AP · U7 · Farmacología básica y radiofármacos",
+  summary: [
+
+"1️⃣ Introducción general\nLa unidad cubre farmacología básica, farmacocinética, tipos de contrastes y radiofármacos usados en radiología, resonancia, ecografía y medicina nuclear. Incluye también vías de administración y protocolos de emergencia médica.",
+
+"2️⃣ Farmacología básica\n• Un fármaco contiene principio activo + excipientes.\n• Puede presentarse como nombre comercial o genérico.\n• Su finalidad: diagnóstico, prevención o tratamiento.\n• En radiología se usan para mejorar la visualización y calidad diagnóstica.",
+
+"3️⃣ Farmacocinética\nEstudia qué hace el cuerpo con el fármaco e incluye 5 fases:\n1. **Liberación** – el fármaco se libera de su forma farmacéutica.\n2. **Absorción** – pasa a la sangre.\n3. **Distribución** – se reparte por los tejidos.\n4. **Metabolismo** – se transforma (principalmente en hígado).\n5. **Eliminación** – excreción (riñón, bilis, heces, aire).\nFactores claves: vía de administración, edad, peso, función renal/hepática.",
+
+"4️⃣ Medios de contraste\n• Mejoran la visualización de tejidos.\n• Clasificación:\n  - **Positivos** → aumentan la densidad (yodo, bario).\n  - **Negativos** → reducen la densidad (aire, CO₂).\n• Se usan en RX, TAC, RM, ecografía y medicina nuclear.",
+
+"5️⃣ Contrastes en rayos X / TAC\n• **Sulfato de bario** → estudio digestivo.\n• **Contrastes yodados** → administración IV o enteral.\n• Riesgos principales:\n  - alergias\n  - nefropatía por contraste\n  - reacciones tardías (náuseas, calor, urticaria)\n• Aire/CO₂ se usan como contraste negativo en estudios específicos.",
+
+"6️⃣ Contrastes en resonancia magnética\n• Basados en **gadolino** (los más comunes).\n• Menor riesgo que los yodados pero pueden existir:\n  - reacciones leves (náuseas, cefalea)\n  - riesgo en insuficiencia renal grave (fibrosis sistémica).\n• Manganeso se usa en estudios específicos.",
+
+"7️⃣ Contrastes en ultrasonidos\n• Son **microburbujas** que reflejan señal ecográfica.\n• Se emplean en estudio de flujo sanguíneo, hígado, corazón.\n• Son seguros, efecto rápido y eliminación veloz.",
+
+"8️⃣ Radiofármacos en medicina nuclear\n• No tienen efecto farmacológico → actúan como **trazadores**.\n• Emisión gamma o positrones para detectar actividad metabólica.\n• Usos: gammagrafía, PET, estudios funcionales.\n• Deben manejarse bajo estrictos protocolos de protección radiológica.",
+
+"9️⃣ Vías de administración\n• **Enteral**: oral, rectal.\n• **Parenteral**:\n  - intravenosa (la más usada)\n  - intrarterial\n  - intracavitaria\n  - subcutánea\n• **Inhalatoria**: contrastes gaseosos.\nLa vía depende de la técnica y objetivo del estudio.",
+
+"🔟 Emergencias tras contraste\nLas situaciones más críticas incluyen:\n• Reacciones alérgicas leves: picor, urticaria.\n• Reacciones graves: broncoespasmo, hipotensión, shock anafiláctico.\n• Se siguen protocolos de soporte vital:",
+
+"1️⃣1️⃣ Soporte vital básico (SVB)\n• Valorar consciencia.\n• Abrir vía aérea (maniobra frente-mentón).\n• Comprobar respiración.\n• Iniciar RCP si no respira.\n• Usar DEA si está disponible.",
+
+"1️⃣2️⃣ Soporte vital avanzado (SVA)\n• Intubación.\n• Adrenalina IV.\n• Canalización venosa.\n• Monitorización cardiaca.\n• Tratamiento farmacológico específico.",
+
+"1️⃣3️⃣ Parada cardiorrespiratoria (PCR)\n• Identificación rápida.\n• Activar emergencias.\n• Compresiones torácicas 30:2.\n• Ventilación adecuada.\n• Uso precoz de desfibrilador.",
+
+"1️⃣4️⃣ Conclusión\nLa unidad enseña el manejo seguro de contrastes y radiofármacos, sus tipos, riesgos, vías de administración y protocolos de actuación ante emergencias, garantizando seguridad del paciente y del personal."
+
+  ],
   questions: [
     {
       q: "¿Cómo llamamos a las sustancias naturales o de síntesis, orgánicas o inorgánicas, que se usan en medicina para el diagnóstico, prevención o curación de ciertas patologías o sintomatologías?",
@@ -3193,6 +3620,24 @@ const SUBJECT = {
 {
   id: "ap-u8",
   title: "AP · U8 · Infecciones, aislamiento e higiene",
+  summary: [
+
+"1️⃣ Introducción general\nLa unidad explica cómo prevenir infecciones en el entorno sanitario, incluyendo cadena epidemiológica, infecciones nosocomiales, medidas de higiene, aislamientos y gestión de residuos. El objetivo es proteger al paciente y al profesional.",
+
+"2️⃣ Infección y cadena epidemiológica\n• La infección ocurre cuando un microorganismo invade zonas donde no debería estar.\n• Muchos microorganismos son beneficiosos salvo que se desplacen.\n• La cadena epidemiológica incluye:\n  - agente infeccioso\n  - reservorio / hospedador\n  - vía de salida\n  - vía de transmisión\n  - vía de entrada\n  - huésped susceptible\n• Vías de transmisión:\n  - contacto directo e indirecto\n  - vía aérea\n  - gotas respiratorias\n  - vectores (insectos)\n  - fómites (objetos contaminados)",
+
+"3️⃣ Infecciones nosocomiales\n• Son infecciones adquiridas dentro del hospital.\n• No cuentan las que estaban incubando en las primeras 72h.\n• Tipos:\n  - Exógenas → proceden del entorno.\n  - Endógenas → causadas por flora del propio paciente.\n• Factores de riesgo:\n  - edad avanzada\n  - inmunodepresión\n  - cirugías\n  - catéteres\n  - sondas\n  - ventilaciones mecánicas\n  - estancia prolongada",
+
+"4️⃣ Medidas de higiene y seguridad\n• Lavado de manos → medida más eficaz de prevención.\n• Debe realizarse:\n  - antes del contacto con el paciente\n  - después del contacto\n  - antes de procedimientos asépticos\n  - tras exposición a fluidos\n• Procedimiento correcto incluye frotado, enjabonado, aclarado y secado adecuado.\n• Equipos de protección individual (EPI): guantes, mascarillas, batas, gafas.\n• Desinfección regular de superficies y material reutilizable.",
+
+"5️⃣ Aislamiento\n• Se aplica dependiendo del tipo de enfermedad y riesgo.\n• Tipos de aislamiento y sus objetivos:\n  - **Estricto**: máximo control, múltiples EPI.\n  - **Respiratorio**: evitar aerosoles y gotas finas.\n  - **Gotas**: distancia + mascarilla.\n  - **Contacto**: guantes + bata.\n  - **Entérico**: control de heces y vómitos.\n  - **Protector o inverso**: protege al paciente inmunodeprimido.\n• Cada aislamiento define:\n  - habitación específica\n  - higiene del personal\n  - eliminación diferenciada de residuos\n  - uso de EPI especializado",
+
+"6️⃣ Eliminación de residuos sanitarios\n• Se clasifican en 4 grupos:\n  1. **Grupo I – Residuos urbanos** (papeles, restos no biológicos).\n  2. **Grupo II – Biosanitarios no específicos** (gasas sin sangre abundante, guantes).\n  3. **Grupo III – Biosanitarios específicos / infecciosos** (sangre, fluidos, material contaminado).\n  4. **Grupo IV – Residuos peligrosos** (citotóxicos, químicos, punzantes).\n• Los punzantes deben ir SIEMPRE a contenedores rígidos.\n• La gestión correcta evita contagios, accidentes y contaminación ambiental.",
+
+"7️⃣ Conclusión\nLa unidad destaca la importancia de romper la cadena epidemiológica mediante higiene, aislamiento, protección personal y correcta eliminación de residuos. Todo el personal debe seguir los protocolos para garantizar seguridad y reducir infecciones."
+
+  ],
+
   questions: [
     {
       q: "¿Cómo denominamos al crecimiento y desarrollo de microorganismos externos, en el cuerpo de un ser vivo?",
@@ -3716,6 +4161,7 @@ const SUBJECT = {
     {
   id: "an-u1",
   title: "AN · U1 · Posición anatómica, planos y cavidades",
+  summary: "Unidad 1: Localización de Estructuras Anatómicas\n\n1.1 Posición Anatómica, Ejes y Planos\n\nPosición Anatómica Estándar:\nEs la posición neutral de referencia para la descripción. El cuerpo debe estar en:\n• Bipedestación (de pie).\n• Cabeza erecta, ojos mirando al frente.\n• Brazos extendidos a los lados.\n• Palmas de las manos orientadas hacia adelante.\n• Pies paralelos.\n\nEjes Anatómicos (Líneas Imaginarias):\n1. Eje Vertical (o Longitudinal): Cráneo-caudal (de cabeza a pies).\n2. Eje Transversal: Latero-lateral (de lado a lado).\n3. Eje Anteroposterior (o Frontal): Desde la parte anterior (ventral) hacia la parte posterior (dorsal).\n\nPlanos Anatómicos (Superficies de Corte):\nLos planos dividen el cuerpo en secciones utilizando los ejes como referencia.\n1. Plano Sagital (o Medio): Se extiende verticalmente, dividiendo el cuerpo en mitad derecha e izquierda.\n2. Plano Frontal (o Coronal): Divide el cuerpo en parte anterior (ventral) y posterior (dorsal).\n3. Plano Transversal (u Horizontal o Axial): Se extiende horizontalmente dividiendo el cuerpo en parte superior e inferior. Importante en tomografía.\n\n1.2 Términos de Posición, Dirección y Movimiento\n\nTérminos de orientación:\n• Cráneo/Cefálico: Más cerca de la cabeza.\n• Caudal: Más cerca del extremo inferior del tronco (pies).\n• Ventral (Anterior): Hacia la parte delantera.\n• Dorsal (Posterior): Hacia la parte trasera.\n• Proximal: Más cerca del tronco.\n• Distal: Más lejos del tronco.\n• Medial: Más cerca del plano sagital.\n• Lateral: Más lejos del plano sagital.\n• Superficial: Más cerca de la superficie del cuerpo.\n• Interno/Profundo: Más lejos de la superficie.\n\nMovimientos Anatómicos:\n• Flexión: Disminución del ángulo.\n• Extensión: Aumento del ángulo.\n• Abducción: Alejamiento de la línea media.\n• Aducción: Acercamiento a la línea media.\n• Rotación Interna: Giro hacia el eje central.\n• Rotación Externa: Giro alejándose del eje.\n• Protrusión: Movimiento hacia adelante.\n• Retrusión: Movimiento hacia atrás.\n\nPosiciones Clínicas:\n• Decúbito Supino: Boca arriba.\n• Decúbito Prono: Boca abajo.\n• Semisentada (Fowler): Supino 45º.\n• Trendelemburg: Piernas elevadas.\n• Trendelemburg Invertida: Cabeza elevada.\n• Lateral o Sims: Acostado de costado.\n\n1.3 Regiones Corporales y Cavidades del Cuerpo\n\nRegiones del cuerpo:\n1. Cabeza y cuello.\n2. Tronco (tórax, abdomen, pelvis, dorso).\n3. Extremidades.\n\nCavidades Corporales:\n1. Dorsal: Craneal (encéfalo) y Espinal (médula espinal).\n2. Ventral:\n• Torácica: Pulmones, corazón, mediastino.\n• Abdominopélvica: Órganos digestivos, excretores y reproductores.\n\n1.5 Referencias anatómicas superficiales y proyección de órganos\n\nReferencias en el tórax: Ángulo Esfernal, línea medioclavicular, línea media esternal.\n\nProyección de órganos torácicos:\n• Pulmones: Sobre el tercio medio de la clavícula.\n• Tráquea: Línea media desde C6 a T4.\n\nDivisión por cuadrantes:\n1. Superior Derecho: Hígado, vesícula, riñón derecho.\n2. Superior Izquierdo: Bazo, estómago.\n3. Inferior Derecho: Ciego, apéndice.\n4. Inferior Izquierdo: Colon sigmoideo.\n\nDivisión por regiones (9):\n• Hipocondrio derecho, Epigastrio, Hipocondrio izquierdo.\n• Flanco derecho, Umbilical, Flanco izquierdo.\n• Fosa ilíaca derecha, Hipogastrio, Fosa ilíaca izquierda.",
   questions: [
     {
       q: "¿Cuál corresponde a la posición anatómica básica?",
@@ -3823,6 +4269,7 @@ const SUBJECT = {
 {
   id: "an-u2",
   title: "AN · U2 · Técnicas de imagen básicas",
+  summary: "Técnicas de Imagen Médica: Comparación entre RX, TC, Ecografía y RM. RX ventajas: Rápida, bajo coste, buena para esqueleto y aire. Limitaciones: Solo un plano, estructuras superpuestas, densidad dominante. TC ventajas: Rápida, gran detalle de regiones amplias, buena para vasos y cráneo. Limitaciones: Alta radiación (evitar en embarazo y niños), menos precisa que RM para tejidos blandos. Ecografía ventajas: No usa radiación ionizante, accesible, útil para muchos sistemas. Limitaciones: Artefactos por aire, hueso o grasa, dependiente de la habilidad del técnico. RM ventajas: No usa radiación, alta resolución, muy detallada. Limitaciones: Tiempos largos, claustrofobia, artefactos metálicos, mala para pulmones. Posiciones y Proyecciones (2.3): RX usa posición (paciente respecto al receptor) y proyección (haz frontal, lateral, oblicua). TC/RM: Posición más común decúbito supino; cortes en plano axial, sagital y coronal. Ecografía: Posición variable y dinámica según zona a estudiar. Normas de Lectura (2.4): Asegurar claridad y elementos solicitados. En RX/TC empezar por lo menos importante y terminar en lo más relevante. En TC empezar por lo oscuro y terminar en lo claro. En ecografía la interpretación es en tiempo real. En RM considerar secuencia T1 o T2 y evitar saltos. Reconocimiento de Órganos (2.5 y 2.6): SNC usa TC o RM (mejor RM para tejidos blandos). Respiratorio: RX para visión general y TC para detalle. Digestivo/Excretor: Frecuente uso de contraste. Sustancias de contraste: Compuestos como Bario o Yodo que absorben radiación y mejoran visualización interna. Aparato circulatorio: TC (Angio-TC) y RM son mejores, normalmente con contraste IV para vasos finos. El corazón se visualiza con todas pero TC/RM son superiores. Sistema músculoesquelético: Huesos bien en RX, TC y RM. Músculos, tendones y ligamentos mejor en ecografía o RM. Optimización de la imagen (2.8): Resolución (más píxeles = mayor claridad), saturación (pureza del color/gris) y brillo (luminosidad). Ajustar estos parámetros permite diferenciar estructuras y lesiones.",
   questions: [
     {
       q: "¿Qué técnica NO usa rayos X?",
@@ -3910,6 +4357,7 @@ const SUBJECT = {
 {
   id: "an-u3",
   title: "AN · U3 · Sistema locomotor",
+  summary:"Huesos: Estructura y Función (3.1 & 3.2) Funciones: Soporte, Movimiento, Protección, Hematopoyesis y Metabolismo (Ca). Estructura: Tejido compacto (superficie) y esponjoso (interior). Tipo: Largos Soportan peso. Tienen Epífisis, Diáfisis, Metáfisis. Ejemplo: Fémur, Húmero. Planos Protección. Cráneo, Pelvis. Marcas Óseas Relieves articulares: Cóndilo, Cabeza, Tróclea. Relieves no articulares: Trocánter, Tubérculo, Espina. Depresiones: Fosa, Foramen, Cavidad glenoidea. 2. Esqueleto Axial (3.4 & 3.5) Cráneo: 22 huesos inmóviles (excepto mandíbula). Se divide en Bóveda Craneal (protege encéfalo) y Esqueleto Facial. Columna Vertebral: 33 vértebras. Regiones: Cervical (C1-C7), Torácica (T1-T12), Lumbar (L1-L5), Sacro, Cóccix. Curvaturas Normales: Cifosis (Torácica, Sacra) y Lordosis (Cervical, Lumbar). Patológicas: Escoliosis, Hipercifosis, Hiperlordosis. 3. Miembros (3.6 & 3.7) Superior: Escápula/Clavícula (Cintura Escapular) → Húmero → Radio/Cúbito → Carpo/Metacarpos/Falanges. Inferior: Huesos Coxales (Cintura Pélvica) → Fémur → Tibia/Peroné → Tarso/Metatarsianos/Falanges. 4. Articulaciones (3.8) Tipo Movimiento Ejemplo Sinartrosis Nulo Suturas craneales Anfiartrosis Limitado Sínfisis púbica Diartrosis Libre Rodilla, Cadera Elementos Clave: Cartílago (amortigua), Líquido Sinovial (lubrica), Ligamentos (estabilidad), Meniscos (amortiguación). Técnicas de Imagen para Articulaciones: RX Simple: Para huesos, fracturas, calcificaciones y espacio articular. Ecografía: Ve partes blandas (tendones, ligamentos, bursas) en tiempo real y movimiento. TC: Para traumatismos complejos y reconstrucciones 3D. RM: La mejor para ver detalle de partes blandas (ligamentos, cartílago, médula ósea). 5. Músculos (3.9) Esquelético (Estriado): Voluntario. Cardíaco: Estriado, Involuntario (Corazón). Liso: Involuntario (Vísceras, vasos). 6. Patologías (3.10 & 3.11) Traumáticas: Fractura (RX, TC, RM), Luxación, Esguince (Ecografía, RM). Articulares: Artritis (inflamación), Artrosis (degeneración cartílago). Metabólicas: Osteoporosis (pérdida de densidad ósea). Diagnóstico con RX o DEXA. Tumores Óseos: Osteolíticos (destructivos) u Osteoblásticos (productivos). Evaluación Gráfica: Siempre revisar Alineación, Morfología, Espacio Articular y Partes Blandas.",
   questions: [
     {
       q: "¿Cuál NO es una función de los huesos?",
@@ -4007,6 +4455,7 @@ const SUBJECT = {
 {
   id: "an-u4",
   title: "AN · U4 · Sistema nervioso",
+  summary:"Meninges y LCR: Son las capas protectoras: Duramadre (externa), Aracnoides y Piamadre (interna). Líquido Cefalorraquídeo (LCR): Líquido transparente que amortigua el tejido cerebral. Se produce en los plexos coroideos de los ventrículos y se reabsorbe en las granulaciones de Pacchioni. El Sistema Ventricular (4 ventrículos conectados) contiene el LCR. Si hay sobreproducción o bloqueo, ocurre Hidrocefalia. Anatomía Cerebral: El cerebro tiene 5 lóbulos: Frontal, Parietal, Temporal, Occipital e Ínsula. Traumatológicas: Lesiones primarias (hemorrágicas) y secundarias (edema, isquemia). Tumores: Primarios o Secundarios. Vasculares: Isquémicas (ictus por oclusión) o Malformaciones (cavernomas). Imagen Patológica (TC y RM): Las lesiones se identifican por cambios en la densidad (TC) o intensidad de señal (RM). Contenido Cálcico: Muy hiperdenso en TC. Contenido Hemorrágico: Hiperdenso en TC. Contenido Graso: Hipodenso en TC e hiperintenso en RM. Contenido Líquido: Hipodenso en TC e hiperintenso en T2. Órganos de los Sentidos: Vista (globo ocular, córnea, cristalino, retina, nervio óptico). Oído: Externo (CAE), Medio (osículos, trompa de Eustaquio), Interno (cóclea, vestíbulo). Hipotálamo: Centro de homeostasis; controla la hipófisis. Vascularización: Polígono de Willis, drenaje por senos venosos. Patologías del SNC: Congénitas (defectos del tubo neural), Traumáticas, Tumores y Vasculares. Protocolos de Evaluación: TC para hueso y traumatismos; RM para tejido blando y SNC. Misconcepción: TC usa radiación y es mejor para hueso; RM no usa radiación, mejor tejidos blandos, pero sensible al movimiento.",
   questions: [
     {
       q: "No forma parte del SNC:",
@@ -4104,6 +4553,7 @@ const SUBJECT = {
 {
   id: "an-u5",
   title: "AN · U5 · Sistema cardiopulmonar",
+  summary:"Aparato Circulatorio (5.2 - 5.5) Anatomía y Fisiología: El corazón está en el Mediastino (entre los pulmones). Corazón: 4 cavidades (2 Aurículas, 2 Ventrículos). Aurícula Derecha: Recibe sangre con CO2 (Venas Cavas). Pasa a Ventrículo Derecho por Válvula Tricúspide. Aurícula Izquierda: Recibe sangre con O2 (Venas Pulmonares). Pasa a Ventrículo Izquierdo por Válvula Mitral. Ventrículo Derecho: Impulsa sangre a Pulmones (Arteria Pulmonar) por Válvula Pulmonar. Ventrículo Izquierdo: Impulsa sangre al cuerpo (Arteria Aorta) por Válvula Aórtica. Ciclo Cardíaco: Sístole (Contracción/Expulsión) y Diástole (Relajación/Llenado). Vasos: Arterias (salen del corazón, pared elástica y muscular, alta presión). Venas (entran al corazón, pared menos resistente, con válvulas para evitar retroceso). Sistema Linfático: transporta linfa (exceso líquido extracelular y grasa) de tejidos a venas. Patologías Cardiovasculares: Cardíacas: Insuficiencia Cardíaca (fallo de bombeo). Isquemia Coronaria (falta de riego). Angina (obstrucción parcial). Infarto (necrosis por obstrucción total). Arritmias (alteraciones del ritmo). Vasculares: Aterosclerosis (obstrucción por placa). Trombosis (coágulo). Varices (fallo de válvulas). Diagnóstico por Imagen: RX Tórax (PA en bipedestación, muestra estructuras extrapulmonares y parénquima). TC Tórax: técnica de elección, gran resolución para vía aérea, cisuras, vasos, mediastino. Ventanas: Mediastínica y Pulmonar. RM Tórax: limitada para parénquima por aire/movimiento pero excelente para mediastino y pared torácica. Técnicas Cardíacas: RX Cardíaca (índice cardiotorácico >0.55 = cardiomegalia). TC Cardíaca (detección calcificaciones, anatomía coronaria, aorta). RM Cardíaca (función, volúmenes, flujo). Ecocardiografía (válvulas, flujo). Angiografía (vasos con contraste yodado). Aparato Respiratorio (5.7 - 5.9). Anatomía y Fisiología: Función: captación de O2, eliminación de CO2, filtrado/calentamiento del aire. Vías aéreas: Superiores (Nariz, Faringe, Laringe – Fonación). Inferiores (Tráquea, Bronquios, Bronquiolos, Alvéolos). Alvéolos: intercambio gaseoso. Pulmones: Derecho (3 lóbulos) Izquierdo (2 lóbulos). Pleura: membrana doble que recubre los pulmones y caja torácica. Neumotórax: aire en espacio pleural. Diafragma: músculo principal respiración (Contracción = Inspiración). Patologías Respiratorias: Infecciosas (Neumonía, Tuberculosis). Obstructivas: EPOC (bronquitis crónica + enfisema). Restrictivas (Asma, Fibrosis Pulmonar). Tumorales (Laringe, Pulmones carcinoma). Diagnóstico por Imagen: RX Tórax (PA bipedestación). TC Tórax (elección). RM Tórax (mediastino/pared).",
   questions: [
     {
       q: "Conecta aurícula derecha con ventrículo derecho:",
@@ -4196,6 +4646,7 @@ const SUBJECT = {
 {
   id: "an-u6",
   title: "AN · U6 · Sistema digestivo y urinario",
+  summary:"Aparato Circulatorio (5.2 - 5.5) Anatomía y Fisiología: El corazón está en el Mediastino (entre los pulmones). Corazón: 4 cavidades (2 Aurículas, 2 Ventrículos). Aurícula Derecha: Recibe sangre con CO2 (Venas Cavas). Pasa a Ventrículo Derecho por Válvula Tricúspide. Aurícula Izquierda: Recibe sangre con O2 (Venas Pulmonares). Pasa a Ventrículo Izquierdo por Válvula Mitral. Ventrículo Derecho: Impulsa sangre a Pulmones (Arteria Pulmonar) por Válvula Pulmonar. Ventrículo Izquierdo: Impulsa sangre al cuerpo (Arteria Aorta) por Válvula Aórtica. Ciclo Cardíaco: Sístole (Contracción/Expulsión) y Diástole (Relajación/Llenado). Vasos: Arterias (salen del corazón, pared elástica y muscular, alta presión). Venas (entran al corazón, pared menos resistente, con válvulas para evitar retroceso). Sistema Linfático: transporta linfa (exceso líquido extracelular y grasa) de tejidos a venas. Patologías Cardiovasculares: Cardíacas: Insuficiencia Cardíaca (fallo de bombeo). Isquemia Coronaria (falta de riego). Angina (obstrucción parcial). Infarto (necrosis por obstrucción total). Arritmias (alteraciones del ritmo). Vasculares: Aterosclerosis (obstrucción por placa). Trombosis (coágulo). Varices (fallo de válvulas). Diagnóstico por Imagen: RX Tórax (PA en bipedestación, muestra estructuras extrapulmonares y parénquima). TC Tórax: técnica de elección, gran resolución para vía aérea, cisuras, vasos, mediastino. Ventanas: Mediastínica y Pulmonar. RM Tórax: limitada para parénquima por aire/movimiento pero excelente para mediastino y pared torácica. Técnicas Cardíacas: RX Cardíaca (índice cardiotorácico >0.55 = cardiomegalia). TC Cardíaca (detección calcificaciones, anatomía coronaria, aorta). RM Cardíaca (función, volúmenes, flujo). Ecocardiografía (válvulas, flujo). Angiografía (vasos con contraste yodado). Aparato Respiratorio (5.7 - 5.9). Anatomía y Fisiología: Función: captación de O2, eliminación de CO2, filtrado/calentamiento del aire. Vías aéreas: Superiores (Nariz, Faringe, Laringe – Fonación). Inferiores (Tráquea, Bronquios, Bronquiolos, Alvéolos). Alvéolos: intercambio gaseoso. Pulmones: Derecho (3 lóbulos) Izquierdo (2 lóbulos). Pleura: membrana doble que recubre los pulmones y caja torácica. Neumotórax: aire en espacio pleural. Diafragma: músculo principal respiración (Contracción = Inspiración). Patologías Respiratorias: Infecciosas (Neumonía, Tuberculosis). Obstructivas: EPOC (bronquitis crónica + enfisema). Restrictivas (Asma, Fibrosis Pulmonar). Tumorales (Laringe, Pulmones carcinoma). Diagnóstico por Imagen: RX Tórax (PA bipedestación). TC Tórax (elección). RM Tórax (mediastino/pared).",
   questions: [
     {
       q: "Órgano en cavidad pélvica:",
@@ -4288,6 +4739,7 @@ const SUBJECT = {
 {
   id: "an-u7",
   title: "AN · U7 · Sistema endocrino y reproductor",
+  summary:"Aparato Genital (7.3 - 7.5): Masculino: Testículos: Producen espermatozoides y testosterona. Epidídimo: Maduración y almacenamiento de espermatozoides. Conducto Deferente: Transporta espermatozoides. Conducto Eyaculador: Se une a vesículas seminales. Pene: Órgano copulador. Glándulas Anexas: Vesículas Seminales, Próstata, Bulbouretrales (Cowper). Femenino: Ovarios: Producen óvulos, Estrógenos y Progesterona. Trompas de Falopio: Transportan óvulos, lugar de fecundación. Útero: Gestación. Vagina: Receptáculo del pene, canal de parto. Vulva: Genitales externos. Ciclo Ovárico: FSH y LH → Maduración del folículo → Ovulación → Cuerpo Lúteo. Ciclo Menstrual: Cambios en el endometrio (Fase Proliferativa, Secretora y Menstrual). Sistema Endocrino (7.1 & 7.2): Funciones Generales: Regulación Hormonal: Crecimiento, Metabolismo, Reproducción. Ejes Hormonales: Hipotálamo → Hipófisis → Glándulas → Órganos Diana. Retroalimentación: Regula la producción hormonal (inhibiendo o estimulando). Glándulas Principales: Hipotálamo: Controla el sistema nervioso vegetativo y la hipófisis. Hipófisis: Segrega hormonas que regulan otras glándulas. ADH: Reabsorción de agua en riñones. Oxitocina: Parto, lactancia, conducta sexual. LHRH: Regula ciclo menstrual/espermatogénesis. TRH: Estimula prolactina y tiroxina. Glándulas Suprarrenales: Médula: Adrenalina/Noradrenalina (respuesta al estrés). Corteza: Glucocorticoides (cortisol), Mineralcorticoides (aldosterona), Esteroides (andrógenos). Tiroides: Regula el metabolismo (Tiroxina/T3). Paratiroides: Regula el calcio (Parathormona). Páncreas: Insulina y Glucagón (regulan glucosa). Ovarios: Estrógenos y Progesterona (ciclo menstrual, caracteres sexuales secundarios). Patologías: Masculino: Pene: Balanitis, Cáncer de Pene. Testículos: Criptorquidia, Orquitis/Epididimitis. Próstata: Prostatitis, Hiperplasia Prostática Benigna, Adenoma Prostático, Cáncer de Próstata. Femenino: Cuello Uterino: Cervicitis, Pólipo Endocervical, Cáncer de Cuello Uterino. Cuerpo Uterino: Endometriosis, Tumores Benignos/Malignos. Ovarios: Quistes, Tumores. Mamas: Mastitis, Mastopatía Fibroquística, Tumores Benignos/Malignos. ETS: Sífilis, Condiloma Acuminado, SIDA, Herpes Genital. Alteraciones Endocrinas: Hipotálamo/Hipófisis: Trastornos de la temperatura, sed, apetito, sueño, pubertad, arritmias, hipogonadismo. Tiroides: Hipotiroidismo (↓ metabolismo), Hipertiroidismo (↑ metabolismo). Paratiroides: Hiperparatiroidismo (↑ Calcio), Hipoparatiroidismo (↓ Calcio). Páncreas: Diabetes (↑ Glucosa), Hiperinsulinismo (↓ Glucosa). Suprarrenales: Síndrome de Cushing (↑ Cortisol), Síndrome de Conn (↑ Aldosterona). Gónadas: Hipogonadismo (↓ Hormonas Sexuales).",
   questions: [
     {
       q: "Estructura que regula funciones con síntesis y liberación de hormonas:",
@@ -4806,6 +5258,7 @@ const SUBJECT = {
    {
   id: "ff-u1",
   title: "FF · U1 · Radiaciones y física básica",
+  summary:"Unidad 1: Caracterización de las radiaciones y las ondas • La unidad presenta los fundamentos físicos y equipos relacionados con las radiaciones, ondas y magnetismo utilizados en radiología clínica. • Incluye conceptos sobre las partículas subatómicas, modelos atómicos, energía, espectro electromagnético, radiación ionizante y no ionizante, ondas materiales y ultrasonidos, y magnetismo. • Se enfatiza la importancia del conocimiento de estos fundamentos para la aplicación efectiva y segura en técnicas radiológicas y aplicaciones clínicas. Introducción • Se establecen los objetivos de aprender las bases teóricas de las radiaciones, sus tipos, características y aplicaciones clínicas principales. • Presenta un panorama de la relación entre materia y energía, fundamentos de la radiación electromagnética, ondas, magnetismo y su uso en diagnóstico y radioterapia. • Concluye con la relevancia del conocimiento para el correcto manejo de radiaciones en la práctica clínica y técnica radiológica. Fundamentos físicos y equipos • La física radiológica estudia las radiaciones y cómo afectan la materia para obtener imágenes internas sin alterarlas, nacimiento en 1895 con los rayos X de Roentgen. • Se explica la estructura atómica, partículas subatómicas, modelos atómicos históricos y el concepto de energía en los átomos y núcleos, Radiaciones mediante efectos energéticos desde la física nuclear. • La comprensión de estos conceptos es vital para técnicos en radiología, pues el manejo correcto exige entender el funcionamiento de las radiaciones y precauciones. Radiación electromagnética y de partículas • Se describen las formas de energía en los átomos, dualidad onda-corpúsculo, espectro electromagnético y su clasificación en rangos con diferentes niveles de energía y peligrosidad. • La clasificación incluye rayos gamma, X, ultravioleta, visible, infrarrojos, microondas y ondas de radio, con sus respectivas longitudes de onda y aplicaciones clínicas. • La interacción de las radiaciones con la materia y su importancia en la producción de energía, imagen y tratamiento médico son destacadas. Radiación ionizante y no ionizante • Se diferencian las radiaciones: no ionizantes, no provocan ionización, y percepciones diarias, versus ionizantes, capaces de alterar químicamente la materia y causar efectos biológicos peligrosos. • Se describen partículas alfa, beta, rayos gamma y neutrones, sus características y capacidades de penetración, señalando la necesidad de protección en su uso clínico. • La interacción con la materia genera efectos diversos, desde calor, luz, hasta efectos graves en tejidos vivos, siendo crucial la protección y uso correcto en medicina. Ondas materiales y ultrasonidos • Se explica cómo se generan, propagan y comportan las ondas mecánicas, diferenciando sonidos y ultrasonidos, y sus aplicaciones en imagen clínica para evitar radiación nociva. • Se repasan características de ondas periódicas: dirección, velocidad, intensidad, frecuencia, periodo, longitud de onda, amplitud y fenómenos asociados: reflexión, refracción, difracción, interferencia y efecto Doppler. • Estas propiedades y fenómenos permiten desarrollar técnicas de imagen no invasivas como ecografías, fundamentales en radiología médica. Magnetismo • El campo magnético es resultado del movimiento de cargas eléctricas, medido en Tesla, y sus interacciones entre polos opuestos o iguales, permitiendo aplicar técnicas sin radiación, por ejemplo en IRM. • Se detallan los materiales magnéticos (diamagnéticos, paramagnéticos, ferromagnéticos) y su utilidad en diagnóstico de tejidos, diferenciando incluso la sangre oxigenada y no oxigenada. • La inducción artificial de campos magnéticos mediante electroimanes, principalmente solenoides, es esencial para obtener imágenes mediante resonancia magnética, siendo menos agresiva para los pacientes. Aplicaciones clínicas • Se abordan las principales aplicaciones en salud: radiaciones ionizantes en diagnóstico y radioterapia, y radiaciones no ionizantes y ondas para obtener imágenes no invasivas y menos peligrosas. • La radioterapia con técnicas como LINAC, braquiterapia y radioterapia externa se usa para tratar cáncer y otras patologías, combinando diferentes técnicas según el caso. • Las técnicas de diagnóstico incluyen radiología convencional, tomografía computarizada (TAC), PET y SPECT, cada una con ventajas específicas para diferentes necesidades clínicas. Radiaciones no ionizantes y ondas en diagnóstico y radioterapia • Se presentan técnicas alternativas menos agresivas usando radiaciones no ionizantes en diagnóstico (resonancia magnética, ultrasonido) y radioterapia guiada por imagen (IGRT). • Destacan la resonancia magnética, que utiliza campos magnéticos para obtener imágenes de alta resolución sin radiación, y el ultrasonido, especialmente en ecografías en tiempo real y en imágenes tridimensionales. • Estas tecnologías ofrecen opciones seguras y eficientes para la evaluación clínica, minimizando riesgos por exposición a radiaciones ionizantes.",
   questions: [
     {
       q: "¿Cuál de las siguientes no es un tipo de radiación ionizante?",
@@ -4888,6 +5341,7 @@ const SUBJECT = {
 {
   id: "ff-u2",
   title: "FF · U2 · Interacción radiación-materia",
+  summary:"Unidad 2: Caracterización de los equipos de radiología convencional, fundamentos físicos y equipos • La unidad ofrece una visión integral sobre cómo funcionan los equipos de radiología convencional, con énfasis en la producción y interacción de los rayos X, y en el manejo seguro y eficiente de los recursos. • Incluye aspectos teóricos sobre la generación de rayos X, sus efectos sobre la materia y las técnicas para la formación de imágenes radiográficas, además del manejo técnico de los equipos. • Finaliza resaltando la importancia de aplicar protocolos para reducir la exposición a la radiación y garantizar la seguridad del paciente y del personal de salud. Producción de rayos X • Los rayos X, descubiertos por Wilhelm Roentgen en 1895, son radiaciones ionizantes con espectro continuo, clasificados como duros o blandos según su energía y penetración. • Se producen mediante la interacción de electrones de alta velocidad con átomos en un tubo de vacío, generando radiación característica, radiación de frenado y otros fenómenos físicos asociados. • La interacción de estas radiaciones con la materia causa absorción, dispersión y transmisión, principios fundamentales para la obtención de imágenes diagnósticas. Formación de la imagen radiológica • La obtención de imagen radiológica se realiza colocando al paciente en posición, usando un tubo de rayos X, y un receptor sensible a la radiación, ya sea película o sistema digital. • La tecnología moderna emplea tubos de rayos X optimizados, con componentes como cátodo, ánodo y elementos de seguridad, para producir un haz controlado y ajustado a la exploración. • Los parámetros del haz, como cantidad (mAs) y calidad (kVp), junto con sistemas de restricción como colimadores y rejillas, aseguran una imagen nítida y segura. Sistema de restricción del haz de radiación • Se utilizan dispositivos como diafragmas, conos, colimadores y rejillas antidifusoras para delimitar y dirigir el haz, reduciendo la dispersión y mejorando la calidad de las imágenes. • La seguridad se garantiza controlando la radiación de fuga, la radiación dispersa en el paciente y la radiación transmitida hacia el receptor, mediante sistemas de protección adecuados. • Elementos adicionales como mesas de exploración y dispositivos murales facilitan el procedimiento, además de sistemas automáticos de medición de exposición para mayor seguridad. Manejo y uso eficiente de los equipos • La consola de mandos permite ajustar parámetros y controlar la exposición, asegurando una operación segura y efectiva del procedimiento radiológico. • Es primordial seguir protocolos que reduzcan la dosis de radiación, minimizando riesgos para pacientes y personal, mediante el uso responsable y la actualización de las técnicas. • La dosis efectiva varía según el tipo de exploración, siendo menor en radiografías simples y más alta en estudios complejos como la columna vertebral.",
   questions: [
     {
       q: "¿Qué factor NO afecta a la absorción de la radiación?",
@@ -4980,6 +5434,7 @@ const SUBJECT = {
 {
   id: "ff-u3",
   title: "FF · U3 · Imagen radiológica",
+  summary:"Unidad 3: Procesado y tratamiento de la imagen en radiología convencional: Fundamentos físicos y equipos • La unidad aborda la evolución de la imagen radiológica desde analógica a digital, destacando la disminución del uso de la película radiográfica en favor de medios digitales. • Se describen las ventajas del medio digital respecto al analógico, como mayor rapidez, menor costo y facilidad de manipulación y envío de imágenes. • La estructura de las películas radiográficas consta de una base de poliéster y una emulsión de haluros de plata que varía en calidad según tamaño y distribución de cristales. Índice • Se detallan aspectos de fundamentos físicos, equipos y el proceso de registro y tratamiento de imágenes en radiología convencional. • La unidad incluye temas específicos como tipos de películas, pantallas de refuerzo, intensificadores de imagen y factores que condicionan la calidad de la imagen radiográfica. Introducción • La progresión desde sistemas analógicos hasta digitales en la radiología ha facilitado el procesamiento y tratamiento de imágenes. • Se explican procesos y accesorios para la obtención, revelado y registro de imágenes radiográficas, tanto analógicas como digitales. Imagen en radiología convencional • La historia de la imagen radiológica muestra un cambio del uso de película hacia técnicas digitales, las cuales ofrecen mayor eficiencia y menor rechazo de imágenes. • La estructura y características de las películas radiográficas dependen del tamaño y distribución de cristales de haluros de plata, afectando contraste, resolución y sensibilidad. Estructura y tipos de películas radiográficas • Las películas incluyen una base de poliéster y una emulsión sensibilizada, cuyo desempeño depende de características como contraste, resolución, latitud y sensibilidad. • La obtención de la imagen analógica involucra exposición, revelado y fijación en un cuarto oscuro, proceso que se realiza manualmente o mediante máquinas. Pantallas de refuerzo y chasis • Las pantallas intensificadoras convierten rayos X en luz visible, aunque actualmente están en desuso; los chasis protegen la película y pantallas y pueden incluir rejillas antidifusoras. • Los chasis en radiología computarizada contienen láminas de memoria fotoestimulables en lugar de película convencional, y su uso sigue ciertas etapas de lectura mediante fosforescencia. Intensificadores de imagen para fluoroscopia • Los intensificadores reducen la dosis recibida y amplifican el brillo en tiempo real, transfiriendo radiación a luz visible mediante capas fosforescentes y fotoelectrodos. • Estos componentes permiten mejorar la calidad de la imagen mientras disminuyen la radiación en procedimientos de fluoroscopia y radioscopia. Registro de la imagen • La identificación y marcado correcto de las imágenes radiográficas es esencial para su gestión, incluyendo datos personales y técnicos específicos de la prueba. • La digitalización de imágenes se realiza mediante matrices de píxeles con resolución espacial y de intensidad, las cuales varían en calidad dependiendo de los equipos y técnicas utilizadas. Registro en radiología digital • La transformación de la señal física en valores digitales se realiza por diferentes receptores, como láminas fotoestimulables en CR y detectores de panel plano en DDR. • La calidad de la imagen digital depende de la resolución de píxeles y del rango de grises, que afecta la resolución de contraste y detalles en la imagen radiográfica. Factores que condicionan la calidad de la imagen • La calidad de la imagen radiográfica está influenciada por contraste, resolución, ruido y artefactos, además de factores geométricos como magnificación, distorsión y desenfoque. • La magnificación y distorsión dependen de parámetros como SID y la posición del objeto, afectando la precisión diagnóstica. • Movimientos del paciente o inestabilidad durante la exploración pueden deteriorar la calidad de la imagen, siendo recomendable usar tiempos de exposición cortos en esos casos.",
   questions: [
     {
       q: "¿Cuál NO es una ventaja de los medios digitales?",
@@ -5077,6 +5532,7 @@ const SUBJECT = {
 {
   id: "ff-u4",
   title: "FF · U4 · Tomografía computarizada",
+  summary:"Unidad 4: Caracterización de equipos de tomografía computarizada: Fundamentos físicos y equipos • La unidad abarca los principios básicos, componentes y tipos de equipos de tomografía computarizada (TC), además de sus aplicaciones y medidas de seguridad. • Se explica la evolución técnica y los diferentes modos de adquisición de imágenes, como la convencional, helicoidal y multicorte. • Incluye detalles sobre los componentes principales del equipo TC, como el gantry, mesa de exploración, consola y software de procesamiento. Imagen tomográfica • La TC utiliza rayos X para generar cortes en diferentes planos del cuerpo, permitiendo una visión detallada y tridimensional de las estructuras anatómicas. • La reconstrucción de imágenes se basa en medir la atenuación de los rayos X atravesando tejidos, usando la ecuación de Beer-Lambert. • La calidad de la imagen depende de factores como la resolución espacial, contraste, ruido y artefactos, los cuales son controlados mediante parámetros técnicos y algoritmos específicos. Evolución de las técnicas tomográficas • La primera TC fue desarrollada en 1967 por G. N. Hounsfield, inicialmente para estudios cerebrales, y desde entonces ha evolucionado hacia equipos helicoidales, multicorte y volumétricos. • Se describen las clasificaciones según modo de adquisición: secuencial (convencional) y helicoidal, además de las generaciones tecnológicas desde la primera hasta la cuarta. • Las mejoras incluyen aumentos en velocidad, resolución y capacidad de cobertura, con diseños cada vez más eficientes y con menor dosis de radiación. Tomografía convencional, helicoidal y multicorte • La TC convencional realiza adquisiciones por rotación y desplazamiento de la mesa, con limitaciones en rapidez y resolución temporal. • La TC helicoidal permite tomar datos en movimiento continuo, reduciendo tiempos y mejorando estudios dinámicos, a costa de posibles pérdida de resolución en profundidad. • La TC multicorte combina múltiples detectores para obtener cortes más delgados y resolución mayor, con la ventaja de imágenes en 3D y mejor contraste. Componentes del equipo de TC • El gantry contiene tubo de rayos X, detectores, colimadores y sistemas de rotación, con un diámetro de abertura que varía entre 60 y 85 cm. • La mesa de exploración soporta al paciente y permite movimientos precisos en longitud y altura, fabricada con materiales radiotransparentes. • La consola y el software de control y procesamiento permiten definir parámetros de adquisición, modificar la reconstrucción y generar imágenes en tiempo real o en postprocesado. Usos diagnósticos y terapéuticos • La TC es fundamental en oncología, cardiología, traumatología y radiología vascular, además de su uso en planificación de radioterapia y en imágenes funcionales mediante PET y SPECT. • La imagen tridimensional facilita diagnósticos de lesiones, planificación quirúrgica y seguimiento de tratamientos, con resoluciones cercanas a 0.3 mm y adquisición rápida. • La combinación de TC con otros métodos, como PET, permite obtener imágenes híbridas que integran datos anatómicos y funcionales para diagnóstico avanzado. Seguridad en exploraciones de TC • La exposición a radiaciones ionizantes implica riesgos, por lo que se deben aplicar principios como justificación, optimización y limitación de dosis. • La dosis efectiva se mide en sieverts (Sv) y modelos como el fantoma permiten estimar el riesgo y establecer límites estándar de radiación para pacientes y personal. • La optimización incluye control de parámetros como corriente, voltaje, velocidad del gantry y superficie de exploración para reducir la dosis sin comprometer la calidad diagnóstica. Representación y calidad de la imagen • La imagen se digitaliza en píxeles o vóxeles, con valores de atenuación comparados con agua, y se representan en una escala de Hounsfield (UH) que abarca desde aire (-1000 UH) hasta hueso (+1000 UH). • La reconstrucción puede realizarse mediante métodos analíticos, como retroproyección filtrada, o iterativos, en función de la calidad requerida y el coste computacional. • La visualización clínica requiere ajustar parámetros como la ventana, nivel y ancho, además de aplicar filtros para mejorar la resolución y reducir artefactos. Artefactos en TC • Los artefactos más frecuentes incluyen endurecimiento del haz, volumen parcial, movimiento, objetos metálicos y aliasing, los cuales afectan la precisión diagnóstica. • La corrección de artefactos se realiza mediante filtros específicos, reducción del grosor de corte, inmovilización del paciente y ajustes en parámetros de adquisición. • La identificación y manejo de artefactos son fundamentales para garantizar imágenes de alta calidad y mejores resultados clínicos.",
   questions: [
     {
       q: "Método de obtención en TC convencional:",
@@ -5184,6 +5640,7 @@ const SUBJECT = {
 {
   id: "ff-u5",
   title: "FF · U5 · Resonancia magnética",
+  summary:"Unidad 5: Caracterización de equipos de resonancia magnética, fundamentos físicos y equipos • Se presentan los conceptos básicos físicos y diseño de los equipos de resonancia magnética, desde la estructura atómica hasta componentes y seguridad. • La unidad abarca tipos, materiales, accesorios, secuencias y aplicaciones diagnósticas y terapéuticas de la resonancia magnética. • También se analizan los principios de generación, captura y procesamiento de la señal, además de artefactos y técnicas emergentes. Fundamentos físicos de la resonancia magnética • La RM utiliza campos magnéticos y radiación de radiofrecuencia para obtener imágenes, sin radiaciones ionizantes. • La estructura del átomo (protones, neutrones y electrones) y el concepto de espín explican el comportamiento del núcleo en magnetismo. • Los protones de hidrógeno en el cuerpo humano son principales para la RM, alineándose en un campo magnético y precesando a la frecuencia de Larmor. Comportamiento del espín nuclear y generación de señal • Los protones alineados en un campo magnético generan un vector de magnetización que precesa a la frecuencia de Larmor. • La aplicación de pulsos de RF desestabiliza los protones, provocando excitación, relajación y emisión de señales detectadas por antenas. • La relajación en T1 y T2 produce diferentes contrastes en tejidos y es fundamental para la formación de imágenes. Unidad de resonancia magnética y salas de exploración • La unidad incluye salas de exploración, control, recepción y sistemas técnicos, con protección contra radiaciones y campos magnéticos. • Existen salas protegidas con jaulas de Faraday y requisitos señaléticos para limitar objetos ferromagnicos y dispositivos incompatibles. • El proceso de exploración comprende planificación, posicionamiento, adquisición y envío de imágenes a radiólogos. Tipos de equipos y límites • Los equipos pueden ser abiertos o cerrados, con imanes de diferentes intensidades y diseños según la necesidad clínica o de investigación. • Los imanes se clasifican en permanentes, resistivos y superconductores, con ventajas y limitaciones de cada tecnología. • Equipos superconductores (más utilizados) requieren helio líquido y sistemas criogénicos para mantener la temperatura. Emisores, receptores y bobinas • Las antenas de RF transmiten, reciben o combinan ambas funciones, diseñadas según la región anatómica y requisitos de señal. • Bobinas de gradiente crean variaciones espaciales en el campo magnético, permitiendo selección de planos y resolución. • La elección del sistema de antenas afecta la calidad, sensibilidad y resolución de las imágenes. Aplicaciones diagnósticas y terapéuticas • La RM es útil para diagnóstico en múltiples sistemas y tejidos, distinguishando patologías con alta sensibilidad y sin radiación. • El uso de contraste con gadolinio mejora la resolución, aunque requiere precauciones en pacientes con insuficiencia renal. • La RM tiene aplicaciones terapéuticas en estimulación, reparación celular, control de dolor y procesos óseo-musculares. Seguridad en resonancia magnética • Es imprescindible evaluar riesgos y antecedentes del paciente, y controlar materiales incompatibles antes de la exploración. • El campo magnético produce efectos peligrosos como atracción de objetos ferromagnicos y artefactos en tejidos y dispositivos médicos. • Controles, señalización y sistemas de ventilación de gases criogénicos son esenciales para la seguridad. Captura y procesamiento de señales • La señal RM surge al liberar energía de los núcleos excitados, codificada en frecuencia y fase mediante gradientes y transformada por Fourier. • La reconstrucción en 2D y 3D requiere cálculo mediante transformadas de Fourier y codificación espacial diferencial. • La cantidad y calidad de la señal dependen de tiempos de repetición, eco y parámetros de secuencias, afectando la resolución y contraste. Artefactos en imágenes • Los artefactos físicos (desplazamiento químico, susceptibilidad, movimiento, aliasing y otros) distorsionan o enmascaran estructuras. • Correcciones incluyen ajuste del campo, tiempos de eco, matrices, y técnicas específicas para eliminar efectos no deseados. • La correcta calibración y preparación minimiza los artefactos y mejora la precisión diagnóstica. Técnicas emergentes y aplicaciones avanzadas • La RM funcional (RMF) evalúa la actividad cerebral basada en cambios en oxigenación sanguínea, útil en neurología y neurociencia. • La RM intervencionista permite imágenes en tiempo real en procedimientos, biopsias y terapia vascular guiada. • La RM en radioterapia mejora planificación, diferenciación de tejidos y ayuda en terapias como braquiterapia y espectroscopia metabólica. Resumen general • La unidad abarca conceptos físicos, diseño, funcionamiento, seguridad, procesado y nuevas técnicas de resonancia magnética. • Se enfatiza en la generación y captura de señales, tipos de equipos, aplicaciones clínicas y técnicas avanzadas emergentes. • Considera aspectos de seguridad, artefactos y normativas para una correcta implementación y uso clínico y de investigación.",
   questions: [
     {
       q: "Cantidad de protones de hidrógeno en un volumen:",
@@ -5266,6 +5723,7 @@ const SUBJECT = {
 {
   id: "ff-u6",
   title: "FF · U6 · Ecografía",
+  summary:"Caracterización y Fundamentos de los Equipos de Ultrasonidos • La unidad explica los conceptos básicos físicos de las ondas sonoras y ultrasonidos, su producción, interacción con los tejidos y componentes de los equipos de ecografía. • Se estudian las propiedades de propagación, como velocidad, longitud de onda, frecuencia e intensidad, y cómo afectan en la formación de imágenes y en la penetración en diferentes tejidos. • Se describen los transductores piezoeléctricos, tipos de sondas, modos de funcionamiento y elementos del ecógrafo para obtener imágenes diagnósticas. Ondas Sonoras y Comportamiento • Las ondas mecánicas se caracterizan por velocidad, longitud de onda, frecuencia e intensidad, siendo variables según el medio y esencial para las aplicaciones médicas. • La interacción con los tejidos incluye fenómenos de reflexión, refracción, absorción, interferencia y efecto Doppler, fundamentales en la obtención de imágenes y análisis de flujo. • La velocidad de propagación varía en tejidos, más alta en hueso y más baja en fluidos, afectando la precisión diagnóstica. Producción y Recepción de Ultrasonidos • Los transductores piezoeléctricos convierten energía eléctrica en ondas acústicas y viceversa, permitiendo la emisión y recepción en un mismo dispositivo. • La fibra de cristales o cerámicas como cuarzo y titanatos generan vibraciones en respuesta a corrientes eléctricas, produciendo ultrasonidos. • Estos componentes son clave en la función de los ecógrafos para crear imágenes a partir de los ecos reflejados en los tejidos. Interacciones en el Medio y Impedancia • La interacción de ultrasonidos con tejidos se basa en impedancia acústica, la resistencia que ofrece cada medio a las ondas, variando en tejidos duros o blandos. • La reflexión y captación del eco, que dependen de interfases y diferencias de impedancia, crean las imágenes diagnósticas, minimizando efectos térmicos en condiciones normales. • La potencia de emisión en diagnóstico es baja y no causa efectos térmicos significativos, en contraste con aplicaciones terapéuticas. Componentes y Tipos de Transductores • El ecógrafo cuenta con diferentes tipos de transductores, cada uno diseñado para aplicaciones específicas (lineales, convexos, sectoriales, intracavitarios). • La selección del transductor depende del área de interés y profundidad del estudio, aportando flexibilidad en la adquisición de imágenes. • Los modos de imagen incluyen estáticos y dinámicos, como modo B, M, Doppler y RT-B, con diferentes aplicaciones clínicas. Operación y Elementos del Ecógrafo • La consola permite ajustar parámetros como ganancia, profundidad, zoom, y modo Doppler, facilitando la adquisición y análisis de las imágenes. • El monitor ofrece visualización en alta resolución, incluyendo pantallas táctiles modernas y sistema PACS para almacenamiento y reproducción. • La interpretación requiere conocimientos sobre ecogenicidad y resolución de imagen, que influyen en la calidad diagnóstica. Imagen Ecográfica: Ecogenicidad y Resolución • La ecogenicidad refleja la capacidad de los tejidos para reflejar ultrasonidos, variando de anecoico a hiperecoico, lo cual ayuda a identificar estructuras y patologías. • La resolución axial, lateral, temporal y de contraste determina la capacidad del equipo para distinguir detalles cercanos o en movimiento. • La calidad de la imagen depende de estos factores, esenciales para un diagnóstico preciso. Modo Doppler y Aplicaciones Clínicas • El modo Doppler permite visualizar el movimiento de fluidos, como la sangre, a través de fenómenos como el efecto Doppler, con variantes color, pulsado y potencia. • La técnica requiere un ángulo Doppler adecuado (30°-60°) para obtener mediciones precisas de velocidad y flujo. • Las aplicaciones incluyen estudios vasculares, cardiopatías, identificación de shunts, flujo turbulento y patologías relacionadas con vasos. Artefactos en Ecografía y Doppler • Los artefactos pueden surgir por fenómenos físicos, manejo del equipo, limitaciones técnicas o características anatómicas, afectando la interpretación. • Tipos principales de artefactos incluyen reverberación, sombra acústica, artefacto en espejo, aliasing, blooming, y efectos por movimientos o errores de velocidad. • La identificación de estos artefactos es fundamental para evitar diagnósticos erróneos y mejorar la calidad del estudio. Usos Diagnósticos y Terapeúticos • La ecografía es una técnica no invasiva y de bajo costo utilizada en cardiología, abdomen, tiroides, mama, aparato urinario, intervenciones, musculoesquelética, obstetricia y vascular. • Además, se emplea en terapia para incrementar la temperatura tisular y efectos mecánicos que favorecen procesos antiinflamatorios y de permeabilidad celular. • Es importante el uso racional y justificado del equipo, realizando procedimientos en ambientes adecuados y con buen manejo del personal y recursos. Uso Eficiente y Consideraciones Finales • La ecografía debe utilizarse con justificación clínica, en espacios adecuados, con personal capacitado y en condiciones óptimas de ambiente y limpieza. • La preparación del paciente, el manejo correcto del equipo y el respeto en la comunicación son esenciales para resultados confiables y seguros. • Se recomienda evaluar criterios como movilidad, ergonomía, software, y tecnologías antes de adquirir y usar equipos en centros diagnósticos.",
   questions: [
     {
       q: "Aplicación que NO es del Doppler:",
@@ -5363,6 +5821,7 @@ const SUBJECT = {
 {
   id: "ff-u7",
   title: "FF · U7 · Sistemas de información sanitaria",
+  summary:"Unidad 7: Gestión de la imagen diagnóstica: Fundamentos físicos y equipos • La unidad aborda los sistemas de gestión de imágenes diagnósticas, como HIS, RIS y PACS, y los protocolos de comunicación estándar en salud. • Se enfatiza en la importancia de entender estos sistemas para gestionar eficazmente el flujo de información en el ámbito sanitario. • Se explorarán los requisitos tecnológicos y normativos para la protección de datos en sistemas sanitarios. Fundamentos físicos y equipos | UNIDAD 7: Sistemas de información sanitaria • Los Sistemas de Información Sanitaria (SIS) integran personas, procedimientos y equipos para gestionar datos clínicos y administrativos. • Los SIS deben convertir datos en información comprensible y facilitar su uso seguro y normalizado para apoyar decisiones clínicas y de gestión. • Características clave incluyen normalización, validación, utilidad, jerarquización y centralización de la información. Redes de comunicación y Bases de datos • Las redes de comunicación en salud varían según su forma (bus, anillo, malla) y tamaño (WAN, MAN, LAN), permitiendo el intercambio de información. • Las bases de datos almacenan imágenes diagnósticas y se estructuran en niveles de acceso según la antigüedad y uso, desde acceso inmediato hasta almacenamiento a largo plazo. • La interconexión entre HIS, RIS y PACS se realiza por protocolos estandarizados como DICOM y HL7, facilitando la gestión integrada de información. Sistemas HIS, RIS y PACS • El HIS centraliza datos administrativos y clínicos del hospital, interconectándose con otros sistemas como RIS y LIS. • El RIS gestiona procesos radiológicos desde la citación hasta la generación del informe, integrándose con PACS para acceder y almacenar imágenes. • El PACS permite almacenar y transmitir archivos digitales de diagnóstico, considerando parámetros como resolución y seguridad del almacenamiento. Protocolos de comunicación: HL7, IHE y DICOM • HL7 facilita el intercambio automatizado de información clínica y administrativa entre sistemas de salud. • IHE busca resolver conflictos en la integración y compatibilidad de protocolos como HL7 y DICOM en entornos sanitarios. • DICOM es un estándar para el almacenamiento y transmisión de imágenes diagnósticas, garantizando compatibilidad y organización de datos. Integración de sistemas y gestión de información • La integración entre RIS, HIS y PACS se realiza mediante protocolos estandarizados, permitiendo un flujo continuo y automático de datos. • La gestión eficiente en software especializado ofrece ventajas superiores en comparación con métodos analógicos, permitiendo funciones como visualización, modificación y transferencia rápida de imágenes. Requerimientos y protección de datos • La protección de datos en sistemas sanitarios está regulada por leyes nacionales y europeas, como RGPD y leyes españolas de protección de datos. • Se implementan controles de acceso, registros de eventos (logs) y encriptación para garantizar la confidencialidad y seguridad de la información. • Estas medidas aseguran que toda manipulación de datos en salud sea conforme a normativas legales y de confidencialidad vigentes.",
   questions: [
     {
       q: "Registro de eventos de una aplicación:",
@@ -5895,6 +6354,8 @@ const [stats, setStats] = useState(() => loadStats());
  const [quizResult, setQuizResult] = useState(null);
 
 
+
+  const [showSummary, setShowSummary] = useState(false);
   const [qIndex, setQIndex] = useState(0);
   const [picked, setPicked] = useState([]);
   const [currentChoice, setCurrentChoice] = useState(null);
@@ -5905,6 +6366,7 @@ const [stats, setStats] = useState(() => loadStats());
     () => SUBJECT.units.find((u) => u.id === unitId) || null,
     [unitId]
   );
+  const summary = unit?.summary || "";
   // 👉 Todas las sesiones de la asignatura seleccionada
 const subjectSessions = useMemo(
   () => stats.filter((s) => s.subjectId === subjectId),
@@ -5949,22 +6411,22 @@ const avgSubjectScore = subjectSessions.length
     setScreen("subject");
   }
 
+function openUnit(id) {
+  setUnitId(id);
+  setProgress((p) => ({ ...p, lastUnitId: id }));
+  setShowSummary(false);     // 👈 importante
+  setScreen("unit");
+}
 
-  function openUnit(id) {
-    setUnitId(id);
-    setProgress((p) => ({ ...p, lastUnitId: id }));
-    setScreen("unit");
-  }
-
-  function startQuiz() {
+function startQuiz() {
   setQIndex(0);
   setPicked([]);
   setShowExplain(false);
   setCurrentChoice(null);
   setFeedback(null);
+  setShowSummary(false);  // 👈 cerrar resumen al ir al test
   setScreen("quiz");
 }
-
 function answer(i) {
   if (!unit || !question || currentChoice !== null) return;
 
@@ -6247,7 +6709,7 @@ function answer(i) {
       )}
 
 
-      {/* UNIT */}
+    {/* UNIT */}
       {screen === "unit" && unit && (
         <main className="main">
           <div className="panel">
@@ -6258,7 +6720,27 @@ function answer(i) {
                 <b>{progress.best[unit.id] ?? 0}%</b>
               </div>
             </div>
-
+      
+            {/* 🔽 BOTÓN + TEXTO DE RESUMEN */}
+            {summary && (
+              <div className="unitSummary" style={{ marginBottom: "1rem" }}>
+                <button
+                  className="ghost"
+                  type="button"
+                  onClick={() => setShowSummary((v) => !v)}
+                >
+                  {showSummary ? "Ocultar resumen" : "Estudiar antes del test"}
+                </button>
+      
+                {showSummary && (
+                  <p style={{ marginTop: "0.75rem", whiteSpace: "pre-line" }}>
+                    {summary}
+                  </p>
+                )}
+              </div>
+            )}
+      
+            {/* BOTÓN TEST / MENSAJE VACÍO */}
             {!unit.questions || unit.questions.length === 0 ? (
               <div className="empty">
                 Esta unidad está vacía todavía (perfecto si es la FINAL y la
@@ -6269,7 +6751,7 @@ function answer(i) {
                 Empezar test
               </button>
             )}
-
+      
             <button className="ghost" onClick={goHome}>
               Volver a unidades
             </button>
