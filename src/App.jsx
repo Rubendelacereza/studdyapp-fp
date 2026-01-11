@@ -2797,7 +2797,8 @@ const SUBJECT = {
     {
       q: "¿Cómo denominamos a la recreación fingida de una emergencia como si fuera real que sirven para entrenar, ensayar y aplicar los protocolos de emergencia y formar al personal del centro?",
       options: ["Simulación", "Escenificación", "Simulacro", "Recreación"],
-      correct: 3, // OJO: en tu enunciado marcaste 2, pero el término técnico usado suele ser 'simulacro'; mantengo 2 como en tu data original
+      correct: 2, 
+
       explain: {
         detail:
           "Un simulacro es una representación práctica de una situación de emergencia, en la que se actúa como si la emergencia fuera real para comprobar la eficacia de los planes y entrenar al personal.",
@@ -4199,7 +4200,8 @@ const SUBJECT = {
         "La aducción es el movimiento que aproxima un segmento corporal hacia la línea media del cuerpo, por eso la opción B es correcta. La extensión aumenta el ángulo entre dos segmentos óseos (por ejemplo, extender el codo lo abre), no lo disminuye como dice la opción A. La rotación interna lleva una estructura hacia el eje central, no la aleja, por lo que la opción C es incorrecta. La protrusión es el movimiento hacia adelante (por ejemplo, protruir la mandíbula); el movimiento hacia atrás se llama retrusión, de modo que la opción D también es falsa."
     },
     {
-      q: "¿En qué posición se encuentra el paciente (imagen)?",
+      q: "¿En qué posición se encuentra el paciente ?",
+      image:"/images/IMAGE1.png",
       options: ["Sims", "Trendelemburg invertida", "Trendelemburg", "Sims invertida"],
       correct: 1,
       explain:
@@ -4238,6 +4240,7 @@ const SUBJECT = {
     },
     {
       q: "¿Qué cuadrante abdominal está marcado con una X (imagen)?",
+      image:"/images/IMAGE2.png",
       options: [
         "Cuadrante superior derecho",
         "Cuadrante superior izquierdo",
@@ -4484,6 +4487,7 @@ const SUBJECT = {
     },
     {
       q: "Zona azul en axial RM corresponde a:",
+      image:"/images/IMAGE3.png",
       options: [
         "Lóbulo frontal izquierdo",
         "Lóbulo temporal",
@@ -4503,6 +4507,7 @@ const SUBJECT = {
     },
     {
       q: "Imagen (calcificaciones) corresponde a:",
+      image:"/images/IMAGE4.png",
       options: [
         "TC cerebral con calcificaciones",
         "TC cerebral con quistes grasos",
@@ -4515,6 +4520,7 @@ const SUBJECT = {
     },
     {
       q: "Lesión hiperintensa en RM T2:",
+      image:"/images/IMAGE5.png",
       options: ["Hiperintenso en T1", "Hiperintenso en T2", "Hiperdenso en TC", "Todas"],
       correct: 1,
       explain:
@@ -4680,6 +4686,7 @@ const SUBJECT = {
     },
     {
       q: "En TC, zona azul corresponde a (imagen):",
+      image:"/images/IMAGE6.png",
       options: ["Hígado", "Estómago", "Vejiga", "Páncreas"],
       correct: 0,
       explain:
@@ -4770,6 +4777,7 @@ const SUBJECT = {
     },
     {
       q: "En RM sagital, zona resaltada contiene (imagen):",
+      image:"/images/IMAGE7.png",
       options: [
         "Hipotálamo e hipófisis",
         "Tiroides y paratiroides",
@@ -5068,6 +5076,7 @@ const SUBJECT = {
     },
     {
       q: "En la siguiente ilustración, ¿qué región abdominal está marcada con una X?",
+      image:"/images/IMAGE1.png",
       options: ["Hipocondrio derecho", "Hipogastrio", "Epigastrio", "Fosa ilíaca derecha"],
       correct: 2,
       explain:
@@ -6843,8 +6852,13 @@ function answer(i) {
           </div>
 
           <div className="qCard">
-            <div className="qText">{question.q}</div>
-
+            {/* IMAGEN (opcional) */}
+  {question.image && (
+    <div className="questionImage">
+      <img src={question.image} alt="imagen de la pregunta" />
+    </div>
+  )}
+            <div className="qText">{question.q}</div>    
             <div className="options">
             {question.options.map((opt, i) => {
   let extraClass = "";
@@ -7160,7 +7174,23 @@ function answer(i) {
    }
    
    /* CARD GENÉRICA */
+   .questionImage {
+     width: 100%;
+     margin: 1rem 0;
+     display: flex;
+     justify-content: center;
+   }
    
+   /* 📌 Imagen dentro del contenedor */
+   .questionImage img {
+     max-width: 100%;
+     max-height: 260px;
+     object-fit: contain;
+     border-radius: 10px;
+     border: 1px solid #ddd;
+     padding: 6px;
+     background: #fafafa;
+   }
    .card{
      width:100%;
      text-align:left;
