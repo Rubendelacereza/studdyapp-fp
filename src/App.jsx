@@ -1288,13 +1288,7 @@ const SUBJECT = {
     },
   ],
 },
-
-{
-  id: "fol-final",
-  title: "⭐ FOL · Prueba final · 40 preguntas",
-  isFinal: true,
-  questions: [
-    // Aquí puedes añadir tus 40 preguntas cuando quieras
+// Aquí puedes añadir tus 40 preguntas cuando quieras
     {
   id: "fol-final",
   title: "⭐ FOL · Prueba final · 40 preguntas",
@@ -2130,8 +2124,6 @@ const SUBJECT = {
         }
       }
     }
-  ]
-}
 
   ],
 },
