@@ -4959,6 +4959,7 @@ const SUBJECT = {
     },
     {
       q: "¿Qué muestra la siguiente imagen?",
+      image:"/images/IMAGE8.png",
       options: [
         "Una tomografía computarizada cerebral, en la que se observan calcificaciones.",
         "Una tomografía computarizada cerebral, en la que se observan quistes en ambos hemisferios.",
@@ -5076,7 +5077,7 @@ const SUBJECT = {
     },
     {
       q: "En la siguiente ilustración, ¿qué región abdominal está marcada con una X?",
-      image:"/images/IMAGE1.png",
+      image:"/images/IMAGE9.png",
       options: ["Hipocondrio derecho", "Hipogastrio", "Epigastrio", "Fosa ilíaca derecha"],
       correct: 2,
       explain:
@@ -5153,6 +5154,7 @@ const SUBJECT = {
     },
     {
       q: "La siguiente imagen corresponde con:",
+      image:"/images/IMAGE10.png",
       options: [
         "Una resonancia magnética en T1, pues el humor vítreo y el líquido subaracnoideo en torno al nervio óptico se observan hiperintensos.",
         "Una resonancia magnética en T2, pues el humor vítreo y el líquido subaracnoideo en torno al nervio óptico se observan hiperintensos.",
@@ -5165,6 +5167,7 @@ const SUBJECT = {
     },
     {
       q: "La siguiente imagen de cabeza y cuello obtenida mediante resonancia magnética:",
+      image:"/images/IMAGE11.png",
       options: [
         "Es un plano sagital, donde en color azul se sombrea el lóbulo occipital.",
         "Es un plano sagital, donde en color azul se sombrea el lóbulo parietal.",
@@ -6081,6 +6084,7 @@ const SUBJECT = {
     },
     {
       q: "¿Qué fenómeno se representa en la siguiente imagen?",
+      image:"/images/IMAGE12.png",
       options: [
         "Radiación de frenado",
         "Radiación característica",
