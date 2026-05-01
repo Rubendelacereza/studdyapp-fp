@@ -12,2121 +12,1778 @@ import { registerSession, getSubjectStats } from "./statsStorage";
 const SUBJECT = {
   id: "fol",
   name: "StudyApp",
-  subtitle: "Tests FOL · Atención · Anatomía · Fundamentos Físicos",
+  subtitle: "Tests PROTECCIÓN RADIOLOGICA · EIE · INGLES",
   colorA: "#6366f1",
   colorB: "#8b5cf6",
   units: [
     /* ================== FOL ================== */
 {
   id: "fol-u1",
-  title: "FOL · U1 · Mercado laboral",
-   summary: [
-    "1️⃣ Visión general\nEsta unidad explica cómo es el mercado laboral actual, las distintas opciones profesionales (trabajo por cuenta ajena, trabajo por cuenta propia y empleo público) y qué competencias necesitas para mantener tu empleabilidad. También insiste en la importancia de la formación continua y del autoconocimiento para tomar buenas decisiones sobre tu futuro profesional.",
+title: "Protección Radiológica · U1 · Detección de la radiación",
+summary: [
+  "1️⃣ Visión general\nEsta unidad explica los principios fundamentales de la detección y medida de las radiaciones ionizantes. Como la radiación no puede percibirse directamente por los sentidos, es necesario utilizar sistemas de detección y dosímetros capaces de transformar la interacción de la radiación con la materia en señales medibles.",
 
-    "2️⃣ Mercado laboral y sectores\nLa inserción laboral es complicada, especialmente para los jóvenes: hay mucho desempleo, precariedad y sobrecualificación. La automatización y la IA sustituyen tareas repetitivas, así que es clave reciclarse y aprender cosas nuevas. Crece el sector cuaternario (conocimiento, I+D, TIC, ciberseguridad, marketing digital, sostenibilidad…), mientras que faltan perfiles en oficios técnicos (soldadores, electricistas, fontaneros, mantenimiento, construcción), que son esenciales y deben revalorizarse.",
+  "2️⃣ Magnitudes radiológicas\nLas magnitudes radiológicas se dividen en tres grupos principales:\n• Magnitudes físicas fundamentales: incluyen radiactividad, radiometría y dosimetría.\n• Magnitudes de radioprotección: permiten valorar el riesgo biológico, como la dosis equivalente y la dosis efectiva.\n• Magnitudes operacionales: se usan en la vigilancia práctica, como la dosis equivalente ambiental y la dosis personal.",
 
-    "3️⃣ Vías de inserción laboral\n• Trabajo por cuenta ajena: trabajas para una empresa, con contrato de trabajo y normativa laboral. La empresa organiza la actividad y asume el riesgo; tú aportas tu trabajo a cambio de salario.\n• Trabajo por cuenta propia (autónomos): tú organizas tu actividad y asumes el riesgo económico. Incluye autónomo tradicional, profesional autónomo, autónomo económicamente dependiente (TRADE, ≥75 % facturación de un cliente), autónomo colaborador (familiar que trabaja en el negocio) y autónomo societario (administra una sociedad).\n• Empleo público: trabajas para la Administración (Estado, CCAA, ayuntamientos…). El acceso se hace por procesos selectivos que respetan mérito y capacidad.",
+  "3️⃣ Magnitudes dosimétricas principales\nLa exposición (X) relaciona la carga de iones producidos con la masa de aire y se mide en C/kg. El Kerma (K) es la energía cinética liberada por unidad de masa y se mide en julio por kilogramo o Gray (Gy). La dosis absorbida (D) indica la energía absorbida por un tejido o material. También aparece la LET, que expresa la energía depositada por unidad de longitud.",
 
-    "4️⃣ Empleo público y grupos de titulación\nEn el empleo público hay varias figuras: funcionario de carrera (plaza fija), personal laboral (fijo o temporal) y funcionarios interinos (cubren necesidades temporales, suelen venir de bolsas). Los sistemas de selección pueden ser oposición, concurso o concurso-oposición. Los grupos se organizan por titulación: Grupo A (títulos universitarios), Grupo B (Técnico Superior de FP), Grupo C1 (Bachillerato o Grado Medio) y Grupo C2 (ESO).",
+  "4️⃣ Radioprotección y efectos biológicos\nLa dosis equivalente y la dosis efectiva permiten valorar el efecto biológico de la radiación. No todos los tipos de radiación producen el mismo daño: los fotones y electrones tienen factor 1, los protones 2, los neutrones entre 5 y 20, y las partículas alfa 20. Los efectos pueden ser deterministas, con dosis umbral, o estocásticos, relacionados con la probabilidad de daño.",
 
-    "5️⃣ Aprendizaje y empleo en Europa\nLa UE ofrece herramientas para estudiar, trabajar y hacer voluntariado en otros países: el Portal Europeo de la Juventud y «Tu Europa» dan información actualizada. Europass unifica el formato del CV y otros documentos para que se entiendan mejor las cualificaciones en toda Europa. Erasmus+ (2021–2027) financia movilidad y cooperación educativa, y la red EURES facilita la libre circulación de trabajadores (ofertas, condiciones laborales, asesoramiento, etc.).",
+  "5️⃣ Sistemas de detección\nLos detectores aprovechan cambios físicos producidos por la radiación en la materia. Pueden basarse en ionización gaseosa, luminiscencia o alteraciones químicas. Entre los principales sistemas están las cámaras de ionización, contadores proporcionales, contadores Geiger-Müller, detectores de centelleo, detectores de termoluminiscencia y detectores de neutrones.",
 
-    "6️⃣ Competencias clave y Zona de Desarrollo Próximo\nNo basta con un título: las empresas valoran actitudes, aptitudes y competencias personales y sociales.\n• Actitudes: proactividad, compromiso, responsabilidad, flexibilidad, positividad.\n• Aptitudes: conocimientos técnicos, resolución de problemas, aprendizaje continuo, buena comunicación.\n• Competencias personales y sociales: trabajo en equipo, empatía, buena gestión del tiempo y liderazgo.\nLa Zona de Desarrollo Próximo (ZDP) es la distancia entre lo que puedes hacer solo y lo que puedes hacer con ayuda. Trabajar tu ZDP implica: evaluar tus competencias, definir objetivos realistas, buscar recursos/ayuda y practicar en situaciones reales. Esto mejora tu adaptabilidad y tu empleabilidad a largo plazo."
-  ],
-  questions: [
-    {
-      q: "¿Cuáles son los tres elementos que componen el mercado laboral?",
-      options: [
-        "La oferta, los demandantes de empleo y los intermediarios",
-        "Los trabajadores por cuenta propia, por cuenta ajena y funcionarios",
-        "Las pymes, las grandes empresas y las administraciones públicas",
-        "La empleabilidad, la demanda empresarial y la FP",
-      ],
-      correct: 0,
-      explain:
-        "La respuesta correcta es la A porque el mercado laboral se entiende como el lugar donde se ofrece y se demanda trabajo, y donde además intervienen agentes que ponen en contacto oferta y demanda (servicios públicos de empleo, ETT, portales, etc.). La B describe tipos de trabajadores, no los elementos del mercado. La C menciona tipos de empresas, que son solo una parte de la demanda de trabajo. La D mezcla conceptos relacionados con el empleo, pero no son los tres elementos básicos que definen el mercado laboral.",
-    },
-    {
-      q: "La incorporación al mercado laboral:",
-      options: [
-        "No requiere una formación previa apropiada",
-        "Ha dejado de ser un desafío para los trabajadores españoles",
-        "Hace referencia a la entrada de individuos en edad de trabajar a la actividad económica",
-        "Todas son correctas",
-      ],
-      correct: 2,
-      explain:
-        "La respuesta correcta es la C porque incorporación al mercado laboral significa que una persona en edad de trabajar pasa a formar parte activa de la economía (buscando empleo o trabajando). La A es falsa porque la formación es clave para mejorar la empleabilidad. La B también es falsa: incorporarse sigue siendo un reto por paro juvenil, cambios tecnológicos, etc. La D no puede ser correcta porque las dos primeras afirmaciones no lo son.",
-    },
-    {
-      q: "Los autónomos económicamente dependientes (TRADE):",
-      options: [
-        "Son aquellos cuya facturación en un 75% o más depende de un solo cliente, ya sea persona física o jurídica",
-        "Son aquellos que desarrollan actividades categorizadas como profesionales",
-        "Son aquellos que administran sociedades mercantiles con un 75% o más de su facturación dependiente de ellos",
-        "Son aquellos que generan de manera propia, al menos, un 75% del valor total de su actividad profesional",
-      ],
-      correct: 0,
-      explain:
-        "La respuesta correcta es la A porque el TRADE se define precisamente por su dependencia económica: al menos el 75 % de sus ingresos proceden de un único cliente. La B habla de actividades profesionales, pero no menciona la dependencia económica. La C mezcla la idea con sociedades mercantiles, que no es el foco de la figura TRADE. La D habla de generar valor, pero eso no es el criterio legal que los define.",
-    },
-    {
-      q: "El tipo de relación laboral cuando el trabajo se hace de forma voluntaria, personal y directa, organizado por un tercero, y a cambio se percibe un salario, se denomina:",
-      options: [
-        "Trabajo por cuenta propia",
-        "Trabajo autónomo",
-        "Trabajo profesional",
-        "Trabajo por cuenta ajena",
-      ],
-      correct: 3,
-      explain:
-        "La respuesta correcta es la D porque en el trabajo por cuenta ajena el trabajador presta servicios personales, voluntarios, bajo la organización y dirección de otra persona (el empresario) y recibe un salario. La A y la B aluden a trabajo por cuenta propia o autónomo, donde el trabajador organiza su propio trabajo y asume el riesgo. La C, trabajo profesional, es un término genérico que no define el tipo de relación laboral desde el punto de vista jurídico.",
-    },
-    {
-      q: "El sistema selectivo de acceso a la función pública consistente en la celebración de pruebas o exámenes se denomina:",
-      options: ["Concurso", "Evaluación funcionarial", "Oposición", "Conculcación"],
-      correct: 2,
-      explain:
-        "La respuesta correcta es la C (oposición) porque es el sistema en el que el acceso se basa exclusivamente en superar pruebas o exámenes. El concurso (A) combina méritos y, a veces, pruebas, pero no se limita solo a exámenes. “Evaluación funcionarial” (B) no es un término técnico para el sistema de acceso. “Conculcación” (D) ni siquiera tiene que ver con procesos selectivos, significa vulneración o infracción de una norma.",
-    },
-    {
-      q: "Señala cuál NO es una categoría de personal al servicio de la Administración Pública:",
-      options: [
-        "Funcionario interino",
-        "Funcionario autónomo dependiente",
-        "Personal laboral temporal",
-        "Funcionario de carrera",
-      ],
-      correct: 1,
-      explain:
-        "La respuesta correcta es la B porque la figura de “funcionario autónomo dependiente” no existe en el ámbito de la Administración. Sí existen funcionarios de carrera (D), funcionarios interinos (A) y personal laboral (temporal, fijo, etc., como en la C). Por eso la B es la única opción que no corresponde a una categoría real de personal al servicio de la Administración Pública.",
-    },
-    {
-      q: "Engloba los cinco documentos que comunican en toda la UE habilidades, titulaciones y certificaciones adquiridas:",
-      options: ["Tu Europa", "Europass", "DocUE", "EURES CV"],
-      correct: 1,
-      explain:
-        "La respuesta correcta es la B porque el Europass es el conjunto de documentos estandarizados en la UE (CV Europass, suplemento al título, etc.) que facilitan la transparencia de cualificaciones y competencias. Tu Europa (A) es un portal de información general de la UE. DocUE (C) no es un sistema oficial de documentos formativos. EURES (D) es la red europea de empleo, no el pack de documentos.",
-    },
-    {
-      q: "El principal programa de promoción y financiación educativa en la UE es:",
-      options: [
-        "Programa Erasmus+ 2021-2027",
-        "Fondos Next Generation UE",
-        "Acciones Jean Monet",
-        "Red EURES",
-      ],
-      correct: 0,
-      explain:
-        "La respuesta correcta es la A porque Erasmus+ es el programa marco de la UE para educación, formación, juventud y deporte, con financiación para estudiar, hacer prácticas y proyectos educativos. Los fondos Next Generation (B) son un mecanismo financiero amplio de recuperación económica, no solo educativo. Las Acciones Jean Monnet (C) forman parte de Erasmus+, pero son una línea concreta, no el programa principal. EURES (D) es una red de servicios de empleo, no un programa educativo.",
-    },
-    {
-      q: "La disposición mental y emocional hacia una situación, persona, objeto o tarea se denomina:",
-      options: ["Aptitud", "Competencia", "Actitud", "Proactividad"],
-      correct: 2,
-      explain:
-        "La respuesta correcta es la C porque la actitud es la postura mental y emocional que adoptamos ante algo: positiva, negativa, de interés, rechazo, etc. La aptitud (A) se refiere a la capacidad o habilidad para hacer algo. La competencia (B) integra conocimientos, habilidades y actitudes, pero no es solo la disposición mental. La proactividad (D) es una actitud concreta de adelantarse a los problemas, no el concepto general.",
-    },
-    {
-      q: "La Zona de Desarrollo Próximo:",
-      options: [
-        "Sirve para guiar e inspirar equipos de trabajo cercanos",
-        "Ayuda a expresar ideas claramente y practicar la escucha activa",
-        "Se ubica en el entorno laboral del trabajador y se compone de herramientas del puesto",
-        "Permite enfocarse en habilidades y competencias que están al alcance y se pueden desarrollar",
-      ],
-      correct: 3,
-      explain:
-        "La respuesta correcta es la D porque la Zona de Desarrollo Próximo (Vygotsky) es el espacio entre lo que una persona ya sabe hacer sola y lo que puede llegar a hacer con ayuda; es decir, el conjunto de habilidades que puede desarrollar a corto plazo. La A se centra en liderazgo y equipos, no en aprendizaje individual. La B habla de comunicación, no del concepto psicológico. La C parece referirse a entorno físico de trabajo, que no es el sentido de la ZDP.",
-    },
-  ],
+  "6️⃣ Dosimetría y control de dosis\nLa dosimetría permite controlar la exposición en el entorno radiológico. Puede ser ambiental, de área o personal. Los dosímetros pasivos no requieren electricidad y no ofrecen lectura inmediata; los activos sí requieren alimentación eléctrica y permiten medición en tiempo real. Los dosímetros más utilizados son los de termoluminiscencia. La normativa exige controlar las dosis recibidas y conservar el historial dosimétrico."
+],
+questions: [
+  {
+    q: "Entre las magnitudes radiológicas encontramos:",
+    options: [
+      "Magnitudes físicas fundamentales",
+      "Magnitudes de radioprotección",
+      "Magnitudes operacionales",
+      "Todas son correctas.",
+    ],
+    correct: 3,
+    explain:
+      "La respuesta correcta es la D porque las magnitudes radiológicas se clasifican en físicas fundamentales, de radioprotección y operacionales.",
+  },
+  {
+    q: "La dosis efectiva (E) es una:",
+    options: [
+      "Magnitud física fundamental",
+      "Magnitud de radioprotección",
+      "Magnitud operacionales",
+      "Magnitud de medida",
+    ],
+    correct: 1,
+    explain:
+      "La respuesta correcta es la B porque la dosis efectiva valora el riesgo biológico teniendo en cuenta la sensibilidad de los tejidos.",
+  },
+  {
+    q: "La dosis personal es una:",
+    options: [
+      "Magnitud física fundamental",
+      "Magnitud de radioprotección",
+      "Magnitud operacionales",
+      "Magnitud de medida",
+    ],
+    correct: 2,
+    explain:
+      "La respuesta correcta es la C porque la dosis personal se usa en la vigilancia práctica del trabajador expuesto.",
+  },
+  {
+    q: "La radiactividad es una:",
+    options: [
+      "Magnitud física fundamental",
+      "Magnitud de radioprotección",
+      "Magnitud operacionales",
+      "Magnitud de medida",
+    ],
+    correct: 0,
+    explain:
+      "La respuesta correcta es la A porque la radiactividad forma parte de las magnitudes físicas fundamentales.",
+  },
+  {
+    q: "Las medidas dosimétricas que se realizan en zonas de acceso restringido y controlado para personal cualificado se denominan:",
+    options: [
+      "Dosimetría radiológica ambiental",
+      "Dosimetría radiológica de área",
+      "Dosimetría personal",
+      "Ninguna de las anteriores",
+    ],
+    correct: 1,
+    explain:
+      "La respuesta correcta es la B porque la dosimetría radiológica de área controla zonas restringidas o controladas donde trabaja personal cualificado.",
+  },
+  {
+    q: "Las unidades de la energía cinética liberada por la radiación o Kerma son:",
+    options: [
+      "Julio por kilogramo o Gray (Gy)",
+      "Julio por gramo",
+      "Greys (Ge)",
+      "Culombio por kilogramo (C/Kg)",
+    ],
+    correct: 0,
+    explain:
+      "La respuesta correcta es la A porque el Kerma se expresa en julio por kilogramo, unidad equivalente al Gray (Gy).",
+  },
+  {
+    q: "Los detectores de radiación que sólo detectan los fotones o partículas son:",
+    options: [
+      "Detectores",
+      "Contadores",
+      "Espectómetros",
+      "Ninguna de las anteriores",
+    ],
+    correct: 1,
+    explain:
+      "La respuesta correcta es la B porque los contadores registran eventos de radiación, como fotones o partículas detectadas.",
+  },
+  {
+    q: "Los dosímetros más utilizados son:",
+    options: [
+      "Detectores de centelleo",
+      "Detectores de neutrones",
+      "Detectores de termoluminiscencia",
+      "Detectores de ionización gaseosa",
+    ],
+    correct: 2,
+    explain:
+      "La respuesta correcta es la C porque los dosímetros de termoluminiscencia son muy usados en dosimetría personal por su precisión y tamaño reducido.",
+  },
+  {
+    q: "Un dosímetro activo:",
+    options: [
+      "Permite medir en tiempo real",
+      "Requiere de una fuente de electricidad para funcionar",
+      "Todas son correctas",
+      "Son las cámaras de ionización de gases y los detectores de centelleo",
+    ],
+    correct: 2,
+    explain:
+      "La respuesta correcta es la C porque un dosímetro activo necesita alimentación eléctrica, permite medición inmediata y puede incluir cámaras de ionización o detectores de centelleo.",
+  },
+  {
+    q: "Un equipo o dispositivo utilizado para medir la dosis de radiación se denomina:",
+    options: [
+      "Dosímetro",
+      "Medidómetro",
+      "Magnitudómetro",
+      "Radiómetro",
+    ],
+    correct: 0,
+    explain:
+      "La respuesta correcta es la A porque el dosímetro es el dispositivo utilizado para medir la dosis de radiación recibida.",
+  },
+],
 },
 
 {
   id: "fol-u2",
-  title: "FOL · U2 · Condiciones de trabajo, salud y riesgos",
-  summary: [
-    "1️⃣ Relación entre trabajo y salud\nLa salud es bienestar físico, mental y social (OMS). El trabajo puede mejorar o perjudicar estas áreas. Las condiciones de trabajo incluyen locales, iluminación, ventilación, equipos, sustancias, horarios y organización. La cultura preventiva consiste en identificar riesgos, evaluarlos y tomar medidas para evitarlos o reducirlos.",
+title: "Protección Radiológica · U2 · Interacción de la radiación con el cuerpo",
+summary: [
+  "1️⃣ Visión general\nEsta unidad explica cómo interactúan las radiaciones ionizantes con el cuerpo humano. Su peligrosidad radica en su capacidad para ionizar la materia y alterar estructuras celulares, siendo el ADN el principal blanco del daño.",
 
-    "2️⃣ Daños derivados del trabajo\nSon enfermedades, lesiones o patologías causadas por el trabajo.\n• Enfermedad profesional: deterioro de salud por exposición repetida a agentes del cuadro oficial.\n• Accidente de trabajo: lesión corporal por consecuencia del trabajo. Incluye in itinere, actos de salvamento, tareas ordenadas por el empresario y enfermedades agravadas por accidente.\nNo cuentan: fuerza mayor ajena al trabajo o imprudencia temeraria. Sí cuenta la imprudencia profesional (confianza por experiencia).",
+  "2️⃣ Mecanismos de acción\nExisten dos formas principales de interacción:\n• Acción directa: la radiación impacta directamente sobre el ADN u otros componentes celulares, alterando su estructura.\n• Acción indirecta: la radiación actúa sobre el agua celular (radiólisis), generando radicales libres que dañan las biomoléculas.",
 
-    "3️⃣ Patologías psicosociales\n• Estrés laboral: demandas > capacidad percibida. Síntomas físicos, psicológicos y conductuales.\n• Fatiga laboral: agotamiento físico o mental por carga excesiva.\n• Mobbing: acoso psicológico continuado (humillaciones, aislamiento, burlas). Puede venir de jefes o compañeros.\n• Burnout: agotamiento emocional + despersonalización + baja realización personal.",
+  "3️⃣ Daño en biomoléculas y ADN\nLas biomoléculas no tienen la misma sensibilidad:\n• Glúcidos: poco importantes por su rápida renovación.\n• Lípidos: se alteran por oxidación.\n• Proteínas: pierden su función al modificarse su estructura.\n• ADN: es el más sensible, ya que contiene la información genética.\nEl daño puede ser molecular (roturas, mutaciones) o cromosómico (alteraciones estructurales).",
 
-    "4️⃣ Riesgos laborales y medidas preventivas\nUn riesgo laboral es la probabilidad de que las condiciones de trabajo causen daño. Es grave e inminente si puede suceder pronto y con gran impacto.",
+  "4️⃣ Radiosensibilidad\nLa radiosensibilidad es la capacidad de una célula de sufrir daño por radiación. Depende de factores como:\n• Fase del ciclo celular (la fase S replica ADN)\n• Edad biológica\n• Nivel de diferenciación\n• LET y tasa de dosis\nTambién influyen sustancias externas como radioprotectores y radiosensibilizadores.",
 
-    "5️⃣ Condiciones de seguridad — Lugares de trabajo\nRiesgos: caídas, golpes, atrapamientos, resbalones.\nMedidas: suelos antideslizantes, buena iluminación, altura mínima, espacio adecuado, pasillos amplios, salidas de emergencia señalizadas.",
+  "5️⃣ Efectos biológicos\n• Efectos deterministas: tienen umbral y la gravedad depende de la dosis.\n• Efectos estocásticos: no tienen umbral y dependen de la probabilidad (ejemplo: cáncer).\nLas alteraciones en genes o proteínas pueden provocar enfermedades como el cáncer.",
 
-    "6️⃣ Factores de riesgo físicos\nIncluyen: ruido, vibraciones, radiaciones, temperatura, humedad e iluminación.\nEfectos: pérdida auditiva, lesiones musculares, quemaduras, cáncer, golpe de calor, fatiga visual.\nMedidas: máquinas menos ruidosas, aislamiento acústico, ventilación, control de clima, EPIs (tapones, gafas), revisiones médicas.",
-
-    "7️⃣ Factores químicos y biológicos\n• Químicos: tóxicos, corrosivos, irritantes, inflamables, explosivos, carcinógenos.\n• Biológicos: bacterias, virus, hongos, parásitos.\nMedidas: sustituir sustancias peligrosas, aislar procesos, ventilación, extracción localizada, EPIs (guantes, mascarillas, gafas), higiene y vacunación cuando corresponda.",
-
-    "8️⃣ Factores psicosociales\nRiesgos derivados de la organización: carga de trabajo, turnos, monotonía, falta de autonomía, mal liderazgo.\nMedidas: rediseño de tareas, buena planificación, mejorar comunicación, rotación de tareas, apoyo psicológico y mediación.",
-
-    "9️⃣ Factores ergonómicos\nMala ergonomía → dolores musculares, lesiones, fatiga.\nMedidas: postura correcta, manipulación segura de cargas, herramientas adecuadas, pausas frecuentes, rotación de tareas, uso de ayudas mecánicas.",
-
-    "🔌 10️⃣ Riesgo eléctrico\nLa corriente puede causar quemaduras, fibrilación, paro respiratorio o muerte.\nMedidas: instalaciones seguras, puesta a tierra, diferenciales, aislamiento de cables, señalización y formación específica.",
-
-    "🧾 11️⃣ Conclusión\nEvaluar riesgos permite identificar peligros y planificar medidas preventivas. Comprender daños físicos, químicos, biológicos, psicosociales, ergonómicos y eléctricos es básico para crear trabajos seguros y una auténtica cultura preventiva."
-  ],
-  questions: [
-    {
-      q: "¿Qué son las condiciones de trabajo?",
-      options: [
-        "Las características generales de las instalaciones y equipos",
-        "Los elementos integrados en los principios generales de la acción preventiva",
-        "Cualquier particularidad laboral que pueda generar riesgos para la seguridad y la salud del trabajador",
-        "Las responsabilidades que asume cada una de las partes implicadas",
-      ],
-      correct: 2,
-      explain:
-        "La respuesta correcta es la C porque las condiciones de trabajo incluyen todos los elementos del puesto (tiempos, organización, equipos, ambiente, etc.) que pueden afectar a la seguridad y salud del trabajador, generando riesgos. La A solo habla de instalaciones y equipos, que es una parte. La B se refiere a principios de acción preventiva, no a las condiciones en sí. La D se centra en responsabilidades legales, no en las características del puesto.",
-    },
-    {
-      q: "Cuando hablamos de salud, hacemos referencia a:",
-      options: [
-        "Salud real, percibida y asociada",
-        "Salud física, social y psíquica",
-        "Salud personal, laboral e interpersonal",
-        "Salud interior, exterior y contextual",
-      ],
-      correct: 1,
-      explain:
-        "La respuesta correcta es la B porque la definición de la OMS considera la salud como un estado de completo bienestar físico, mental (psíquico) y social, no solo ausencia de enfermedad. La A mezcla otros tipos de clasificaciones pero no es la definición clásica. La C y la D inventan categorías que no se corresponden con el enfoque oficial de salud en prevención de riesgos laborales.",
-    },
-    {
-      q: "Dentro de la organización del trabajo, la carga de trabajo incluye:",
-      options: [
-        "Exigencias físicas y mentales",
-        "Exigencias directas e indirectas",
-        "Elementos tangibles, intangibles y neutrales",
-        "Responsabilidades respecto a medios y actividades",
-      ],
-      correct: 0,
-      explain:
-        "La respuesta correcta es la A porque la carga de trabajo se define como el conjunto de exigencias físicas (esfuerzo muscular, posturas, movimientos) y mentales (atención, concentración, toma de decisiones) que el trabajo impone al trabajador. La B, C y D son clasificaciones que no se usan en PRL para definir carga de trabajo.",
-    },
-    {
-      q: "La enfermedad profesional:",
-      options: [
-        "Debe estar recogida en el listado de la Directiva Marco",
-        "Se define como toda lesión corporal por cuenta ajena como consecuencia del trabajo",
-        "Incluye las que sean por dolo o imprudencia temeraria del trabajador",
-        "Ninguna es correcta",
-      ],
-      correct: 3,
-      explain:
-        "La respuesta correcta es la D porque ninguna de las otras opciones recoge bien la definición legal. La enfermedad profesional debe estar recogida en el cuadro oficial de enfermedades profesionales del sistema de Seguridad Social, no en una simple directiva marco (A). La B describe más bien el accidente de trabajo (lesión corporal súbita). La C mezcla conceptos de culpabilidad del trabajador, que no son el criterio para definir enfermedad profesional.",
-    },
-    {
-      q: "Las dimensiones del burnout son:",
-      options: [
-        "Agotamiento emocional, despersonalización y baja realización personal",
-        "Manifestación general, manifestación local e intensidad",
-        "Desinterés, agresividad y bajo rendimiento",
-        "Baja atención, aumento de conflictos e irascibilidad",
-      ],
-      correct: 0,
-      explain:
-        "La respuesta correcta es la A: el síndrome de burnout se caracteriza por agotamiento emocional (cansancio extremo), despersonalización (trato frío o cínico hacia los usuarios) y sensación de baja realización personal. Las otras opciones mencionan posibles consecuencias o síntomas, pero no responden a la clasificación clásica de dimensiones del burnout que se estudia en FOL.",
-    },
-    {
-      q: "Agentes que al entrar en contacto con tejidos vivos los pueden destruir se denominan:",
-      options: ["Irritantes", "Corrosivos", "Inflamables", "Tóxicos"],
-      correct: 1,
-      explain:
-        "La respuesta correcta es la B porque los agentes corrosivos destruyen los tejidos con los que contactan (piel, mucosas, ojos). Los irritantes (A) causan inflamación o irritación pero no destrucción profunda. Los inflamables (C) se caracterizan por arder con facilidad, no por dañar directamente tejidos. Los tóxicos (D) producen efectos nocivos por inhalación, ingestión o contacto, pero su mecanismo no es necesariamente corrosivo.",
-    },
-    {
-      q: "Agentes que por inhalación, ingestión o penetración cutánea pueden provocar efectos agudos o crónicos e incluso la muerte:",
-      options: ["Irritantes", "Corrosivos", "Inflamables", "Tóxicos"],
-      correct: 3,
-      explain:
-        "La respuesta correcta es la D porque los agentes tóxicos son los que, al entrar en el organismo, pueden producir daños graves, enfermedades crónicas o incluso la muerte. Los irritantes (A) producen sobre todo inflamación local. Los corrosivos (B) destruyen tejidos donde contactan, pero el foco es local. Los inflamables (C) se caracterizan por arder fácilmente, no por su toxicidad interna.",
-    },
-    {
-      q: "Determina si el tono es agudo o grave y se mide en hercios (Hz):",
-      options: ["Frecuencia", "Duración", "Intensidad", "Volumen"],
-      correct: 0,
-      explain:
-        "La respuesta correcta es la A porque la frecuencia de una onda sonora, medida en hercios, indica cuántas vibraciones por segundo tiene y determina que el sonido se perciba como más agudo (frecuencia alta) o más grave (frecuencia baja). La duración (B) es el tiempo que se mantiene el sonido. La intensidad (C) y el volumen (D) tienen que ver con lo fuerte o débil que se percibe, no con que sea agudo o grave.",
-    },
-    {
-      q: "El factor que permite que el ruido pueda ser continuo, discontinuo o de impacto se denomina:",
-      options: ["Frecuencia", "Duración", "Intensidad", "Volumen"],
-      correct: 1,
-      explain:
-        "La respuesta correcta es la B porque la duración del ruido (cómo se mantiene en el tiempo) es lo que permite clasificarlo en continuo (constante), discontinuo (se repite con pausas) o de impacto (golpe breve e intenso). La frecuencia (A) tiene que ver con el tono. La intensidad (C) y el volumen (D) se refieren a lo fuerte que es el sonido, no a su carácter continuo o intermitente.",
-    },
-    {
-      q: "El instrumento de medida utilizado para medir la cantidad de luz es el:",
-      options: ["Lumen", "Lux", "Luxómetro", "Lumenógeno"],
-      correct: 2,
-      explain:
-        "La respuesta correcta es la C porque el luxómetro es el aparato que se utiliza para medir la iluminación (en lux) sobre una superficie. El lumen (A) es una unidad que mide flujo luminoso, no el aparato. El lux (B) es la unidad de iluminación que justamente mide el luxómetro. Lumenógeno (D) no es un término técnico habitual en PRL.",
-    },
-  ],
+  "6️⃣ Respuesta del organismo\nLa radiación puede provocar daños celulares, muerte celular o alteraciones del ciclo celular. En exposiciones altas aparece el síndrome de radiación aguda. A largo plazo pueden aparecer cataratas, cáncer o reducción de la esperanza de vida. El embrión es especialmente sensible, por lo que se evita la exposición en personas gestantes."
+],
+questions: [
+  {
+    q: "Entre los efectos que se producen en el ADN por parte de las radiaciones ionizantes encontramos:",
+    options: [
+      "Efectos a nivel molecular",
+      "Efectos a nivel cromosómico",
+      "A y B son correctas",
+      "Ninguna es correcta"
+    ],
+    correct: 2,
+    explain:
+      "La respuesta correcta es la C porque la radiación puede producir daños tanto a nivel molecular como a nivel cromosómico en el ADN.",
+  },
+  {
+    q: "Entre los factores que afectan a la sensibilidad celular encontramos:",
+    options: [
+      "Fase del ciclo celular",
+      "Edad biológica",
+      "Nivel de diferenciación celular",
+      "Todas son correctas"
+    ],
+    correct: 3,
+    explain:
+      "La respuesta correcta es la D porque la radiosensibilidad depende de múltiples factores como la fase celular, edad y diferenciación.",
+  },
+  {
+    q: "La alteración de genes o proteínas que regulan el crecimiento y la división celular pueden ser causa de:",
+    options: [
+      "Cáncer",
+      "Anomalías hereditarias",
+      "Síndrome gastrointestinal",
+      "Cataratas"
+    ],
+    correct: 0,
+    explain:
+      "La respuesta correcta es la A porque las alteraciones genéticas pueden provocar proliferación celular descontrolada, es decir, cáncer.",
+  },
+  {
+    q: "La fase del ciclo celular en la que se replica/duplica el ADN es la:",
+    options: [
+      "Fase G1",
+      "Fase G2",
+      "Fase M",
+      "Fase S"
+    ],
+    correct: 3,
+    explain:
+      "La respuesta correcta es la D porque en la fase S se produce la duplicación del ADN.",
+  },
+  {
+    q: "La sensibilidad y susceptibilidad a las radiaciones ionizantes por parte de una célula se denomina:",
+    options: [
+      "Radiosensibilidad",
+      "Susceptibilidad",
+      "Efectos deterministas",
+      "Efectos sensibilistas"
+    ],
+    correct: 0,
+    explain:
+      "La respuesta correcta es la A porque la radiosensibilidad describe la capacidad de una célula para verse afectada por la radiación.",
+  },
+  {
+    q: "La/s molécula/s más sensibles a la radiación son:",
+    options: [
+      "Glúcidos",
+      "Lípidos",
+      "Proteínas",
+      "ADN"
+    ],
+    correct: 3,
+    explain:
+      "La respuesta correcta es la D porque el ADN es la biomolécula más sensible a la radiación.",
+  },
+  {
+    q: "La acción o mecanismo directo de una radiación hace referencia a:",
+    options: [
+      "Cuando la radiación impacta directamente con componentes de la célula (ADN, proteínas, orgánulos, etc.), que ven alterada su estructura química",
+      "La radiación incide sobre estructuras del medio que alteran la célula",
+      "Ninguna es correcta",
+      "Todas son correctas"
+    ],
+    correct: 0,
+    explain:
+      "La respuesta correcta es la A porque el mecanismo directo implica impacto directo sobre estructuras celulares.",
+  },
+  {
+    q: "Los efectos deterministas son:",
+    options: [
+      "Aquellos en los que la dosis de radiación recibida se relaciona directamente y de manera lineal con el daño o el efecto causado",
+      "Aquellos en los que la dosis no se relaciona con el daño",
+      "Aquellos que dependen de la probabilidad",
+      "Ninguna de las anteriores"
+    ],
+    correct: 0,
+    explain:
+      "La respuesta correcta es la A porque los efectos deterministas dependen directamente de la dosis recibida y tienen umbral.",
+  },
+  {
+    q: "Una lesión celular se define como:",
+    options: [
+      "La rotura de una célula",
+      "Exclusivamente la muerte inmediata de la célula",
+      "Cualquier daño que se produzca en la célula que le cause su muerte o alteraciones en el ciclo celular",
+      "Ninguna de las anteriores"
+    ],
+    correct: 2,
+    explain:
+      "La respuesta correcta es la C porque una lesión celular incluye cualquier daño que altere su funcionamiento o provoque su muerte.",
+  },
+  {
+    q: "Una sustancia cuyo efecto consiste en reparar un daño o absorber la radiación se denomina:",
+    options: [
+      "Radiotrazador",
+      "Radioisótopo",
+      "Tasa de dosis",
+      "Radioprotector"
+    ],
+    correct: 3,
+    explain:
+      "La respuesta correcta es la D porque los radioprotectores ayudan a reducir el daño producido por la radiación.",
+  }
+],
 },
 
 {
   id: "fol-u3",
-  title: "FOL · U3 · Prevención, protección y primeros auxilios",
-  summary: [
-    "1️⃣ Visión general\nLa unidad explica cómo se organiza la prevención en una empresa: marco legal, derechos y deberes, responsables, gestión, señalización, medidas colectivas/individuales y actuación en emergencias y primeros auxilios.",
+ id: "fol-u3",
+title: "Protección Radiológica · U3 · Protección radiológica operacional",
+summary: [
+  "1️⃣ Visión general\nEsta unidad explica la protección radiológica como disciplina que busca proteger a las personas y al medio ambiente frente a los efectos de las radiaciones ionizantes. Se basa en normativa internacional y nacional, y en principios fundamentales que garantizan la seguridad.",
 
-    "2️⃣ Marco normativo básico\n• Constitución Española: garantiza seguridad y salud en el trabajo.\n• Ley 31/1995: base de la PRL en España.\n• Reglamento de los Servicios de Prevención: define cómo se organiza la actividad preventiva.\n• Derecho comunitario/UE: directivas y normativa europea que España adapta.",
+  "2️⃣ Objetivos de la protección radiológica\nLos objetivos principales son:\n• Evitar los efectos deterministas (daños con umbral como quemaduras o cataratas).\n• Reducir los efectos estocásticos (probabilidad de cáncer o mutaciones genéticas).\nPara ello se aplican medidas de control y vigilancia en todos los entornos con radiación.",
 
-    "3️⃣ Derechos y deberes\nEmpresa debe: informar, formar, evaluar riesgos, entregar EPIs, plan de prevención, vigilar la salud.\nTrabajador tiene derecho a: información, formación, protección, participación y a parar en caso de riesgo grave.\nResponsabilidad compartida entre trabajador y empresa.",
+  "3️⃣ Principios básicos\nToda práctica con radiaciones ionizantes se rige por tres principios:\n• Justificación: la práctica debe aportar más beneficio que riesgo.\n• Optimización (ALARA): la dosis debe mantenerse lo más baja posible.\n• Limitación de dosis: no se deben superar los límites establecidos por la normativa.",
 
-    "4️⃣ Responsabilidades y sanciones\nEmpresario: responsabilidad administrativa, civil y penal. Sanciones: multas, cierre, incluso prisión.\nTrabajador: responsabilidades disciplinarias, civiles y penales si incumple normas de seguridad.\nLas sanciones las aplican Inspección de Trabajo y tribunales.",
+  "4️⃣ Tipos de exposición\nLa exposición a radiación puede clasificarse en:\n• Externa: la radiación proviene del exterior.\n• Interna: hay contaminación por inhalación, ingestión o inyección.\nTambién puede ser total o parcial, planificada o accidental, y continua o puntual.",
 
-    "5️⃣ Representación en prevención\n• Delegados de prevención: representan a los trabajadores en PRL.\n• Comité de Seguridad y Salud: obligatorio en empresas de +50 trabajadores.\nFunciones: participar en evaluación, planificación, formación y seguimiento de medidas preventivas.",
+  "5️⃣ Clasificación del personal y zonas\nEl personal se clasifica en:\n• Categoría A: puede recibir más de 6 mSv/año.\n• Categoría B: recibe dosis menores, como el personal técnico (TSID).\n• Público general: límite ≤ 1 mSv/año.\nLas zonas se clasifican en vigiladas y controladas, siendo estas últimas de mayor riesgo.",
 
-    "6️⃣ Organización de la prevención\nModalidades:\n• El propio empresario (cuando hay muy pocos trabajadores y bajo riesgo).\n• Trabajador designado.\n• Servicio de prevención propio.\n• Servicio de prevención ajeno.\nLa elección depende del tamaño y riesgos de la empresa.",
-
-    "7️⃣ Sistema de gestión preventiva\nIncluye: política, planificación, evaluación de riesgos, medidas de control, coordinación entre empresas, documentación y auditorías.\nObjetivo: mejora continua y revisión periódica del sistema de prevención.",
-
-    "8️⃣ Principios y técnicas preventivas\nPrincipios básicos: evitar riesgos, evaluar los inevitables, actuar en origen, priorizar protección colectiva > individual, formar e informar.\nTécnicas: seguridad, higiene industrial, ergonomía, psicosociología y medicina del trabajo.",
-
-    "9️⃣ Medidas de protección\n• Colectivas: protegen a todos (barandillas, extractores, ventilación, resguardos, señalización).\n• Individuales (EPIs): casco, guantes, gafas, mascarillas, arnés…\nLos EPIs deben estar homologados y ser usados correctamente.",
-
-    "🔰 10️⃣ Señalización de seguridad\nFunción: advertir, prohibir, obligar, evacuar y ayudar en emergencias.\nTipos:\n• Prohibición: rojo.\n• Obligación: azul.\n• Advertencia: amarillo.\n• Emergencia/salvamento: verde.\n• Extinción de incendios: rojo.\nPueden ser ópticas, acústicas, gestuales o táctiles.",
-
-    "🚨 11️⃣ Plan de autoprotección y emergencias\nRegulado por RD 393/2007.\nIncluye: identificación de riesgos, medidas preventivas, organización de equipos, protocolos de actuación y simulacros periódicos.\nDebe revisarse cada 3 años.",
-
-    "🚑 12️⃣ Respuesta en emergencias\nPasos: activar alarma, coordinar evacuación, primeros auxilios, relación con bomberos y servicios sanitarios.\nEquipos: jefe de emergencia, equipos de intervención, primeros auxilios y evacuación.",
-
-    "➡️ 13️⃣ Plan de evacuación\nFases: detección → alarma → evacuación → punto de reunión.\nObjetivo: evacuar rápido y sin pánico.\nSe mejora mediante simulacros.",
-
-    "❤️ 14️⃣ Técnicas básicas de primeros auxilios\nProtocolo PAS: Proteger → Avisar → Socorrer.\nActuación: comprobar consciencia y respiración, controlar hemorragias, inmovilizar si hay fracturas, usar botiquín correctamente.\nRCP: 30 compresiones + 2 ventilaciones si no respira.",
-
-    "🩺 15️⃣ Técnicas según lesiones\nHeridas leves: limpiar, desinfectar y cubrir.\nHeridas graves: controlar hemorragia, no retirar objetos clavados, avisar a emergencias.\nQuemaduras: enfriar con agua, cubrir, nunca usar hielo ni cremas caseras.\nHemorragias: presión directa, torniquete solo en casos extremos.\nFracturas: inmovilizar y no mover al herido salvo peligro."
-  ],
-  questions: [
-    {
-      q: "En prevención y protección, empresario y trabajadores tienen una responsabilidad:",
-      options: [
-        "Administrativa, civil y penal",
-        "Directa, indirecta y asociada",
-        "Criminal, procesal y judicial",
-        "Laboral, administrativa y social",
-      ],
-      correct: 0,
-      explain:
-        "La respuesta correcta es la A porque las infracciones en materia de prevención pueden tener consecuencias administrativas (sanciones), civiles (indemnizaciones) y penales (delitos contra la seguridad de los trabajadores). La B y la C son clasificaciones genéricas que no reflejan los tipos de responsabilidad reconocidos en PRL. La D mezcla ámbitos pero no es la fórmula jurídica habitual.",
-    },
-    {
-      q: "Se constituirá un Comité de Seguridad y Salud en empresas o centros con:",
-      options: ["10 o más", "25 o más", "50 o más", "100 o más"],
-      correct: 2,
-      explain:
-        "La respuesta correcta es la C porque la ley establece que el Comité de Seguridad y Salud se crea en empresas o centros de trabajo con 50 o más trabajadores. Por debajo de esa cifra no hay comité como tal, aunque sí puede haber delegados de prevención. Las otras opciones (10, 25, 100) no se corresponden con el umbral legal habitual.",
-    },
-    {
-      q: "El desarrollo legislativo en materia de prevención parte desde:",
-      options: [
-        "Derecho consuetudinario",
-        "OMS",
-        "Reglamentos internos",
-        "Derecho Comunitario y Constitución española",
-      ],
-      correct: 3,
-      explain:
-        "La respuesta correcta es la D porque el marco de la prevención se apoya en la Constitución (derecho a la protección de la salud y a la integridad física) y en el derecho comunitario europeo (directivas) que se trasponen a la legislación nacional. El derecho consuetudinario (A) son usos y costumbres, no la base principal. La OMS (B) da recomendaciones, pero no legisla en España. Los reglamentos internos (C) son normas de empresa, subordinadas a la ley.",
-    },
-    {
-      q: "La elección de delegados de prevención se hará:",
-      options: [
-        "Entre miembros del Comité de Seguridad y Salud",
-        "A través de los directivos de la empresa",
-        "A través de los representantes de los trabajadores y de entre ellos",
-        "Entre los miembros más cualificados en Seguridad Social",
-      ],
-      correct: 2,
-      explain:
-        "La respuesta correcta es la C porque la ley establece que los delegados de prevención son elegidos por y entre los representantes de los trabajadores (comité de empresa o delegados de personal). La A confunde con el Comité de Seguridad y Salud, que se compone entre otros por esos delegados. La B es incorrecta porque la empresa no los nombra unilateralmente. La D no es un criterio legal de elección.",
-    },
-    {
-      q: "En relación con las medidas de protección:",
-      options: [
-        "Debe primar la seguridad individual sobre la colectiva",
-        "Debe primar la seguridad colectiva sobre la individual",
-        "Se centran en el uso de señalización",
-        "Son lo mismo que técnicas de prevención",
-      ],
-      correct: 1,
-      explain:
-        "La respuesta correcta es la B porque el principio básico es priorizar las medidas de protección colectiva (barandillas, resguardos, ventilación, etc.) frente a las individuales (EPIs). La A contradice este principio. La C reduce las medidas de protección a señalización, que es solo una parte. La D confunde medidas de protección con técnicas preventivas en general (seguridad, higiene, ergonomía…).",
-    },
-    {
-      q: "Equipo que el trabajador lleva puesto para protegerle de riesgos se denomina:",
-      options: [
-        "Equipo de Prevención Interna",
-        "Equipo de Protección Colectivo",
-        "Equipo de Protección Individual",
-        "Equipo de Protección Ergonómico",
-      ],
-      correct: 2,
-      explain:
-        "La respuesta correcta es la C porque el EPI (Equipo de Protección Individual) es aquel que lleva o sujeta el trabajador para protegerse de uno o varios riesgos (casco, guantes, gafas…). El equipo de protección colectivo (B) protege a varios trabajadores a la vez y no se lleva puesto (redes, barandillas, etc.). A y D no son denominaciones oficiales en PRL.",
-    },
-    {
-      q: "La señalización de seguridad:",
-      options: [
-        "Establece condiciones de tamaño del puesto",
-        "Requiere seguir instrucciones del fabricante para mantenimiento",
-        "Siempre incluye un pictograma",
-        "Da indicación u obligación en relación con seguridad o salud en el puesto",
-      ],
-      correct: 3,
-      explain:
-        "La respuesta correcta es la D porque la señalización de seguridad tiene como función dar información, advertencia u obligación relacionada con la seguridad y salud (prohibido fumar, uso obligatorio de casco, salida de emergencia…). La A habla de dimensiones del puesto, que no es el objetivo. La B es una recomendación general de mantenimiento, no la definición. La C es falsa porque no toda señalización lleva pictograma (también hay señales acústicas, luminosas, etc.).",
-    },
-    {
-      q: "Ante una situación de emergencia se debe:",
-      options: [
-        "Mantener la calma y actuar con rapidez",
-        "Examinar el lugar y comprobar otros peligros",
-        "Intentar evitar el shock",
-        "Todas las anteriores son correctas",
-      ],
-      correct: 3,
-      explain:
-        "La respuesta correcta es la D porque todas las acciones forman parte de una buena actuación ante emergencias: mantener la calma para pensar, evaluar el lugar por si hay riesgos añadidos (fuego, gas, tráfico…), y cuidar al accidentado para evitar el shock. Por separado, A, B y C son medidas correctas pero incompletas; juntas resumen la actuación adecuada.",
-    },
-    {
-      q: "En primeros auxilios, el orden adecuado es:",
-      options: [
-        "Proteger, Avisar y Socorrer",
-        "Prevenir, Actuar y Socorrer",
-        "Proteger, Ayudar y Solucionar",
-        "Prevenir, Alentar y Solventar",
-      ],
-      correct: 0,
-      explain:
-        "La respuesta correcta es la A: primero Proteger (a la víctima, al entorno y a nosotros mismos), luego Avisar a los servicios de emergencia y por último Socorrer dentro de nuestras capacidades. Las demás opciones inventan secuencias que no responden al protocolo clásico PAS que se estudia en FOL.",
-    },
-    {
-      q: "En RCP hay que hacer:",
-      options: [
-        "10 compresiones y 1 insuflación",
-        "25 compresiones y 3 insuflaciones",
-        "30 compresiones y 2 insuflaciones",
-        "20 compresiones y 2 insuflaciones",
-      ],
-      correct: 2,
-      explain:
-        "La respuesta correcta es la C porque la recomendación básica de RCP en adultos es realizar ciclos de 30 compresiones torácicas seguidas de 2 ventilaciones de rescate. Los otros números (10:1, 25:3, 20:2) no coinciden con el protocolo estándar que se enseña en primeros auxilios.",
-    },
-  ],
+  "6️⃣ Medidas de protección\nLas medidas fundamentales para reducir la exposición son:\n• Tiempo: reducir el tiempo de exposición disminuye la dosis.\n• Distancia: a mayor distancia, menor radiación.\n• Blindaje: uso de materiales como plomo para absorber la radiación.\nAdemás, se realiza vigilancia ambiental y dosimetría personal para controlar la exposición."
+],
+questions: [
+  {
+    q: "El criterio ALARA (As Low As Reasonably Achievable) se relaciona con:",
+    options: [
+      "Justificación",
+      "Blindaje",
+      "Limitación de dosis",
+      "Optimización"
+    ],
+    correct: 3,
+    explain:
+      "La respuesta correcta es la D porque el principio ALARA hace referencia a mantener la dosis lo más baja posible, es decir, optimización.",
+  },
+  {
+    q: "El personal técnico de imagen (TSID) se clasifica como:",
+    options: [
+      "Categoría A",
+      "Categoría B",
+      "Categoría C",
+      "Categoría D"
+    ],
+    correct: 1,
+    explain:
+      "La respuesta correcta es la B porque el personal técnico suele clasificarse como categoría B, con exposición moderada.",
+  },
+  {
+    q: "El registro y notificación de las dosis de radiación recibidas por parte del personal se realizan en:",
+    options: [
+      "Historial dosimétrico individual",
+      "Historial médico",
+      "Documento de registro",
+      "Ninguna es correcta"
+    ],
+    correct: 0,
+    explain:
+      "La respuesta correcta es la A porque el historial dosimétrico recoge todas las dosis recibidas por el trabajador.",
+  },
+  {
+    q: "El tiempo de exposición es:",
+    options: [
+      "La cantidad de tiempo a la que se expone a una radiación ionizante",
+      "Directamente proporcional a la dosis recibida",
+      "Se puede calcular matemáticamente con la fórmula Dosis = tasa de dosis · tiempo",
+      "Todas son correctas"
+    ],
+    correct: 3,
+    explain:
+      "La respuesta correcta es la D porque todas las afirmaciones describen correctamente el tiempo de exposición.",
+  },
+  {
+    q: "La sala de exploración es una:",
+    options: [
+      "Zona vigilada",
+      "Zona controlada de acceso prohibido",
+      "Zona controlada",
+      "Zona normal"
+    ],
+    correct: 2,
+    explain:
+      "La respuesta correcta es la C porque la sala de exploración es una zona controlada por el riesgo radiológico.",
+  },
+  {
+    q: "Las fuentes radiactivas pueden clasificarse en:",
+    options: [
+      "Riesgos de exposición externa",
+      "Riesgos de contaminación radiactiva",
+      "Ambas son correctas",
+      "Ninguna es correcta"
+    ],
+    correct: 2,
+    explain:
+      "La respuesta correcta es la C porque las fuentes pueden producir tanto exposición externa como contaminación.",
+  },
+  {
+    q: "Las medidas para la prevención, vigilancia y control de la exposición a radiaciones ionizantes se reflejan en la normativa española en:",
+    options: [
+      "Real Decreto 601/2019",
+      "Real Decreto 783/2001",
+      "Real Decreto 2013/2020",
+      "Ninguna de las anteriores"
+    ],
+    correct: 0,
+    explain:
+      "La respuesta correcta es la A porque el RD 601/2019 regula la justificación y optimización en el ámbito médico.",
+  },
+  {
+    q: "Los principios básicos de la protección radiológica son:",
+    options: [
+      "Justificación, exposición y limitación de dosis",
+      "Justificación, optimización y limitación de la exposición",
+      "Optimización, blindaje y exposición",
+      "Optimización, limitación de la exposición e historial dosimétrico"
+    ],
+    correct: 1,
+    explain:
+      "La respuesta correcta es la B porque los tres principios básicos son justificación, optimización y limitación de dosis.",
+  },
+  {
+    q: "Se define como la actividad multidisciplinar cuya finalidad es la protección de personas y el medio ambiente contra los efectos nocivos de la exposición a radiaciones ionizantes a:",
+    options: [
+      "Protección radiológica",
+      "Optimización",
+      "Limitación de exposición",
+      "Blindaje"
+    ],
+    correct: 0,
+    explain:
+      "La respuesta correcta es la A porque define directamente el concepto de protección radiológica.",
+  },
+  {
+    q: "Una zona controlada se señaliza con:",
+    options: [
+      "Símbolo de aviso de radiación en forma de trébol de color verde",
+      "Símbolo de aviso de radiación en forma de trébol de color gris",
+      "Símbolo de aviso de radiación en forma de pétalo de color rojo",
+      "Símbolo de aviso de radiación en forma cuadrada de color verde"
+    ],
+    correct: 0,
+    explain:
+      "La respuesta correcta es la A porque las zonas controladas se señalizan con el símbolo de radiación en color verde.",
+  }
+],
 },
 
 {
   id: "fol-u4",
-  title: "FOL · U4 · Normativa laboral, principios y representación",
-  summary: [
-    "1️⃣ Visión general\nLa unidad explica el marco legal del trabajo, la relación laboral individual, los derechos y deberes de trabajadores y empresarios, la representación colectiva, los convenios y la resolución de conflictos laborales.",
+  id: "fol-u4",
+title: "Protección Radiológica · U4 · Instalaciones radiactivas",
+summary: [
+  "1️⃣ Visión general\nEsta unidad explica qué es una instalación radiactiva, cómo se clasifica y qué requisitos legales y técnicos debe cumplir para poder funcionar. Toda instalación que utilice radiación ionizante está regulada y requiere autorización previa.",
 
-    "2️⃣ Derecho del trabajo: fuentes y principios\n• Regula las relaciones trabajador–empresa.\n• Nace tras la Revolución Industrial para proteger al trabajador.\n• Principios: protección, irrenunciabilidad, norma más favorable, condición más beneficiosa, norma mínima y primacía de la realidad.\n• Fuentes internas: Constitución, leyes, reglamentos y convenios.\n• Fuentes externas: Derecho europeo, tratados internacionales y OIT.",
+  "2️⃣ Definición de instalación radiactiva\nSe considera instalación radiactiva cualquier lugar donde exista una fuente de radiación ionizante o equipos que funcionen con una diferencia de potencial superior a 5 kV. Estas instalaciones pueden tener fines médicos, industriales o de investigación.",
 
-    "3️⃣ Relación laboral individual\nCaracterísticas de una relación laboral real:\n• Voluntaria\n• Personal (solo la persona contratada)\n• Dependiente (obedece órdenes)\n• Por cuenta ajena (para una empresa)\n• Remunerada\nNo son relaciones laborales: autónomos, funcionarios, trabajos familiares, voluntarios o actividades sin salario.",
+  "3️⃣ Clasificación de instalaciones\nLas instalaciones radiactivas se clasifican en tres categorías según su riesgo:\n• Primera categoría: alta actividad o gran riesgo (industria nuclear).\n• Segunda categoría: instalaciones con alta actividad o equipos de alta energía.\n• Tercera categoría: instalaciones de menor riesgo, como muchos equipos de rayos X.",
 
-    "4️⃣ Derechos del trabajador\nDerechos básicos:\n• Igualdad y no discriminación\n• Seguridad y salud laboral\n• Información y formación\n• Percibir salario puntual\n• Descansos, vacaciones y registro horario\n• Protección ante despidos injustificados\nDerivan del contrato y de la ley laboral.",
+  "4️⃣ Autorización de funcionamiento\nAntes de iniciar la actividad es obligatorio obtener una autorización. Para ello se requiere presentar documentación como:\n• Memoria descriptiva\n• Estudio de seguridad\n• Reglamento de funcionamiento\n• Plan de emergencia\n• Plan de mantenimiento y control\nSin esta autorización no se puede operar legalmente.",
 
-    "5️⃣ Inspección de Trabajo y jurisdicción social\nInspección:\n• Vigila el cumplimiento de las leyes laborales.\n• Puede investigar, entrar en centros de trabajo y pedir documentación.\n• Impone sanciones.\n• Cualquier trabajador puede denunciar irregularidades.\nJurisdicción social:\n• Resuelve conflictos que no se solucionan en la empresa.\n• Interpreta y aplica la ley en juicios laborales.",
+  "5️⃣ Personal de la instalación\nEl personal debe tener cualificación específica:\n• Supervisor: titulación universitaria.\n• Operador: formación profesional.\nLas licencias tienen una duración de 5 años y deben renovarse. En radiodiagnóstico se utilizan acreditaciones que no requieren renovación.",
 
-    "6️⃣ Representación de los trabajadores\nFormas de participación:\n• Información y consulta\n• Representantes unitarios y sindicales\nGarantías de los representantes:\n• Prioridad en permanencia\n• No despido por ejercer el cargo\n• Libertad de expresión en temas laborales",
+  "6️⃣ Diario de operaciones\nEs un documento obligatorio donde se registra toda la actividad de la instalación. Debe estar autorizado por el CSN e incluye datos sobre funcionamiento, personal, incidencias y mantenimiento.",
 
-    "7️⃣ Representación unitaria\n• Delegados de personal: empresas de 10–49 trabajadores.\n• Comité de empresa: a partir de 50 trabajadores.\nFunciones:\n• Recibir información económica y laboral.\n• Participar en la prevención de riesgos.\n• Negociar y plantear mejoras.",
+  "7️⃣ Tipos de fuentes y diseño\nLas fuentes pueden ser:\n• Encapsuladas: protegidas dentro de una estructura.\n• No encapsuladas: manipulables directamente.\nLas instalaciones varían según su uso:\n• Medicina nuclear\n• Radioterapia (teleterapia y braquiterapia)\n• Radiodiagnóstico\nCada una tiene zonas de riesgo y zonas libres.",
 
-    "8️⃣ Representación sindical\n• Los sindicatos defienden derechos laborales.\n• Pueden crear secciones sindicales en la empresa.\n• Delegados sindicales según tamaño y representatividad.\n• La representatividad (estatal/autonómica) da derecho a negociar convenios.",
-
-    "9️⃣ Convenio colectivo\n• Acuerdo escrito entre empresa(s) y representantes de trabajadores.\n• Regula salarios, horarios, descansos, permisos, prevención y organización del trabajo.\n• Tiene fuerza de ley dentro de su ámbito y es superior al contrato individual.\n• Puede denunciarse, renovarse o prorrogarse según lo pactado.",
-
-    "📌 Diferencia convenio vs acuerdo individual\n• Convenio: afecta a todos los trabajadores del ámbito → tiene valor normativo.\n• Acuerdo individual: solo afecta a un trabajador concreto → no tiene fuerza de ley y nunca puede empeorar lo que dice el convenio.",
-
-    "🔧 10️⃣ Conflictos laborales\nTipos:\n• Individuales: afectan a un solo trabajador.\n• Colectivos: afectan a un grupo.\nHuelga:\n• Suspensión colectiva del trabajo.\n• Requiere declaración formal, comunicación y comité de huelga.\nCierre patronal:\n• El empresario suspende la actividad.\n• Solo en casos legales: violencia, ocupación del centro o riesgo grave.",
-
-    "🤝 11️⃣ Resolución extrajudicial de conflictos\n• Diálogo social\n• Negociación\n• Mediación\n• Conciliación\n• Arbitraje\nObjetivo: evitar procedimientos judiciales y llegar a acuerdos voluntarios."
-  ],
-  questions: [
-    {
-      q: "Orden jerárquico correcto de normas (de mayor a menor):",
-      options: [
-        "Constitución, leyes/rango de ley, reglamentos, convenio colectivo, contrato, usos y costumbres",
-        "Constitución, convenio, contrato, usos, leyes, reglamentos",
-        "Leyes, constitución, contrato, reglamentos, convenio, usos",
-        "Ninguna es correcta",
-      ],
-      correct: 0,
-      explain:
-        "La respuesta correcta es la A porque refleja la jerarquía: primero la Constitución, luego las leyes y normas con rango de ley, después los reglamentos, y por debajo los convenios colectivos, contratos y finalmente los usos y costumbres. La B altera el orden colocando el convenio antes de las leyes y reglamentos. La C incluso sitúa las leyes por encima de la Constitución, lo cual es incorrecto. Por tanto la única secuencia válida es la A.",
-    },
-    {
-      q: "El principio in dubio pro operario:",
-      options: [
-        "En confusión se aplica la norma que favorece al empresario",
-        "Expresión latina que enaltece el trabajo duro",
-        "En confusión se aplica la norma que favorece al trabajador",
-        "Los trabajadores no pueden renunciar a derechos",
-      ],
-      correct: 2,
-      explain:
-        "La respuesta correcta es la C porque el principio in dubio pro operario significa que, en caso de duda en la interpretación de una norma laboral, debe aplicarse la interpretación más favorable al trabajador. La A afirma justo lo contrario. La B es una explicación inventada. La D se refiere al principio de irrenunciabilidad de derechos, que es otro principio distinto.",
-    },
-    {
-      q: "Dentro del derecho comunitario diferenciamos entre:",
-      options: ["OIT y ET", "Derecho interno y externo", "Derecho originario y derivado", "Directivas, recomendaciones, sanciones y euroórdenes"],
-      correct: 2,
-      explain:
-        "La respuesta correcta es la C porque el derecho comunitario se clasifica en derecho originario (tratados constitutivos) y derecho derivado (directivas, reglamentos, decisiones). La A mezcla la OIT (organismo internacional) y el ET (Estatuto de los Trabajadores). La B habla de derecho interno/externo, que es otra clasificación. La D enumera algunos tipos de normas, pero no refleja la división clave originario/derivado.",
-    },
-    {
-      q: "Señala la afirmación falsa sobre el derecho laboral:",
-      options: [
-        "Ha existido desde que existe el trabajo",
-        "Nace en el siglo XIX por la revolución industrial",
-        "Está en continuo cambio y mejora bienestar laboral",
-        "Sus principios interpretan legislación y cubren vacíos",
-      ],
-      correct: 0,
-      explain:
-        "La respuesta correcta es la A porque el derecho laboral como rama diferenciada del derecho NO ha existido desde siempre; surge principalmente en el siglo XIX con la industrialización (tal como indica la B). Las afirmaciones C y D son verdaderas: es un derecho muy dinámico y sus principios sirven para interpretar y completar la normativa. Por eso la única falsa es la A.",
-    },
-    {
-      q: "En relación laboral empleador-empleado, las normas abogan por:",
-      options: ["Proteger por igual", "Proteger más al empleado", "Proteger más al empleador", "Solo recomendaciones"],
-      correct: 1,
-      explain:
-        "La respuesta correcta es la B porque el derecho laboral tiene un carácter tuitivo: protege especialmente a la parte más débil de la relación, el trabajador. La A sería cierta solo en un plano teórico de igualdad, pero en la práctica la normativa refuerza la posición del empleado. La C es lo contrario de lo que ocurre. La D es falsa porque no se trata solo de recomendaciones, sino de normas obligatorias.",
-    },
-    {
-      q: "Escoger un delegado de personal entre trabajadores ejerce el derecho a:",
-      options: [
-        "Representación colectiva unitaria",
-        "Representación colectiva sindical",
-        "Representación retribuida personalizada",
-        "Ninguna",
-      ],
-      correct: 0,
-      explain:
-        "La respuesta correcta es la A porque la elección de delegados de personal forma parte de la representación unitaria de los trabajadores en la empresa (delegados de personal y comité de empresa). La B se refiere a representación sindical (secciones y delegados sindicales), que es otra vía. La C no es un concepto utilizado en derecho laboral. La D es incorrecta porque sí se está ejerciendo un derecho de representación concreta.",
-    },
-    {
-      q: "El convenio colectivo:",
-      options: [
-        "Es una fuente del derecho laboral",
-        "Es un pacto alcanzado libremente",
-        "Refleja la participación efectiva de los trabajadores",
-        "Todas son correctas",
-      ],
-      correct: 3,
-      explain:
-        "La respuesta correcta es la D porque todas las afirmaciones sobre el convenio colectivo son ciertas: es fuente del derecho laboral (A), es un acuerdo negociado libremente entre representantes de trabajadores y empresarios (B), y es una vía de participación real de los trabajadores en la regulación de sus condiciones laborales (C). Al ser todas correctas, la opción correcta es “Todas son correctas”.",
-    },
-    {
-      q: "Cese de prestación de trabajo para reivindicar conflictos o mejoras se conoce como:",
-      options: ["Huelga", "Cierre patronal", "Conflicto colectivo", "Festivos"],
-      correct: 0,
-      explain:
-        "La respuesta correcta es la A porque la huelga consiste precisamente en la suspensión colectiva, concertada y temporal del trabajo para reivindicar mejoras o protestar por conflictos laborales. El cierre patronal (B) es lo contrario: la empresa cierra y suspende la actividad. El conflicto colectivo (C) es el desacuerdo general, no la medida de presión concreta. Los festivos (D) no tienen nada que ver con reivindicaciones.",
-    },
-    {
-      q: "¿Cuál NO es una garantía de representantes de trabajadores?",
-      options: [
-        "Prioridad de permanencia",
-        "Libertad de expresión en asuntos de representación",
-        "Están exentos de despidos disciplinarios",
-        "Horas retribuidas para ejercer funciones",
-      ],
-      correct: 2,
-      explain:
-        "La respuesta correcta es la C porque los representantes de los trabajadores NO están totalmente exentos de despidos disciplinarios; pueden ser despedidos si existe causa justificada, aunque disfrutan de ciertas garantías (protección frente a despidos por represalia). Las otras opciones sí son garantías reales: prioridad de permanencia en la empresa, libertad de expresión en temas de representación y crédito horario retribuido.",
-    },
-    {
-      q: "¿Cuál es una competencia del comité de empresa?",
-      options: [
-        "Vigilar cumplimiento de normas laborales y seguridad",
-        "Participar en gestión de obras sociales",
-        "Informar a representados de asuntos laborales",
-        "Todas las anteriores",
-      ],
-      correct: 3,
-      explain:
-        "La respuesta correcta es la D porque todas las funciones mencionadas son competencias del comité de empresa: vigilancia del cumplimiento de normas, participación en la gestión de obras sociales y obligación de informar a los trabajadores sobre cuestiones laborales. Por tanto, la opción “Todas las anteriores” recoge correctamente el conjunto.",
-    },
-  ],
+  "8️⃣ Normativa\nEl funcionamiento está regulado por diferentes normas, como directivas europeas y reales decretos españoles que garantizan la seguridad y control de las radiaciones ionizantes."
+],
+questions: [
+  {
+    q: "En relación con el diario de operaciones:",
+    options: [
+      "Documento de registro de toda actividad de la instalación radiactiva",
+      "Ha de estar autorizado, sellado y registrado por el CSN",
+      "Completado por el personal titular o supervisor",
+      "Todas son correctas"
+    ],
+    correct: 3,
+    explain:
+      "La respuesta correcta es la D porque el diario de operaciones cumple todas esas funciones: registro, autorización y control de actividad.",
+  },
+  {
+    q: "Forman parte de una instalación de braquiterapia de baja dosis o LDR:",
+    options: [
+      "Radioquirófano o área quirúrgica",
+      "Gammateca",
+      "Habitaciones",
+      "Todas son correctas"
+    ],
+    correct: 3,
+    explain:
+      "La respuesta correcta es la D porque todas esas áreas forman parte de una instalación LDR.",
+  },
+  {
+    q: "Los elementos básicos en una instalación de braquiterapia de alta dosis o HDR son:",
+    options: [
+      "Área de control, sala de irradiación y área quirúrgica",
+      "Área de control y sala de espera",
+      "Área quirúrgica y área de control",
+      "Ninguna es correcta"
+    ],
+    correct: 0,
+    explain:
+      "La respuesta correcta es la A porque incluye las tres áreas fundamentales de este tipo de instalación.",
+  },
+  {
+    q: "Para el inicio de la actividad de una instalación radiactiva se requiere:",
+    options: [
+      "Diario de operaciones",
+      "Informes de accidentes",
+      "Protocolos generales de descontaminación",
+      "Autorización de funcionamiento"
+    ],
+    correct: 3,
+    explain:
+      "La respuesta correcta es la D porque sin autorización no se puede iniciar la actividad.",
+  },
+  {
+    q: "Se define como instalación radiactiva:",
+    options: [
+      "Todo lugar en el que hay una fuente o equipos de radiación ionizante",
+      "La radiación ionizante tiene una diferencia de potencial mayor a 5 kV",
+      "A y B son correctas",
+      "Todas son incorrectas"
+    ],
+    correct: 2,
+    explain:
+      "La respuesta correcta es la C porque ambas afirmaciones forman parte de la definición.",
+  },
+  {
+    q: "Un protocolo que trata de limitar y/o eliminar una contaminación radiactiva externa o interna es:",
+    options: [
+      "Sistema de descontaminación",
+      "Protocolo de contaminación",
+      "Diario de operaciones",
+      "Ninguna de las anteriores es correcta"
+    ],
+    correct: 0,
+    explain:
+      "La respuesta correcta es la A porque los sistemas de descontaminación se utilizan para eliminar contaminación.",
+  },
+  {
+    q: "Una fuente de radiación en el interior de una estructura protectora es:",
+    options: [
+      "Fuente no encapsulada",
+      "Fuente encapsulada",
+      "Fuente protegida",
+      "Fuente internada"
+    ],
+    correct: 1,
+    explain:
+      "La respuesta correcta es la B porque una fuente encapsulada está protegida dentro de una estructura.",
+  },
+  {
+    q: "Una instalación de medicina nuclear se divide en:",
+    options: [
+      "Zona no activa de libre acceso y zona activa de acceso restringido",
+      "Gammacámara o cámara caliente y laboratorio de radiofarmacia",
+      "Almacén de residuos radiactivos y zona de descontaminación",
+      "Todas son correctas"
+    ],
+    correct: 3,
+    explain:
+      "La respuesta correcta es la D porque todas esas partes forman la instalación de medicina nuclear.",
+  },
+  {
+    q: "Una instalación de teleterapia se puede dividir en:",
+    options: [
+      "Zona de libre acceso sin riesgo radiológico y zona vigilada/controlada",
+      "Zona de libre acceso con riesgo radiológico",
+      "Zona de libre acceso y zona exclusiva",
+      "Zona de libre acceso y zona descontrolada"
+    ],
+    correct: 0,
+    explain:
+      "La respuesta correcta es la A porque diferencia zonas seguras y zonas con riesgo radiológico.",
+  },
+  {
+    q: "Uno de los elementos de un búnker de radioterapia es:",
+    options: [
+      "Cámara caliente",
+      "Laboratorio de radioisótopos",
+      "Laberinto",
+      "Ninguna es correcta"
+    ],
+    correct: 2,
+    explain:
+      "La respuesta correcta es la C porque el laberinto forma parte del diseño del búnker para reducir la radiación.",
+  }
+],
 },
 
 {
   id: "fol-u5",
-  title: "FOL · U5 · Contratos y despidos",
-  summary: [
+  id: "fol-u5",
+title: "Protección Radiológica · U5 · Gestión de residuos radiactivos",
+summary: [
+  "1️⃣ Visión general\nEsta unidad explica cómo se gestionan los residuos radiactivos en el ámbito sanitario. Su objetivo principal es proteger la salud humana y el medio ambiente mediante procedimientos seguros y regulados.",
 
-"1️⃣ Visión general de la unidad\nLa unidad analiza el contrato de trabajo: qué es, cómo se formaliza, qué requisitos debe cumplir para ser válido, qué modalidades existen y cómo se modifican, suspenden o extinguen. También explica el fraude de ley en la contratación y la importancia del finiquito y derechos del trabajador.",
+  "2️⃣ Qué es un residuo radiactivo\nSe considera residuo radiactivo cualquier material de desecho que contiene radioisótopos en niveles superiores a los establecidos por la normativa. En España, su gestión corresponde a ENRESA bajo la supervisión del CSN.",
 
-"2️⃣ Concepto de contrato de trabajo\n• Acuerdo entre trabajador y empresario.\n• El trabajador presta servicios por cuenta ajena, de forma personal y remunerada.\n• El empresario organiza y dirige la actividad.\nPartes del contrato:\n• Empresa (persona física o jurídica)\n• Persona trabajadora (mayor de 16 años y con capacidad legal)",
+  "3️⃣ Conceptos clave\n• Exención: residuo no peligroso que no requiere control específico.\n• Desclasificación: el residuo deja de ser peligroso tras decaer su actividad.\n• Exclusión: residuos sin riesgo significativo.\n• Niveles de exención: límites que permiten eliminar residuos sin autorización.",
 
-"3️⃣ Elementos esenciales del contrato\nPara que sea válido debe tener:\n• Consentimiento: ambas partes aceptan libremente.\n• Objeto: la prestación de servicios.\n• Causa: el trabajo a cambio de salario.\nSi falta alguno → contrato nulo o anulable.",
+  "4️⃣ Etapas de gestión\nEl proceso incluye:\n• Segregación\n• Caracterización\n• Almacenamiento\n• Transporte\n• Evacuación\nCada etapa es fundamental para garantizar la seguridad radiológica.",
 
-"4️⃣ Forma del contrato\nPuede ser:\n• Verbal (solo indefinido y jornada completa en general)\n• Escrito (obligatorio en temporales, formativos, prácticas, parcial, relevo, ETT, etc.)\nEl contrato debe registrar:\n• Datos de empresa y trabajador\n• Jornada\n• Salario\n• Categoría profesional\n• Duración\n• Periodo de prueba\n• Convenio aplicable\n• Lugar de trabajo",
+  "5️⃣ Clasificación de residuos\nLos residuos se clasifican según:\n• Vida media (corta, larga)\n• Peligrosidad\n• Actividad (baja, media, alta)\n• Tipo (sólidos, líquidos, mixtos, fuentes encapsuladas)",
 
-"5️⃣ Cláusulas adicionales del contrato\nPueden incluir:\n• Confidencialidad\n• No competencia\n• Permanencia en la empresa\n• Movilidad funcional/geográfica\n• Horas complementarias (en tiempo parcial)",
+  "6️⃣ Transporte y seguridad\nEl transporte está regulado por normativa específica (ADR). Se utilizan distintos tipos de bultos y un sistema de etiquetado según el nivel de radiación (categorías I, II y III).",
 
-"6️⃣ Modalidades de contratación (post reforma laboral 2021)\nLa reforma prioriza el contrato indefinido y limita el uso de temporales.\nTipos principales:\n• Indefinido (ordinario y fijo discontinuo)\n• Temporales (circunstancias de la producción, sustitución)\n• Formativos (alternancia y práctica profesional)\n• Otros: relevo, tiempo parcial, ETT…",
+  "7️⃣ Gestión en medicina nuclear y radioterapia\nEn medicina nuclear se generan residuos sólidos, líquidos y mixtos, incluyendo generadores de 99Mo/99mTc. En radioterapia destacan las fuentes encapsuladas como iridio-192 o semillas de yodo y paladio.",
 
-"7️⃣ Contratos indefinidos\n7.1 Ordinario\n• Sin límite de duración.\n• Puede ser verbal o escrito.\n7.2 Fijo discontinuo\n• Actividad intermitente con periodos de inactividad.\n• Obligatorio por escrito.\n• Debe especificar forma de llamamiento y orden de antigüedad.",
-
-"8️⃣ Contratos temporales\n8.1 Circunstancias de la producción\n• Justificado por aumento ocasional de trabajo.\n• Duración máxima: 6 a 12 meses.\n8.2 Sustitución\n• Para reemplazar a un trabajador con reserva de puesto.\n• Debe identificar a la persona sustituida y la causa.\n❌ Si no existe causa real → fraude de ley → se convierte en indefinido.",
-
-"9️⃣ Contratos formativos\n9.1 Formación en alternancia\n• Combina trabajo + formación.\n• Edad máxima: 30 años.\n9.2 Práctica profesional\n• Tras estudios (FP superior, grado, máster…)\n• Debe formalizarse en los 3 años siguientes al título.",
-
-"🔧 10️⃣ Otras modalidades\n• Tiempo parcial: menos horas que la jornada completa.\n• Horas complementarias: pactadas por escrito.\n• Relevo: vinculado a jubilación parcial.\n• ETT: relación triangular (empresa–ETT–trabajador).",
-
-"11️⃣ Modificación del contrato\nLa empresa puede modificar condiciones si existe causa objetiva y justificada:\n• Jornada\n• Horario\n• Sistemas de remuneración\n• Funciones (movilidad funcional)\nProceso:\n• Notificación previa\n• Trabajador puede reclamar o extinguir con indemnización según caso.",
-
-"12️⃣ Suspensión del contrato\nEl contrato se detiene temporalmente sin extinguirse.\nCausas:\n• Incapacidad temporal\n• Maternidad/paternidad\n• ERTE\n• Excedencias\n• Huelga\nDurante la suspensión se mantiene el vínculo laboral pero se pausa la prestación de servicios.",
-
-"13️⃣ Extinción del contrato\nFormas principales:\n• Mutuo acuerdo\n• Fin de contrato temporal\n• Renuncia del trabajador\n• Dimisión o abandono\n• Jubilación o incapacidad\n• Muerte del trabajador\n• Despido disciplinario\n• Despido objetivo\n• Despido colectivo (ERE)\n• Fuerza mayor",
-
-"14️⃣ Despido disciplinario\nCausas:\n• Indisciplina\n• Faltas repetidas de asistencia\n• Ofensas verbales o físicas\n• Disminución voluntaria del rendimiento\n• Embriaguez o toxicomanía que afecte al trabajo\nNo hay indemnización, solo finiquito.\nEl trabajador puede impugnar.",
-
-"15️⃣ Despido objetivo\nCausas económicas, organizativas, técnicas o productivas.\nIndemnización: 20 días por año.\nRequiere comunicación escrita y preaviso.",
-
-"16️⃣ Finiquito\nDocumento que resume:\n• Salarios pendientes\n• Vacaciones no disfrutadas\n• Pagas extra\n• Indemnizaciones si proceden\nDebe entregarse siempre al finalizar la relación laboral.",
-
-"17️⃣ Impugnación de despidos\nVías:\n• Conciliación laboral\n• Mediación\n• Demanda en jurisdicción social\nSentencias posibles:\n• Procedente\n• Improcedente (indemnización mayor o readmisión)\n• Nulo (readmisión + salarios de tramitación)"
-  ],
-
-  questions: [
-    {
-      q: "En contratos de formación en alternancia:",
-      options: [
-        "Finalidad cubrir temporalmente un puesto durante selección formativa",
-        "Duración mínima 3 meses y máxima 2 años",
-        "Admite horas extra 65% en primer año",
-        "Todas son correctas",
-      ],
-      correct: 1,
-      explain:
-        "La respuesta correcta es la B porque una característica clave del contrato de formación en alternancia es su duración mínima y máxima (normalmente entre 3 meses y 2 años, según normativa). La A confunde el objetivo: no es solo cubrir un puesto, sino combinar trabajo y formación. La C mezcla el tema de horas extra, que además están muy limitadas en este tipo de contrato. La D no puede ser correcta porque A y C no lo son.",
-    },
-    {
-      q: "Señala la respuesta correcta:",
-      options: [
-        "En contrato a tiempo parcial no se pueden hacer horas extra salvo fuerza mayor",
-        "Duración máxima de indefinido es 25 años",
-        "Temporal solo a jornada parcial y puede ser verbal o escrito",
-        "Ninguna es correcta",
-      ],
-      correct: 0,
-      explain:
-        "La respuesta correcta es la A porque el contrato a tiempo parcial, por regla general, no permite horas extraordinarias salvo por fuerza mayor, aunque sí horas complementarias pactadas. La B es absurda: el contrato indefinido no tiene duración máxima. La C es falsa porque los contratos temporales pueden ser a jornada completa o parcial y suelen requerir forma escrita. Por tanto la única afirmación correcta es la A.",
-    },
-    {
-      q: "Causa de despido objetivo:",
-      options: [
-        "Embriaguez habitual o toxicomanía",
-        "Ofensas verbales o físicas",
-        "Disminución continuada y voluntaria del rendimiento",
-        "Ineptitud del trabajador conocida o sobrevenida posteriormente",
-      ],
-      correct: 3,
-      explain:
-        "La respuesta correcta es la D porque la ineptitud del trabajador, cuando es conocida o aparece después de su contratación, es una causa de despido objetivo. Las opciones A, B y C corresponden a causas de despido disciplinario (conductas graves imputables al trabajador: embriaguez habitual, ofensas o bajo rendimiento voluntario).",
-    },
-    {
-      q: "En un despido disciplinario:",
-      options: [
-        "Indemnización 20 días/año",
-        "Indemnización 33 días/año",
-        "Indemnización solo si no hay preaviso de 30 días",
-        "No tienes derecho a indemnización",
-      ],
-      correct: 3,
-      explain:
-        "La respuesta correcta es la D porque en el despido disciplinario procedente, el trabajador no tiene derecho a indemnización (solo al finiquito de cantidades pendientes). Las indemnizaciones de 20 días/año (A) se asocian a despidos objetivos y la de 33 días/año (B) a despidos improcedentes. La C no refleja el régimen real del preaviso en despidos disciplinarios.",
-    },
-    {
-      q: "En un despido colectivo:",
-      options: [
-        "Deben concurrir causas económicas, técnicas, organizativas o de producción",
-        "Debe afectar al 30% de la plantilla",
-        "No requiere comunicación previa a representantes",
-        "A y B son correctas",
-      ],
-      correct: 0,
-      explain:
-        "La respuesta correcta es la A porque la esencia del despido colectivo es que afecta a un número relevante de trabajadores y se basa en causas económicas, técnicas, organizativas o de producción (ETOP). El porcentaje del 30% (B) no es el único criterio: la ley fija umbrales diferentes según tamaño de la empresa. La C es falsa: sí hay obligación de comunicación y negociación con los representantes. Por tanto solo la A es correcta.",
-    },
-    {
-      q: "En un despido declarado improcedente:",
-      options: [
-        "Se prohíbe readmitir al trabajador",
-        "Se entrega finiquito hasta 24 mensualidades",
-        "Indemnización siempre 24 días/año",
-        "Ninguna es correcta",
-      ],
-      correct: 3,
-      explain:
-        "La respuesta correcta es la D porque las tres afirmaciones anteriores son incorrectas o incompletas. En un despido improcedente el empresario puede elegir entre readmitir al trabajador o indemnizarlo; no está prohibida la readmisión (A). Las cuantías no son simplemente “finiquito hasta 24 mensualidades” ni 24 días/año (B y C); la normativa habla de días de salario por año trabajado con ciertos topes, pero no los que se indican ahí.",
-    },
-    {
-      q: "¿Qué NO se considera modificación sustancial de condiciones de trabajo?",
-      options: [
-        "Afecte a la jornada de trabajo",
-        "Cambio a turnos rotativos",
-        "Modificación del espacio de trabajo dentro del mismo centro",
-        "Modificación de cuantía salarial o sistema de remuneración",
-      ],
-      correct: 2,
-      explain:
-        "La respuesta correcta es la C porque cambiar el espacio de trabajo dentro del mismo centro, sin más, suele ser una modificación ordinaria de condiciones, no una modificación sustancial. En cambio, afectar a la jornada (A), modificar turnos (B) o alterar el salario o su sistema (D) sí son ejemplos de modificaciones sustanciales según la legislación laboral.",
-    },
-    {
-      q: "Elementos esenciales del contrato:",
-      options: [
-        "Consentimiento, objeto y causa",
-        "Licitud, posibilidad y determinabilidad",
-        "Partes, tiempo y categoría",
-        "Persona física, jurídica y motivación",
-      ],
-      correct: 0,
-      explain:
-        "La respuesta correcta es la A porque en derecho civil los elementos esenciales de todo contrato son el consentimiento (acuerdo de voluntades), el objeto (lo que se presta) y la causa (la finalidad económica o función social). La B menciona requisitos del objeto, no los elementos esenciales. La C y la D recogen aspectos importantes, pero no son la tríada clásica de elementos esenciales.",
-    },
-    {
-      q: "¿Cuál NO es una cláusula que se puede incluir en el contrato?",
-      options: ["Confidencialidad", "No competencia", "Excedencia", "Permanencia"],
-      correct: 2,
-      explain:
-        "La respuesta correcta es la C porque la excedencia es una situación del trabajador (interrupción temporal de la relación laboral) regulada normalmente fuera del contrato concreto. En cambio, sí pueden incluirse cláusulas de confidencialidad (A), no competencia (B) o permanencia (D) siempre que cumplan requisitos legales. Por tanto la única que no encaja como cláusula contractual típica es la excedencia.",
-    },
-    {
-      q: "Cambio de residencia definitivo o desplazamientos >12 meses en 3 años se denomina:",
-      options: ["Movilidad sustancial", "Movilización", "Desplazamiento", "Traslado"],
-      correct: 3,
-      explain:
-        "La respuesta correcta es la D porque cuando el cambio de centro de trabajo implica cambio de residencia o desplazamientos de larga duración (más de un cierto tiempo, como 12 meses en 3 años), hablamos de traslado. La C, ‘desplazamiento’, se utiliza para cambios temporales más cortos. ‘Movilidad sustancial’ (A) no es el término técnico y ‘movilización’ (B) no se usa en este contexto.",
-    },
-  ],
+  "8️⃣ Tratamiento final\nLos residuos se tratan mediante:\n• Ultracompactación (S01)\n• Mortero de relleno (L02)\n• Incineración\n• Inmovilización directa\nFinalmente son almacenados o gestionados por ENRESA."
+],
+questions: [
+  {
+    q: "El proceso de gestión de los materiales radiactivos está formado por diferentes etapas:",
+    options: [
+      "Protección, separación, transporte y evacuación",
+      "Segregación, transporte y almacenamiento",
+      "Segregación, caracterización, transporte, almacenamiento y evacuación",
+      "Caracterización, transporte y almacenamiento"
+    ],
+    correct: 2,
+    explain:
+      "La respuesta correcta es la C porque incluye todas las fases del proceso de gestión de residuos radiactivos.",
+  },
+  {
+    q: "ENRESA son las siglas de:",
+    options: [
+      "Empresa Nacional de Residuos Super Activos",
+      "Empresa Normativa de Residuos SA",
+      "Empresa Nacional de Residuos Radiactivos S.A.",
+      "Empresa Nueva de Residuos Activos"
+    ],
+    correct: 2,
+    explain:
+      "La respuesta correcta es la C porque ENRESA es la entidad encargada de gestionar residuos radiactivos en España.",
+  },
+  {
+    q: "Es un residuo producido en radioterapia:",
+    options: [
+      "Fuentes encapsuladas",
+      "Sólidos radiactivos de iridio-192",
+      "Semillas de yodo y paladio",
+      "Todas son correctas"
+    ],
+    correct: 3,
+    explain:
+      "La respuesta correcta es la D porque todos esos ejemplos son residuos generados en radioterapia.",
+  },
+  {
+    q: "La categoría III del nivel de radiación hace referencia:",
+    options: [
+      "Nivel máximo de radiación en superficie mayor a 0.005 mSv/hora máximo 0.5 mSv/hora",
+      "Nivel máximo de radiación en superficie mayor a 0.005 mSv/hora máximo 2 mSv/hora",
+      "Nivel máximo de radiación en superficie mayor a 0.005 mSv/hora",
+      "Ninguna de las anteriores"
+    ],
+    correct: 1,
+    explain:
+      "La respuesta correcta es la B porque corresponde al nivel de radiación más alto permitido en transporte.",
+  },
+  {
+    q: "La desclasificación de un residuo radiactivo hace referencia a:",
+    options: [
+      "Residuos no peligrosos que no tienen que cumplir con el reglamento",
+      "Exención de la gestión del residuo cuando pasa un tiempo suficiente para que la actividad decaiga a niveles no peligrosos",
+      "Los residuos están fuera de los sistemas de protección",
+      "Ninguna de las anteriores"
+    ],
+    correct: 1,
+    explain:
+      "La respuesta correcta es la B porque la desclasificación ocurre cuando la actividad disminuye a niveles seguros.",
+  },
+  {
+    q: "La normativa europea relativa al transporte de sustancias radiactivas es:",
+    options: [
+      "Acuerdo europeo de transporte de mercancías no peligrosas por aire",
+      "Acuerdo europeo relativo al transporte internacional de mercancías por tren",
+      "Acuerdo europeo relativo al transporte internacional de residuos en barco",
+      "Ninguna es correcta"
+    ],
+    correct: 3,
+    explain:
+      "La respuesta correcta es la D porque ninguna opción describe correctamente la normativa real.",
+  },
+  {
+    q: "La ultracompactación se realiza en residuos de tipo:",
+    options: [
+      "Residuos compactables (S01)",
+      "Residuos orgánicos",
+      "Residuos líquidos",
+      "Residuos no compactables"
+    ],
+    correct: 0,
+    explain:
+      "La respuesta correcta es la A porque la ultracompactación se aplica a residuos sólidos compactables.",
+  },
+  {
+    q: "Los residuos líquidos acuosos (L02) se evacuan:",
+    options: [
+      "Inmovilización directa",
+      "Mortero de relleno",
+      "Ultracompactación",
+      "Incineración"
+    ],
+    correct: 1,
+    explain:
+      "La respuesta correcta es la B porque estos residuos se tratan mediante mortero de relleno.",
+  },
+  {
+    q: "Los residuos sólidos mixtos en medicina nuclear se pueden clasificar en:",
+    options: [
+      "Tipo I y II",
+      "Tipo I, II, III y generadores",
+      "Tipo I, II, III, IV y generadores de 99Mo/99mTc",
+      "Generadores únicamente"
+    ],
+    correct: 2,
+    explain:
+      "La respuesta correcta es la C porque incluye toda la clasificación completa.",
+  },
+  {
+    q: "Se define como cualquier elemento de desecho que está contaminado o contiene radioisótopos en niveles superiores a los establecidos por normativa a:",
+    options: [
+      "Residuo urbano",
+      "Residuo radiactivo",
+      "Residuo desechable",
+      "Residuo residual"
+    ],
+    correct: 1,
+    explain:
+      "La respuesta correcta es la B porque describe correctamente un residuo radiactivo.",
+  }
+],
 },
 
 {
   id: "fol-u6",
-  title: "FOL · U6 · Jornada, descanso, vacaciones y entorno digital",
-  summary: [
+  id: "fol-u6",
+title: "Protección Radiológica · U6 · Garantía de calidad",
+summary: [
+  "1️⃣ Visión general\nEsta unidad explica la garantía de calidad en el ámbito sanitario, cuyo objetivo es obtener el mejor resultado diagnóstico o terapéutico con el menor riesgo posible para el paciente y la máxima seguridad.",
 
-"1️⃣ Visión general de la unidad\nLa unidad trata los principales elementos de la jornada laboral: horas máximas, descansos, permisos, vacaciones, periodos de prueba y modelos actuales de organización del trabajo (teletrabajo, flexibilidad, conciliación). También introduce el derecho procesal social para la resolución de conflictos laborales.",
+  "2️⃣ Concepto de calidad sanitaria\nLa calidad se basa en aplicar conocimientos médicos y técnicos para:\n• Obtener resultados óptimos\n• Reducir riesgos iatrogénicos\n• Garantizar la satisfacción del paciente\nEste concepto está regulado por normativa europea como la directiva 2013/59/Euratom.",
 
-"2️⃣ Jornada de trabajo y horarios\n• Jornada: tiempo trabajado.\n• Horario: distribución de la jornada.\nLímites legales:\n• Máximo 40 h/semanales de promedio anual.\n• Máximo 9 h/día (salvo pacto en convenio).\n• Prohibiciones: menores tienen límites especiales.\n• Obligatorio el registro de jornada diario para todos los trabajadores.",
+  "3️⃣ Elementos clave del control de calidad\n• Pruebas de aceptación: se realizan antes del primer uso del equipo.\n• Estado de referencia inicial: valores obtenidos al inicio para comparaciones futuras.\n• Verificación: controles tras reparaciones.\n• Calibración: ajuste de equipos para asegurar mediciones correctas.",
 
-"3️⃣ Horas extraordinarias\n• Son horas que exceden la jornada establecida.\n• Carácter general: voluntarias.\n• Obligatorias solo en fuerza mayor.\n• Límite: 80 horas/año.\n• Compensación: dinero o descanso.\nProhibidas para:\n• Menores.\n• Trabajadores a tiempo parcial.\n• Turno nocturno.\n• Maternidad/paternidad (salvo fuerza mayor).",
+  "4️⃣ Garantía de calidad en medicina nuclear\nSe centra en la optimización de dosis y el uso correcto de radiofármacos.\nEs obligatorio registrar datos en la historia clínica y realizar controles de equipos como gammacámaras o PET. El radiofísico hospitalario juega un papel clave.",
 
-"4️⃣ Organización especial del trabajo\n4.1 Trabajo nocturno\n• Considerado nocturno si al menos 3 h o 1/3 del turno es entre 22:00 y 06:00.\n• Limitaciones en jornada y horas extra.\n4.2 Trabajo a turnos\n• Rotación entre distintos horarios.\n• El turno de noche no puede exceder 15 días continuos salvo consentimiento del trabajador.",
+  "5️⃣ Garantía de calidad en radioterapia\nBusca administrar la dosis exacta al tejido diana protegiendo el tejido sano.\nIncluye la hoja de tratamiento, controles de equipos y supervisión por una comisión de garantía y control de calidad.",
 
-"5️⃣ Descansos y días festivos\n• Descanso diario: mínimo 12 horas entre jornadas.\n• Pausas dentro de la jornada según duración.\n• Descanso semanal: 1 día y medio ininterrumpido.\n• Festivos: máximo 14 al año.\n• Vacaciones: derecho mínimo de 30 días naturales al año.\nReglas clave:\n• No sustituibles por dinero.\n• Deben fijarse por acuerdo entre empresa y trabajador.\n• Deben disfrutarse dentro del año natural.",
+  "6️⃣ Garantía de calidad en radiodiagnóstico\nEl objetivo es obtener imágenes de calidad con la menor dosis posible.\nIncluye controles de radiación, repetición de pruebas, formación del personal y control técnico de equipos.",
 
-"6️⃣ Permisos retribuidos\nSe conceden con aviso y justificación.\nIncluyen:\n• Matrimonio (15 días).\n• Nacimiento de hijo.\n• Defunción de familiares.\n• Traslado de domicilio.\n• Deber público.\n• Exámenes.\n• Fenómenos meteorológicos.\nLa duración exacta depende del Estatuto y del convenio.",
+  "7️⃣ Registro y control\nLos datos de dosis deben almacenarse hasta 30 años.\nLos equipos deben tener mantenimiento continuo y controles periódicos.\nLas autoridades pueden realizar auditorías para verificar el cumplimiento.",
 
-"7️⃣ Reducción de jornada\nMotivos principales:\n• Cuidado de hijos.\n• Cuidado de familiares.\n• Enfermedades graves.\n• Violencia de género o terrorismo.\nAfecta al salario proporcionalmente pero mantiene derechos esenciales.",
-
-"8️⃣ Periodo de prueba\n• Etapa inicial para valorar adaptación.\n• Puede extinguirse sin indemnización.\nDuración máxima orientativa:\n• 1 a 6 meses según categoría y convenio.\n• 2 meses habitual para técnicos.\n• Debe constar por escrito y ser recíproco.",
-
-"9️⃣ Entornos laborales actuales\nTendencias modernas:\n• Teletrabajo.\n• Horarios flexibles.\n• Conciliación vida laboral/personal.\n• Trabajo por objetivos.\nRequisitos del teletrabajo:\n• Acuerdo escrito.\n• Medios proporcionados por la empresa.\n• Compensación de gastos.\n• Control horario compatible con privacidad.",
-
-"🔟 Derechos digitales del trabajador\nDerechos clave:\n• Desconexión digital (fuera del horario).\n• Privacidad y protección de datos.\n• Limitación del uso de dispositivos personales.\n• Regulación del control empresarial (cámaras, GPS, software).",
-
-"1️⃣1️⃣ Igualdad, diversidad e inclusión\nLas empresas deben promover:\n• Igualdad de trato.\n• No discriminación por género, edad, origen o discapacidad.\n• Políticas inclusivas para mejorar creatividad y productividad.",
-
-"1️⃣2️⃣ Derecho procesal social\nProceso para resolver conflictos laborales:\n1. Mediación/conciliación previa.\n2. Demanda ante el Juzgado de lo Social.\n3. Juicio.\n4. Sentencia.\n5. Recursos.\nPermite resolver:\n• Despidos.\n• Reclamaciones salariales.\n• Sanciones.\n• Modificaciones de contrato.\n• Conflictos colectivos."
-  ],
-  questions: [
-    {
-      q: "Durante el período de prueba:",
-      options: [
-        "Empresario puede despedir sin justificación ni indemnización, pero trabajador sí debe preaviso",
-        "Empresario no puede despedir sin justificación",
-        "Empresario puede despedir sin justificación ni indemnización y trabajador no debe preaviso",
-        "Ya no existe período de prueba",
-      ],
-      correct: 2,
-      explain:
-        "La respuesta correcta es la C porque durante el período de prueba cualquiera de las partes puede extinguir el contrato sin necesidad de alegar causa y sin indemnización, y el trabajador no está obligado a dar preaviso salvo que lo diga el convenio. La A obliga injustificadamente al trabajador a preavisar. La B limita indebidamente la facultad del empresario. La D es falsa porque el período de prueba sigue existiendo.",
-    },
-    {
-      q: "La jornada laboral:",
-      options: [
-        "Establece horas diarias",
-        "Establece horas semanales",
-        "Establece horas anuales",
-        "Todas son correctas",
-      ],
-      correct: 3,
-      explain:
-        "La respuesta correcta es la D porque la jornada laboral puede expresarse en horas diarias, semanales o anuales según la regulación. Las opciones A, B y C recogen cada una un nivel de referencia, pero ninguna por sí sola refleja todo el concepto. Por eso la mejor opción que incluye todas es ‘Todas son correctas’.",
-    },
-    {
-      q: "Las vacaciones:",
-      options: [
-        "No son un derecho constitucional",
-        "Sirven para dar descanso a los trabajadores",
-        "Pueden ser o no retribuidas",
-        "Pueden sustituirse por compensación económica",
-      ],
-      correct: 1,
-      explain:
-        "La respuesta correcta es la B porque la finalidad de las vacaciones es el descanso periódico del trabajador, normalmente anual. La A es cuestionable, ya que el descanso es un derecho reconocido. La C es falsa: las vacaciones deben ser retribuidas. La D solo se admite en supuestos muy concretos (por ejemplo, al finalizar el contrato si quedaron vacaciones pendientes), pero no como norma general que las sustituya.",
-    },
-    {
-      q: "El trabajo nocturno:",
-      options: [
-        "Permite 15 horas extra semanales",
-        "Se retribuye menos si es por fuerza mayor",
-        "Se da al menos 3 horas o 1/3 de la jornada de 22:00 a 6:00",
-        "Se da al menos 5 horas o 3/5 de 00:00 a 8:00",
-      ],
-      correct: 2,
-      explain:
-        "La respuesta correcta es la C porque la definición de trabajo nocturno en la normativa habla de que al menos 3 horas de la jornada diaria o un tercio de la jornada anual se realicen entre las 22:00 y las 6:00. La A habla de horas extra, sin relación directa. La B no es cierta: no se retribuye menos por ser por fuerza mayor. La D inventa otro tramo horario que no coincide con la definición estándar.",
-    },
-    {
-      q: "Tiempo mínimo entre el final de una jornada y el comienzo de otra (salvo excepciones):",
-      options: ["8 horas", "12 horas", "6 horas", "No existe mínimo"],
-      correct: 1,
-      explain:
-        "La respuesta correcta es la B porque el Estatuto de los Trabajadores establece, con carácter general, un descanso mínimo de 12 horas entre el final de una jornada y el inicio de la siguiente. Las otras cifras (8 y 6 horas) son inferiores a lo que marca la ley. La D es falsa porque sí existe un mínimo legal.",
-    },
-    {
-      q: "¿Qué días deben respetarse por fiesta nacional?",
-      options: ["1 de enero", "1 de mayo", "12 de octubre", "Todos los anteriores"],
-      correct: 3,
-      explain:
-        "La respuesta correcta es la D porque tanto el 1 de enero (Año Nuevo), como el 1 de mayo (Fiesta del Trabajo) y el 12 de octubre (Fiesta Nacional de España) son festivos nacionales de obligado descanso, salvo ciertas excepciones. Por tanto la opción que los agrupa a todos es la más correcta.",
-    },
-    {
-      q: "El periodo de prueba en un contrato:",
-      options: [
-        "Hasta 6 meses técnicos titulados y 2 meses resto",
-        "Hasta 12 meses técnicos titulados y 8 meses resto",
-        "Es obligatorio y debe aparecer por escrito",
-        "Ya no existe",
-      ],
-      correct: 0,
-      explain:
-        "La respuesta correcta es la A porque la duración máxima orientativa del período de prueba suele ser de hasta 6 meses para técnicos titulados y 2 meses para el resto de trabajadores, según Estatuto de los Trabajadores y convenios. La B exagera los plazos. La C es falsa porque el período de prueba es opcional; solo existe si se pacta por escrito. La D es obviamente falsa.",
-    },
-    {
-      q: "La flexibilidad laboral:",
-      options: [
-        "Equivale al teletrabajo",
-        "No tiene límites para el trabajador",
-        "Implica autogestión y organización del tiempo",
-        "No se adapta a circunstancias cambiantes",
-      ],
-      correct: 2,
-      explain:
-        "La respuesta correcta es la C porque la flexibilidad laboral implica, entre otras cosas, cierta capacidad del trabajador para organizar su tiempo, lugar o modo de trabajo (siempre dentro de límites pactados). La A identifica flexibilidad solo con teletrabajo, que es una forma concreta. La B es falsa: la flexibilidad está regulada, no es ilimitada. La D va en contra de la propia idea de flexibilidad, que justamente sirve para adaptarse a cambios.",
-    },
-    {
-      q: "Derechos laborales en el entorno digital:",
-      options: [
-        "Acceso universal a Internet y libertad de contenidos",
-        "Salud mental y diversidad digital",
-        "Desconexión digital y privacidad/protección de datos personales",
-        "Teletrabajo y no invasión del ámbito privado",
-      ],
-      correct: 2,
-      explain:
-        "La respuesta correcta es la C porque entre los nuevos derechos laborales vinculados al entorno digital destacan el derecho a la desconexión digital (no recibir comunicaciones laborales fuera de horario salvo causa justificada) y la protección de datos personales. La A es más un derecho ciudadano general. La B es una formulación muy amplia. La D habla de teletrabajo, que sí se relaciona, pero la formulación de la opción C es más precisa y completa.",
-    },
-    {
-      q: "Instancia más alta dentro de los tribunales y juzgados de lo social:",
-      options: [
-        "Tribunales Superiores de Justicia",
-        "Tribunal Supremo",
-        "Ministerio de Trabajo",
-        "Audiencia Nacional",
-      ],
-      correct: 1,
-      explain:
-        "La respuesta correcta es la B porque el Tribunal Supremo es el órgano jurisdiccional superior en todos los órdenes (incluido el social) salvo lo dispuesto para las garantías constitucionales. Los Tribunales Superiores de Justicia (A) están por debajo y actúan en ámbito autonómico. El Ministerio de Trabajo (C) es un órgano administrativo, no judicial. La Audiencia Nacional (D) tiene competencias importantes, pero no es la instancia más alta del orden social.",
-    },
-  ],
+  "8️⃣ Obligaciones del titular\nEl titular de la unidad debe:\n• Aplicar el programa de garantía de calidad\n• Informar a las autoridades\n• Comunicar incidentes\n• Garantizar la seguridad del paciente\n• Obtener el consentimiento informado antes de las pruebas"
+],
+questions: [
+  {
+    q: "Antes de exponer a una persona a una radiación ionizante estas deben firmar:",
+    options: [
+      "Consentimiento informado",
+      "Consentimiento formado",
+      "Desconsentimiento informado",
+      "Información básica"
+    ],
+    correct: 0,
+    explain:
+      "La respuesta correcta es la A porque el consentimiento informado es obligatorio antes de cualquier procedimiento con radiación.",
+  },
+  {
+    q: "El estado de referencia inicial se define como:",
+    options: [
+      "Aquellos valores que tiene el equipo al inicio de su uso",
+      "Estado del equipo en desuso",
+      "Valores de referencia obtenidos como punto de control para futuras pruebas de calidad",
+      "Valores de referencia iniciales de daños del equipo"
+    ],
+    correct: 2,
+    explain:
+      "La respuesta correcta es la C porque sirve como base para comparar futuros controles de calidad.",
+  },
+  {
+    q: "El Real Decreto 1976/1999 legisla el ámbito de la calidad en:",
+    options: [
+      "Medicina nuclear",
+      "Radiodiagnóstico",
+      "Radioterapia",
+      "Todas son incorrectas."
+    ],
+    correct: 1,
+    explain:
+      "La respuesta correcta es la B porque este decreto regula la calidad en radiodiagnóstico.",
+  },
+  {
+    q: "Entre las obligaciones de la persona titular de una unidad de imagen para el diagnóstico encontramos:",
+    options: [
+      "Aplicación del programa de garantía de calidad",
+      "Redacción de un informe anual sobre los resultados del programa de garantía",
+      "Informar a las autoridades competentes cualquier incidente o accidente",
+      "Todas son correctas"
+    ],
+    correct: 3,
+    explain:
+      "La respuesta correcta es la D porque el titular debe cumplir todas esas obligaciones.",
+  },
+  {
+    q: "La directiva europea que garantiza la calidad en el ámbito sanitario es:",
+    options: [
+      "2013/59/Euratom",
+      "1997/43/Euratom",
+      "2003/122/Euratom",
+      "1996/29/Euratom"
+    ],
+    correct: 0,
+    explain:
+      "La respuesta correcta es la A porque esta directiva establece normas de protección radiológica.",
+  },
+  {
+    q: "La función de aplicar el programa de garantía de calidad recae sobre:",
+    options: [
+      "Comisión de mantenimiento",
+      "Comisión de garantía y control de calidad",
+      "Comité de control",
+      "Todas las anteriores son incorrectas."
+    ],
+    correct: 1,
+    explain:
+      "La respuesta correcta es la B porque esta comisión es responsable de aplicar el programa de calidad.",
+  },
+  {
+    q: "La hoja de tratamiento es:",
+    options: [
+      "Documento con información sobre el procedimiento",
+      "Documento incluido en la historia clínica",
+      "Documento usado en radioterapia",
+      "Todas son correctas"
+    ],
+    correct: 3,
+    explain:
+      "La respuesta correcta es la D porque la hoja de tratamiento cumple todas esas funciones.",
+  },
+  {
+    q: "Las pruebas de aceptación en medicina nuclear se definen en el:",
+    options: [
+      "Protocolo Nacional de Control de Calidad de Instrumentación de Medicina Nuclear",
+      "Protocolo Nacional de Control de Calidad de Equipos de Medicina Nuclear",
+      "Protocolo Internacional de Control de Calidad",
+      "Ninguna de las anteriores"
+    ],
+    correct: 0,
+    explain:
+      "La respuesta correcta es la A porque este protocolo regula las pruebas de aceptación.",
+  },
+  {
+    q: "Las pruebas o controles que se realizan al inicio para comprobar que cumple con los requisitos especificados y la normativa:",
+    options: [
+      "Pruebas de verificación",
+      "Pruebas de aceptación",
+      "Programa de mantenimiento",
+      "Pruebas de comprobación"
+    ],
+    correct: 1,
+    explain:
+      "La respuesta correcta es la B porque las pruebas de aceptación se realizan antes del uso clínico.",
+  },
+  {
+    q: "Se define como toda prueba que se realiza sobre un equipo tras una modificación o reparación para comprobar si es apto para el uso clínico:",
+    options: [
+      "Pruebas de verificación",
+      "Pruebas de aceptación",
+      "Programa de mantenimiento",
+      "Pruebas de comprobación"
+    ],
+    correct: 0,
+    explain:
+      "La respuesta correcta es la A porque la verificación se realiza después de intervenciones en el equipo.",
+  }
+],
 },
 
 {
   id: "fol-u7",
-  title: "FOL · U7 · Salario, nómina y Seguridad Social",
-  summary: [
+title: "Protección Radiológica · U7 · Planes de emergencia",
+summary: [
+  "1️⃣ Visión general\nEsta unidad explica cómo actuar ante emergencias en instalaciones radiactivas. El elemento clave es el Plan de Emergencia Interior (PEI), que establece las actuaciones para minimizar riesgos sobre personas, instalaciones y medio ambiente.",
 
-"1️⃣ Resumen general de la unidad\nLa unidad explica cómo funciona el salario, qué partes componen la nómina, qué deducciones se aplican y cómo se calculan. También detalla el sistema de Seguridad Social y sus prestaciones: incapacidad temporal, desempleo, nacimiento y cuidado del menor, incapacidad permanente, jubilación, muerte y supervivencia, además del ingreso mínimo vital. Incluye la protección por desempleo y requisitos para acceder a ella.",
+  "2️⃣ Plan de Emergencia Interior (PEI)\nEl PEI es un documento obligatorio que define:\n• Organización y responsables\n• Clasificación de sucesos\n• Protocolos de actuación\n• Medidas correctoras y recuperación\nSu objetivo es reducir las consecuencias de una emergencia y garantizar una respuesta rápida y eficaz.",
 
-"2️⃣ La nómina y el salario\n• El salario es la retribución por el trabajo prestado.\n• Existe un salario mínimo obligatorio: SMI (1.184 €/mes en 2025).\n• El salario puede tener:\n  - Salario base.\n  - Complementos (antigüedad, peligrosidad, nocturnidad...).\n  - Horas extra.\n  - Salario en especie.\n  - Percepciones no salariales (dietas, transporte, indemnizaciones).",
-  
-"2.1 Componentes de la nómina\n• Devengos: todo lo que el trabajador gana.\n• Deducciones: restan del salario (cotización y IRPF).\n• Salario bruto: total antes de deducciones.\n• Salario neto: cantidad final a recibir.\n• Base de cotización: se usa para calcular prestaciones.\n• Tipo de IRPF: depende de salario, situación familiar y contrato.",
+  "3️⃣ Incidentes vs accidentes\n• Incidente: suceso previsible que no causa daños significativos.\n• Accidente: suceso no previsto que puede causar daños importantes.\nLa prevención se basa en formación, análisis de errores y buenas prácticas.",
 
-"3️⃣ Seguridad Social y sus coberturas\nLa Seguridad Social protege al trabajador ante contingencias económicas y de salud.\nIncluye prestaciones por:\n• Incapacidad Temporal (IT).\n• Riesgo embarazo/lactancia.\n• Nacimiento y cuidado del menor.\n• Incapacidad Permanente.\n• Jubilación.\n• Muerte y supervivencia.\n• Lesiones permanentes no invalidantes.\n• Ingreso mínimo vital.\n• Desempleo.",
+  "4️⃣ Emergencias en medicina nuclear\nSe trabaja con fuentes no encapsuladas, por lo que existe riesgo de contaminación:\n• Contaminación externa: contacto con superficies o piel.\n• Contaminación interna: inhalación, ingestión o heridas.\nEs clave actuar rápido (especialmente en las primeras horas) para limitar el daño.",
 
-"3.1 Incapacidad Temporal (IT)\n• Duración máxima: 365 días, prorrogable.\n• Puede ser por contingencias comunes o profesionales.\n• La prestación depende del tipo:\n  - Enfermedad común: % de base reguladora tras los primeros días.\n  - Accidente laboral: desde el día siguiente al 75% de la base reguladora.",
+  "5️⃣ Actuación ante contaminación\nLas medidas básicas son:\n• Proteger al personal\n• Medir niveles de contaminación\n• Delimitar la zona\n• Limpiar correctamente\nLa descontaminación cutánea se realiza con agua y jabón, evitando dañar la piel.",
 
-"3.2 Nacimiento y cuidado de menor\n• Sustituye maternidad y paternidad desde 2019.\n• 16 semanas para cada progenitor.\n• Permiso obligatorio mínimo inicial.\n• Prestación económica según base reguladora.",
+  "6️⃣ Emergencias en radioterapia\n• Teleterapia: análisis de riesgos mediante estudios previos.\n• Braquiterapia: control de fallos en fuentes radiactivas.\nSe utilizan enfoques retrospectivos (analizar accidentes pasados) y prospectivos (prever riesgos).",
 
-"3.3 Incapacidad permanente\nGrados:\n• Parcial.\n• Total.\n• Absoluta.\n• Gran invalidez.\nCada grado determina:\n• Derecho a indemnización o pensión vitalicia.\n• Cantidad proporcional a la base reguladora y grado de afectación.",
+  "7️⃣ Notificación de sucesos\nLos incidentes y accidentes deben notificarse:\n• De forma inmediata (1 hora) en casos graves como pérdida de fuentes.\n• En menos de 24 horas en otros casos.\nLa responsabilidad recae en el titular de la instalación.",
 
-"3.4 Jubilación\nRequisitos:\n• Edad legal (variable según año y cotización).\n• Periodos mínimos cotizados.\n• Posible jubilación anticipada o demorada.\nLa prestación depende de:\n• Años cotizados.\n• Bases de cotización.\n• Edad de retiro.",
-
-"3.5 Muerte y supervivencia\nIncluye:\n• Pensión de viudedad.\n• Orfandad.\n• Prestaciones a favor de familiares.\nEn caso de accidente laboral, se incluyen indemnizaciones adicionales.",
-
-"4️⃣ Desempleo: requisitos y prestaciones\nClasificación:\n• Desempleo total.\n• Desempleo parcial.\nRequisitos generales para contributiva:\n• Haber cotizado mínimo 12 meses en los últimos 6 años.\n• Estar inscrito como demandante de empleo.\n• No haber rechazado ofertas adecuadas.\nLa cuantía depende de:\n• Base reguladora.\n• Hijos a cargo.\n• Situación familiar.",
-  
-"4.1 Duración de la prestación\n• Depende del tiempo cotizado.\n• De 4 meses hasta 2 años.",
-  
-"4.2 Subsidio por desempleo\n• Para quienes no cumplen los requisitos de la contributiva.\n• Cuantía reducida y tiempo limitado.\n• Existen subsidios especiales: mayores de 45, cargas familiares, mayores de 52, etc.",
-
-"5️⃣ Conclusión de la unidad\nEsta unidad explica de forma completa cómo se calcula la nómina, cuál es el valor real del salario neto y qué protecciones existen dentro de la Seguridad Social. También aclara los requisitos de desempleo y el funcionamiento de las prestaciones en España, garantizando derechos ante enfermedad, maternidad, vejez o falta de empleo."
-  ],
-  questions: [
-    {
-      q: "El Salario Mínimo Interprofesional (SMI):",
-      options: [
-        "Cuantía mínima por trabajo por cuenta ajena a tiempo completo",
-        "No se puede mejorar por contrato salvo ley del Gobierno",
-        "Se usa como referencia para el IPC",
-        "Ninguna es correcta",
-      ],
-      correct: 0,
-      explain:
-        "La respuesta correcta es la A porque el SMI es la retribución mínima que debe percibir cualquier trabajador por cuenta ajena a jornada completa, con independencia del tipo de contrato. La B es falsa: el SMI sí puede mejorarse por convenio o contrato, lo que no se puede es rebajarlo. La C no describe su función principal, aunque pueda usarse como referencia en algunos cálculos. Por tanto la D tampoco puede ser correcta.",
-    },
-    {
-      q: "¿Qué se entiende por salario?",
-      options: [
-        "Totalidad percepciones en dinero o especie",
-        "Totalidad percepciones solo en dinero",
-        "Recibo individual del Ministerio",
-        "Devengo no consolidable fiscal",
-      ],
-      correct: 0,
-      explain:
-        "La respuesta correcta es la A porque salario es el conjunto de percepciones económicas del trabajador, tanto en dinero como en especie (vivienda, coche, etc.), a cambio del trabajo prestado. La B excluye el salario en especie. La C parece referirse a la nómina como documento, pero no define salario. La D menciona un término fiscal, no la definición general.",
-    },
-    {
-      q: "El FOGASA:",
-      options: [
-        "Protege salarios pendientes de pago",
-        "Protege indemnizaciones reconocidas judicial/administrativamente",
-        "Organismo autónomo adscrito al Ministerio de Trabajo",
-        "Todas son correctas",
-      ],
-      correct: 3,
-      explain:
-        "La respuesta correcta es la D porque todas las afirmaciones definen al FOGASA: es un organismo autónomo del Ministerio de Trabajo que garantiza el pago de salarios e indemnizaciones a los trabajadores cuando la empresa es insolvente o está en concurso. Por eso las opciones A, B y C son verdaderas y la opción ‘Todas son correctas’ es la correcta.",
-    },
-    {
-      q: "¿Cuál NO es un complemento salarial?",
-      options: ["Nocturnidad", "Toxicidad/peligrosidad", "Quebranto de moneda", "Participación en resultados"],
-      correct: 2,
-      explain:
-        "La respuesta correcta es la C porque el quebranto de moneda suele considerarse una indemnización o suplido para compensar posibles pérdidas de caja, no un complemento salarial propiamente dicho. La nocturnidad y la toxicidad/peligrosidad (A y B) son complementos ligados a condiciones especiales del trabajo. La participación en resultados (D) también puede ser un complemento ligado a beneficios.",
-    },
-    {
-      q: "¿Cuál se considera una deducción a efectos de retribución?",
-      options: [
-        "Indemnizaciones o suplidos",
-        "Cotización por productividad",
-        "Retención por IRPF",
-        "Todas son correctas",
-      ],
-      correct: 2,
-      explain:
-        "La respuesta correcta es la C porque en la nómina se descuentan al salario bruto, entre otras cosas, las retenciones por IRPF. Las indemnizaciones o suplidos (A) no son retribuciones salariales y suelen estar fuera de la base de cotización. La ‘cotización por productividad’ (B) no es una deducción típica; lo que se descuenta son cotizaciones a la Seguridad Social, pero la opción está mal formulada. Por eso la D tampoco puede ser correcta.",
-    },
-    {
-      q: "¿Qué NO es una acción protectora de la Seguridad Social?",
-      options: [
-        "Incapacidad temporal",
-        "Asistencia sanitaria",
-        "Jubilación",
-        "Prestación por circunstancia social",
-      ],
-      correct: 3,
-      explain:
-        "La respuesta correcta es la D porque ‘prestación por circunstancia social’ no es una figura concreta dentro del catálogo de prestaciones de la Seguridad Social. En cambio, la incapacidad temporal (A), la asistencia sanitaria (B) y la jubilación (C) sí son prestaciones que forman parte de la acción protectora del sistema.",
-    },
-    {
-      q: "Grados de incapacidad permanente:",
-      options: [
-        "Parcial, total, absoluta y gran invalidez",
-        "Crónica y total",
-        "Concluyente, lesiva y gran invalidez",
-        "Revisable, incapacitante, parcial y absoluta",
-      ],
-      correct: 0,
-      explain:
-        "La respuesta correcta es la A porque la Seguridad Social diferencia cuatro grados básicos de incapacidad permanente: parcial, total, absoluta y gran invalidez. Las demás opciones mezclan términos que no se corresponden con la clasificación oficial: ‘crónica’, ‘concluyente’, ‘revisable’… son adjetivos genéricos pero no grados jurídicos.",
-    },
-    {
-      q: "Requisitos para percibir subsidio por desempleo:",
-      options: [
-        "Solo no disponer de renta mensual",
-        "No rechazar ofertas adecuadas ni acciones formativas y carecer de rentas mensuales superiores al 75% del SMI",
-        "Desempleo, menor de 55, e ingresar menos del 80% IPREM",
-        "Desempleo con incapacidad y/o cargas familiares",
-      ],
-      correct: 1,
-      explain:
-        "La respuesta correcta es la B porque resume dos condiciones clave: mantener la disposición activa (no rechazar ofertas ni formación) y no superar un límite de rentas (por ejemplo, el 75 % del SMI). La A se queda corta, solo menciona renta. La C y la D describen situaciones concretas (personas de cierta edad o con cargas familiares), pero no recogen de forma general los requisitos del subsidio.",
-    },
-    {
-      q: "Prestaciones de la acción protectora se clasifican en:",
-      options: [
-        "Familiares e individuales",
-        "Personales y laborales",
-        "Contributivas y no contributivas",
-        "Asistenciales y no asistenciales",
-      ],
-      correct: 2,
-      explain:
-        "La respuesta correcta es la C porque la gran clasificación de prestaciones de la Seguridad Social es entre contributivas (cuando se ha cotizado previamente) y no contributivas (cuando se reconocen por necesidad, aunque no se haya cotizado lo suficiente). Las otras divisiones (familiares/individuales, personales/laborales, asistenciales/no asistenciales) no se corresponden con la clasificación básica del sistema.",
-    },
-    {
-      q: "Sobre incapacidad temporal:",
-      options: [
-        "Imposibilidad de trabajar durante un periodo y necesita asistencia sanitaria",
-        "En comunes y profesionales es obligatorio 180 días cotizados el año anterior",
-        "Duración máxima 360 días improrrogables",
-        "Todas son correctas",
-      ],
-      correct: 0,
-      explain:
-        "La respuesta correcta es la A porque la incapacidad temporal se caracteriza por la imposibilidad de trabajar durante un tiempo debido a enfermedad o accidente y va ligada a la necesidad de asistencia sanitaria. Las cifras de días cotizados (B) y la duración máxima de 360 días (C) no son exactas o pueden variar según la situación, por lo que no pueden darse como afirmaciones generales totalmente correctas.",
-    },
-  ],
-},
-
-{
-  id: "fol-u8",
-  title: "FOL · U8 · Orientación profesional y formación",
-  summary: [
-
-"1️⃣ Resumen general de la unidad\nEsta unidad trata sobre el autoconocimiento y la importancia de analizar tus intereses, habilidades, valores y motivaciones para construir tu trayectoria profesional. Explica cómo definir metas realistas, establecer un proyecto de carrera y elegir itinerarios formativos adecuados. También trabaja la autoestima, resiliencia, análisis DAFO personal e identificación de hitos vitales que influyen en tus decisiones laborales.",
-
-"2️⃣ Autoconocimiento y evaluación personal\n• El autoconocimiento consiste en saber quién eres, qué te gusta, qué te motiva y qué quieres conseguir.\n• Se evalúan intereses, valores y motivaciones.\n• Herramientas como el Test de Holland ayudan a identificar perfiles profesionales.\n• Reflexionar sobre habilidades y destrezas permite crear un plan de mejora personal.",
-
-"3️⃣ Cualidades y competencias personales\n• Cualidades: responsabilidad, iniciativa, resiliencia, adaptabilidad, autoconfianza.\n• Competencias: comunicación, trabajo en equipo, resolución de problemas, gestión del tiempo.\n• Hard skills: habilidades técnicas específicas.\n• Soft skills: habilidades sociales y personales.\n• Las soft skills marcan la diferencia en la empleabilidad actual.",
-
-"4️⃣ Preferencias profesionales y metas\n• Las preferencias se basan en intereses, valores, habilidades y experiencias.\n• Las metas se dividen en:\n  - Corto plazo (0–1 años)\n  - Medio plazo (1–3 años)\n  - Largo plazo (3–5+ años)\n• El proyecto profesional debe incluir investigación del mercado laboral y acciones concretas.\n• Revisar las metas de forma periódica es imprescindible para avanzar.",
-
-"5️⃣ Autoestima y búsqueda de empleo\n• La autoestima influye en la motivación, seguridad y desempeño en entrevistas.\n• Una autoestima fuerte ayuda a manejar rechazos y mantener el enfoque.\n• La autoconfianza permite defender tus capacidades y crear una marca personal positiva.",
-
-"6️⃣ Análisis DAFO personal\n• Fortalezas: puntos fuertes personales.\n• Debilidades: aspectos a mejorar.\n• Oportunidades: tendencias del mercado, formaciones, nichos.\n• Amenazas: competencia, cambios económicos.\n• El DAFO ayuda a planificar estrategias para maximizar fortalezas y minimizar debilidades.",
-
-"7️⃣ Hitos importantes en la trayectoria vital\n• Los hitos son experiencias clave que definen tu crecimiento personal y profesional.\n• Pueden ser logros, cambios vitales, experiencias educativas o retos superados.\n• Ayudan a entender tu evolución y a reforzar la motivación y la confianza.",
-
-"8️⃣ Elección de itinerarios formativos\n• La formación profesional para el empleo ayuda a mejorar habilidades y adaptarse al mercado.\n• Los ciclos formativos permiten acceder a estudios superiores o al empleo.\n• El sistema universitario europeo (Bolonia) organiza estudios en Grado, Máster y Doctorado.\n• Elegir el itinerario correcto depende de tus metas y fortalezas personales."
-  ],
-  questions: [
-    {
-      q: "Capacidad de comprender intereses, valores, motivaciones, habilidades y destrezas:",
-      options: [
-        "Autoconocimiento",
-        "Inventario de intereses",
-        "Exploración de actividades",
-        "Instinto",
-      ],
-      correct: 0,
-      explain:
-        "La respuesta correcta es la A porque autoconocimiento es precisamente entender quién eres, qué te motiva, qué valores tienes y qué sabes hacer, algo clave para orientarte profesionalmente. El inventario de intereses (B) es una herramienta, no la capacidad en sí. La exploración de actividades (C) es un proceso para probar opciones. El instinto (D) se refiere a impulsos más básicos, no a una reflexión consciente sobre uno mismo.",
-    },
-    {
-      q: "El Inventario de Intereses de Holland:",
-      options: [
-        "También es conocido como Teoría de los Tipos de Personalidad Vocacional",
-        "Clasifica personas y ambientes en seis tipos",
-        "Batería de preguntas que evalúan preferencias/aversiones",
-        "Todas son correctas",
-      ],
-      correct: 3,
-      explain:
-        "La respuesta correcta es la D porque todas las afirmaciones describen bien el modelo de Holland: es una teoría de tipos vocacionales, distingue seis grandes perfiles (realista, investigador, artístico, social, emprendedor, convencional) y se aplica mediante cuestionarios de intereses. Como A, B y C son verdaderas, la opción correcta es ‘Todas son correctas’.",
-    },
-    {
-      q: "Las motivaciones:",
-      options: [
-        "Factores internos que impulsan a actuar",
-        "Factores externos que impulsan a actuar",
-        "Factores internos y externos que impulsan a actuar",
-        "Permiten descubrir nuevas áreas de interés",
-      ],
-      correct: 2,
-      explain:
-        "La respuesta correcta es la C porque las motivaciones pueden ser internas (gusto, vocación, valores) y externas (salario, reconocimiento, estabilidad), y ambas influyen en nuestras decisiones. La A solo recoge la parte interna, la B solo la externa. La D es una consecuencia posible de estar motivado, pero no define el concepto.",
-    },
-    {
-      q: "Se pueden conocer las habilidades a través de:",
-      options: [
-        "Inventarios de habilidades",
-        "Autoevaluación de competencias",
-        "Evaluaciones de desempeño",
-        "Todas son correctas",
-      ],
-      correct: 3,
-      explain:
-        "La respuesta correcta es la D porque las habilidades pueden explorarse mediante cuestionarios específicos (A), reflexión personal y autoevaluación (B) y también a través de evaluaciones en el trabajo o en formación (C). Como cada método aporta información distinta y útil, la opción que los agrupa a todos es la más acertada.",
-    },
-    {
-      q: "Atributos innatos o desarrollados que forman parte de la personalidad:",
-      options: [
-        "Competencias personales",
-        "Cualidades personales",
-        "Competencias sociales",
-        "Preferencias profesionales",
-      ],
-      correct: 1,
-      explain:
-        "La respuesta correcta es la B porque las cualidades personales (responsabilidad, puntualidad, creatividad, etc.) son rasgos de la personalidad que se pueden tener de forma más innata o desarrollarse con el tiempo. Las competencias personales (A) son combinaciones de conocimientos, habilidades y actitudes; las competencias sociales (C) están más relacionadas con cómo nos relacionamos con los demás. Las preferencias profesionales (D) se refieren a gustos por ciertos trabajos.",
-    },
-    {
-      q: "Habilidades adquiridas que pueden desarrollarse y mejorarse con el tiempo, imprescindibles para el puesto:",
-      options: [
-        "Competencias personales",
-        "Cualidades personales",
-        "Competencias sociales",
-        "Preferencias profesionales",
-      ],
-      correct: 0,
-      explain:
-        "La respuesta correcta es la A porque las competencias personales (y profesionales) son habilidades que se adquieren y se pueden entrenar: trabajo en equipo, comunicación, organización, etc., y resultan clave para desempeñar un puesto. Las cualidades personales (B) se acercan más a rasgos. Las competencias sociales (C) son un subtipo concreto referente a interacción social. Las preferencias profesionales (D) son gustos, no habilidades.",
-    },
-    {
-      q: "Existen tres tipos de objetivos profesionales:",
-      options: [
-        "Personales, empresariales y grupales",
-        "Logísticos, específicos y estratégicos",
-        "A corto, a medio y a largo plazo",
-        "Específicos, de carrera y evaluativos",
-      ],
-      correct: 2,
-      explain:
-        "La respuesta correcta es la C porque en orientación profesional se suele distinguir entre objetivos a corto plazo (meses), medio plazo (1–3 años) y largo plazo (5 o más años). Las otras opciones proponen clasificaciones que no son las típicas de planificación profesional.",
-    },
-    {
-      q: "Una de las vías de acceso a un CFGS es:",
-      options: [
-        "Título de Técnico (Grado Medio)",
-        "Bachillerato",
-        "Prueba de acceso a CFGS",
-        "Todas son correctas",
-      ],
-      correct: 3,
-      explain:
-        "La respuesta correcta es la D porque todas las vías indicadas son reales: se puede acceder a un CFGS con un título de Técnico (Grado Medio relacionado), con Bachillerato, o superando la prueba específica de acceso. Como las tres son válidas, la opción correcta es ‘Todas son correctas’.",
-    },
-    {
-      q: "Tras Bolonia 1999, estudios universitarios divididos en dos niveles:",
-      options: [
-        "Grado y posgrado",
-        "Grados Medios y Superiores",
-        "Máster y Doctorado",
-        "Europeos e internacionales",
-      ],
-      correct: 0,
-      explain:
-        "La respuesta correcta es la A porque la reforma de Bolonia estructura los estudios universitarios en grado y posgrado (donde se incluyen máster y doctorado). La B habla de FP, no de universidad. La C solo nombra los niveles de posgrado. La D no tiene sentido como clasificación oficial.",
-    },
-    {
-      q: "La autoestima:",
-      options: [
-        "No tiene relevancia en búsqueda de empleo",
-        "Determina habilidades técnicas específicas",
-        "Percepción subjetiva y valoración emocional de uno mismo",
-        "Puede ser educativa, personal o laboral",
-      ],
-      correct: 2,
-      explain:
-        "La respuesta correcta es la C porque la autoestima es cómo te percibes y valoras a ti mismo, lo que influye en tu seguridad, en cómo te presentas y en tu capacidad para afrontar retos. La A es falsa: una buena autoestima ayuda mucho en entrevistas y procesos de selección. La B confunde autoestima con habilidades técnicas. La D mezcla ámbitos, pero la definición más clara es la de la opción C.",
-    },
-  ],
-},
-
-{
-  id: "fol-u9",
-  title: "FOL · U9 · Habilidades, resiliencia e identidad digital",
-  summary: [
-
-"1️⃣ Resumen general de la unidad\nLa unidad trata la importancia del aprendizaje continuo, el desarrollo de competencias y el uso de herramientas digitales para mejorar la empleabilidad. Explica cómo elaborar un Plan de Desarrollo Individual (PDI), gestionar la identidad digital y adaptarse al entorno laboral moderno. Se destacan habilidades blandas, técnicas y estrategias de autoaprendizaje.",
-
-"2️⃣ Importancia del aprendizaje permanente\n• El aprendizaje continuo permite adaptarse a cambios tecnológicos y nuevas demandas del empleo.\n• Favorece la empleabilidad, innovación, motivación y resiliencia.\n• Incluye habilidades duras (hard skills) y blandas (soft skills).\n• Actualizar conocimientos es clave para mantenerse competitivo en el mercado laboral actual.",
-
-"3️⃣ Estrategias para el desarrollo de competencias\n• Formación formal (ciclos, cursos, certificados, universidad).\n• Desarrollo de soft skills: comunicación, liderazgo, inteligencia emocional.\n• Networking: crear relaciones profesionales que generen oportunidades.\n• Para el aprendizaje autónomo se recomienda disciplina, metas claras y autoevaluaciones frecuentes.\n• Las herramientas digitales facilitan el seguimiento y organización del aprendizaje.",
-
-"4️⃣ Adaptación al entorno laboral actual\n• El mundo laboral cambia con la transformación digital, IA y automatización.\n• Nuevas formas de empleo: remoto, híbrido, flexible, freelance, gig economy.\n• Habilidades técnicas clave: programación, ciberseguridad, análisis de datos.\n• Habilidades blandas clave: liderazgo, comunicación, gestión del tiempo.\n• La sostenibilidad y RSC condicionan cada vez más las expectativas laborales.",
-
-"5️⃣ Adaptación, flexibilidad y resiliencia\n• Adaptarse a nuevos roles, cambios de horario o herramientas tecnológicas.\n• La resiliencia permite superar dificultades, gestionar el estrés y mantener la motivación.\n• Características del trabajador resiliente: optimismo, autocontrol emocional, iniciativa, pensamiento crítico y redes de apoyo.",
-
-"6️⃣ Mundo digital y empleabilidad\n• La digitalización genera oportunidades y exige nuevas competencias tecnológicas.\n• La identidad digital (2.0) es la presencia que proyectamos online.\n• La marca personal ayuda a destacar, conectar con empleadores y mostrar talento.\n• Importante cuidar seguridad, privacidad y reputación digital.\n• Mantener perfiles actualizados en LinkedIn, portfolio y redes profesionales.",
-
-"7️⃣ Entorno Personal de Aprendizaje (EPA)\n• Es un conjunto de herramientas, recursos, personas y actividades que ayudan a aprender.\n• Incluye apps, cursos online, redes profesionales, blogs, podcasts, comunidades.\n• Permite definir metas, gestionar contenido y evaluar progreso.\n• Ejemplos de EPA: YouTube educativo, Duolingo, cursos MOOC, LinkedIn Learning.",
-
-"8️⃣ Plan de Desarrollo Individual (PDI)\n• Es una hoja de ruta para organizar tu crecimiento profesional.\n• Fases del PDI:\n  1. Autoevaluación.\n  2. Metas claras.\n  3. Acciones concretas.\n  4. Seguimiento.\n• Permite alinear objetivos personales con oportunidades laborales reales.\n• Debe ser flexible y revisarse periódicamente.",
-
-"9️⃣ Elaboración y seguimiento del PDI\n• Metas SMART: específicas, medibles, alcanzables, relevantes y con fecha.\n• Definir indicadores para medir progreso.\n• Revisar resultados y ajustar según nuevas metas o cambios del entorno.\n• Permitir modificaciones continuas para evitar estancamiento.",
-
-"🔟 Conclusión final\n• La adaptabilidad es clave para el éxito profesional.\n• Actualización constante + herramientas digitales = empleabilidad sostenible.\n• La autoevaluación continua, disciplina y proactividad fortalecen la carrera profesional.\n• El PDI debe evolucionar según las necesidades del mercado y tus objetivos personales."
-  ],
-
-  questions: [
-    {
-      q: "El aprendizaje permanente proporciona:",
-      options: [
-        "Adaptación a cambios tecnológicos",
-        "Mejora de empleabilidad",
-        "Satisfacción y motivación laboral",
-        "Todas son correctas",
-      ],
-      correct: 3,
-      explain:
-        "La respuesta correcta es la D porque seguir aprendiendo de forma continua te permite adaptarte a nuevas tecnologías (A), aumentar tu empleabilidad al tener más competencias (B) y sentirte más satisfecho y motivado al ver que avanzas (C). Como todas las ventajas son reales, la opción ‘Todas son correctas’ es la adecuada.",
-    },
-    {
-      q: "Señala cuál NO es una habilidad blanda:",
-      options: ["Asertividad", "Empatía", "Liderazgo", "Análisis de datos"],
-      correct: 3,
-      explain:
-        "La respuesta correcta es la D porque el análisis de datos es una habilidad técnica o dura (hard skill), relacionada con conocimientos específicos. La asertividad, la empatía y el liderazgo (A, B y C) son habilidades blandas o soft skills, ligadas a la forma de relacionarse, comunicarse y dirigir.",
-    },
-    {
-      q: "Establecer un horario de estudio y cumplirlo se considera:",
-      options: [
-        "Networking",
-        "Educación formal",
-        "Autodisciplina",
-        "Habilidad dura",
-      ],
-      correct: 2,
-      explain:
-        "La respuesta correcta es la C porque organizar tu tiempo y respetar ese plan es un ejemplo claro de autodisciplina: capacidad de mantener hábitos y compromisos contigo mismo. El networking (A) es crear redes de contactos. La educación formal (B) son estudios reglados. Las habilidades duras (D) son técnicas concretas, no un rasgo de comportamiento como la autodisciplina.",
-    },
-    {
-      q: "Modelo laboral con trabajos temporales/corta duración y aumento de independientes:",
-      options: [
-        "Economía gig",
-        "Responsabilidad Social Corporativa",
-        "Transformación digital",
-        "Teletrabajo freelance",
-      ],
-      correct: 0,
-      explain:
-        "La respuesta correcta es la A porque la ‘gig economy’ se caracteriza por trabajos por encargo, proyectos cortos, plataformas digitales y un número creciente de trabajadores independientes. La RSC (B) se refiere al compromiso social de las empresas. La transformación digital (C) es un proceso más amplio. El teletrabajo freelance (D) es una forma de trabajo, pero no el nombre del modelo económico.",
-    },
-    {
-      q: "La capacidad de adaptación implica:",
-      options: [
-        "Estrategias para mejorar comunicación efectiva",
-        "Ajustar respuestas/acciones/enfoques ante situaciones cambiantes",
-        "Renunciar a empleabilidad por flexibilidad",
-        "Todas son correctas",
-      ],
-      correct: 1,
-      explain:
-        "La respuesta correcta es la B porque adaptarse es ser capaz de cambiar tu forma de actuar, pensar o organizarte cuando cambian las circunstancias (nuevas tecnologías, jefes, tareas…). La A se centra solo en comunicación, que es una parte. La C plantea algo absurdo: la adaptación precisamente mejora tu empleabilidad, no al revés. Por tanto la D tampoco puede ser correcta.",
-    },
-    {
-      q: "¿Cuál NO es característica de empleados resilientes?",
-      options: ["Pasividad", "Optimismo realista", "Control emocional", "Autoconciencia"],
-      correct: 0,
-      explain:
-        "La respuesta correcta es la A porque la pasividad es lo contrario de la resiliencia; un trabajador resiliente afronta los problemas y busca soluciones. El optimismo realista (B), el control emocional (C) y la autoconciencia (D) sí son rasgos típicos de personas resilientes, que se recuperan y aprenden de las dificultades.",
-    },
-    {
-      q: "Con respecto a la identidad digital:",
-      options: [
-        "También conocida como identidad 1.0",
-        "Se compone únicamente por perfiles en redes sociales",
-        "Empleadores la usan cada vez más para evaluar candidatos",
-        "Ninguna es correcta",
-      ],
-      correct: 2,
-      explain:
-        "La respuesta correcta es la C porque cada vez más empresas revisan la huella digital (publicaciones, comentarios, presencia online) de los candidatos para hacerse una idea de su perfil. La A hace una referencia sin sentido a ‘identidad 1.0’. La B es falsa porque la identidad digital incluye más que redes sociales (blogs, foros, resultados en buscadores, etc.). Por tanto la D tampoco es correcta.",
-    },
-    {
-      q: "Para gestión de privacidad y seguridad digital:",
-      options: [
-        "No hace falta revisar configuraciones de privacidad",
-        "Evitar gestor de contraseñas",
-        "La autenticación en dos factores resta seguridad",
-        "Ninguna es correcta",
-      ],
-      correct: 3,
-      explain:
-        "La respuesta correcta es la D porque las tres primeras afirmaciones son malas prácticas: sí es importante revisar la privacidad (A), los gestores de contraseñas pueden ser muy útiles y seguros (B) y la autenticación en dos factores aumenta la seguridad (C). Como todas son incorrectas, la opción correcta es ‘Ninguna es correcta’.",
-    },
-    {
-      q: "Herramienta estratégica para estructurar y dirigir crecimiento profesional:",
-      options: [
-        "Plan de Desarrollo Individual (PDI)",
-        "Mapa de Habilidades",
-        "Entorno de Desarrollo y Análisis (EDA)",
-        "Autoconocimiento estratégico",
-      ],
-      correct: 0,
-      explain:
-        "La respuesta correcta es la A porque un Plan de Desarrollo Individual recoge objetivos, acciones y plazos para avanzar en tu carrera, y se utiliza como herramienta estratégica de crecimiento. Un mapa de habilidades (B) puede ser un recurso útil, pero no es el nombre típico de la herramienta. Las opciones C y D son formulaciones genéricas que no corresponden a una herramienta concreta.",
-    },
-    {
-      q: "El Entorno Personal de Aprendizaje:",
-      options: [
-        "Es perjudicial para tomar el control del aprendizaje",
-        "Se centra en contribución a la organización (RSC, mentoría)",
-        "Sistema de herramientas, fuentes, personas y actividades",
-        "Ninguna es correcta",
-      ],
-      correct: 2,
-      explain:
-        "La respuesta correcta es la C porque un Entorno Personal de Aprendizaje (EPA o PLE) es el conjunto de recursos (apps, webs, personas, cursos, etc.) que cada individuo usa para aprender de forma autónoma y continua. La A es justo lo contrario, ya que un buen EPA ayuda a tomar el control del propio aprendizaje. La B se refiere más a contribución organizacional. Por eso la opción acertada es la C.",
-    },
-  ],
+  "8️⃣ Objetivo final\nLa prioridad en cualquier emergencia es salvar vidas, atender heridos y posteriormente controlar el riesgo radiológico para evitar consecuencias mayores."
+],
+questions: [
+  {
+    q: "Ante contaminación radiactiva externa en medicina nuclear se recomienda:",
+    options: [
+      "Proteger al personal que realice la descontaminación",
+      "Medir los niveles de contaminación",
+      "Delimitar y marcar la zona del accidente",
+      "Todas son correctas"
+    ],
+    correct: 3,
+    explain:
+      "La respuesta correcta es la D porque todas las medidas son necesarias para controlar la contaminación.",
+  },
+  {
+    q: "En caso de fallecimiento de una persona con implantes radiactivos:",
+    options: [
+      "La autopsia se realiza a las 36 horas",
+      "Se incinera el cuerpo pasados 12 meses del implante de yodo-125",
+      "Se incinera el cuerpo pasados 3 meses del implante de paladio-103",
+      "B y C son correctas"
+    ],
+    correct: 3,
+    explain:
+      "La respuesta correcta es la D porque ambas opciones indican los tiempos correctos de seguridad.",
+  },
+  {
+    q: "Es un suceso de aviso inmediato:",
+    options: [
+      "Pérdida o robo de fuentes radiactivas",
+      "Exposición externa o contaminación",
+      "Vertidos no controlados",
+      "Ninguna es correcta"
+    ],
+    correct: 0,
+    explain:
+      "La respuesta correcta es la A porque la pérdida o robo de fuentes requiere aviso inmediato.",
+  },
+  {
+    q: "La aplicación de medidas tras el estudio de un incidente o accidente se conoce como:",
+    options: [
+      "Enfoque retrospectivo o reactivo",
+      "Enfoque prospectivo o predictivo",
+      "Enfoque analista",
+      "Enfoque futurista"
+    ],
+    correct: 0,
+    explain:
+      "La respuesta correcta es la A porque se basa en analizar lo ocurrido para aplicar mejoras.",
+  },
+  {
+    q: "La contaminación interna en medicina nuclear se puede producir por:",
+    options: [
+      "Inhalación",
+      "Ingestión",
+      "Contacto con heridas",
+      "Todas las anteriores son correctas"
+    ],
+    correct: 3,
+    explain:
+      "La respuesta correcta es la D porque todas son vías de entrada de material radiactivo.",
+  },
+  {
+    q: "Las fases de actuación ante una emergencia en una exploración con radiaciones ionizantes son:",
+    options: [
+      "Parada de control desde la consola",
+      "Botón de parada de emergencia",
+      "Corte de la corriente eléctrica",
+      "Todas son correctas"
+    ],
+    correct: 3,
+    explain:
+      "La respuesta correcta es la D porque todas son acciones de seguridad ante emergencia.",
+  },
+  {
+    q: "Los sucesos de emergencia se informan:",
+    options: [
+      "De manera inmediata o en 24 horas",
+      "Por parte de la persona titular de la instalación",
+      "A y B son correctas",
+      "De forma mensual"
+    ],
+    correct: 2,
+    explain:
+      "La respuesta correcta es la C porque incluye tanto el plazo como el responsable.",
+  },
+  {
+    q: "Se define como todo proceso anormal involuntario, no previsto que puede causar daños significativos:",
+    options: [
+      "Incidente",
+      "Accidente",
+      "Error",
+      "Emergencia"
+    ],
+    correct: 1,
+    explain:
+      "La respuesta correcta es la B porque describe un accidente.",
+  },
+  {
+    q: "Se define como todo proceso anormal que se puede prever y que no causa daños significativos:",
+    options: [
+      "Incidente",
+      "Accidente",
+      "Error",
+      "Emergencia"
+    ],
+    correct: 0,
+    explain:
+      "La respuesta correcta es la A porque describe un incidente.",
+  },
+  {
+    q: "Un plan de emergencia interior es:",
+    options: [
+      "Documento obligatorio",
+      "Documento con las medidas ante situaciones de emergencia",
+      "Plan para reducir las consecuencias sobre personas, bienes materiales y medio ambiente ante una emergencia",
+      "Todas son correctas."
+    ],
+    correct: 3,
+    explain:
+      "La respuesta correcta es la D porque el PEI cumple todas esas funciones.",
+  }
+],
 },
 // Aquí puedes añadir tus 40 preguntas cuando quieras
     {
   id: "fol-final",
-  title: "⭐ FOL · Prueba final · 40 preguntas",
-  isFinal: true,
-  questions: [
-    {
-      q: "¿Cuál de las siguientes es una relación no laboral o excluida?",
-      options: [
-        "Deportistas profesionales.",
-        "Operarios de industria pesada.",
-        "Médicos Internos Residentes.",
-        "Autónomos y TRADE."
-      ],
-      correct: 3,
-      explain: {
-        detail:
-          "Las relaciones laborales excluidas son aquellas en las que, aun existiendo una prestación de servicios, no se aplica el Estatuto de los Trabajadores porque tienen su propia normativa o se consideran ajenas al trabajo por cuenta ajena.",
-        whyCorrect:
-          "La opción D es correcta porque los autónomos y los TRADE trabajan por cuenta propia, asumiendo el riesgo de su actividad y organizando su trabajo, por lo que su relación no es laboral sino de carácter mercantil o profesional.",
-        whyWrong: {
-          A: "Los deportistas profesionales sí pueden tener relación laboral especial regulada por una norma específica.",
-          B: "Los operarios de industria pesada son trabajadores por cuenta ajena con relación laboral común.",
-          C: "Los MIR mantienen una relación laboral especial con la Administración sanitaria."
-        }
-      }
-    },
-    {
-      q: "¿Cuál de las siguientes situaciones no tendrá la consideración de accidente de trabajo?",
-      options: [
-        "Los que se sufran al ir o al volver del lugar de trabajo.",
-        "Los sufridos durante el desempeño de cargos electivos de carácter sindical.",
-        "Los ocurridos por consecuencia de las tareas que se realicen por orden del empresario.",
-        "Los que sean debidos a dolo o a imprudencia temeraria."
-      ],
-      correct: 3,
-      explain: {
-        detail:
-          "El accidente de trabajo es toda lesión corporal que sufre el trabajador con ocasión o por consecuencia del trabajo. La ley recoge una serie de supuestos incluidos y también supuestos excluidos.",
-        whyCorrect:
-          "La opción D es correcta porque cuando el daño se produce por dolo (intencionalidad) o imprudencia temeraria del trabajador, se excluye la consideración de accidente de trabajo.",
-        whyWrong: {
-          A: "Los accidentes 'in itinere', al ir o volver del trabajo, se consideran accidente de trabajo.",
-          B: "Los accidentes sufridos en el ejercicio de cargos sindicales también se consideran accidentes de trabajo.",
-          C: "Los accidentes producidos al realizar órdenes del empresario están expresamente incluidos como accidentes de trabajo."
-        }
-      }
-    },
-    {
-      q: "¿Cuál de los siguientes no es un organismo nacional encargado de velar por la seguridad y la salud en el trabajo?",
-      options: [
-        "Instituto Nacional de Seguridad, Salud y Bienestar en el Trabajo (INSST).",
-        "Organización Nacional de Trabajo, Salud e Inspección Social (ONTS).",
-        "Inspección de Trabajo y Seguridad Social (ITSS).",
-        "Comisión Nacional de Seguridad y Salud en el Trabajo (CNSST)."
-      ],
-      correct: 1,
-      explain: {
-        detail:
-          "En España existen diversos organismos oficiales que trabajan en materia de prevención de riesgos laborales y seguridad y salud en el trabajo.",
-        whyCorrect:
-          "La opción B es correcta porque la ONTS no existe; es un organismo inventado y, por tanto, no forma parte del sistema institucional real.",
-        whyWrong: {
-          A: "El INSST (antiguo INSHT) es el organismo científico-técnico especializado en prevención de riesgos.",
-          C: "La Inspección de Trabajo y Seguridad Social vigila el cumplimiento de la normativa laboral y de prevención.",
-          D: "La CNSST es un órgano colegiado de participación institucional en materia de seguridad y salud."
-        }
-      }
-    },
-    {
-      q: "¿Cuáles son los tres elementos que componen el mercado laboral?",
-      options: [
-        "La oferta, los demandantes de empleo y los intermediarios.",
-        "Los trabajadores por cuenta propia, los trabajadores por cuenta ajena y los funcionarios.",
-        "Las pymes, las grandes empresas y las administraciones públicas.",
-        "La empleabilidad, la demanda empresarial y la FP."
-      ],
-      correct: 0,
-      explain: {
-        detail:
-          "El mercado laboral es el espacio en el que se relacionan quienes buscan empleo, quienes ofrecen puestos de trabajo y los agentes que facilitan ese encuentro.",
-        whyCorrect:
-          "La opción A es correcta porque define los tres elementos clave: la oferta de trabajo (empresas), los demandantes de empleo (personas trabajadoras) y los intermediarios (servicios públicos y privados de empleo).",
-        whyWrong: {
-          B: "Trabajadores por cuenta propia, ajena y funcionarios son tipos de trabajadores, no elementos del mercado.",
-          C: "Pymes, grandes empresas y administraciones son ejemplos de ofertantes, no todos los elementos.",
-          D: "Empleabilidad, demanda empresarial y FP son conceptos relacionados, pero no describen los sujetos que intervienen en el mercado."
-        }
-      }
-    },
-    {
-      q: "¿Qué son los devengos?",
-      options: [
-        "Las cantidades totales percibidas por el trabajador (percepciones salariales y no salariales).",
-        "Los complementos de vencimiento periódico superior al mes (en especie o prorrateados).",
-        "Los tipos porcentuales mediante los que se obtienen las cuotas a descontar de la nómina (en dinero o en especie).",
-        "Los importes que convierten la remuneración salarial en no salarial."
-      ],
-      correct: 0,
-      explain: {
-        detail:
-          "En la nómina, los devengos recogen todo aquello que el trabajador ha generado a su favor, antes de restar las deducciones.",
-        whyCorrect:
-          "La opción A es correcta porque los devengos incluyen todas las percepciones, tanto salariales (salario base, complementos) como no salariales (dietas, indemnizaciones, etc.).",
-        whyWrong: {
-          B: "Los complementos de vencimiento superior al mes son un tipo concreto de devengo (pagas extra), no el concepto general.",
-          C: "Los tipos porcentuales son los tipos de cotización o retención, relacionados con deducciones, no con devengos.",
-          D: "No existen importes que 'conviertan' salario en no salarial; es la naturaleza jurídica de cada concepto lo que determina si es salarial o no."
-        }
-      }
-    },
-    {
-      q: "Actividades, temas o áreas que captan la atención y motivan a aprender y participar en ellas:",
-      options: ["Intereses.", "Conocimientos.", "Reflexiones.", "Habilidades."],
-      correct: 0,
-      explain: {
-        detail:
-          "En orientación profesional, los intereses ayudan a elegir estudios y profesiones acordes con aquello que nos gusta y motiva.",
-        whyCorrect:
-          "La opción A es correcta porque los intereses son precisamente esas áreas o actividades que despiertan curiosidad y ganas de implicarse.",
-        whyWrong: {
-          B: "Los conocimientos son lo que ya sabemos, no aquello que necesariamente nos motiva.",
-          C: "Las reflexiones son pensamientos o valoraciones, no áreas que nos atraen en sí mismas.",
-          D: "Las habilidades son capacidades para hacer algo, que no siempre coinciden con aquello que nos interesa."
-        }
-      }
-    },
-    {
-      q: "Como norma general, la jornada diaria no será superior a:",
-      options: ["12 horas.", "8 horas.", "10 horas.", "9 horas."],
-      correct: 3,
-      explain: {
-        detail:
-          "El Estatuto de los Trabajadores establece límites máximos de jornada para proteger la salud y la conciliación de la persona trabajadora.",
-        whyCorrect:
-          "La opción D es correcta porque la jornada diaria ordinaria no puede superar las 9 horas efectivas de trabajo, salvo pacto y siempre respetando el descanso.",
-        whyWrong: {
-          A: "12 horas diarias excederían ampliamente el límite legal ordinario.",
-          B: "8 horas es un valor típico, pero la ley fija el máximo general en 9, no en 8.",
-          C: "10 horas también superan el máximo permitido salvo casos muy excepcionales y compensados."
-        }
-      }
-    },
-    {
-      q: "Con respecto a las fuentes del derecho del trabajo:",
-      options: [
-        "Las fuentes internas provienen de fuentes nacionales y las fuentes externas provienen de fuentes internacionales.",
-        "Las fuentes internas provienen de dentro de la propia Constitución y las fuentes externas provienen de leyes o reglamentos.",
-        "Las fuentes internas siempre están por encima de las externas.",
-        "Las fuentes internas son variantes de las fuentes externas."
-      ],
-      correct: 0,
-      explain: {
-        detail:
-          "Las fuentes del derecho laboral pueden clasificarse según su origen: nacional (internas) o internacional/comunitario (externas).",
-        whyCorrect:
-          "La opción A es correcta porque describe fielmente que las fuentes internas son las dictadas por el Estado español y las externas vienen de organismos internacionales (UE, OIT, etc.).",
-        whyWrong: {
-          B: "No se limita a Constitución frente a leyes y reglamentos; todas ellas son fuentes internas.",
-          C: "No siempre las normas internas prevalecen: en muchos casos el derecho comunitario o los tratados tienen primacía.",
-          D: "No son variantes, sino niveles distintos (nacional e internacional)."
-        }
-      }
-    },
-    {
-      q: "Con respecto a las partes del contrato de trabajo:",
-      options: [
-        "El trabajador debe ser una persona física.",
-        "La empresa puede ser una persona física, una persona jurídica o una comunidad de bienes.",
-        "Con 16 o 17 años se puede firmar un contrato cuando se cuente con la autorización de los padres o se esté emancipado.",
-        "Todas son correctas."
-      ],
-      correct: 3,
-      explain: {
-        detail:
-          "El contrato de trabajo vincula a un trabajador que presta servicios y a un empresario que los retribuye, con requisitos de capacidad y forma.",
-        whyCorrect:
-          "La opción D es correcta porque todas las afirmaciones anteriores describen condiciones reales: el trabajador siempre es persona física, el empresario puede adoptar distintas formas y los menores de 18 tienen límites de capacidad.",
-        whyWrong: {
-          A: "Es correcta, pero no recoge toda la información de las demás.",
-          B: "También es correcta, pero no agota el contenido de la pregunta.",
-          C: "Igualmente correcta, pero la opción que integra todo es la D."
-        }
-      }
-    },
-    {
-      q: "Cuando hablamos de salud, hacemos referencia a:",
-      options: [
-        "La salud real, percibida y asociada.",
-        "La salud física, social y psíquica.",
-        "La salud personal, laboral e interpersonal.",
-        "La salud interior, exterior y contextual."
-      ],
-      correct: 1,
-      explain: {
-        detail:
-          "La OMS define la salud como un estado de completo bienestar físico, mental (psíquico) y social, y no solo la ausencia de enfermedad.",
-        whyCorrect:
-          "La opción B es correcta porque recoge las tres dimensiones clásicas de la definición de salud: física, social y psíquica/mental.",
-        whyWrong: {
-          A: "Real, percibida y asociada son formas de valorar la salud, pero no la definición oficial.",
-          C: "Personal, laboral e interpersonal aluden a ámbitos de vida, no a dimensiones de salud.",
-          D: "Interior, exterior y contextual tampoco corresponden a los componentes de la definición de salud."
-        }
-      }
-    },
-    {
-      q: "El Comité de Seguridad y Salud tendrá entre sus competencias:",
-      options: [
-        "Participar en la elaboración, puesta en práctica y evaluación de los planes y programas de prevención de riesgos de la empresa.",
-        "Informar al Ministerio de Trabajo de las irregularidades que cometa la empresa en materia de prevención y proponerle sanciones.",
-        "Administrar las partidas presupuestarias destinadas a promoción de la salud y prevención de los riesgos.",
-        "Prestar atención a los trabajadores para que las medidas de prevención no disminuyan la eficacia y operatividad del servicio."
-      ],
-      correct: 0,
-      explain: {
-        detail:
-          "El Comité de Seguridad y Salud es el órgano paritario y colegiado de participación destinado a consulta regular sobre actuaciones preventivas en la empresa.",
-        whyCorrect:
-          "La opción A es correcta porque una de sus funciones principales es intervenir en los planes y programas de prevención, evaluando su eficacia.",
-        whyWrong: {
-          B: "El Comité no tiene función sancionadora ni se dirige directamente al Ministerio para proponer sanciones.",
-          C: "Tampoco gestiona directamente presupuestos; esa es competencia de la empresa.",
-          D: "Puede hacer propuestas, pero no se define su función como 'prestar atención' para mantener eficacia del servicio."
-        }
-      }
-    },
-    {
-      q: "El cónyuge o familiar directo del autónomo que trabaja con él de manera regular, sin estar dado de alta por cuenta ajena, se denomina:",
-      options: [
-        "Autónomo administrador.",
-        "Familiar societario.",
-        "Autónomo colaborador.",
-        "Está prohibido que el autónomo contrate familiares."
-      ],
-      correct: 2,
-      explain: {
-        detail:
-          "El Estatuto del Trabajo Autónomo regula la figura del autónomo colaborador para familiares directos que colaboran de forma habitual.",
-        whyCorrect:
-          "La opción C es correcta porque el autónomo colaborador es precisamente el familiar directo que trabaja con el titular de forma continuada y convive con él.",
-        whyWrong: {
-          A: "Autónomo administrador hace referencia a quien administra sociedades, no a familiares colaboradores.",
-          B: "Familiar societario no es una categoría jurídica específica en este contexto.",
-          D: "No está prohibido; simplemente se regula a través de la figura del autónomo colaborador."
-        }
-      }
-    },
-    {
-      q: "El estrés:",
-      options: [
-        "Solo se manifiesta con síntomas psicológicos.",
-        "Es un desequilibrio entre las exigencias percibidas y las capacidades del trabajador para hacerles frente.",
-        "Se denomina fatiga laboral cuando se convierte en crónico.",
-        "Todas son correctas."
-      ],
-      correct: 1,
-      explain: {
-        detail:
-          "En prevención de riesgos psicosociales, el estrés se entiende como una respuesta del organismo ante demandas que percibe como excesivas o amenazantes.",
-        whyCorrect:
-          "La opción B es correcta porque define el estrés como ese desajuste entre lo que se nos exige y lo que creemos poder afrontar.",
-        whyWrong: {
-          A: "El estrés también genera síntomas físicos (taquicardia, dolores, problemas digestivos…).",
-          C: "La fatiga laboral es un concepto relacionado, pero no equivale exactamente a estrés crónico.",
-          D: "No pueden ser todas correctas porque A y C contienen imprecisiones."
-        }
-      }
-    },
-    {
-      q: "El FOGASA:",
-      options: [
-        "Se encarga de proteger la percepción de los salarios que estén pendientes de pago.",
-        "Se encarga de proteger las indemnizaciones por despido o extinción que estén reconocidas por vía judicial o administrativa.",
-        "Es un organismo autónomo adscrito al Ministerio de Trabajo.",
-        "Todas son correctas."
-      ],
-      correct: 3,
-      explain: {
-        detail:
-          "El Fondo de Garantía Salarial (FOGASA) garantiza parte de los créditos salariales e indemnizatorios de los trabajadores cuando el empresario es insolvente o está en concurso.",
-        whyCorrect:
-          "La opción D es correcta porque el FOGASA cumple las tres funciones señaladas: protege salarios, protege indemnizaciones y es un organismo autónomo adscrito al Ministerio.",
-        whyWrong: {
-          A: "Es cierta, pero solo recoge una parte de sus funciones.",
-          B: "También es cierta, pero se queda corta frente a la D.",
-          C: "Igualmente verdadera, pero no engloba todo el contenido de la pregunta."
-        }
-      }
-    },
-    {
-      q: "El Inventario de Intereses de Holland:",
-      options: [
-        "También es conocido como \"Teoría de los Tipos de Personalidad Vocacional\".",
-        "Clasifica a las personas y los ambientes de trabajo en seis tipos.",
-        "Es una batería de preguntas que evalúan las preferencias y aversiones del individuo.",
-        "Todas son correctas."
-      ],
-      correct: 3,
-      explain: {
-        detail:
-          "El modelo de Holland relaciona tipos de personalidad con entornos profesionales para orientar la elección de estudios y trabajos.",
-        whyCorrect:
-          "La opción D es correcta porque el inventario de Holland cumple las tres características: es una teoría de tipos vocacionales, establece seis categorías y se aplica mediante cuestionarios.",
-        whyWrong: {
-          A: "Es verdad, pero no resume todo lo que se pregunta.",
-          B: "También es correcta, pero parcial.",
-          C: "Igualmente verdadera, pero la más completa es la D."
-        }
-      }
-    },
-    {
-      q: "El modelo económico y laboral basado en trabajos temporales o de corta duración y el aumento de los trabajadores independientes, que ha redefinido las estructuras laborales tradicionales, se denomina:",
-      options: [
-        "Economía gig.",
-        "Responsabilidad Social Corporativa.",
-        "Transformación digital.",
-        "Teletrabajo freelance."
-      ],
-      correct: 0,
-      explain: {
-        detail:
-          "La economía gig describe un mercado laboral flexible donde proliferan los trabajos puntuales, por encargo y a menudo mediante plataformas digitales.",
-        whyCorrect:
-          "La opción A es correcta porque la 'gig economy' se basa en microtrabajos temporales y un aumento de trabajadores independientes.",
-        whyWrong: {
-          B: "La Responsabilidad Social Corporativa se refiere al compromiso social y ambiental de las empresas, no a la forma de contratar.",
-          C: "La transformación digital es un proceso más amplio ligado a las tecnologías, no solo al tipo de contratos.",
-          D: "El teletrabajo freelance es una forma de trabajo dentro de la economía gig, pero no el modelo económico en sí."
-        }
-      }
-    },
-    {
-      q: "El orden jerárquico correcto de las normas (de mayor a menor) es:",
-      options: [
-        "La Constitución, las leyes y normas con rango de ley, reglamentos, convenio colectivo, contrato de trabajo, usos y costumbres locales y profesionales.",
-        "La Constitución, convenio colectivo, contrato de trabajo, usos y costumbres locales y profesionales, normas con rango de ley y reglamentos.",
-        "Las leyes y normas con rango de ley, la constitución, contrato de trabajo, reglamentos, convenio colectivo, usos y costumbres locales y profesionales.",
-        "Ninguna es correcta."
-      ],
-      correct: 0,
-      explain: {
-        detail:
-          "En derecho laboral rige un orden jerárquico: las normas inferiores no pueden contradecir a las superiores, aunque sí mejorarlas en beneficio del trabajador.",
-        whyCorrect:
-          "La opción A es correcta porque refleja el orden Constitucional → leyes → reglamentos → convenio colectivo → contrato → usos y costumbres.",
-        whyWrong: {
-          B: "Coloca el convenio por encima de las leyes y reglamentos, lo cual es incorrecto.",
-          C: "Sitúa la Constitución por debajo de las leyes, cuando es la norma suprema.",
-          D: "No es cierta porque sí hay una respuesta correcta (la A)."
-        }
-      }
-    },
-    {
-      q: "El Salario Mínimo Interprofesional (SMI):",
-      options: [
-        "Es la cuantía mínima percibida por un trabajo por cuenta ajena a tiempo completo.",
-        "No se puede mejorar por contrato salvo que lo autorice el Gobierno por ley.",
-        "Se usa como referencia para el IPC.",
-        "Ninguna de las anteriores es correcta."
-      ],
-      correct: 0,
-      explain: {
-        detail:
-          "El SMI marca la retribución mínima que debe recibir una persona trabajadora a jornada completa, con independencia del sector.",
-        whyCorrect:
-          "La opción A es correcta porque define el SMI como la cuantía mínima que se puede pagar por un trabajo por cuenta ajena a jornada completa.",
-        whyWrong: {
-          B: "Sí se puede mejorar por convenio o contrato siempre que se respete esa cuantía mínima.",
-          C: "Se utiliza como referencia en algunas normas, pero no es el indicador principal del IPC.",
-          D: "No procede porque la opción A es verdadera."
-        }
-      }
-    },
-    {
-      q: "El trabajo nocturno:",
-      options: [
-        "Permite la realización de 15 horas extraordinarias semanales.",
-        "Se retribuye con una cuantía menor si ocurre por fuerza mayor.",
-        "Debe darse al menos durante 3 horas o 1/3 de la jornada de 22:00 a 6:00",
-        "Debe darse al menos durante 5 horas o 3/5 de la jornada de 00:00 a 8:00."
-      ],
-      correct: 2,
-      explain: {
-        detail:
-          "La ley considera trabajador nocturno a quien presta una parte importante de su jornada entre las 22:00 y las 6:00, con limitaciones y, normalmente, compensaciones.",
-        whyCorrect:
-          "La opción C es correcta porque la definición legal exige que al menos 3 horas o un tercio de la jornada se desarrollen en ese tramo horario nocturno.",
-        whyWrong: {
-          A: "No se permiten 15 horas extra semanales; las horas extraordinarias tienen límites mucho menores.",
-          B: "El trabajo nocturno suele conllevar recargo, no rebaja de salario, aunque haya fuerza mayor.",
-          D: "Ese horario no coincide con la franja legal fijada (22:00-6:00)."
-        }
-      }
-    },
-    {
-      q: "En la relación laboral entre empleador y empleado, las normas abogan por:",
-      options: [
-        "Proteger por igual a empleador y empleado.",
-        "Proteger en mayor medida al empleado.",
-        "Proteger en mayor medida al empleador.",
-        "Solo establecen recomendaciones a seguir."
-      ],
-      correct: 1,
-      explain: {
-        detail:
-          "El derecho laboral tiene un carácter tuitivo: busca equilibrar la posición de inferioridad del trabajador frente al empresario.",
-        whyCorrect:
-          "La opción B es correcta porque las normas laborales se orientan a proteger especialmente a la parte más débil, que es el trabajador.",
-        whyWrong: {
-          A: "No existe una protección completamente simétrica; el énfasis es protector hacia el empleado.",
-          C: "El derecho laboral no prioriza al empleador.",
-          D: "Las normas no son simples recomendaciones, sino disposiciones de obligado cumplimiento."
-        }
-      }
-    },
-    {
-      q: "En relación con las medidas de protección:",
-      options: [
-        "Debe primar la seguridad individual sobre la colectiva",
-        "Debe primar la seguridad colectiva sobre la individual",
-        "Se centran en el uso de señalización de seguridad.",
-        "Son lo mismo que las técnicas de prevención."
-      ],
-      correct: 1,
-      explain: {
-        detail:
-          "En prevención se priorizan las medidas que protegen al conjunto de trabajadores (colectivas) sobre las que solo protegen a una persona (EPI).",
-        whyCorrect:
-          "La opción B es correcta porque la ley establece que deben primar las medidas de protección colectiva (barandillas, sistemas de extracción, etc.) frente a las individuales.",
-        whyWrong: {
-          A: "Los EPI son importantes, pero se usan cuando la protección colectiva no es suficiente.",
-          C: "La señalización es solo una parte de las medidas de protección, no su totalidad.",
-          D: "Protección y prevención están relacionadas pero no son exactamente lo mismo: las medidas de protección actúan cuando el riesgo persiste."
-        }
-      }
-    },
-    {
-      q: "En un despido disciplinario:",
-      options: [
-        "Te deben indemnizar con 20 días de salario por año trabajado.",
-        "Te deben indemnizar con 33 días de salario por año trabajado.",
-        "Se cobrará indemnización solo si el empresario no preavisa con 30 días.",
-        "No tienes derecho a indemnización."
-      ],
-      correct: 3,
-      explain: {
-        detail:
-          "El despido disciplinario se basa en un incumplimiento grave y culpable del trabajador. Si es procedente, no genera derecho a indemnización.",
-        whyCorrect:
-          "La opción D es correcta porque, declarado procedente, el despido disciplinario solo da derecho al finiquito, pero no a indemnización.",
-        whyWrong: {
-          A: "20 días por año es la indemnización típica del despido objetivo, no del disciplinario.",
-          B: "33 días por año es la indemnización del despido improcedente, tampoco corresponde aquí.",
-          C: "El preaviso de 30 días es propio de algunos supuestos de despido objetivo, no del disciplinario."
-        }
-      }
-    },
-    {
-      q: "Entre las alternativas para la formación y el aprendizaje encontramos:",
-      options: [
-        "Educación formal.",
-        "Aprendizaje en el lugar de trabajo.",
-        "Aprendizaje autónomo.",
-        "Todas son correctas."
-      ],
-      correct: 3,
-      explain: {
-        detail:
-          "El aprendizaje a lo largo de la vida combina la educación reglada, la experiencia en el trabajo y la autoformación.",
-        whyCorrect:
-          "La opción D es correcta porque todas las vías mencionadas son formas válidas de formación y aprendizaje profesional.",
-        whyWrong: {
-          A: "La educación formal es solo una de las vías, no la única.",
-          B: "El aprendizaje en el lugar de trabajo también es importante, pero no es exclusivo.",
-          C: "La autoformación es otra vía, pero la pregunta pide todas las alternativas."
-        }
-      }
-    },
-    {
-      q: "La capacidad de adaptación implica:",
-      options: [
-        "La puesta en práctica de ciertas estrategias que ayuden a mejorar la comunicación efectiva.",
-        "Modificar y ajustar respuestas, acciones o enfoques en función de nuevas situaciones o condiciones cambiantes.",
-        "Renunciar a la empleabilidad en favor de una mayor flexibilidad laboral.",
-        "Todas son correctas."
-      ],
-      correct: 1,
-      explain: {
-        detail:
-          "La adaptabilidad es una competencia clave en un mercado laboral cambiante: implica ajustar nuestra manera de actuar ante nuevos contextos.",
-        whyCorrect:
-          "La opción B es correcta porque define la adaptación como la capacidad de modificar conductas y enfoques según las circunstancias.",
-        whyWrong: {
-          A: "Mejorar la comunicación puede formar parte de la adaptación, pero no la define por completo.",
-          C: "Adaptarse no significa renunciar a la empleabilidad, sino precisamente mantenerla.",
-          D: "No pueden ser todas correctas porque C es claramente errónea."
-        }
-      }
-    },
-    {
-      q: "La capacidad de una persona para comprender sus propias características, es decir, sus intereses, valores, motivaciones, habilidades y destrezas, se denomina:",
-      options: [
-        "Autoconocimiento.",
-        "Inventario de intereses.",
-        "Exploración de actividades.",
-        "Instinto."
-      ],
-      correct: 0,
-      explain: {
-        detail:
-          "El autoconocimiento es la base de la orientación profesional: saber quién eres para decidir hacia dónde quieres ir.",
-        whyCorrect:
-          "La opción A es correcta porque el autoconocimiento consiste precisamente en identificar y comprender las propias características personales y profesionales.",
-        whyWrong: {
-          B: "El inventario de intereses es una herramienta para explorar intereses, no la capacidad en sí.",
-          C: "La exploración de actividades es una fase del proceso, no la comprensión interna de uno mismo.",
-          D: "El instinto alude a reacciones espontáneas, no a un análisis consciente de las propias características."
-        }
-      }
-    },
-    {
-      q: "La cláusula incluida en el contrato de trabajo que obliga al trabajador a trabajar exclusivamente para un empresario durante la vigencia del acuerdo se denomina:",
-      options: [
-        "Confidencialidad.",
-        "No competencia.",
-        "Permanencia.",
-        "Dedicación plena."
-      ],
-      correct: 3,
-      explain: {
-        detail:
-          "En los contratos pueden incluirse cláusulas adicionales que regulan aspectos como exclusividad, permanencia o confidencialidad.",
-        whyCorrect:
-          "La opción D es correcta porque la cláusula de dedicación plena implica que el trabajador no presta servicios para otros empleadores durante el contrato.",
-        whyWrong: {
-          A: "La confidencialidad obliga a guardar secreto sobre información de la empresa, no sobre trabajar solo para ella.",
-          B: "La no competencia suele proyectarse tras la extinción del contrato para no trabajar en empresas rivales.",
-          C: "La permanencia obliga a mantenerse en la empresa un tiempo determinado tras recibir una formación, pero no exige exclusividad absoluta."
-        }
-      }
-    },
-    {
-      q: "La enfermedad profesional:",
-      options: [
-        "Debe estar recogida en el listado de la Directiva Marco.",
-        "Se define como toda lesión corporal que sufre el trabajador por cuenta ajena como consecuencia del trabajo.",
-        "Incluye las que sean por dolo o imprudencia temeraria del trabajador.",
-        "Ninguna es correcta."
-      ],
-      correct: 3,
-      explain: {
-        detail:
-          "La enfermedad profesional es la contraída a consecuencia del trabajo por cuenta ajena, provocada por elementos o sustancias especificados en un cuadro oficial español.",
-        whyCorrect:
-          "La opción D es correcta porque ninguna de las otras define correctamente la enfermedad profesional según la normativa española.",
-        whyWrong: {
-          A: "El listado de referencia es el cuadro de enfermedades profesionales aprobado en España, no la Directiva Marco.",
-          B: "Esa definición corresponde al accidente de trabajo, no a la enfermedad profesional.",
-          C: "El dolo o imprudencia temeraria suelen excluir la calificación, en lugar de incluirla."
-        }
-      }
-    },
-    {
-      q: "La técnica de prevención de riesgos laborales cuya finalidad es prevenir las posibles enfermedades profesionales que pueden derivar de la actividad laboral, en especial por los contaminantes ambientales, se denomina:",
-      options: [
-        "Psicología aplicada.",
-        "Enfermería laboral.",
-        "Ergosotomía.",
-        "Higiene en el trabajo."
-      ],
-      correct: 3,
-      explain: {
-        detail:
-          "Las disciplinas preventivas se dividen en seguridad, higiene industrial, ergonomía/psicosociología y vigilancia de la salud.",
-        whyCorrect:
-          "La opción D es correcta porque la higiene industrial se ocupa de los contaminantes físicos, químicos o biológicos presentes en el ambiente de trabajo.",
-        whyWrong: {
-          A: "La psicología aplicada se acerca más a la psicosociología del trabajo, no tanto a contaminantes ambientales.",
-          B: "La enfermería laboral se enmarca en la vigilancia de la salud, no en la higiene industrial.",
-          C: "Ergosotomía no es un término técnico reconocido; probablemente se refiere a ergonomía."
-        }
-      }
-    },
-    {
-      q: "Las relaciones laborales especiales:",
-      options: [
-        "No cumplen las cinco características de las relaciones ordinarias.",
-        "Tienen ciertas peculiaridades y están reguladas por su propia norma específica.",
-        "Se encuentran enumeradas en el artículo 42 del EBEP.",
-        "Todas son correctas."
-      ],
-      correct: 1,
-      explain: {
-        detail:
-          "Además de la relación laboral común, la ley contempla relaciones laborales especiales (por ejemplo, artistas, penados, empleados de hogar…).",
-        whyCorrect:
-          "La opción B es correcta porque estas relaciones mantienen las notas básicas del trabajo por cuenta ajena pero con peculiaridades reguladas en normas específicas.",
-        whyWrong: {
-          A: "Sí cumplen las características esenciales de dependencia y ajenidad; lo especial son sus condiciones particulares.",
-          C: "No se recogen en el artículo 42 del EBEP, sino en el Estatuto de los Trabajadores y normativa específica.",
-          D: "No pueden ser todas correctas porque A y C son falsas."
-        }
-      }
-    },
-    {
-      q: "Los autónomos económicamente dependientes (TRADE):",
-      options: [
-        "Son aquellos cuya facturación en un 75 % o más depende de un solo cliente, ya sea persona física o jurídica.",
-        "Son aquellos que desarrollan actividades que están categorizadas como profesionales.",
-        "Son aquellos que administran sociedades mercantiles con un 75 % o más de su facturación dependiente de ellos.",
-        "Son aquellos que generan de manera propia, al menos, un 75 % del valor del total de su actividad profesional."
-      ],
-      correct: 0,
-      explain: {
-        detail:
-          "El TRADE es una figura intermedia: trabaja por cuenta propia, pero con una fuerte dependencia económica de un solo cliente.",
-        whyCorrect:
-          "La opción A es correcta porque la nota característica del TRADE es que al menos el 75 % de sus ingresos proviene de un único cliente.",
-        whyWrong: {
-          B: "Que la actividad sea profesional no implica necesariamente dependencia económica.",
-          C: "Administrar sociedades mercantiles no define la situación de TRADE.",
-          D: "Generar el 75 % del valor de su actividad no dice nada sobre de quién procede la facturación."
-        }
-      }
-    },
-    {
-      q: "Los funcionarios se rigen por:",
-      options: [
-        "La Ley del Estatuto Básico del Empleado Público.",
-        "El Derecho público.",
-        "La Ley Funcionarial 2021-2027.",
-        "Los funcionarios están en el mismo régimen que los trabajadores por cuenta ajena."
-      ],
-      correct: 0,
-      explain: {
-        detail:
-          "El personal funcionario tiene un régimen jurídico distinto al laboral, basado en el derecho administrativo.",
-        whyCorrect:
-          "La opción A es correcta porque el EBEP establece el marco básico para el empleo público en España.",
-        whyWrong: {
-          B: "Es cierto que se rigen por derecho público, pero la pregunta pide una norma concreta.",
-          C: "La llamada \"Ley Funcionarial 2021-2027\" no existe.",
-          D: "No comparten el mismo régimen que los trabajadores del Estatuto de los Trabajadores."
-        }
-      }
-    },
-    {
-      q: "Para evaluar las propias destrezas se puede utilizar:",
-      options: [
-        "Una prueba de competencia.",
-        "Una simulación.",
-        "Una autoevaluación práctica.",
-        "Todas son correctas."
-      ],
-      correct: 3,
-      explain: {
-        detail:
-          "La evaluación de destrezas puede hacerse con instrumentos formales e informales que permitan observar cómo actuamos.",
-        whyCorrect:
-          "La opción D es correcta porque pruebas de competencia, simulaciones y autoevaluaciones son métodos válidos para valorar habilidades.",
-        whyWrong: {
-          A: "Es un método, pero no el único.",
-          B: "Las simulaciones también sirven, pero la pregunta habla de alternativas, no de una sola.",
-          C: "La autoevaluación es otra vía, pero la respuesta completa es la D."
-        }
-      }
-    },
-    {
-      q: "Quitando las excepciones, ¿cuánto tiempo mínimo debe transcurrir entre el final de una jornada y el comienzo de otra?",
-      options: [
-        "8 horas.",
-        "12 horas.",
-        "6 horas.",
-        "No existe un tiempo mínimo, depende del cómputo semanal."
-      ],
-      correct: 1,
-      explain: {
-        detail:
-          "Para garantizar el descanso, la ley fija un periodo mínimo de descanso diario entre jornadas.",
-        whyCorrect:
-          "La opción B es correcta porque, con carácter general, deben mediar al menos 12 horas entre el final de una jornada y el inicio de la siguiente.",
-        whyWrong: {
-          A: "8 horas serían insuficientes según la norma general.",
-          C: "6 horas vulnerarían claramente el descanso mínimo fijado.",
-          D: "Sí existe un tiempo mínimo, no depende solo del cómputo semanal."
-        }
-      }
-    },
-    {
-      q: "Se considera una causa de despido objetivo:",
-      options: [
-        "Embriaguez habitual o toxicomanía.",
-        "Ofensas verbales o físicas a otros trabajadores.",
-        "Disminución continuada y voluntaria en el rendimiento de trabajo.",
-        "Ineptitud del trabajador conocida o sobrevenida posteriormente."
-      ],
-      correct: 3,
-      explain: {
-        detail:
-          "El despido objetivo se basa en causas económicas, técnicas, organizativas o de producción, o en causas inherentes a la persona (ineptitud, falta de adaptación…).",
-        whyCorrect:
-          "La opción D es correcta porque la ineptitud del trabajador, conocida o sobrevenida, es una causa de despido objetivo reconocida por el Estatuto.",
-        whyWrong: {
-          A: "La embriaguez habitual es causa de despido disciplinario, no objetivo.",
-          B: "Las ofensas verbales o físicas también son motivo de despido disciplinario.",
-          C: "La disminución voluntaria y continuada del rendimiento es otra causa disciplinaria."
-        }
-      }
-    },
-    {
-      q: "Se constituirá un Comité de Seguridad y Salud en todas las empresas o centros de trabajo que cuenten con:",
-      options: [
-        "10 o más trabajadores.",
-        "25 o más trabajadores.",
-        "50 o más trabajadores.",
-        "100 o más trabajadores."
-      ],
-      correct: 2,
-      explain: {
-        detail:
-          "El Comité de Seguridad y Salud es obligatorio a partir de un determinado tamaño de plantilla para garantizar la participación en prevención.",
-        whyCorrect:
-          "La opción C es correcta porque la ley fija el umbral en 50 o más trabajadores en el centro de trabajo.",
-        whyWrong: {
-          A: "Con 10 trabajadores puede haber delegado de prevención, pero no Comité.",
-          B: "25 tampoco alcanza el mínimo para constituir Comité.",
-          D: "No es necesario llegar a 100; a partir de 50 ya es obligatorio."
-        }
-      }
-    },
-    {
-      q: "Señala cuál de las siguientes no es una habilidad dura:",
-      options: [
-        "Programación y codificación.",
-        "Idiomas.",
-        "Ética laboral.",
-        "Análisis de datos."
-      ],
-      correct: 2,
-      explain: {
-        detail:
-          "Las habilidades duras (hard skills) son competencias técnicas y específicas; las blandas (soft skills) se relacionan con actitudes y comportamientos.",
-        whyCorrect:
-          "La opción C es correcta porque la ética laboral es una habilidad blanda, relacionada con valores y conducta profesional.",
-        whyWrong: {
-          A: "Programación y codificación son habilidades técnicas claramente duras.",
-          B: "El dominio de idiomas es una competencia técnica medible.",
-          D: "El análisis de datos también es una habilidad dura, vinculada a conocimientos técnicos."
-        }
-      }
-    },
-    {
-      q: "Señala la afirmación falsa acerca del derecho laboral:",
-      options: [
-        "Ha existido desde que existe el trabajo.",
-        "Nace en el siglo XIX derivado de los problemas de la revolución industrial.",
-        "Está en continuo cambio e intenta mejorar la calidad y el bienestar en el ámbito laboral.",
-        "Sus principios sirven para interpretar la legislación laboral y cubrir los vacíos que deje."
-      ],
-      correct: 0,
-      explain: {
-        detail:
-          "El derecho laboral es relativamente reciente y surge para responder a los conflictos derivados del trabajo asalariado en la industrialización.",
-        whyCorrect:
-          "La opción A es correcta como afirmación falsa, porque el derecho laboral no ha existido siempre; aparece históricamente en el siglo XIX.",
-        whyWrong: {
-          B: "Es verdadera: la revolución industrial y la cuestión social impulsan el nacimiento del derecho del trabajo.",
-          C: "También es cierta: la normativa laboral evoluciona constantemente.",
-          D: "Los principios generales del derecho laboral se usan para interpretar normas y cubrir lagunas."
-        }
-      }
-    },
-    {
-      q: "Sobre el descanso semanal:",
-      options: [
-        "Los trabajadores tendrán derecho a un día y medio ininterrumpido.",
-        "Se podrá acumular en períodos de un máximo 30 días.",
-        "Los menores de edad deberán disfrutar de tres días de descanso semanal.",
-        "Todas son correctas."
-      ],
-      correct: 0,
-      explain: {
-        detail:
-          "Además del descanso diario, la ley reconoce un descanso semanal mínimo para evitar la fatiga y favorecer la conciliación.",
-        whyCorrect:
-          "La opción A es correcta porque, con carácter general, el descanso semanal será de día y medio ininterrumpido, normalmente sábado tarde y domingo.",
-        whyWrong: {
-          B: "El descanso semanal puede acumularse en ciertos casos, pero no en periodos de 30 días para todos los trabajadores.",
-          C: "Los menores tienen descanso reforzado, pero no de tres días semanales como regla general.",
-          D: "No pueden ser todas correctas porque B y C no son exactas."
-        }
-      }
-    },
-    {
-      q: "Sobre el periodo de pago del salario:",
-      options: [
-        "No se debe exceder el plazo de un mes entre un pago y el siguiente.",
-        "Cuando el empresario no pague puntualmente, se le podrá exigir un 10 % de interés de mora.",
-        "El trabajador podrá recibir anticipos por parte de la empresa.",
-        "Todas son correctas."
-      ],
-      correct: 3,
-      explain: {
-        detail:
-          "La nómina debe abonarse puntualmente y el trabajador tiene derechos frente a retrasos o necesidades económicas puntuales.",
-        whyCorrect:
-          "La opción D es correcta porque la ley establece un máximo de un mes entre pagos, interés de mora por retraso y posibilidad de pedir anticipos.",
-        whyWrong: {
-          A: "Es cierta, pero no tan completa como la D.",
-          B: "También es correcta, pero solo recoge un aspecto.",
-          C: "Igualmente verdadera, pero la respuesta global es la D."
-        }
-      }
-    },
-    {
-      q: "Tanto el empresario como los trabajadores tienen una responsabilidad:",
-      options: [
-        "Administrativa, civil y penal.",
-        "Directa, indirecta y asociada.",
-        "Criminal, procesal y judicial.",
-        "Laboral, administrativa y social."
-      ],
-      correct: 0,
-      explain: {
-        detail:
-          "En materia de prevención y relaciones laborales, los incumplimientos pueden generar distintos tipos de responsabilidad jurídica.",
-        whyCorrect:
-          "La opción A es correcta porque las infracciones pueden originar sanciones administrativas, reclamaciones civiles por daños y, en casos graves, responsabilidad penal.",
-        whyWrong: {
-          B: "Directa, indirecta y asociada no son categorías de responsabilidad jurídica reconocidas.",
-          C: "Criminal, procesal y judicial no forman una clasificación correcta; 'procesal' y 'judicial' no son tipos de responsabilidad.",
-          D: "La responsabilidad 'laboral' y 'social' no se formulan así en la normativa; la tríada típica es administrativa, civil y penal."
-        }
+title: "⭐ Protección Radiológica · Prueba final · 40 preguntas",
+isFinal: true,
+questions: [
+  {
+    q: "¿A qué hace referencia el dispositivo de la imagen?",
+    options: [
+      "Dosímetro activo",
+      "Dosímetro pasivo",
+      "Dosímetro personal",
+      "B y C son correctas"
+    ],
+    correct: 3,
+    explain: {
+      detail: "El dispositivo mostrado corresponde a un dosímetro utilizado para controlar la dosis recibida.",
+      whyCorrect: "La opción D es correcta porque hace referencia a un dosímetro pasivo y personal.",
+      whyWrong: {
+        A: "No es activo porque no mide en tiempo real ni requiere alimentación eléctrica.",
+        B: "Es correcta, pero incompleta.",
+        C: "Es correcta, pero incompleta."
       }
     }
-
-  ],
-},
+  },
+  {
+    q: "¿A qué hace referencia este símbolo?",
+    options: [
+      "Zona vigilada",
+      "Zona de permanencia reglamentada",
+      "Zona controlada",
+      "Zona de acceso prohibido"
+    ],
+    correct: 0,
+    explain: {
+      detail: "Los símbolos de señalización radiológica identifican el tipo de zona según el riesgo.",
+      whyCorrect: "La opción A es correcta porque el símbolo corresponde a una zona vigilada.",
+      whyWrong: {
+        B: "No corresponde a permanencia reglamentada.",
+        C: "La zona controlada tiene otra señalización.",
+        D: "La zona de acceso prohibido indica mayor riesgo."
+      }
+    }
+  },
+  {
+    q: "Ante contaminación radiactiva externa en medicina nuclear se recomienda:",
+    options: [
+      "Proteger al personal que realice la descontaminación",
+      "Medir los niveles de contaminación",
+      "Delimitar y marcar la zona del accidente",
+      "Todas son correctas"
+    ],
+    correct: 3,
+    explain: {
+      detail: "Ante contaminación externa se debe actuar de forma organizada y segura.",
+      whyCorrect: "La opción D es correcta porque hay que proteger al personal, medir niveles y delimitar la zona.",
+      whyWrong: {
+        A: "Es correcta, pero incompleta.",
+        B: "Es correcta, pero incompleta.",
+        C: "Es correcta, pero incompleta."
+      }
+    }
+  },
+  {
+    q: "Antes de exponer a una persona a una radiación ionizante estas deben firmar:",
+    options: [
+      "Consentimiento informado",
+      "Consentimiento formado",
+      "Desconsentimiento informado",
+      "Información básica"
+    ],
+    correct: 0,
+    explain: {
+      detail: "Antes de una exposición médica debe informarse al paciente de riesgos y beneficios.",
+      whyCorrect: "La opción A es correcta porque debe firmarse el consentimiento informado.",
+      whyWrong: {
+        B: "No es el término correcto.",
+        C: "No existe como documento válido.",
+        D: "La información básica no sustituye al consentimiento."
+      }
+    }
+  },
+  {
+    q: "El criterio ALARA (As Low As Reasonably Achievable) se relaciona con:",
+    options: [
+      "Justificación",
+      "Blindaje",
+      "Limitación de dosis",
+      "Optimización"
+    ],
+    correct: 3,
+    explain: {
+      detail: "ALARA significa mantener las dosis tan bajas como sea razonablemente posible.",
+      whyCorrect: "La opción D es correcta porque ALARA se relaciona con la optimización.",
+      whyWrong: {
+        A: "La justificación valora si la práctica está indicada.",
+        B: "El blindaje es una medida de protección.",
+        C: "La limitación fija máximos de dosis."
+      }
+    }
+  },
+  {
+    q: "El equipo de la imagen es:",
+    options: [
+      "Detector de fluorescencia",
+      "Dosímetro",
+      "Detector de termoradiactividad",
+      "Radiactivímetro"
+    ],
+    correct: 1,
+    explain: {
+      detail: "El equipo mostrado sirve para medir dosis de radiación.",
+      whyCorrect: "La opción B es correcta porque se trata de un dosímetro.",
+      whyWrong: {
+        A: "No corresponde a un detector de fluorescencia.",
+        C: "No es un término técnico adecuado.",
+        D: "No es un radiactivímetro."
+      }
+    }
+  },
+  {
+    q: "El personal técnico de imagen (TSID) se clasifica como:",
+    options: [
+      "Categoría A",
+      "Categoría B",
+      "Categoría C",
+      "Categoría D"
+    ],
+    correct: 1,
+    explain: {
+      detail: "El personal expuesto se clasifica según la dosis que puede recibir.",
+      whyCorrect: "La opción B es correcta porque el TSID se clasifica como categoría B.",
+      whyWrong: {
+        A: "Categoría A implica mayor nivel de exposición.",
+        C: "No existe esta categoría en este contexto.",
+        D: "No existe esta categoría en este contexto."
+      }
+    }
+  },
+  {
+    q: "El proceso de gestión de los materiales radiactivos está formado por diferentes etapas:",
+    options: [
+      "Protección, separación, transporte y evacuación",
+      "Segregación, transporte y almacenamiento",
+      "Segregación, caracterización, transporte, almacenamiento y evacuación",
+      "Caracterización, transporte y almacenamiento"
+    ],
+    correct: 2,
+    explain: {
+      detail: "La gestión de residuos radiactivos sigue varias fases ordenadas.",
+      whyCorrect: "La opción C es correcta porque incluye segregación, caracterización, transporte, almacenamiento y evacuación.",
+      whyWrong: {
+        A: "Faltan fases importantes.",
+        B: "Falta caracterización y evacuación.",
+        D: "Falta segregación y evacuación."
+      }
+    }
+  },
+  {
+    q: "El siguiente plano hace referencia a la unidad de:",
+    options: [
+      "Radiodiagnóstico",
+      "Medicina nuclear",
+      "Teleterapia",
+      "Braquiterapia"
+    ],
+    correct: 0,
+    explain: {
+      detail: "El plano corresponde a la distribución típica de una unidad de imagen diagnóstica.",
+      whyCorrect: "La opción A es correcta porque hace referencia a radiodiagnóstico.",
+      whyWrong: {
+        B: "Medicina nuclear requiere zonas activas y radiofarmacia.",
+        C: "Teleterapia incluye búnker y sala de tratamiento.",
+        D: "Braquiterapia tiene áreas específicas para fuentes."
+      }
+    }
+  },
+  {
+    q: "En el programa de garantía de calidad en imagen para el diagnóstico es cierto:",
+    options: [
+      "Se han de aplicar protocolos de control de calidad",
+      "Cada procedimiento en cada equipo tiene un protocolo establecido",
+      "Se ha de formar en protección radiológica al personal que use los equipos",
+      "Todas son correctas"
+    ],
+    correct: 3,
+    explain: {
+      detail: "La garantía de calidad asegura imágenes útiles con la menor dosis posible.",
+      whyCorrect: "La opción D es correcta porque todas forman parte del programa de garantía de calidad.",
+      whyWrong: {
+        A: "Es correcta, pero incompleta.",
+        B: "Es correcta, pero incompleta.",
+        C: "Es correcta, pero incompleta."
+      }
+    }
+  },
+  {
+    q: "En España, los sucesos de emergencia que ocurran en las instalaciones radiactivas se han de notificar a:",
+    options: [
+      "Dirección General de Política Energética y Minas (DGPEM)",
+      "Consejo de Seguridad Nacional (CSN)",
+      "Consejo de cada Comunidad Autónoma",
+      "A y B son correctas"
+    ],
+    correct: 3,
+    explain: {
+      detail: "Los sucesos relevantes deben notificarse a organismos competentes.",
+      whyCorrect: "La opción D es correcta porque se notifican a la DGPEM y al CSN.",
+      whyWrong: {
+        A: "Es correcta, pero incompleta.",
+        B: "Es correcta, pero incompleta.",
+        C: "No es la opción marcada como correcta en este test."
+      }
+    }
+  },
+  {
+    q: "En esta imagen se muestran:",
+    options: [
+      "Equipos de teleterapia",
+      "Equipos de braquiterapia",
+      "Equipos de radiología convencional",
+      "Equipos de radiología especial"
+    ],
+    correct: 1,
+    explain: {
+      detail: "La braquiterapia utiliza equipos y fuentes para tratamientos próximos o internos.",
+      whyCorrect: "La opción B es correcta porque la imagen corresponde a equipos de braquiterapia.",
+      whyWrong: {
+        A: "Teleterapia usa haces externos.",
+        C: "Radiología convencional es diagnóstica.",
+        D: "Radiología especial no corresponde a la imagen."
+      }
+    }
+  },
+  {
+    q: "En la siguiente imagen se muestra un tipo de bulto para el transporte de material radiactivo para lo que es cierto:",
+    options: [
+      "Se denominan bulto de tipo A",
+      "Permite el transporte de elevadísimas cantidades de material radiactivo",
+      "Son mejores que los bultos de tipo B y C",
+      "No se etiquetan"
+    ],
+    correct: 0,
+    explain: {
+      detail: "Los bultos de transporte se clasifican según el riesgo y la actividad transportada.",
+      whyCorrect: "La opción A es correcta porque se trata de un bulto tipo A.",
+      whyWrong: {
+        B: "Las elevadísimas cantidades requieren otros tipos de bulto.",
+        C: "No se clasifican como mejores, sino según uso y resistencia.",
+        D: "Sí deben etiquetarse."
+      }
+    }
+  },
+  {
+    q: "En la siguiente imagen se muestra un:",
+    options: [
+      "Dosímetro de neutrones",
+      "Dosímetro termoluminiscente",
+      "Detector de centelleo",
+      "Contador proporcional"
+    ],
+    correct: 1,
+    explain: {
+      detail: "Los dosímetros termoluminiscentes son frecuentes en dosimetría personal.",
+      whyCorrect: "La opción B es correcta porque corresponde a un dosímetro termoluminiscente.",
+      whyWrong: {
+        A: "No corresponde específicamente a neutrones.",
+        C: "Un detector de centelleo tiene otra finalidad.",
+        D: "Un contador proporcional es un detector gaseoso."
+      }
+    }
+  },
+  {
+    q: "En relación con el diario de operaciones:",
+    options: [
+      "Documento de registro de toda actividad de la instalación radiactiva",
+      "Ha de estar autorizado, sellado y registrado por el CSN",
+      "Completado por el personal titular o supervisor",
+      "Todas son correctas"
+    ],
+    correct: 3,
+    explain: {
+      detail: "El diario de operaciones registra la actividad de la instalación.",
+      whyCorrect: "La opción D es correcta porque todas las afirmaciones son verdaderas.",
+      whyWrong: {
+        A: "Es correcta, pero incompleta.",
+        B: "Es correcta, pero incompleta.",
+        C: "Es correcta, pero incompleta."
+      }
+    }
+  },
+  {
+    q: "Entre las magnitudes radiológicas encontramos:",
+    options: [
+      "Magnitudes físicas fundamentales",
+      "Magnitudes de radioprotección",
+      "Magnitudes operacionales",
+      "Todas son correctas"
+    ],
+    correct: 3,
+    explain: {
+      detail: "Las magnitudes radiológicas se agrupan en varias categorías.",
+      whyCorrect: "La opción D es correcta porque existen magnitudes físicas, de radioprotección y operacionales.",
+      whyWrong: {
+        A: "Es correcta, pero incompleta.",
+        B: "Es correcta, pero incompleta.",
+        C: "Es correcta, pero incompleta."
+      }
+    }
+  },
+  {
+    q: "Entre los factores que afectan a la sensibilidad celular encontramos:",
+    options: [
+      "Fase del ciclo celular",
+      "Edad biológica",
+      "Nivel de diferenciación celular",
+      "Todas son correctas"
+    ],
+    correct: 3,
+    explain: {
+      detail: "La radiosensibilidad depende de factores biológicos y técnicos.",
+      whyCorrect: "La opción D es correcta porque todos afectan a la sensibilidad celular.",
+      whyWrong: {
+        A: "Es correcta, pero incompleta.",
+        B: "Es correcta, pero incompleta.",
+        C: "Es correcta, pero incompleta."
+      }
+    }
+  },
+  {
+    q: "Es un control de calidad en el ámbito sanitario:",
+    options: [
+      "Control de calidad técnica",
+      "Control del riesgo",
+      "Control de optimización",
+      "Todas son correctas"
+    ],
+    correct: 3,
+    explain: {
+      detail: "La calidad sanitaria incluye controles técnicos, de riesgo y de optimización.",
+      whyCorrect: "La opción D es correcta porque todas forman parte del control de calidad.",
+      whyWrong: {
+        A: "Es correcta, pero incompleta.",
+        B: "Es correcta, pero incompleta.",
+        C: "Es correcta, pero incompleta."
+      }
+    }
+  },
+  {
+    q: "Es un plan de emergencia en teleterapia:",
+    options: [
+      "Presencia de personal en la sala de exploración",
+      "Errores en la administración de radiofármacos",
+      "Derrame de material radiactivo",
+      "Fallecimiento de persona con implantes"
+    ],
+    correct: 0,
+    explain: {
+      detail: "En teleterapia se contemplan riesgos relacionados con la irradiación externa.",
+      whyCorrect: "La opción A es correcta porque la presencia de personal en sala durante la irradiación es un suceso de emergencia.",
+      whyWrong: {
+        B: "Corresponde más a medicina nuclear.",
+        C: "Corresponde a contaminación por material radiactivo.",
+        D: "Se relaciona con implantes radiactivos."
+      }
+    }
+  },
+  {
+    q: "Es un residuo producido en radioterapia:",
+    options: [
+      "Fuentes encapsuladas",
+      "Sólidos radiactivos de iridio-192",
+      "Semillas de yodo y paladio",
+      "Todas son correctas"
+    ],
+    correct: 3,
+    explain: {
+      detail: "Radioterapia puede generar residuos asociados a fuentes encapsuladas.",
+      whyCorrect: "La opción D es correcta porque todos son residuos posibles en radioterapia.",
+      whyWrong: {
+        A: "Es correcta, pero incompleta.",
+        B: "Es correcta, pero incompleta.",
+        C: "Es correcta, pero incompleta."
+      }
+    }
+  },
+  {
+    q: "Este símbolo significa:",
+    options: [
+      "Zona de permanencia limitada",
+      "Zona de permanencia reglamentada",
+      "Zona controlada",
+      "Zona de acceso prohibido"
+    ],
+    correct: 2,
+    explain: {
+      detail: "La señalización permite identificar el nivel de riesgo radiológico.",
+      whyCorrect: "La opción C es correcta porque el símbolo corresponde a zona controlada.",
+      whyWrong: {
+        A: "No corresponde a permanencia limitada.",
+        B: "No corresponde a permanencia reglamentada.",
+        D: "No indica acceso prohibido."
+      }
+    }
+  },
+  {
+    q: "La alteración de genes o proteínas que regulan el crecimiento y la división celular pueden ser causa de:",
+    options: [
+      "Cáncer",
+      "Anomalías hereditarias",
+      "Síndrome gastrointestinal",
+      "Cataratas"
+    ],
+    correct: 0,
+    explain: {
+      detail: "El cáncer puede aparecer por alteraciones en genes reguladores del ciclo celular.",
+      whyCorrect: "La opción A es correcta porque estas alteraciones pueden producir crecimiento celular descontrolado.",
+      whyWrong: {
+        B: "Las anomalías hereditarias afectan a células germinales.",
+        C: "Es un síndrome agudo por alta dosis.",
+        D: "Las cataratas son un efecto tardío específico."
+      }
+    }
+  },
+  {
+    q: "La clasificación de los tipos de residuos radiactivos se puede realizar en base a:",
+    options: [
+      "Peligrosidad de la fuente",
+      "Periodo de semidesintegración",
+      "Actividad específica",
+      "Todas son correctas"
+    ],
+    correct: 3,
+    explain: {
+      detail: "Los residuos se clasifican según criterios físicos, radiológicos y de gestión.",
+      whyCorrect: "La opción D es correcta porque todos esos criterios son válidos.",
+      whyWrong: {
+        A: "Es correcta, pero incompleta.",
+        B: "Es correcta, pero incompleta.",
+        C: "Es correcta, pero incompleta."
+      }
+    }
+  },
+  {
+    q: "La directiva europea que garantiza la calidad en el ámbito sanitario es:",
+    options: [
+      "2013/59/Euratom",
+      "1997/43/Euratom",
+      "2003/122/Euratom",
+      "1996/29/Euratom"
+    ],
+    correct: 0,
+    explain: {
+      detail: "La normativa europea establece estándares de protección frente a radiaciones ionizantes.",
+      whyCorrect: "La opción A es correcta porque la Directiva 2013/59/Euratom establece normas básicas de seguridad.",
+      whyWrong: {
+        B: "No es la directiva correcta en este test.",
+        C: "No es la opción correcta.",
+        D: "No corresponde a la respuesta esperada."
+      }
+    }
+  },
+  {
+    q: "La medida de protección radiológica que hace referencia a la presencia de un material que actúa de barrera frente a las radiaciones ionizantes es:",
+    options: [
+      "Blindaje",
+      "Distancia",
+      "Tiempo de exposición",
+      "Ninguna es correcta"
+    ],
+    correct: 0,
+    explain: {
+      detail: "El blindaje reduce la radiación mediante barreras materiales.",
+      whyCorrect: "La opción A es correcta porque el blindaje actúa como barrera frente a la radiación.",
+      whyWrong: {
+        B: "La distancia reduce dosis, pero no es una barrera material.",
+        C: "El tiempo reduce exposición, pero no es una barrera.",
+        D: "Sí hay una respuesta correcta."
+      }
+    }
+  },
+  {
+    q: "La radiación puede afectar al embrión de una de las siguientes maneras:",
+    options: [
+      "Anomalías congénitas",
+      "Muerte del organismo",
+      "Cáncer embrionario",
+      "Dos respuestas son correctas"
+    ],
+    correct: 3,
+    explain: {
+      detail: "El embrión es especialmente sensible por su elevada división celular.",
+      whyCorrect: "La opción D es correcta porque la radiación puede causar anomalías congénitas y muerte embrionaria o fetal.",
+      whyWrong: {
+        A: "Es correcta, pero incompleta.",
+        B: "Es correcta, pero incompleta.",
+        C: "No es la respuesta esperada en este test."
+      }
+    }
+  },
+  {
+    q: "La siguiente etiqueta hace referencia a:",
+    options: [
+      "Categoría II",
+      "Material fisible",
+      "Categoría V",
+      "Categoría 7"
+    ],
+    correct: 0,
+    explain: {
+      detail: "Las etiquetas de transporte indican el nivel de radiación del bulto.",
+      whyCorrect: "La opción A es correcta porque la etiqueta corresponde a Categoría II.",
+      whyWrong: {
+        B: "Material fisible tiene otra identificación.",
+        C: "No existe categoría V en este contexto.",
+        D: "No es la denominación correcta."
+      }
+    }
+  },
+  {
+    q: "La vigencia de los informes sobre dosis y niveles de radiación de una instalación se han de almacenar al menos:",
+    options: [
+      "2 años",
+      "No hay que guardarlos",
+      "30 años",
+      "80 años"
+    ],
+    correct: 2,
+    explain: {
+      detail: "Los registros de dosis y niveles de radiación deben conservarse durante largo tiempo.",
+      whyCorrect: "La opción C es correcta porque deben almacenarse al menos 30 años.",
+      whyWrong: {
+        A: "2 años es insuficiente.",
+        B: "Sí deben conservarse.",
+        D: "80 años no es el plazo indicado."
+      }
+    }
+  },
+  {
+    q: "Las fases de actuación ante una emergencia en una exploración con radiaciones ionizantes son:",
+    options: [
+      "Parada de control desde la consola",
+      "Botón de parada de emergencia",
+      "Corte de la corriente eléctrica",
+      "Todas son correctas"
+    ],
+    correct: 3,
+    explain: {
+      detail: "Ante una emergencia deben aplicarse medidas de parada y seguridad.",
+      whyCorrect: "La opción D es correcta porque todas son fases o acciones posibles.",
+      whyWrong: {
+        A: "Es correcta, pero incompleta.",
+        B: "Es correcta, pero incompleta.",
+        C: "Es correcta, pero incompleta."
+      }
+    }
+  },
+  {
+    q: "Los efectos deterministas son:",
+    options: [
+      "Aquellos en los que la dosis de radiación recibida se relaciona directamente y de manera lineal con el daño o el efecto causado",
+      "Aquellos en los que la dosis de radiación recibida no se relaciona directamente y de manera lineal con el daño o el efecto causado",
+      "Aquellos que dependen de la probabilidad",
+      "Ninguna de las anteriores"
+    ],
+    correct: 0,
+    explain: {
+      detail: "Los efectos deterministas tienen umbral y gravedad relacionada con la dosis.",
+      whyCorrect: "La opción A es correcta porque la dosis se relaciona directamente con el daño.",
+      whyWrong: {
+        B: "Eso no define los deterministas.",
+        C: "Eso define mejor los estocásticos.",
+        D: "Sí hay una respuesta correcta."
+      }
+    }
+  },
+  {
+    q: "Los principios básicos de la protección radiológica son:",
+    options: [
+      "Justificación, exposición y limitación de dosis",
+      "Justificación, optimización y limitación de la exposición",
+      "Optimización, blindaje y exposición",
+      "Optimización, limitación de la exposición e historial dosimétrico"
+    ],
+    correct: 1,
+    explain: {
+      detail: "La protección radiológica se basa en tres principios fundamentales.",
+      whyCorrect: "La opción B es correcta porque son justificación, optimización y limitación.",
+      whyWrong: {
+        A: "Exposición no es uno de los tres principios.",
+        C: "Blindaje es una medida, no un principio básico.",
+        D: "Historial dosimétrico no es un principio básico."
+      }
+    }
+  },
+  {
+    q: "No es un suceso inmediato:",
+    options: [
+      "Pérdida o robo de fuentes radiactivas",
+      "Aparición de fuentes radiactivas de categoría 1, 2 o 3",
+      "Amenaza de bomba",
+      "Derrames de material radiactivo"
+    ],
+    correct: 3,
+    explain: {
+      detail: "Algunos sucesos requieren comunicación inmediata y otros en plazos más amplios.",
+      whyCorrect: "La opción D es correcta porque los derrames se notifican normalmente en un plazo máximo de 24 horas, no como aviso inmediato.",
+      whyWrong: {
+        A: "La pérdida o robo sí es inmediata.",
+        B: "La aparición de fuentes peligrosas sí requiere aviso inmediato.",
+        C: "Una amenaza de bomba requiere aviso inmediato."
+      }
+    }
+  },
+  {
+    q: "Para el inicio de la actividad de una instalación radiactiva se requiere:",
+    options: [
+      "Diario de operaciones",
+      "Informes de accidentes",
+      "Protocolos generales de descontaminación",
+      "Autorización de funcionamiento"
+    ],
+    correct: 3,
+    explain: {
+      detail: "Una instalación radiactiva no puede iniciar su actividad sin autorización.",
+      whyCorrect: "La opción D es correcta porque se requiere autorización de funcionamiento.",
+      whyWrong: {
+        A: "El diario es necesario, pero no autoriza el inicio.",
+        B: "Los informes de accidentes no permiten iniciar actividad.",
+        C: "Los protocolos no sustituyen la autorización."
+      }
+    }
+  },
+  {
+    q: "Se define como cualquier elemento de desecho que está contaminado o contiene radioisótopos en niveles superiores a los establecidos por normativa a:",
+    options: [
+      "Residuo urbano",
+      "Residuo radiactivo",
+      "Residuo desechable",
+      "Residuo residual"
+    ],
+    correct: 1,
+    explain: {
+      detail: "Los residuos radiactivos contienen radioisótopos por encima de niveles permitidos.",
+      whyCorrect: "La opción B es correcta porque define un residuo radiactivo.",
+      whyWrong: {
+        A: "Un residuo urbano no tiene por qué contener radioisótopos.",
+        C: "Desechable no implica radiactivo.",
+        D: "No es una categoría técnica adecuada."
+      }
+    }
+  },
+  {
+    q: "Se define como instalación radiactiva:",
+    options: [
+      "Todo lugar en el que hay una fuente o equipos de radiación ionizante",
+      "La radiación ionizante tiene una diferencia de potencial mayor a 5 kV",
+      "A y B son correctas",
+      "Todas son incorrectas"
+    ],
+    correct: 2,
+    explain: {
+      detail: "La instalación radiactiva se define por la presencia de fuentes o equipos productores de radiación.",
+      whyCorrect: "La opción C es correcta porque ambas afirmaciones forman parte de la definición.",
+      whyWrong: {
+        A: "Es correcta, pero incompleta.",
+        B: "Es correcta, pero incompleta.",
+        D: "Sí hay respuestas correctas."
+      }
+    }
+  },
+  {
+    q: "Se define como toda prueba que se realiza sobre un equipo tras una modificación o reparación para comprobar si es apto para el uso clínico:",
+    options: [
+      "Pruebas de verificación",
+      "Pruebas de aceptación",
+      "Programa de mantenimiento",
+      "Pruebas de comprobación"
+    ],
+    correct: 0,
+    explain: {
+      detail: "Tras una reparación o modificación se comprueba que el equipo sigue siendo apto.",
+      whyCorrect: "La opción A es correcta porque eso corresponde a pruebas de verificación.",
+      whyWrong: {
+        B: "Las pruebas de aceptación se hacen antes del primer uso.",
+        C: "El mantenimiento es un programa general.",
+        D: "No es el término técnico correcto."
+      }
+    }
+  },
+  {
+    q: "Un dosímetro activo:",
+    options: [
+      "Permite medir en tiempo real",
+      "Requiere de una fuente de electricidad para funcionar",
+      "Todas son correctas",
+      "Son las cámaras de ionización de gases y los detectores de centelleo"
+    ],
+    correct: 2,
+    explain: {
+      detail: "Los dosímetros activos permiten lectura inmediata y requieren alimentación.",
+      whyCorrect: "La opción C es correcta porque todas las afirmaciones son verdaderas.",
+      whyWrong: {
+        A: "Es correcta, pero incompleta.",
+        B: "Es correcta, pero incompleta.",
+        D: "Es correcta, pero incompleta."
+      }
+    }
+  },
+  {
+    q: "Un equipo o dispositivo utilizado para medir la dosis de radiación se denomina:",
+    options: [
+      "Dosímetro",
+      "Medidómetro",
+      "Magnitudómetro",
+      "Radiómetro"
+    ],
+    correct: 0,
+    explain: {
+      detail: "La dosis de radiación se mide con dosímetros.",
+      whyCorrect: "La opción A es correcta porque el dispositivo se denomina dosímetro.",
+      whyWrong: {
+        B: "No es un término técnico.",
+        C: "No existe como equipo real.",
+        D: "No es la respuesta correcta para medir dosis."
+      }
+    }
+  },
+  {
+    q: "Un plan de emergencia interior hace referencia a un:",
+    options: [
+      "Documento obligatorio",
+      "Documento con las medidas ante situaciones de emergencia",
+      "Plan para reducir las consecuencias sobre personas, bienes materiales y medio ambiente ante una emergencia",
+      "Todas son correctas"
+    ],
+    correct: 3,
+    explain: {
+      detail: "El PEI organiza la respuesta ante emergencias en instalaciones radiactivas.",
+      whyCorrect: "La opción D es correcta porque todas las afirmaciones describen el Plan de Emergencia Interior.",
+      whyWrong: {
+        A: "Es correcta, pero incompleta.",
+        B: "Es correcta, pero incompleta.",
+        C: "Es correcta, pero incompleta."
+      }
+    }
+  },
+  {
+    q: "Un posible efecto a largo plazo de las radiaciones ionizantes puede ser:",
+    options: [
+      "Cataratas en el cristalino",
+      "Diarrea",
+      "Síndrome hematológico",
+      "Vértigo"
+    ],
+    correct: 0,
+    explain: {
+      detail: "Algunos efectos de la radiación pueden aparecer tiempo después de la exposición.",
+      whyCorrect: "La opción A es correcta porque las cataratas pueden ser un efecto tardío de la radiación.",
+      whyWrong: {
+        B: "La diarrea es más propia de efectos agudos gastrointestinales.",
+        C: "El síndrome hematológico es efecto agudo por alta dosis.",
+        D: "El vértigo no es el efecto tardío típico esperado."
+      }
+    }
+  }
+],
+    },
 
     /* ================== ATENCIÓN AL PACIENTE ================== */
 
@@ -2134,615 +1791,718 @@ const SUBJECT = {
 
 {
   id: "ap-u1",
-  title: "AP · U1 · Sistema sanitario y recursos",
-  summary: [
+title: "AP · U1 · Economía y administración básica",
+summary: [
+  "1️⃣ Visión general de la unidad\nLa unidad explica nociones básicas de economía y administración aplicadas a la vida diaria y a la empleabilidad. Se centra en la toma de decisiones, la gestión financiera personal, el ahorro, el endeudamiento, los agentes económicos, la responsabilidad social corporativa y los tipos de empresas.",
 
-"1️⃣ Visión general de la unidad\nLa unidad explica cómo está organizado el sistema sanitario en España (público y privado), la estructura del SNS, la función de hospitales y centros de salud, las unidades de imagen médica y la importancia de la gestión de almacén, economía sanitaria y calidad asistencial. Se centra en comprender el funcionamiento global del sistema para mejorar el trabajo en equipo y la atención al paciente.",
+  "2️⃣ Toma de decisiones económicas\nLas decisiones económicas se basan en comparar beneficios y costes. El beneficio es la satisfacción o ganancia obtenida, mientras que el coste es aquello a lo que se renuncia. También aparece el coste de oportunidad, que es el valor de la mejor alternativa sacrificada, y el coste irrecuperable, que son gastos pasados que no deben influir en decisiones futuras.",
 
-"2️⃣ Estructura del sistema sanitario\n• Diferentes modelos sanitarios: nacional, seguros sociales y liberal.\n• Todos comparten objetivos: equidad, accesibilidad, eficiencia y legitimidad.\n• España utiliza un Sistema Nacional de Salud (SNS): universal, financiado con impuestos, descentralizado en comunidades autónomas.\n• Organización administrativa:\n  - Nivel central: Ministerio de Sanidad (coordinación general).\n  - Nivel autonómico: Consejerías (gestión sanitaria regional).\n  - Nivel local: Áreas y zonas básicas de salud.",
+  "3️⃣ Costes, incentivos e intercambio\nLos incentivos son factores que motivan a actuar de una forma determinada porque modifican los beneficios o costes esperados. En sociedad, las decisiones económicas se relacionan con el intercambio, la eficiencia y el bienestar social. El objetivo es usar bien los recursos y mejorar la prosperidad colectiva.",
 
-"3️⃣ Características del sistema sanitario español\n• Universalidad: cobertura para todos los ciudadanos.\n• Financiación pública: vía impuestos.\n• Atención integral: primaria + especializada.\n• Participación ciudadana en la gestión.\n• Eficiencia y calidad como objetivos principales.\n• Atención primaria: puerta de entrada al sistema, prevención y seguimiento.\n• Atención hospitalaria: diagnóstico especializado, cirugías, urgencias y tratamientos complejos.",
+  "4️⃣ Economía doméstica y ahorro\nLa economía doméstica se basa en controlar ingresos, gastos y ahorro. Ahorrar significa renunciar a consumir hoy para poder consumir más en el futuro. Es recomendable crear un fondo de emergencia que cubra 6 meses de gastos habituales. En situaciones de ingresos inestables, puede ser recomendable ampliarlo hasta 9 o 12 meses.",
 
-"4️⃣ Unidades de radiodiagnóstico, medicina nuclear y radioterapia\n• Radiodiagnóstico: RX, TAC, RM, ecografías.\n• Medicina nuclear: gammagrafías, PET, uso de radiofármacos.\n• Radioterapia: tratamientos con radiación ionizante para tumores.\n• Organización jerárquica:\n  - Médicos especialistas.\n  - Radiofísicos.\n  - Técnicos Superiores en Imagen para el Diagnóstico y Medicina Nuclear.\n  - Enfermería.\n  - Personal auxiliar.\n• Cada profesional tiene funciones específicas en prescripción, preparación, control, mantenimiento y asistencia al paciente.",
+  "5️⃣ Presupuesto familiar\nEl presupuesto familiar permite planificar la economía personal. Incluye gastos fijos, gastos corrientes y gastos ocasionales. Para elaborarlo hay que identificar ingresos y gastos, priorizar necesidades, considerar el ahorro como un gasto fijo, hacer seguimiento y ajustar el presupuesto si no se cumplen los objetivos.",
 
-"5️⃣ Gestión del almacén en centro sanitario\n• Objetivo: garantizar disponibilidad, seguridad y orden.\n• Tipos de almacenes: central, general y pequeño almacén.\n• Clasificación del stock por:\n  - Uso.\n  - Caducidad.\n  - Peligrosidad.\n  - Conservación (temperatura, humedad, luz).\n• Control de inventarios, revisión de fechas y reposición periódica.\n• Evitar errores y faltantes que afecten al paciente.",
+  "6️⃣ Agentes económicos\nLos principales agentes económicos son las familias, las empresas, el Estado y el sector bancario. Las familias consumen y aportan trabajo; las empresas producen bienes y servicios; el Estado regula, recauda y redistribuye; y el sector bancario canaliza el dinero y el crédito.",
 
-"6️⃣ Economía sanitaria\n• Estudia cómo se gestionan recursos y gastos en sanidad.\n• Factores clave:\n  - Oferta y demanda.\n  - Coste de la tecnología.\n  - Necesidades de la población.\n  - Políticas y presupuestos.\n• Una buena gestión garantiza sostenibilidad y calidad asistencial.\n• La demanda sanitaria no siempre es voluntaria: depende de enfermedades y envejecimiento poblacional.",
+  "7️⃣ Financiación personal\nLa financiación debe usarse con responsabilidad para evitar el sobreendeudamiento. La capacidad de endeudamiento recomendada es como máximo el 35 % de los ingresos netos, y el límite de endeudamiento no debería superar el 40 %. El coste total de un préstamo incluye nominal, intereses, comisiones y gastos.",
 
-"7️⃣ Niveles de gestión sanitaria\n• Macrogestión: Estado → legislación, financiación, planificación.\n• Mesogestión: Comunidades autónomas → organización territorial.\n• Microgestión: hospitales, centros de salud y sus profesionales → atención directa.\n• Una buena coordinación entre niveles mejora resultados asistenciales.",
+  "8️⃣ Productos bancarios\nLos préstamos hipotecarios se usan normalmente para comprar inmuebles. La cantidad concedida depende del valor de la vivienda y suele limitarse al 80 % del valor de tasación. Los préstamos personales se destinan a consumo y suelen tener plazos más cortos. Las tarjetas pueden ser de débito, crédito o revolving. Las revolving son peligrosas porque pueden generar una deuda muy difícil de terminar de pagar.",
 
-"8️⃣ Calidad en los servicios sanitarios\n• Calidad asistencial = servicios seguros, eficaces y centrados en el paciente.\n• Herramientas de calidad:\n  - ISO: estándares de gestión.\n  - EFQM: modelo de excelencia.\n• EFQM utiliza REDER:\n  - Resultados.\n  - Enfoque.\n  - Despliegue.\n  - Evaluación y Revisión.\n• Objetivo: mejora continua, eficiencia y satisfacción del paciente.",
+  "9️⃣ Responsabilidad Social Corporativa\nLa RSC es la integración voluntaria de preocupaciones sociales, económicas y medioambientales en la actividad empresarial. Incluye aspectos como bienestar laboral, conciliación, gestión de residuos, eficiencia energética, reciclaje e impacto positivo en la comunidad.",
 
-"9️⃣ Resumen final\n• La unidad proporciona una visión completa del sistema sanitario español.\n• Explica estructura, niveles de gestión, unidades de imagen médica y calidad.\n• Recalca la importancia de una organización eficaz, gestión del stock y sostenibilidad del sistema.\n• Estos conceptos son esenciales para trabajar como técnico en cualquier hospital o centro sanitario."
-  ],
+  "🔟 Tipos de empresas y sociedades\nLas empresas pueden clasificarse por tamaño, ámbito, titularidad y actividad. También existen distintas formas jurídicas: empresario individual, sociedad limitada, sociedad anónima, sociedad colectiva, cooperativa y sociedad laboral. Cada una tiene requisitos diferentes de socios, capital mínimo y responsabilidad."
+],
 
-  questions: [
-    {
-      q: "¿Cómo conocemos al conjunto de recursos de titularidad pública y/o privada de un país para atender las necesidades de salud de sus ciudadanos?",
-      options: ["Sanidad", "Sistema sanitario", "Sistema asistencial", "Todas son correctas"],
-      correct: 1,
-      explain: {
-        detail:
-          "El sistema sanitario es el conjunto organizado de recursos humanos, materiales, tecnológicos y económicos que un país dispone para prevenir la enfermedad, promover la salud, diagnosticar y tratar a sus ciudadanos. Incluye tanto servicios públicos como privados, así como diferentes niveles de atención.",
-        whyCorrect:
-          "Es correcto 'Sistema sanitario' porque es el término técnico que engloba toda la estructura organizada de recursos para atender la salud de la población.",
-        whyWrong: {
-          0: "‘Sanidad’ es un término más general relacionado con el estado de salud o el sector, pero no describe el conjunto organizado de recursos.",
-          2: "‘Sistema asistencial’ se refiere más bien al ámbito de la asistencia directa, pero no incluye toda la estructura organizativa y de recursos.",
-          3: "‘Todas son correctas’ es falso porque solo una opción define con precisión el concepto: sistema sanitario."
-        }
-      }
-    },
-    {
-      q: "¿Cuál de los siguientes factores no afecta a la oferta de los sistemas sanitarios?",
-      options: ["Políticas estatales", "Costes de producción", "Técnicas de producción", "Todas las mencionadas afectan"],
-      correct: 3,
-      explain: {
-        detail:
-          "La oferta sanitaria depende de la cantidad de recursos disponibles y de cómo se organizan. Factores como las políticas del Estado, los costes de personal, material y tecnología, y las técnicas utilizadas influyen en la capacidad de ofrecer servicios sanitarios.",
-        whyCorrect:
-          "Es correcta ‘Todas las mencionadas afectan’ porque tanto las políticas, como los costes y las técnicas condicionan cuántos recursos pueden ponerse a disposición de los ciudadanos.",
-        whyWrong: {
-          0: "Las políticas estatales sí influyen, porque determinan financiación, prioridades y organización del sistema.",
-          1: "Los costes de producción afectan a la viabilidad económica y al volumen de servicios que se pueden ofrecer.",
-          2: "Las técnicas de producción (procedimientos, métodos, tecnología) afectan a la eficiencia y a la capacidad del sistema."
-        }
-      }
-    },
-    {
-      q: "¿En qué unidad se aplican técnicas para obtener imágenes que se utilizarán para obtener un diagnóstico?",
-      options: [
-        "Medicina nuclear y radiodiagnóstico",
-        "Radioterapia",
-        "Quimioterapia",
-        "Ninguna de las anteriores es correcta.",
-      ],
-      correct: 0,
-      explain: {
-        detail:
-          "Las unidades de radiodiagnóstico y medicina nuclear se especializan en obtener imágenes del interior del cuerpo mediante rayos X, radiofármacos, resonancias, etc. Estas imágenes permiten identificar lesiones, tumores, fracturas o alteraciones funcionales.",
-        whyCorrect:
-          "Es correcta ‘Medicina nuclear y radiodiagnóstico’ porque son precisamente las unidades dedicadas a generar imágenes diagnósticas.",
-        whyWrong: {
-          1: "La radioterapia se enfoca en tratar tumores con radiación, no en obtener imágenes diagnósticas.",
-          2: "La quimioterapia utiliza fármacos citotóxicos para tratar el cáncer, no está orientada a generar imágenes.",
-          3: "‘Ninguna de las anteriores’ es falsa porque la opción correcta sí figura en la lista."
-        }
-      }
-    },
-    {
-      q: "¿Qué nivel de gestión sanitaria llevan a cabo los profesionales sanitarios directamente al tratar con los pacientes?",
-      options: ["Macrogestión", "Mesogestión", "Microgestión", "Gestión integrada"],
-      correct: 2,
-      explain: {
-        detail:
-          "La microgestión se refiere al nivel más cercano al paciente, donde los profesionales aplican protocolos, atienden, informan y toman decisiones clínicas. Es la gestión del día a día en la consulta, planta o unidad.",
-        whyCorrect:
-          "‘Microgestión’ es correcta porque describe la gestión directa en el punto de atención entre profesional y paciente.",
-        whyWrong: {
-          0: "La macrogestión corresponde a la planificación a gran escala (Estado, comunidades, grandes organismos).",
-          1: "La mesogestión se sitúa en niveles intermedios, como la gestión de hospitales o servicios.",
-          3: "‘Gestión integrada’ es un modelo de coordinación, no un nivel clásico de gestión."
-        }
-      }
-    },
-    {
-      q: "¿Qué nombre recibe la ciencia social encargada de estudiar las relaciones entre individuos y las reglas que rigen la producción, la distribución y el consumo de bienes y servicios, todo ello aplicado al ámbito de la sanidad?",
-      options: ["Economía sanitaria", "Financiación sanitaria", "Monetización sanitaria", "Sanieconomía"],
-      correct: 0,
-      explain: {
-        detail:
-          "La economía sanitaria estudia cómo se utilizan los recursos limitados en salud, cómo se financian los servicios, qué intervenciones son más eficientes y cómo se maximiza el beneficio para la población.",
-        whyCorrect:
-          "Es correcta ‘Economía sanitaria’ porque es el término reconocido para el análisis económico aplicado a la salud.",
-        whyWrong: {
-          1: "La financiación sanitaria es solo una parte de la economía sanitaria, centrada en cómo se obtienen los recursos económicos.",
-          2: "‘Monetización sanitaria’ no es un término técnico utilizado en este ámbito.",
-          3: "‘Sanieconomía’ no es un concepto aceptado en la literatura científica."
-        }
-      }
-    },
-    {
-      q: "¿Qué personal de las unidades de oncología radioterápica, medicina nuclear y radiodiagnóstico se encargan del mantenimiento, calibración y comprobación del buen funcionamiento de los equipos que se utilizan?",
-      options: ["Personal accesorio", "Radiofísicos", "Técnicos especializados", "Médicos responsables"],
-      correct: 1,
-      explain: {
-        detail:
-          "Los radiofísicos hospitalarios son especialistas en física aplicada a la medicina. Se encargan de calibrar equipos, garantizar que las dosis de radiación sean las adecuadas y velar por la seguridad radiológica.",
-        whyCorrect:
-          "Es correcta ‘Radiofísicos’ porque su función principal es asegurar el correcto funcionamiento técnico y dosimétrico de los equipos de radiación.",
-        whyWrong: {
-          0: "‘Personal accesorio’ es un término genérico y no define un perfil profesional cualificado para calibraciones.",
-          2: "Los técnicos especializados operan los equipos y atienden al paciente, pero no son responsables principales de calibración y control físico.",
-          3: "Los médicos responsables prescriben y supervisan tratamientos, pero no realizan las tareas técnicas de física médica."
-        }
-      }
-    },
-    {
-      q: "¿Qué término usamos para referirnos al conjunto de personas que pueden beneficiarse de los servicios ofrecidos por un sistema sanitario?",
-      options: [
-        "Población susceptible",
-        "Pacientes potenciales",
-        "Cobertura poblacional",
-        "Individuos asistibles",
-      ],
-      correct: 2,
-      explain: {
-        detail:
-          "La cobertura poblacional se refiere al grupo de personas que tienen derecho o acceso efectivo a los servicios de un sistema sanitario, en función de criterios como residencia, afiliación o aseguramiento.",
-        whyCorrect:
-          "‘Cobertura poblacional’ es correcta porque define de forma técnica el conjunto de personas a las que alcanza el sistema.",
-        whyWrong: {
-          0: "‘Población susceptible’ suele usarse para referirse a personas con riesgo de desarrollar una enfermedad, no a todos los cubiertos por el sistema.",
-          1: "‘Pacientes potenciales’ es un término coloquial y menos preciso, sin definición formal.",
-          3: "‘Individuos asistibles’ no es un término técnico habitual en organización sanitaria."
-        }
-      }
-    },
-    {
-      q: "¿Qué tipo de almacenes proveen a varios almacenes y poseen grandes cantidades de existencias?",
-      options: ["Almacenes pequeños", "Almacenes generales", "Almacenes centrales", "Almacenes de reserva"],
-      correct: 2,
-      explain: {
-        detail:
-          "Los almacenes centrales concentran una gran cantidad de productos y suministros que posteriormente distribuyen a otros almacenes o unidades más pequeñas del centro sanitario.",
-        whyCorrect:
-          "Es correcta ‘Almacenes centrales’ porque definen los puntos de almacenamiento principales desde los que se abastece al resto.",
-        whyWrong: {
-          0: "Un ‘almacén pequeño’ no abastece a otros almacenes, sino que suele recibir suministro.",
-          1: "‘Almacenes generales’ es un término ambiguo que no refleja necesariamente función de distribución central.",
-          3: "‘Almacenes de reserva’ se asocian a stock de seguridad, no a la función principal de distribución."
-        }
-      }
-    },
-    {
-      q: "En los almacenes, los productos termolábiles son aquellos que...",
-      options: [
-        "Requieren temperaturas estables para conservar sus propiedades",
-        "Son sensibles a la luz",
-        "Tienden a absorber agua",
-        "Deben mantener condiciones de asepsia en todo momento",
-      ],
-      correct: 0,
-      explain: {
-        detail:
-          "Los productos termolábiles son sensibles a la temperatura y pueden perder eficacia o estropearse si no se conservan dentro de un rango adecuado (por ejemplo, ciertas vacunas o medicamentos).",
-        whyCorrect:
-          "Es correcta la opción que indica ‘Requieren temperaturas estables’ porque esa es precisamente la característica de los productos termolábiles.",
-        whyWrong: {
-          1: "La sensibilidad a la luz describe productos fotosensibles, no termolábiles.",
-          2: "La tendencia a absorber agua se relaciona con productos higroscópicos, no con la temperatura.",
-          3: "La necesidad de asepsia es importante, pero no define la termolabilidad."
-        }
-      }
-    },
-    {
-      q: "La procedencia de los recursos de un sistema sanitario puede ser...",
-      options: ["Pública", "Privada", "Mixta", "Todas son correctas"],
-      correct: 3,
-      explain: {
-        detail:
-          "Los recursos del sistema sanitario pueden provenir del sector público (Estado, comunidades), del sector privado (empresas, aseguradoras) o de modelos mixtos donde conviven ambas fuentes de financiación y provisión.",
-        whyCorrect:
-          "‘Todas son correctas’ es la opción adecuada porque los recursos pueden ser públicos, privados o una combinación de ambos (mixtos).",
-        whyWrong: {
-          0: "Solo ‘pública’ es incompleta, porque no contempla recursos privados.",
-          1: "Solo ‘privada’ excluye la financiación y gestión pública.",
-          2: "‘Mixta’ describe uno de los modelos, pero no todos los posibles orígenes de los recursos."
-        }
+questions: [
+  {
+    q: "¿Cuál de las siguientes no es una característica del préstamo hipotecario?",
+    options: [
+      "La cuantía concedida dependerá del valor de la vivienda.",
+      "Habitualmente la cuantía concedida no superará el 80% del valor de tasación.",
+      "Su plazo máximo de amortización no suele exceder de 8 años.",
+      "Suele utilizarse para la compra de bienes inmuebles.",
+    ],
+    correct: 2,
+    explain: {
+      detail:
+        "El préstamo hipotecario se utiliza normalmente para comprar una vivienda u otro bien inmueble. Tiene garantía real sobre el inmueble y suele tener plazos de devolución largos.",
+      whyCorrect:
+        "La opción C es correcta porque no es una característica del préstamo hipotecario. El plazo máximo de amortización de 8 años se asocia más a préstamos personales, no a hipotecas.",
+      whyWrong: {
+        0: "Es verdadera: la cuantía concedida depende del valor de la vivienda.",
+        1: "Es verdadera: normalmente no se concede más del 80 % del valor de tasación.",
+        3: "Es verdadera: se utiliza habitualmente para comprar bienes inmuebles."
       }
     }
-  ]
+  },
+  {
+    q: "¿Cuál de los siguientes es un agente que actúa en la economía?",
+    options: [
+      "Familias.",
+      "Empresas.",
+      "Estado.",
+      "Todas son correctas.",
+    ],
+    correct: 3,
+    explain: {
+      detail:
+        "Los agentes económicos son los sujetos que intervienen en la actividad económica mediante consumo, producción, regulación o financiación.",
+      whyCorrect:
+        "La opción D es correcta porque familias, empresas y Estado son agentes económicos.",
+      whyWrong: {
+        0: "Es correcta, pero incompleta.",
+        1: "Es correcta, pero incompleta.",
+        2: "Es correcta, pero incompleta."
+      }
+    }
+  },
+  {
+    q: "¿En qué se basa la decisión que se toma para cubrir necesidades?",
+    options: [
+      "En un impulso.",
+      "En una comparativa.",
+      "En una encuesta.",
+      "En una imitación de lo que hace la sociedad.",
+    ],
+    correct: 1,
+    explain: {
+      detail:
+        "Las decisiones económicas racionales se toman comparando beneficios y costes antes de elegir una alternativa.",
+      whyCorrect:
+        "La opción B es correcta porque una decisión económica se basa en una comparativa entre opciones.",
+      whyWrong: {
+        0: "Un impulso no implica análisis racional.",
+        2: "Una encuesta puede aportar información, pero no es la base de la decisión.",
+        3: "Imitar a la sociedad no garantiza una decisión adecuada."
+      }
+    }
+  },
+  {
+    q: "Cuando se toma una decisión, los costes del pasado que no deben influir en la decisión futura se denominan:",
+    options: [
+      "El coste operacional.",
+      "El coste duplicado.",
+      "El coste irrecuperable.",
+      "El coste de ahorro.",
+    ],
+    correct: 2,
+    explain: {
+      detail:
+        "Los costes irrecuperables son gastos ya realizados que no se pueden recuperar y no deberían condicionar decisiones futuras.",
+      whyCorrect:
+        "La opción C es correcta porque define el coste irrecuperable.",
+      whyWrong: {
+        0: "Coste operacional se relaciona con el funcionamiento de una actividad.",
+        1: "Coste duplicado no es el concepto económico correcto.",
+        3: "Coste de ahorro no define gastos pasados irreversibles."
+      }
+    }
+  },
+  {
+    q: "El coste total de un préstamo será la suma de:",
+    options: [
+      "Capital inicial e intereses.",
+      "Interés fijo e interés variable.",
+      "Nominal, amortización, comisiones y tasas.",
+      "Nominal, intereses, comisiones y gastos.",
+    ],
+    correct: 3,
+    explain: {
+      detail:
+        "El coste total de un préstamo incluye todo lo que se devuelve y todos los costes asociados a la operación.",
+      whyCorrect:
+        "La opción D es correcta porque incluye nominal, intereses, comisiones y gastos.",
+      whyWrong: {
+        0: "Es incompleta porque faltan comisiones y otros gastos.",
+        1: "Solo menciona tipos de interés, no el coste total.",
+        2: "No es la formulación correcta del coste total."
+      }
+    }
+  },
+  {
+    q: "El presupuesto familiar se compone de:",
+    options: [
+      "Gastos fijos.",
+      "Gastos corrientes.",
+      "Gastos ocasionales.",
+      "Todas son correctas.",
+    ],
+    correct: 3,
+    explain: {
+      detail:
+        "El presupuesto familiar recoge distintos tipos de gastos para organizar mejor la economía doméstica.",
+      whyCorrect:
+        "La opción D es correcta porque incluye gastos fijos, corrientes y ocasionales.",
+      whyWrong: {
+        0: "Es correcta, pero incompleta.",
+        1: "Es correcta, pero incompleta.",
+        2: "Es correcta, pero incompleta."
+      }
+    }
+  },
+  {
+    q: "La capacidad de endeudamiento:",
+    options: [
+      "Será como máximo del 35% de los ingresos netos.",
+      "Será como máximo del 45% de los ingresos netos.",
+      "Es equivalente al límite de endeudamiento.",
+      "Es el total de los ingresos netos.",
+    ],
+    correct: 0,
+    explain: {
+      detail:
+        "La capacidad de endeudamiento indica qué parte de los ingresos puede destinarse al pago de deudas sin comprometer la estabilidad económica.",
+      whyCorrect:
+        "La opción A es correcta porque se recomienda que sea como máximo del 35 % de los ingresos netos.",
+      whyWrong: {
+        1: "45 % sería demasiado elevado.",
+        2: "No es exactamente equivalente al límite de endeudamiento.",
+        3: "No puede ser el total de los ingresos netos."
+      }
+    }
+  },
+  {
+    q: "La cuantía recomendada para el fondo de emergencia es aquella que permite mantener todos los gastos durante:",
+    options: [
+      "6 meses.",
+      "3 meses.",
+      "12 meses.",
+      "Toda la vida del individuo.",
+    ],
+    correct: 0,
+    explain: {
+      detail:
+        "El fondo de emergencia sirve para afrontar imprevistos sin recurrir a deuda.",
+      whyCorrect:
+        "La opción A es correcta porque se recomienda cubrir unos 6 meses de gastos habituales.",
+      whyWrong: {
+        1: "3 meses puede ser insuficiente.",
+        2: "12 meses puede ser recomendable en situaciones inestables, pero no es la cuantía general.",
+        3: "No es realista ni necesario cubrir toda la vida."
+      }
+    }
+  },
+  {
+    q: "Las tarjetas revolving:",
+    options: [
+      "Son las que emiten las empresas comerciales.",
+      "Se consideran una deuda eterna.",
+      "Realizan el cargo de manera inmediata en la cuenta bancaria.",
+      "Todas son correctas.",
+    ],
+    correct: 1,
+    explain: {
+      detail:
+        "Las tarjetas revolving permiten aplazar pagos mediante cuotas, pero suelen generar intereses muy elevados.",
+      whyCorrect:
+        "La opción B es correcta porque pueden convertirse en una deuda eterna si apenas se amortiza capital.",
+      whyWrong: {
+        0: "No se definen por ser emitidas por empresas comerciales.",
+        2: "El cargo inmediato corresponde a tarjetas de débito.",
+        3: "No todas son correctas."
+      }
+    }
+  },
+  {
+    q: "Renunciar a consumir hoy para consumir más en el futuro, ¿a qué concepto hace referencia?",
+    options: [
+      "Consumo.",
+      "Financiación.",
+      "Planificación.",
+      "Ahorro.",
+    ],
+    correct: 3,
+    explain: {
+      detail:
+        "El ahorro consiste en reservar parte de los ingresos actuales para utilizarlos en el futuro.",
+      whyCorrect:
+        "La opción D es correcta porque ahorrar implica renunciar a consumo presente para disponer de recursos futuros.",
+      whyWrong: {
+        0: "Consumo es gastar recursos en bienes o servicios.",
+        1: "Financiación implica obtener recursos ajenos.",
+        2: "Planificación ayuda a organizar, pero no es el concepto exacto."
+      }
+    }
+  }
+]
 },
 
 {
   id: "ap-u2",
-  title: "AP · U2 · Documentación, citación y LOPD",
-  summary: [
+title: "AP · U2 · Sistema fiscal y gestión empresarial",
+summary: [
+  "1️⃣ Visión general de la unidad\nLa unidad explica las nociones básicas del sistema fiscal y la gestión administrativa de una empresa. Se centra en cómo las empresas crean valor, gestionan documentos de compraventa, planifican cobros y pagos, y cumplen sus obligaciones tributarias.",
 
-"1️⃣ Visión general de la unidad\nLa unidad trata sobre cómo recibir al paciente, gestionar su documentación administrativa y clínica, garantizar su correcta identificación y aplicar principios éticos como la confidencialidad y la protección de datos. Explica paso a paso el protocolo de citación, registro, información y manejo de documentos en centros sanitarios.",
+  "2️⃣ La empresa y su función\nLa empresa crea valor transformando recursos en bienes o servicios útiles para satisfacer necesidades. Además, asume riesgos, genera empleo, coordina recursos productivos y contribuye al bienestar social y económico.",
 
-"2️⃣ Protocolo de citación, registro e identificación\n• La citación organiza la agenda y evita retrasos, mejorando la eficiencia.\n• El registro incluye datos personales, poblacionales y económicos.\n• Identificar al paciente correctamente evita errores clínicos graves.\n• El centro debe verificar identidad mediante DNI, tarjeta sanitaria o documento válido.\n• La información debe ser clara, ordenada y protegida de accesos no autorizados.",
+  "3️⃣ Análisis del entorno empresarial\nPara estudiar el entorno de una empresa se utilizan herramientas como el análisis PESTEL y las 5 fuerzas de Porter. El análisis PESTEL estudia factores políticos, económicos, sociales, tecnológicos, ecológicos y legales. El factor ecológico incluye energía, conciencia ambiental y restricciones de emisiones.",
 
-"3️⃣ Gestión de datos del paciente\n• Los datos administrativos permiten acceso al servicio (nombre, dirección, CIP, aseguradora).\n• Los datos clínicos permiten diagnóstico y tratamiento.\n• Todo dato sanitario es considerado “dato especialmente protegido”.\n• Errores en identificación pueden generar diagnósticos incorrectos, duplicación de pruebas o fallos en tratamiento.",
+  "4️⃣ Documentos de compraventa\nEn una operación comercial aparecen varios documentos:\n• Presupuesto: oferta del vendedor con condiciones.\n• Pedido: solicitud formal del comprador.\n• Albarán: justificante de entrega.\n• Factura: documento obligatorio que acredita la operación y permite repercutir IVA.",
 
-"4️⃣ Documentos clínicos\n• La historia clínica es el documento central, contiene:\n  - Datos personales.\n  - Antecedentes.\n  - Exploraciones.\n  - Informes de pruebas.\n  - Diagnósticos.\n• Documentos específicos por área:\n  - Radiodiagnóstico: informes RX, TAC, RM.\n  - Medicina Nuclear: informes con radiofármacos.\n  - Radioterapia: planificación, dosimetría y controles.\n• Su gestión debe ser rigurosa, ordenada y accesible solo al personal autorizado.",
+  "5️⃣ Pagos y tesorería\nEl pago puede ser al contado o aplazado. Algunos instrumentos de pago son la letra de cambio, el pagaré y el recibo normalizado. El plan de tesorería recoge los cobros y pagos previstos a corto plazo para detectar superávit o déficit.",
 
-"5️⃣ Documentos no clínicos\n• Hoja de citación: indica día, hora y preparaciones (ayuno, hidratación, retirada de objetos metálicos, etc.).\n• Consentimiento previo para pruebas con contraste, sedación o radiación.\n• Encuestas de satisfacción: ayudan a evaluar calidad del servicio desde la perspectiva del paciente.\n• La correcta gestión mejora la organización y reduce errores administrativos.",
+  "6️⃣ Sistema tributario español\nEl sistema tributario permite al Estado obtener ingresos públicos mediante impuestos, tasas, contribuciones especiales, deuda pública, donaciones y otros recursos. Se basa en principios como equidad, justicia, progresividad, legalidad y no confiscatoriedad.",
 
-"6️⃣ Documentación informativa y protección de datos (LOPD / RGPD)\n• Los pacientes deben recibir información clara sobre:\n  - Procedimiento.\n  - Riesgos.\n  - Beneficios.\n  - Preparación previa.\n• El consentimiento informado es obligatorio:\n  - Para procedimientos invasivos.\n  - Para menores de 16 años requiere autorización del tutor.\n  - Puede ser revocado en cualquier momento.\n• La LOPD/RGPD obliga a proteger la información sanitaria:\n  - Almacenamiento seguro.\n  - Minimizar accesos.\n  - Confidencialidad absoluta.",
+  "7️⃣ Tipos de tributos\n• Impuestos: no tienen contraprestación directa y financian el gasto público general.\n• Tasas: se pagan por un servicio o trámite administrativo concreto.\n• Contribuciones especiales: se pagan por un beneficio derivado de obras o servicios públicos.",
 
-"7️⃣ Principios éticos y responsabilidad social del profesional\n• La salud es un derecho fundamental.\n• El trato debe ser humano, respetuoso, empático y confidencial.\n• La atención centrada en el paciente implica:\n  - Escuchar.\n  - Informar de forma clara.\n  - Responder dudas.\n  - Respetar decisiones.\n• Importancia del apoyo emocional en situaciones de ansiedad.\n• Las instrucciones previas (testamento vital) deben respetarse.\n• El profesional debe actuar con responsabilidad, ética y compromiso social.",
+  "8️⃣ Obligaciones fiscales de la empresa\nAntes de iniciar actividad, la empresa debe presentar la declaración censal mediante modelos 036 o 037. También puede estar sujeta a impuestos como IAE, IVA, IRPF o Impuesto sobre Sociedades, según su forma jurídica y actividad.",
 
-"8️⃣ Resumen final\n• La acogida correcta del paciente es esencial para su seguridad.\n• La identificación y documentación adecuada evita errores graves.\n• La historia clínica y documentos no clínicos deben gestionarse con máxima confidencialidad.\n• La relación profesional-paciente se basa en ética, respeto, apoyo emocional y derecho a la información.\n• La protección de datos y el consentimiento informado son obligaciones legales imprescindibles."
-  ],
+  "9️⃣ IVA, IRPF e Impuesto sobre Sociedades\nEl IVA grava el consumo y la empresa actúa como recaudadora. El IRPF grava las rentas de las personas físicas y es progresivo. El Impuesto sobre Sociedades grava los beneficios de las personas jurídicas, generalmente al 25 %.",
 
-  questions: [
-    {
-      q: "¿Cómo conocemos a los primeros pasos que se toman cuando un paciente acude a nuestro centro para recibir un servicio sanitario?",
-      options: ["Recibimiento", "Protocolo de acogida", "Protocolo de recepción", "Todas son correctas."],
-      correct: 1,
-      explain: {
-        detail:
-          "El protocolo de acogida establece las primeras actuaciones ante la llegada del paciente: identificación, registro, información inicial y orientación. Su objetivo es estandarizar el primer contacto para que sea seguro, ordenado y respetuoso.",
-        whyCorrect:
-          "Es correcta ‘Protocolo de acogida’ porque es el nombre específico para esas primeras actuaciones sistematizadas.",
-        whyWrong: {
-          0: "‘Recibimiento’ es un término genérico, no un procedimiento formal.",
-          2: "‘Protocolo de recepción’ podría usarse coloquialmente, pero el término habitual en sanidad es ‘protocolo de acogida’.",
-          3: "No todas son correctas, solo una se ajusta al término técnico."
-        }
-      }
-    },
-    {
-      q: "¿Cuál de las siguientes no es una característica que deba cumplir el consentimiento informado?",
-      options: ["Voluntariedad", "Comprensibilidad", "Decisión", "Coste del tratamiento"],
-      correct: 3,
-      explain: {
-        detail:
-          "El consentimiento informado debe ser libre (voluntario), basado en información comprensible y suficiente, y reflejar una decisión consciente del paciente. No tiene que ver con el coste económico del tratamiento, sino con la información clínica y los riesgos/beneficios.",
-        whyCorrect:
-          "‘Coste del tratamiento’ es correcta como respuesta porque no es una característica esencial del consentimiento informado.",
-        whyWrong: {
-          0: "La voluntariedad es básica: el paciente no debe ser presionado o coaccionado.",
-          1: "La comprensibilidad es clave: el lenguaje debe adaptarse al paciente.",
-          2: "La decisión final del paciente es precisamente el núcleo del consentimiento informado."
-        }
-      }
-    },
-    {
-      q: "¿Cuál de los siguientes datos debe incluirse en las hojas de citación?",
-      options: [
-        "Preparación necesaria para la prueba",
-        "Lugar y fecha de la realización de la prueba",
-        "Descripción de la prueba",
-        "Todas son correctas",
-      ],
-      correct: 3,
-      explain: {
-        detail:
-          "Una hoja de citación bien hecha debe indicar claramente qué prueba se realizará, cuándo y dónde, y si se requiere alguna preparación previa (ayuno, suspensión de medicación, etc.). Esto reduce errores y mejora la seguridad del paciente.",
-        whyCorrect:
-          "‘Todas son correctas’ porque la combinación de esos datos es necesaria para una citación completa y segura.",
-        whyWrong: {
-          0: "La preparación es importante, pero por sí sola no basta para una citación correcta.",
-          1: "Lugar y fecha son esenciales, pero incompletos sin explicar la prueba ni la preparación.",
-          2: "Describir la prueba es útil, pero se debe complementar con lugar, fecha y preparación."
-        }
-      }
-    },
-    {
-      q: "¿Cuál de los siguientes datos no se considera especialmente protegido por la LOPD?",
-      options: ["Religión", "Origen racial", "Enfermedades padecidas", "Antecedentes penales"],
-      correct: 2,
-      explain: {
-        detail:
-          "Los datos especialmente protegidos son aquellos especialmente sensibles: ideología, religión, origen racial, salud, vida sexual o antecedentes penales. Sin embargo, en la clasificación clásica, la enfermedad se trata como dato de salud, que ya tiene régimen específico, pero la pregunta se orienta a excluirlo de la categoría de 'especialmente protegido' tal como estaba formulado en versiones previas de la normativa.",
-        whyCorrect:
-          "Se considera correcta ‘Enfermedades padecidas’ en el contexto del test, porque el resto encaja de forma más directa en la categoría de especialmente protegidos según la formulación clásica.",
-        whyWrong: {
-          0: "La religión sí se contempla como dato especialmente protegido.",
-          1: "El origen racial es un dato especialmente protegido por su potencial discriminatorio.",
-          3: "Los antecedentes penales también se consideran especialmente sensibles."
-        }
-      }
-    },
-    {
-      q: "¿Cuál es la función principal de los datos poblacionales?",
-      options: [
-        "La comunicación con el paciente",
-        "La descripción de las pruebas a realizar",
-        "Dejar constancia del consentimiento del paciente",
-        "El cobro de los servicios prestados",
-      ],
-      correct: 0,
-      explain: {
-        detail:
-          "Los datos poblacionales incluyen información básica del paciente: nombre, dirección, teléfono, etc. Su objetivo es identificarlo correctamente y poder contactar con él cuando sea necesario.",
-        whyCorrect:
-          "La respuesta correcta es ‘La comunicación con el paciente’ porque esos datos permiten localizarle y mantener el contacto.",
-        whyWrong: {
-          1: "La descripción de las pruebas está relacionada con datos clínicos, no con datos poblacionales.",
-          2: "El consentimiento se registra en documentos específicos, no mediante datos poblacionales.",
-          3: "El cobro puede apoyarse en estos datos, pero no es su función principal."
-        }
-      }
-    },
-    {
-      q: "¿En qué documento se resumen las vías de entrada de los haces aplicados en la radioterapia (para radioterapia externa) o la posición de las fuentes (cuando se trata de braquiterapia)?",
-      options: ["Dosimetría", "Radioinforme", "Hoja de tratamiento", "Hoja de citación"],
-      correct: 0,
-      explain: {
-        detail:
-          "La dosimetría recoge información técnica sobre las dosis de radiación, las vías de entrada, los campos y la distribución de la radiación en el paciente. Es fundamental para asegurar eficacia y seguridad en radioterapia.",
-        whyCorrect:
-          "Es correcta ‘Dosimetría’ porque es el documento técnico donde se planifica y resume la administración de radiación.",
-        whyWrong: {
-          1: "El radioinforme describe los resultados de pruebas de imagen, no los parámetros de radiación terapéutica.",
-          2: "La hoja de tratamiento puede contener pautas generales, pero no el detalle dosimétrico.",
-          3: "La hoja de citación solo indica cita, lugar, hora y pruebas, no parámetros técnicos."
-        }
-      }
-    },
-    {
-      q: "¿Qué documento contiene la interpretación del médico radiólogo que hace un informe de los datos obtenidos en la exploración?",
-      options: [
-        "Documento primario de la exploración",
-        "Documento secundario de la exploración",
-        "Documento terciario de la exploración",
-        "Documento final de la exploración",
-      ],
-      correct: 1,
-      explain: {
-        detail:
-          "En una exploración de imagen, el documento primario suelen ser las imágenes en sí. El documento secundario es el informe interpretado por el médico radiólogo, donde se explica qué significan esas imágenes.",
-        whyCorrect:
-          "‘Documento secundario de la exploración’ es correcto porque recoge la interpretación médica de los hallazgos.",
-        whyWrong: {
-          0: "El documento primario son las imágenes obtenidas, no la interpretación.",
-          2: "‘Documento terciario’ no es un término habitual en este contexto.",
-          3: "‘Documento final’ es una expresión ambigua sin definición concreta."
-        }
-      }
-    },
-    {
-      q: "¿Qué tipo de datos no están relacionados con la salud de las personas?",
-      options: ["Datos administrativos", "Datos de gestión", "Datos clínicos", "Todas son incorrectas."],
-      correct: 1,
-      explain: {
-        detail:
-          "Los datos clínicos incluyen diagnósticos, tratamientos y antecedentes médicos. Los datos administrativos identifican al paciente y su relación con el centro. Los datos de gestión se relacionan con la organización del sistema (estadísticas, tiempos, costes) y no tratan directamente sobre la salud de una persona concreta.",
-        whyCorrect:
-          "‘Datos de gestión’ es correcto porque no describen el estado de salud de un individuo, sino el funcionamiento del sistema.",
-        whyWrong: {
-          0: "Los datos administrativos sí están conectados con la atención sanitaria, aunque no describan la salud, forman parte de la historia.",
-          2: "Los datos clínicos se refieren directamente al estado de salud y cuidados del paciente.",
-          3: "No es cierto que todas sean incorrectas, la de gestión sí encaja como no relacionada con salud personal."
-        }
-      }
-    },
-    {
-      q: "En qué documento se recoge la secuencia estructurada de información que han generado los médicos y el resto de profesionales a lo largo del proceso de atención al paciente",
-      options: ["Historia médica", "Historia patológica", "Historia clínica", "Historia sanitaria"],
-      correct: 2,
-      explain: {
-        detail:
-          "La historia clínica es el documento principal que integra todos los datos relevantes sobre el paciente: datos administrativos, antecedentes, exploraciones, diagnósticos, tratamientos y evolución.",
-        whyCorrect:
-          "La respuesta correcta es ‘Historia clínica’ porque es el término oficial para este conjunto ordenado de información.",
-        whyWrong: {
-          0: "‘Historia médica’ es un término más genérico y no el nombre técnico habitual.",
-          1: "‘Historia patológica’ solo haría referencia a enfermedades, no a toda la atención.",
-          3: "‘Historia sanitaria’ no es el término formalmente utilizado en la práctica clínica."
-        }
-      }
-    },
-    {
-      q: "Indica la opción correcta sobre la citación de pacientes:",
-      options: [
-        "El horario disponible debe estar cubierto completamente",
-        "No es necesario programar las pruebas, pues los pacientes se organizan de manera autónoma",
-        "Deben dejarse espacios sin citación por la posibilidad de que surjan imprevistos",
-        "Ninguna es correcta.",
-      ],
-      correct: 2,
-      explain: {
-        detail:
-          "En la organización de las citas es importante prever retrasos, urgencias inesperadas o necesidades especiales. Por eso no se debe llenar al 100% la agenda, sino dejar huecos para absorber imprevistos.",
-        whyCorrect:
-          "Es correcta la opción que indica ‘Deben dejarse espacios sin citación’ porque refleja una buena práctica de gestión de citas.",
-        whyWrong: {
-          0: "Cubrir todo el horario sin margen provoca saturación y retrasos acumulados.",
-          1: "Dejar que los pacientes se organicen solos generaría caos y falta de control.",
-          3: "Sí hay una opción correcta, por lo que ‘Ninguna’ no puede ser la adecuada."
-        }
+  "🔟 Resumen final\nLa gestión administrativa y fiscal es esencial para evitar sanciones, controlar la liquidez y tomar mejores decisiones. Una empresa debe controlar sus documentos, prever cobros y pagos, conocer sus tributos y adaptarse a los cambios legales."
+],
+
+questions: [
+  {
+    q: "¿Cómo se crea valor en un producto?",
+    options: [
+      "Incrementando la cuota de mercado.",
+      "Mediante una buena cadena de proveedores en el aprovisionamiento.",
+      "Utilizando nuevas tecnologías y personal de élite.",
+      "Añadiéndole utilidad para que satisfaga necesidades.",
+    ],
+    correct: 3,
+    explain: {
+      detail:
+        "Crear valor significa transformar recursos en bienes o servicios que resulten útiles para las personas.",
+      whyCorrect:
+        "La opción D es correcta porque un producto crea valor cuando incorpora utilidad y satisface necesidades.",
+      whyWrong: {
+        0: "Incrementar cuota de mercado puede ser una consecuencia, pero no define la creación de valor.",
+        1: "Una buena cadena de proveedores ayuda, pero no es el concepto central.",
+        2: "La tecnología y el personal pueden contribuir, pero el valor depende de la utilidad para satisfacer necesidades."
       }
     }
-  ]
+  },
+  {
+    q: "¿Qué tipo de tributo es aquel que no conlleva contraprestación directa y que se dedica a la financiación general del gasto público?",
+    options: [
+      "Impuestos.",
+      "Contribuciones especiales.",
+      "Tasas.",
+      "Sablazos.",
+    ],
+    correct: 0,
+    explain: {
+      detail:
+        "Los tributos pueden ser impuestos, tasas o contribuciones especiales según exista o no una contraprestación directa.",
+      whyCorrect:
+        "La opción A es correcta porque los impuestos financian el gasto público general sin contraprestación directa.",
+      whyWrong: {
+        1: "Las contribuciones especiales se pagan por un beneficio derivado de una obra o servicio público.",
+        2: "Las tasas se pagan por recibir un servicio o trámite concreto.",
+        3: "Sablazos no es una categoría tributaria."
+      }
+    }
+  },
+  {
+    q: "Cuando el vendedor quiere dejar constancia de la oferta de un determinado bien o servicio y sus condiciones de entrega, utilizará:",
+    options: [
+      "La factura.",
+      "El presupuesto.",
+      "El albarán.",
+      "El pedido.",
+    ],
+    correct: 1,
+    explain: {
+      detail:
+        "El presupuesto recoge una oferta previa con precio, condiciones y características del bien o servicio.",
+      whyCorrect:
+        "La opción B es correcta porque el presupuesto sirve para dejar constancia de la oferta del vendedor.",
+      whyWrong: {
+        0: "La factura acredita legalmente una operación ya realizada.",
+        2: "El albarán justifica la entrega de mercancía.",
+        3: "El pedido es la solicitud formal del comprador."
+      }
+    }
+  },
+  {
+    q: "El documento formal que incorpora una orden de pago, por la que una persona ordena pagar una determinada cantidad de dinero al poseedor de esta a su vencimiento:",
+    options: [
+      "Cheque.",
+      "Letra de cambio.",
+      "Recibo normalizado.",
+      "Transferencia bancaria.",
+    ],
+    correct: 1,
+    explain: {
+      detail:
+        "La letra de cambio es un documento mercantil usado como instrumento de pago aplazado.",
+      whyCorrect:
+        "La opción B es correcta porque la letra de cambio incorpora una orden de pago a favor de su poseedor al vencimiento.",
+      whyWrong: {
+        0: "El cheque es una orden de pago, pero no se ajusta a esta definición de vencimiento y transmisión de derecho.",
+        2: "El recibo normalizado se usa para domiciliaciones o cobros periódicos.",
+        3: "La transferencia bancaria es una operación bancaria, no este documento formal."
+      }
+    }
+  },
+  {
+    q: "El documento que recoge los cobros y pagos que tiene previstos la empresa, en base a las operaciones que va a realizar a corto plazo, se denomina:",
+    options: [
+      "Plan de marketing.",
+      "Plan de tesorería.",
+      "Plan contable.",
+      "Sistema tributario.",
+    ],
+    correct: 1,
+    explain: {
+      detail:
+        "El plan de tesorería permite prever entradas y salidas de dinero a corto plazo.",
+      whyCorrect:
+        "La opción B es correcta porque el plan de tesorería recoge cobros y pagos previstos.",
+      whyWrong: {
+        0: "El plan de marketing se centra en producto, precio, comunicación y ventas.",
+        2: "El plan contable organiza cuentas y registros contables.",
+        3: "El sistema tributario regula impuestos y tributos."
+      }
+    }
+  },
+  {
+    q: "El Estado puede conseguir los ingresos públicos de:",
+    options: [
+      "Las donaciones y la deuda pública.",
+      "La extracción o expropiación.",
+      "Los ingresos contractuales.",
+      "Todas son correctas.",
+    ],
+    correct: 3,
+    explain: {
+      detail:
+        "El Estado obtiene ingresos por diferentes vías, tanto tributarias como no tributarias.",
+      whyCorrect:
+        "La opción D es correcta porque todas las opciones representan posibles fuentes de ingresos públicos.",
+      whyWrong: {
+        0: "Es correcta, pero incompleta.",
+        1: "Es correcta, pero incompleta.",
+        2: "Es correcta, pero incompleta."
+      }
+    }
+  },
+  {
+    q: "El impuesto que se encarga de gravar el consumo es:",
+    options: [
+      "El IVA.",
+      "El IRPF.",
+      "El Impuesto sobre Sociedades.",
+      "La declaración censal.",
+    ],
+    correct: 0,
+    explain: {
+      detail:
+        "El IVA es un impuesto indirecto que grava el consumo de bienes y servicios.",
+      whyCorrect:
+        "La opción A es correcta porque el IVA grava el consumo.",
+      whyWrong: {
+        1: "El IRPF grava la renta de las personas físicas.",
+        2: "El Impuesto sobre Sociedades grava beneficios empresariales.",
+        3: "La declaración censal es una obligación administrativa, no un impuesto."
+      }
+    }
+  },
+  {
+    q: "El impuesto que se encarga de gravar las rentas de cada persona física es:",
+    options: [
+      "El IVA.",
+      "El IRPF.",
+      "El Impuesto sobre Sociedades.",
+      "La declaración censal.",
+    ],
+    correct: 1,
+    explain: {
+      detail:
+        "El IRPF es un impuesto personal, directo y progresivo sobre la renta de las personas físicas.",
+      whyCorrect:
+        "La opción B es correcta porque el IRPF grava las rentas de cada persona física.",
+      whyWrong: {
+        0: "El IVA grava el consumo.",
+        2: "El Impuesto sobre Sociedades grava beneficios de personas jurídicas.",
+        3: "La declaración censal no es un impuesto."
+      }
+    }
+  },
+  {
+    q: "La base liquidable del IRPF es:",
+    options: [
+      "Igual a la base imponible.",
+      "La parte que queda exenta de la aplicación del tributo.",
+      "La cantidad que finalmente es sometida al gravamen.",
+      "El tipo impositivo progresivo.",
+    ],
+    correct: 2,
+    explain: {
+      detail:
+        "La base liquidable se obtiene tras aplicar reducciones a la base imponible y sobre ella se calcula el impuesto.",
+      whyCorrect:
+        "La opción C es correcta porque es la cantidad que finalmente se somete al gravamen.",
+      whyWrong: {
+        0: "No siempre es igual a la base imponible, porque pueden aplicarse reducciones.",
+        1: "No es la parte exenta, sino la cantidad gravada.",
+        3: "El tipo impositivo es el porcentaje aplicado, no la base."
+      }
+    }
+  },
+  {
+    q: "Según el análisis PESTEL, el factor ecológico del macroentorno hace referencia a:",
+    options: [
+      "Inflación, política monetaria, desempleo...",
+      "Demografía, educación, estilo de vida...",
+      "Contabilidad, legislación, salubridad...",
+      "Energía, concienciación ambiental, restricción de emisiones...",
+    ],
+    correct: 3,
+    explain: {
+      detail:
+        "El análisis PESTEL estudia factores políticos, económicos, sociales, tecnológicos, ecológicos y legales.",
+      whyCorrect:
+        "La opción D es correcta porque el factor ecológico incluye energía, conciencia ambiental y restricciones de emisiones.",
+      whyWrong: {
+        0: "Eso corresponde al factor económico.",
+        1: "Eso corresponde al factor social.",
+        2: "Eso mezcla elementos legales y administrativos, no ecológicos."
+      }
+    }
+  }
+]
 },
-
 {
   id: "ap-u3",
-  title: "AP · U3 · Comunicación y relación con el paciente",
-  summary: [
+title: "AP · U3 · Marketing y análisis de mercado",
+summary: [
+  "1️⃣ Visión general de la unidad\nLa unidad explica el concepto de marketing y el análisis de mercado como herramientas clave para que una empresa detecte necesidades, cree valor y tome decisiones estratégicas. El marketing no es solo vender o hacer publicidad, sino planificar productos, precios, promoción y distribución para generar intercambios útiles.",
 
-"1️⃣ Introducción general\nLa unidad explica cómo debe comunicarse un profesional sanitario con los pacientes, entendiendo tanto el lenguaje verbal como el no verbal, los aspectos psicológicos implicados en la enfermedad y la importancia del apoyo emocional. Se busca interpretar señales, mejorar la interacción y atender situaciones especiales con empatía y respeto.",
+  "2️⃣ Concepto de marketing\nEl marketing es la planificación y ejecución de la concepción del producto, la fijación de precios, la promoción y la distribución de ideas, bienes y servicios. Su finalidad es crear relaciones de intercambio que satisfagan objetivos individuales y organizacionales.",
 
-"2️⃣ Elementos básicos de la comunicación\n• Emisor, receptor, mensaje, canal, código y contexto forman el proceso comunicativo.\n• La comunicación eficaz implica transmitir y comprender correctamente.\n• Una buena comunicación previene conflictos, mejora la relación terapéutica y aumenta la seguridad del paciente.",
+  "3️⃣ Funciones del marketing\nLas funciones principales del marketing son:\n• Funciones de análisis: detectar necesidades, estudiar el mercado y reconocer oportunidades.\n• Funciones de planificación y decisión: decidir qué hacer con los recursos disponibles para aprovechar esas oportunidades.",
 
-"3️⃣ Obstáculos en la comunicación\n• Obstáculos semánticos: palabras ambiguas o mal interpretadas.\n• Obstáculos psicológicos: ansiedad, miedo, prejuicios.\n• Obstáculos fisiológicos: problemas auditivos o visuales.\n• Obstáculos físicos: ruido, distancia, barreras.\n• Obstáculos socioculturales: idioma, valores, religión.\nSuperarlos requiere claridad, empatía y adaptación.",
+  "4️⃣ Marketing estratégico y operativo\nEl marketing estratégico se centra en el análisis continuo del mercado, las necesidades del público objetivo y las oportunidades a largo plazo. El marketing operativo se ocupa de poner en marcha medidas concretas y tácticas para aprovechar esas oportunidades.",
 
-"4️⃣ Características del proceso comunicativo eficaz\n• Retroalimentación clara (feedback).\n• Empatía equilibrada sin sobreimplicarse emocionalmente.\n• Asertividad para comunicar con respeto y firmeza.\n• Claridad en el mensaje.\n• Cortesía y respeto como base de la interacción clínica.",
+  "5️⃣ Tipos de marketing\nExisten diferentes tipos de marketing:\n• Interno: dirigido a los integrantes de la organización.\n• Externo: dirigido al público objetivo.\n• Relacional: busca relaciones significativas a largo plazo.\n• Emocional: crea conexión emocional entre producto y consumidor.\n• Social: busca cambiar comportamientos para el bienestar comunitario.\n• Político: busca apoyo de votantes.",
 
-"5️⃣ Técnicas de comunicación verbal\n• Puede ser oral, escrita o signada.\n• La comunicación verbal requiere:\n  - Preparar el mensaje.\n  - Adaptarlo al nivel del paciente.\n  - Valorar emociones.\n  - Hablar claro y pausado.\n• Ventajas: rápida, directa.\n• Problemas: puede malinterpretarse si el paciente está nervioso o no comprende bien.",
+  "6️⃣ Orientaciones de la actividad comercial\nLas empresas pueden orientarse hacia el producto, las ventas, el cliente, la competencia o el mercado. La orientación hacia el mercado es la más completa porque anticipa necesidades futuras y alinea la organización con el entorno.",
 
-"6️⃣ Comunicación no verbal\n• Incluye gestos, postura, tonos, miradas y distancia.\n• Componentes clave:\n  - Paralenguaje (tono, ritmo, volumen).\n  - Expresión facial.\n  - Proxemia (distancia adecuada).\n• Es esencial para transmitir confianza y detectar emociones ocultas.",
+  "7️⃣ Concepto de mercado\nEl mercado está formado por individuos o entidades con necesidades, recursos y capacidad de compra, que participan en un lugar o contexto de intercambio comercial. Los beneficios obtenidos por la empresa no forman parte del concepto de mercado, sino que son un resultado de la actividad empresarial.",
 
-"7️⃣ Fases de atención al paciente (comunicación terapéutica)\n1. Acogida: saludo cortés, presentación y explicación inicial.\n2. Exploración: preguntas abiertas, escucha activa.\n3. Información: explicar procedimiento, riesgos y preparación.\n4. Finalización: despedida, recordar instrucciones y resolver dudas.\n• Protocolos en imagen y radioterapia incluyen recepción, preparación y acompañamiento durante todo el proceso, manteniendo información clara y respeto constante.",
+  "8️⃣ Análisis de la demanda\nLa demanda es la cantidad de producto que los compradores desean adquirir en determinadas condiciones. Depende de factores como la renta, el precio del producto, el comportamiento del consumidor y la existencia de productos sustitutivos o competidores.",
 
-"8️⃣ Situaciones especiales en la atención\n• Pacientes agresivos: mantener calma, llamar apoyo, establecer límites.\n• Pacientes mayores: hablar lento, usar frases simples, revisar comprensión.\n• Pacientes pediátricos: lenguaje infantil, apoyo emocional, presencia del familiar.\n• Pacientes con limitaciones físicas o cognitivas: adaptar ritmo, simplificar instrucciones, apoyar con gestos o demostraciones.",
+  "9️⃣ Lean Startup y PMV\nEl método Lean Startup reduce la incertidumbre mediante experimentación. Se basa en formular hipótesis, diseñar experimentos, crear un Producto Mínimo Viable (PMV), medir resultados y aprender. El PMV es una versión básica del producto que permite probar si realmente aporta valor al cliente.",
 
-"9️⃣ Mediación cultural en el entorno sanitario\n• Respetar diversidad cultural, religiosa y de género.\n• Evitar prejuicios y estereotipos.\n• Usar intérpretes cuando sea necesario.\n• Garantizar comunicación efectiva en pacientes que no hablan el idioma.",
+  "🔟 Resumen final\nEl marketing ayuda a comprender el mercado, detectar oportunidades, crear productos útiles y establecer relaciones duraderas con el cliente. Para ello combina análisis, estrategia, ejecución, medición y aprendizaje continuo."
+],
 
-"🔟 Desarrollo de la personalidad y conductas\n• La personalidad influye en la forma en que un paciente afronta enfermedad.\n• Factores que la forman: crianza, genética, cultura, experiencias.\n• Tipos de personalidad desadaptativa (dependiente, obsesiva, narcisista, paranoica, etc.).\n• El profesional NO debe diagnosticar ni discutir patologías psicológicas.",
-
-"1️⃣1️⃣ Cambios psicológicos relacionados con la enfermedad\n• Fases emocionales: diagnóstico, tratamiento, remisión, recaída, paliativos.\n• Emociones frecuentes: miedo, tristeza, ansiedad, negación.\n• Requiere apoyo psicológico, comprensión y comunicación clara.",
-
-"1️⃣2️⃣ Psicología del paciente crónico\n• El paciente crónico vive estrés prolongado.\n• Puede sentir frustración, angustia y pérdida de autonomía.\n• La atención psicológica continua es clave para facilitar adaptación y aceptación.",
-
-"1️⃣3️⃣ Mecanismos de defensa ante la enfermedad\n• Negación: rechazar realidad.\n• Proyección: atribuir a otros sentimientos propios.\n• Racionalización: justificar emociones.\n• Aislamiento emocional.\n• Disociación.\n• Regresión.\n• Estos mecanismos ayudan temporalmente, pero deben gestionarse con apoyo adecuado.",
-
-"1️⃣4️⃣ Relación de ayuda (counselling)\n• Implica escuchar activamente, acompañar emocionalmente y facilitar estrategias.\n• Objetivos:\n  - Reducir ansiedad.\n  - Favorecer adaptación.\n  - Mejorar comunicación.\n  - Dar soporte emocional.\n• El profesional debe controlar su propio estrés y mantener límites saludables.",
-
-"1️⃣5️⃣ Resumen final\n• La comunicación efectiva es esencial en la atención sanitaria.\n• El profesional debe dominar comunicación verbal y no verbal.\n• La empatía, el respeto y la claridad mejoran la experiencia del paciente.\n• Comprender aspectos psicológicos permite un trato más humano y profesional.\n• Es clave adaptarse a situaciones especiales y diversidad cultural."
-  ],
-  questions: [
-    {
-      q: "¿Cómo se denomina la capacidad de expresar de manera clara, directa y honesta aquello que se necesita compartir, sin que ello produzca una mala reacción en el interlocutor?",
-      options: ["Empatía", "Asertividad", "Quinesia", "Ninguna de las anteriores es correcta."],
-      correct: 1,
-      explain: {
-        detail:
-          "La asertividad es un estilo de comunicación en el que la persona defiende sus derechos y expresa sus opiniones de forma clara y respetuosa, sin agredir ni someterse.",
-        whyCorrect:
-          "Es correcta ‘Asertividad’ porque define exactamente esa capacidad de expresar lo que se piensa y siente sin dañar la relación.",
-        whyWrong: {
-          0: "La empatía es la capacidad de ponerse en el lugar del otro, no de expresar lo propio.",
-          2: "La quinesia se refiere al lenguaje corporal, no al estilo de expresión del mensaje.",
-          3: "Sí existe un término correcto para esa definición, por lo que esta opción es falsa."
-        }
-      }
-    },
-    {
-      q: "¿Cuál de las siguientes es una medida recomendable cuando se trata con personas agresivas?",
-      options: ["Responder con agresividad", "Tener una actitud asertiva", "Ignorar a la persona", "Ninguna es correcta."],
-      correct: 1,
-      explain: {
-        detail:
-          "Ante una persona agresiva es importante mantener la calma, no escalar el conflicto y comunicarse con firmeza pero con respeto. La asertividad permite marcar límites sin provocar más hostilidad.",
-        whyCorrect:
-          "‘Tener una actitud asertiva’ es la opción correcta porque propone una estrategia equilibrada y profesional.",
-        whyWrong: {
-          0: "Responder con agresividad solo aumenta el conflicto y puede poner en riesgo la seguridad.",
-          2: "Ignorar a la persona puede empeorar la situación y no resuelve el problema de fondo.",
-          3: "Sí hay una respuesta adecuada, por lo que ‘Ninguna’ no es correcta."
-        }
-      }
-    },
-    {
-      q: "¿Cuál de los siguientes es un mecanismo psicológico de defensa ante la enfermedad?",
-      options: ["Disociación", "Proyección", "Aislamiento", "Todas son correctas"],
-      correct: 3,
-      explain: {
-        detail:
-          "Los mecanismos de defensa son recursos inconscientes que utiliza la mente para protegerse de emociones o situaciones difíciles. Ante una enfermedad, la persona puede proyectar, aislarse o disociarse, entre otros mecanismos.",
-        whyCorrect:
-          "‘Todas son correctas’ es adecuada porque disociación, proyección y aislamiento son mecanismos de defensa reconocidos.",
-        whyWrong: {
-          0: "La disociación sí es un mecanismo de defensa, no puede ser la única respuesta correcta.",
-          1: "La proyección también es un mecanismo de defensa, por lo que no excluye a las demás.",
-          2: "El aislamiento igualmente forma parte de los mecanismos de defensa descritos."
-        }
-      }
-    },
-    {
-      q: "¿Cuál de los siguientes no es un tipo de comunicación verbal?",
-      options: ["Oral", "Escrita", "Signada", "Todas las indicadas son comunicaciones verbales"],
-      correct: 3,
-      explain: {
-        detail:
-          "La comunicación verbal es aquella que utiliza palabras, ya sea habladas, escritas o a través de signos (como la lengua de signos). Lo importante es que existe un código lingüístico.",
-        whyCorrect:
-          "Es correcta ‘Todas las indicadas son comunicaciones verbales’ porque oral, escrita y signada usan palabras y un código.",
-        whyWrong: {
-          0: "La comunicación oral utiliza la voz y es claramente verbal.",
-          1: "La comunicación escrita utiliza palabras en formato texto, también verbal.",
-          2: "La comunicación signada emplea signos que sustituyen a las palabras habladas, pero sigue siendo lenguaje verbal."
-        }
-      }
-    },
-    {
-      q: "¿Cuál de los siguientes no forma parte de la comunicación no verbal?",
-      options: ["Paralenguaje", "Prosémica", "Quinesia", "Todas las anteriores son no verbales"],
-      correct: 3,
-      explain: {
-        detail:
-          "La comunicación no verbal incluye gestos, posturas, distancias físicas, tono de voz, silencios y otros elementos que acompañan o sustituyen a las palabras. El paralenguaje, la prosémica y la quinesia son ejemplos de ello.",
-        whyCorrect:
-          "‘Todas las anteriores son no verbales’ es correcta porque las tres opciones son componentes de la comunicación no verbal.",
-        whyWrong: {
-          0: "El paralenguaje abarca el tono, volumen y ritmo de la voz, no el contenido verbal.",
-          1: "La prosémica se refiere al uso del espacio y la distancia interpersonal.",
-          2: "La quinesia estudia los movimientos del cuerpo, como gestos y posturas."
-        }
-      }
-    },
-    {
-      q: "¿En qué alteración de la personalidad se caracteriza por una profunda tristeza o apatía?",
-      options: ["Narcisista", "Antisocial", "Depresiva", "Esquizoide"],
-      correct: 2,
-      explain: {
-        detail:
-          "Los rasgos depresivos se asocian a tristeza intensa, apatía, falta de energía, pérdida de interés y visión negativa de uno mismo y del futuro.",
-        whyCorrect:
-          "‘Depresiva’ es correcta porque la pregunta alude precisamente a síntomas típicos de este tipo de alteración.",
-        whyWrong: {
-          0: "En la personalidad narcisista predominan la grandiosidad y la necesidad de admiración, no la apatía.",
-          1: "La personalidad antisocial se caracteriza por desprecio a las normas y falta de empatía.",
-          3: "La esquizoide se asocia a aislamiento emocional, pero no necesariamente a profunda tristeza."
-        }
-      }
-    },
-    {
-      q: "¿Qué elemento de la comunicación constituye el sistema de signos o sonidos que utilizamos para convertir la idea del mensaje en algo que el receptor pueda interpretar?",
-      options: ["Canal", "Emisor", "Código", "Receptor"],
-      correct: 2,
-      explain: {
-        detail:
-          "El código es el sistema de signos que comparten emisor y receptor (por ejemplo, el idioma). Permite transformar ideas en palabras o símbolos comprensibles.",
-        whyCorrect:
-          "Es correcta la opción ‘Código’ porque es el sistema de signos que se usa para codificar el mensaje.",
-        whyWrong: {
-          0: "El canal es el medio físico por el que circula el mensaje (voz, papel, pantalla...).",
-          1: "El emisor es quien genera y envía el mensaje.",
-          3: "El receptor es quien recibe e interpreta el mensaje, no el sistema de signos."
-        }
-      }
-    },
-    {
-      q: "¿Qué nombre recibe la capacidad de entender la posición de las otras personas que intervienen en la comunicación?",
-      options: ["Asertividad", "Empatía", "Retroalimentación", "Paralenguaje"],
-      correct: 1,
-      explain: {
-        detail:
-          "La empatía es la capacidad de ponerse en el lugar del otro, comprender sus emociones, pensamientos y perspectiva, algo clave en la relación con el paciente.",
-        whyCorrect:
-          "‘Empatía’ es correcta porque la pregunta describe literalmente esa habilidad.",
-        whyWrong: {
-          0: "La asertividad es expresar lo propio, no ponerse en el lugar del otro.",
-          2: "La retroalimentación es la respuesta que da el receptor para indicar si ha entendido el mensaje.",
-          3: "El paralenguaje se refiere al cómo se dice algo (tono, volumen), no a entender al otro."
-        }
-      }
-    },
-    {
-      q: "La situación (o circunstancias) en las que se produce la comunicación y que puede afectar a cómo se interpreta el mensaje se conoce como...",
-      options: ["Contexto", "Casuística", "Ambiente", "Todas son incorrectas."],
-      correct: 0,
-      explain: {
-        detail:
-          "El contexto incluye el lugar, el momento, la relación entre las personas y los factores culturales. Todo ello influye en cómo se entiende un mensaje.",
-        whyCorrect:
-          "‘Contexto’ es la respuesta correcta porque abarca las circunstancias que rodean la comunicación.",
-        whyWrong: {
-          1: "‘Casuística’ se refiere a casos concretos, no a las circunstancias generales de la comunicación.",
-          2: "El ambiente puede formar parte del contexto, pero es un término más limitado.",
-          3: "Sí existe un término correcto, por lo que esta opción es falsa."
-        }
-      }
-    },
-    {
-      q: "Los cuidados destinados a reducir el sufrimiento en enfermedades terminales son:",
-      options: [
-        "Cuidados paliativos",
-        "Tratamientos mitigadores",
-        "Procedimientos calmantes",
-        "Atenciones reductoras",
-      ],
-      correct: 0,
-      explain: {
-        detail:
-          "Los cuidados paliativos buscan aliviar el dolor y el sufrimiento físico, emocional y espiritual en pacientes con enfermedades avanzadas o terminales, mejorando su calidad de vida.",
-        whyCorrect:
-          "‘Cuidados paliativos’ es el término técnico reconocido para este tipo de atención.",
-        whyWrong: {
-          1: "‘Tratamientos mitigadores’ no es un término específico en el ámbito sanitario.",
-          2: "‘Procedimientos calmantes’ es demasiado genérico y poco técnico.",
-          3: "‘Atenciones reductoras’ no se utiliza como concepto en cuidados al final de la vida."
-        }
+questions: [
+  {
+    q: "¿Cuál de las siguientes no es una orientación para la actividad comercial según el enfoque del marketing?",
+    options: [
+      "Orientación hacia el producto.",
+      "Orientación hacia las ventas.",
+      "Orientación hacia el cliente o consumidor.",
+      "Orientación hacia la innovación tecnológica.",
+    ],
+    correct: 3,
+    explain: {
+      detail:
+        "Las orientaciones clásicas de la actividad comercial incluyen producto, ventas, cliente, competencia y mercado.",
+      whyCorrect:
+        "La opción D es correcta porque la orientación hacia la innovación tecnológica no aparece como orientación comercial básica en este enfoque.",
+      whyWrong: {
+        0: "La orientación hacia el producto sí es una orientación comercial.",
+        1: "La orientación hacia las ventas sí es una orientación comercial.",
+        2: "La orientación hacia el cliente o consumidor sí es una orientación comercial."
       }
     }
-  ]
+  },
+  {
+    q: "¿Cuál de los siguientes elementos no pertenece al concepto de mercado?",
+    options: [
+      "Beneficios obtenidos por la empresa.",
+      "Conjunto de individuos con necesidades.",
+      "Recursos y capacidad de compra.",
+      "Lugar de intercambio comercial.",
+    ],
+    correct: 0,
+    explain: {
+      detail:
+        "El mercado se compone de personas o entidades con necesidades, capacidad de compra y posibilidad de intercambio.",
+      whyCorrect:
+        "La opción A es correcta porque los beneficios de la empresa no forman parte del concepto de mercado, sino que son un resultado posible.",
+      whyWrong: {
+        1: "El conjunto de individuos con necesidades sí forma parte del mercado.",
+        2: "Los recursos y la capacidad de compra sí forman parte del mercado.",
+        3: "El lugar o contexto de intercambio comercial sí forma parte del mercado."
+      }
+    }
+  },
+  {
+    q: "¿Cuál es el objetivo principal del marketing relacional?",
+    options: [
+      "Incrementar las ventas a corto plazo.",
+      "Mantener una relación significativa a largo plazo con el público objetivo.",
+      "Realizar promociones y descuentos.",
+      "Atraer nuevos clientes a través de la publicidad masiva.",
+    ],
+    correct: 1,
+    explain: {
+      detail:
+        "El marketing relacional busca crear vínculos estables y de confianza con los clientes.",
+      whyCorrect:
+        "La opción B es correcta porque su objetivo es mantener relaciones significativas a largo plazo.",
+      whyWrong: {
+        0: "Aumentar ventas a corto plazo no es el objetivo central del marketing relacional.",
+        2: "Las promociones pueden usarse, pero no definen el marketing relacional.",
+        3: "La publicidad masiva se relaciona más con captación, no con relación duradera."
+      }
+    }
+  },
+  {
+    q: "¿Cuál es la definición más completa de marketing?",
+    options: [
+      "El proceso de ventas de productos y servicios.",
+      "El estudio de competencia y comportamiento del consumidor.",
+      "La actividad de publicidad y análisis de mercado.",
+      "La planificación y ejecución de la concepción del producto, fijación de precios, promoción y distribución de ideas, bienes y servicios para crear relaciones de intercambio que satisfagan objetivos individuales y organizacionales.",
+    ],
+    correct: 3,
+    explain: {
+      detail:
+        "El marketing incluye producto, precio, promoción, distribución y creación de relaciones de intercambio.",
+      whyCorrect:
+        "La opción D es correcta porque recoge la definición completa de marketing.",
+      whyWrong: {
+        0: "Vender es solo una parte del marketing.",
+        1: "El análisis de competencia y consumidor es importante, pero no define todo el marketing.",
+        2: "Publicidad y análisis de mercado son solo partes del proceso."
+      }
+    }
+  },
+  {
+    q: "¿Cuál es la principal diferencia entre marketing estratégico y marketing operativo?",
+    options: [
+      "El marketing estratégico se centra en el corto plazo, mientras que el operativo se centra en el largo plazo.",
+      "El marketing estratégico se ocupa de la implementación de acciones, mientras que el operativo se ocupa del análisis de necesidades del público objetivo.",
+      "El marketing estratégico se ocupa de la publicidad, mientras que el marketing operativo se centra en las ventas.",
+      "El marketing estratégico se centra en el análisis continuo y la identificación de necesidades del público objetivo, mientras que el marketing operativo se focaliza en la puesta en marcha de medidas para aprovechar oportunidades.",
+    ],
+    correct: 3,
+    explain: {
+      detail:
+        "El marketing estratégico analiza y decide a largo plazo; el operativo ejecuta acciones concretas.",
+      whyCorrect:
+        "La opción D es correcta porque distingue análisis estratégico y ejecución operativa.",
+      whyWrong: {
+        0: "Está invertido: el estratégico mira más al largo plazo.",
+        1: "También está invertido: el operativo implementa acciones.",
+        2: "La diferencia no es publicidad frente a ventas."
+      }
+    }
+  },
+  {
+    q: "¿Cuáles son las funciones del marketing en la empresa?",
+    options: [
+      "Funciones de producción y funciones de comercialización.",
+      "Funciones de dirección y gestión y funciones de acción.",
+      "Funciones de evaluación del mercado.",
+      "Funciones de análisis y funciones de planificación y decisión.",
+    ],
+    correct: 3,
+    explain: {
+      detail:
+        "El marketing ayuda a analizar oportunidades y a planificar decisiones comerciales.",
+      whyCorrect:
+        "La opción D es correcta porque sus funciones principales son análisis y planificación-decisión.",
+      whyWrong: {
+        0: "Producción no es una función propia del marketing.",
+        1: "No es la clasificación concreta del tema.",
+        2: "La evaluación del mercado es solo una parte del análisis."
+      }
+    }
+  },
+  {
+    q: "¿Qué caracteriza al marketing emocional?",
+    options: [
+      "La segmentación del mercado basada en datos demográficos.",
+      "El uso intensivo de técnicas de venta agresivas.",
+      "La implementación de estrategias de precios competitivos.",
+      "La creación de una conexión emocional entre el producto y el consumidor.",
+    ],
+    correct: 3,
+    explain: {
+      detail:
+        "El marketing emocional busca asociar la marca o producto a experiencias y sentimientos positivos.",
+      whyCorrect:
+        "La opción D es correcta porque se basa en crear una conexión emocional con el consumidor.",
+      whyWrong: {
+        0: "Eso corresponde a segmentación de mercado.",
+        1: "Las ventas agresivas se asocian más a orientación a ventas.",
+        2: "El precio competitivo no define el marketing emocional."
+      }
+    }
+  },
+  {
+    q: "¿Qué enfoque de marketing se centra en la anticipación de problemas y necesidades futuras del mercado?",
+    options: [
+      "Orientación hacia el producto.",
+      "Orientación hacia las ventas.",
+      "Orientación hacia la competencia.",
+      "Orientación hacia el mercado.",
+    ],
+    correct: 3,
+    explain: {
+      detail:
+        "La orientación hacia el mercado busca comprender y anticipar necesidades futuras.",
+      whyCorrect:
+        "La opción D es correcta porque anticipa problemas, cambios y necesidades del mercado.",
+      whyWrong: {
+        0: "La orientación al producto se centra en la oferta propia.",
+        1: "La orientación a ventas se centra en vender más.",
+        2: "La orientación a la competencia compara la empresa con sus rivales."
+      }
+    }
+  },
+  {
+    q: "¿Qué es el Producto Mínimo Viable (PMV) en el contexto del método Lean Startup?",
+    options: [
+      "Una versión de prueba del producto con características básicas necesarias para satisfacer las necesidades de los clientes.",
+      "Un producto final completo.",
+      "Un concepto teórico sin implementación real.",
+      "Un plan de marketing detallado.",
+    ],
+    correct: 0,
+    explain: {
+      detail:
+        "El PMV permite probar una idea con el mínimo esfuerzo y recoger aprendizaje real del mercado.",
+      whyCorrect:
+        "La opción A es correcta porque el PMV es una versión básica de prueba del producto.",
+      whyWrong: {
+        1: "No es el producto final completo.",
+        2: "No es solo teórico, se implementa para probar.",
+        3: "No es un plan de marketing, sino una versión inicial del producto."
+      }
+    }
+  },
+  {
+    q: "El marketing interno se refiere a:",
+    options: [
+      "Las acciones del marketing dentro de la organización dirigidas a sus propios integrantes.",
+      "Las estrategias de comunicación de la empresa hacia su público objetivo.",
+      "La publicidad realizada dentro del país de origen de la empresa.",
+      "Las ventas directas a los empleados de la empresa.",
+    ],
+    correct: 0,
+    explain: {
+      detail:
+        "El marketing interno busca implicar y satisfacer a los miembros de la organización.",
+      whyCorrect:
+        "La opción A es correcta porque se dirige a los propios integrantes de la empresa.",
+      whyWrong: {
+        1: "Eso corresponde al marketing externo.",
+        2: "No tiene que ver con el país donde se hace publicidad.",
+        3: "No significa vender productos a empleados."
+      }
+    }
+  }
+]
 },
 
 {
