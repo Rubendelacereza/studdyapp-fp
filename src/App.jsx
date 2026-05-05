@@ -1017,778 +1017,782 @@ questions: [
 ],
 },
 // Aquí puedes añadir tus 40 preguntas cuando quieras
-    {
+{
   id: "fol-final",
-title: "⭐ Protección Radiológica · Prueba final · 40 preguntas",
-isFinal: true,
-questions: [
-  {
-    q: "¿A qué hace referencia el dispositivo de la imagen?",
-    options: [
-      "Dosímetro activo",
-      "Dosímetro pasivo",
-      "Dosímetro personal",
-      "B y C son correctas"
-    ],
-    correct: 3,
-    explain: {
-      detail: "El dispositivo mostrado corresponde a un dosímetro utilizado para controlar la dosis recibida.",
-      whyCorrect: "La opción D es correcta porque hace referencia a un dosímetro pasivo y personal.",
-      whyWrong: {
-        A: "No es activo porque no mide en tiempo real ni requiere alimentación eléctrica.",
-        B: "Es correcta, pero incompleta.",
-        C: "Es correcta, pero incompleta."
+  title: "⭐ Protección Radiológica · Prueba final · 40 preguntas",
+  isFinal: true,
+  questions: [
+    {
+      q: "¿A qué hace referencia el dispositivo de la imagen?",
+      image: "/images/IMAGE1.png",
+      options: [
+        "Dosímetro activo",
+        "Dosímetro pasivo",
+        "Dosímetro personal",
+        "B y C son correctas"
+      ],
+      correct: 3,
+      explain: {
+        detail: "El dispositivo mostrado corresponde a un dosímetro utilizado para controlar la dosis recibida.",
+        whyCorrect: "La opción D es correcta porque hace referencia a un dosímetro pasivo y personal.",
+        whyWrong: {
+          A: "No es activo porque no mide en tiempo real ni requiere alimentación eléctrica.",
+          B: "Es correcta, pero incompleta.",
+          C: "Es correcta, pero incompleta."
+        }
       }
-    }
-  },
-  {
-    q: "¿A qué hace referencia este símbolo?",
-    options: [
-      "Zona vigilada",
-      "Zona de permanencia reglamentada",
-      "Zona controlada",
-      "Zona de acceso prohibido"
-    ],
-    correct: 0,
-    explain: {
-      detail: "Los símbolos de señalización radiológica identifican el tipo de zona según el riesgo.",
-      whyCorrect: "La opción A es correcta porque el símbolo corresponde a una zona vigilada.",
-      whyWrong: {
-        B: "No corresponde a permanencia reglamentada.",
-        C: "La zona controlada tiene otra señalización.",
-        D: "La zona de acceso prohibido indica mayor riesgo."
-      }
-    }
-  },
-  {
-    q: "Ante contaminación radiactiva externa en medicina nuclear se recomienda:",
-    options: [
-      "Proteger al personal que realice la descontaminación",
-      "Medir los niveles de contaminación",
-      "Delimitar y marcar la zona del accidente",
-      "Todas son correctas"
-    ],
-    correct: 3,
-    explain: {
-      detail: "Ante contaminación externa se debe actuar de forma organizada y segura.",
-      whyCorrect: "La opción D es correcta porque hay que proteger al personal, medir niveles y delimitar la zona.",
-      whyWrong: {
-        A: "Es correcta, pero incompleta.",
-        B: "Es correcta, pero incompleta.",
-        C: "Es correcta, pero incompleta."
-      }
-    }
-  },
-  {
-    q: "Antes de exponer a una persona a una radiación ionizante estas deben firmar:",
-    options: [
-      "Consentimiento informado",
-      "Consentimiento formado",
-      "Desconsentimiento informado",
-      "Información básica"
-    ],
-    correct: 0,
-    explain: {
-      detail: "Antes de una exposición médica debe informarse al paciente de riesgos y beneficios.",
-      whyCorrect: "La opción A es correcta porque debe firmarse el consentimiento informado.",
-      whyWrong: {
-        B: "No es el término correcto.",
-        C: "No existe como documento válido.",
-        D: "La información básica no sustituye al consentimiento."
-      }
-    }
-  },
-  {
-    q: "El criterio ALARA (As Low As Reasonably Achievable) se relaciona con:",
-    options: [
-      "Justificación",
-      "Blindaje",
-      "Limitación de dosis",
-      "Optimización"
-    ],
-    correct: 3,
-    explain: {
-      detail: "ALARA significa mantener las dosis tan bajas como sea razonablemente posible.",
-      whyCorrect: "La opción D es correcta porque ALARA se relaciona con la optimización.",
-      whyWrong: {
-        A: "La justificación valora si la práctica está indicada.",
-        B: "El blindaje es una medida de protección.",
-        C: "La limitación fija máximos de dosis."
-      }
-    }
-  },
-  {
-    q: "El equipo de la imagen es:",
-    options: [
-      "Detector de fluorescencia",
-      "Dosímetro",
-      "Detector de termoradiactividad",
-      "Radiactivímetro"
-    ],
-    correct: 1,
-    explain: {
-      detail: "El equipo mostrado sirve para medir dosis de radiación.",
-      whyCorrect: "La opción B es correcta porque se trata de un dosímetro.",
-      whyWrong: {
-        A: "No corresponde a un detector de fluorescencia.",
-        C: "No es un término técnico adecuado.",
-        D: "No es un radiactivímetro."
-      }
-    }
-  },
-  {
-    q: "El personal técnico de imagen (TSID) se clasifica como:",
-    options: [
-      "Categoría A",
-      "Categoría B",
-      "Categoría C",
-      "Categoría D"
-    ],
-    correct: 1,
-    explain: {
-      detail: "El personal expuesto se clasifica según la dosis que puede recibir.",
-      whyCorrect: "La opción B es correcta porque el TSID se clasifica como categoría B.",
-      whyWrong: {
-        A: "Categoría A implica mayor nivel de exposición.",
-        C: "No existe esta categoría en este contexto.",
-        D: "No existe esta categoría en este contexto."
-      }
-    }
-  },
-  {
-    q: "El proceso de gestión de los materiales radiactivos está formado por diferentes etapas:",
-    options: [
-      "Protección, separación, transporte y evacuación",
-      "Segregación, transporte y almacenamiento",
-      "Segregación, caracterización, transporte, almacenamiento y evacuación",
-      "Caracterización, transporte y almacenamiento"
-    ],
-    correct: 2,
-    explain: {
-      detail: "La gestión de residuos radiactivos sigue varias fases ordenadas.",
-      whyCorrect: "La opción C es correcta porque incluye segregación, caracterización, transporte, almacenamiento y evacuación.",
-      whyWrong: {
-        A: "Faltan fases importantes.",
-        B: "Falta caracterización y evacuación.",
-        D: "Falta segregación y evacuación."
-      }
-    }
-  },
-  {
-    q: "El siguiente plano hace referencia a la unidad de:",
-    options: [
-      "Radiodiagnóstico",
-      "Medicina nuclear",
-      "Teleterapia",
-      "Braquiterapia"
-    ],
-    correct: 0,
-    explain: {
-      detail: "El plano corresponde a la distribución típica de una unidad de imagen diagnóstica.",
-      whyCorrect: "La opción A es correcta porque hace referencia a radiodiagnóstico.",
-      whyWrong: {
-        B: "Medicina nuclear requiere zonas activas y radiofarmacia.",
-        C: "Teleterapia incluye búnker y sala de tratamiento.",
-        D: "Braquiterapia tiene áreas específicas para fuentes."
-      }
-    }
-  },
-  {
-    q: "En el programa de garantía de calidad en imagen para el diagnóstico es cierto:",
-    options: [
-      "Se han de aplicar protocolos de control de calidad",
-      "Cada procedimiento en cada equipo tiene un protocolo establecido",
-      "Se ha de formar en protección radiológica al personal que use los equipos",
-      "Todas son correctas"
-    ],
-    correct: 3,
-    explain: {
-      detail: "La garantía de calidad asegura imágenes útiles con la menor dosis posible.",
-      whyCorrect: "La opción D es correcta porque todas forman parte del programa de garantía de calidad.",
-      whyWrong: {
-        A: "Es correcta, pero incompleta.",
-        B: "Es correcta, pero incompleta.",
-        C: "Es correcta, pero incompleta."
-      }
-    }
-  },
-  {
-    q: "En España, los sucesos de emergencia que ocurran en las instalaciones radiactivas se han de notificar a:",
-    options: [
-      "Dirección General de Política Energética y Minas (DGPEM)",
-      "Consejo de Seguridad Nacional (CSN)",
-      "Consejo de cada Comunidad Autónoma",
-      "A y B son correctas"
-    ],
-    correct: 3,
-    explain: {
-      detail: "Los sucesos relevantes deben notificarse a organismos competentes.",
-      whyCorrect: "La opción D es correcta porque se notifican a la DGPEM y al CSN.",
-      whyWrong: {
-        A: "Es correcta, pero incompleta.",
-        B: "Es correcta, pero incompleta.",
-        C: "No es la opción marcada como correcta en este test."
-      }
-    }
-  },
-  {
-    q: "En esta imagen se muestran:",
-    options: [
-      "Equipos de teleterapia",
-      "Equipos de braquiterapia",
-      "Equipos de radiología convencional",
-      "Equipos de radiología especial"
-    ],
-    correct: 1,
-    explain: {
-      detail: "La braquiterapia utiliza equipos y fuentes para tratamientos próximos o internos.",
-      whyCorrect: "La opción B es correcta porque la imagen corresponde a equipos de braquiterapia.",
-      whyWrong: {
-        A: "Teleterapia usa haces externos.",
-        C: "Radiología convencional es diagnóstica.",
-        D: "Radiología especial no corresponde a la imagen."
-      }
-    }
-  },
-  {
-    q: "En la siguiente imagen se muestra un tipo de bulto para el transporte de material radiactivo para lo que es cierto:",
-    options: [
-      "Se denominan bulto de tipo A",
-      "Permite el transporte de elevadísimas cantidades de material radiactivo",
-      "Son mejores que los bultos de tipo B y C",
-      "No se etiquetan"
-    ],
-    correct: 0,
-    explain: {
-      detail: "Los bultos de transporte se clasifican según el riesgo y la actividad transportada.",
-      whyCorrect: "La opción A es correcta porque se trata de un bulto tipo A.",
-      whyWrong: {
-        B: "Las elevadísimas cantidades requieren otros tipos de bulto.",
-        C: "No se clasifican como mejores, sino según uso y resistencia.",
-        D: "Sí deben etiquetarse."
-      }
-    }
-  },
-  {
-    q: "En la siguiente imagen se muestra un:",
-    options: [
-      "Dosímetro de neutrones",
-      "Dosímetro termoluminiscente",
-      "Detector de centelleo",
-      "Contador proporcional"
-    ],
-    correct: 1,
-    explain: {
-      detail: "Los dosímetros termoluminiscentes son frecuentes en dosimetría personal.",
-      whyCorrect: "La opción B es correcta porque corresponde a un dosímetro termoluminiscente.",
-      whyWrong: {
-        A: "No corresponde específicamente a neutrones.",
-        C: "Un detector de centelleo tiene otra finalidad.",
-        D: "Un contador proporcional es un detector gaseoso."
-      }
-    }
-  },
-  {
-    q: "En relación con el diario de operaciones:",
-    options: [
-      "Documento de registro de toda actividad de la instalación radiactiva",
-      "Ha de estar autorizado, sellado y registrado por el CSN",
-      "Completado por el personal titular o supervisor",
-      "Todas son correctas"
-    ],
-    correct: 3,
-    explain: {
-      detail: "El diario de operaciones registra la actividad de la instalación.",
-      whyCorrect: "La opción D es correcta porque todas las afirmaciones son verdaderas.",
-      whyWrong: {
-        A: "Es correcta, pero incompleta.",
-        B: "Es correcta, pero incompleta.",
-        C: "Es correcta, pero incompleta."
-      }
-    }
-  },
-  {
-    q: "Entre las magnitudes radiológicas encontramos:",
-    options: [
-      "Magnitudes físicas fundamentales",
-      "Magnitudes de radioprotección",
-      "Magnitudes operacionales",
-      "Todas son correctas"
-    ],
-    correct: 3,
-    explain: {
-      detail: "Las magnitudes radiológicas se agrupan en varias categorías.",
-      whyCorrect: "La opción D es correcta porque existen magnitudes físicas, de radioprotección y operacionales.",
-      whyWrong: {
-        A: "Es correcta, pero incompleta.",
-        B: "Es correcta, pero incompleta.",
-        C: "Es correcta, pero incompleta."
-      }
-    }
-  },
-  {
-    q: "Entre los factores que afectan a la sensibilidad celular encontramos:",
-    options: [
-      "Fase del ciclo celular",
-      "Edad biológica",
-      "Nivel de diferenciación celular",
-      "Todas son correctas"
-    ],
-    correct: 3,
-    explain: {
-      detail: "La radiosensibilidad depende de factores biológicos y técnicos.",
-      whyCorrect: "La opción D es correcta porque todos afectan a la sensibilidad celular.",
-      whyWrong: {
-        A: "Es correcta, pero incompleta.",
-        B: "Es correcta, pero incompleta.",
-        C: "Es correcta, pero incompleta."
-      }
-    }
-  },
-  {
-    q: "Es un control de calidad en el ámbito sanitario:",
-    options: [
-      "Control de calidad técnica",
-      "Control del riesgo",
-      "Control de optimización",
-      "Todas son correctas"
-    ],
-    correct: 3,
-    explain: {
-      detail: "La calidad sanitaria incluye controles técnicos, de riesgo y de optimización.",
-      whyCorrect: "La opción D es correcta porque todas forman parte del control de calidad.",
-      whyWrong: {
-        A: "Es correcta, pero incompleta.",
-        B: "Es correcta, pero incompleta.",
-        C: "Es correcta, pero incompleta."
-      }
-    }
-  },
-  {
-    q: "Es un plan de emergencia en teleterapia:",
-    options: [
-      "Presencia de personal en la sala de exploración",
-      "Errores en la administración de radiofármacos",
-      "Derrame de material radiactivo",
-      "Fallecimiento de persona con implantes"
-    ],
-    correct: 0,
-    explain: {
-      detail: "En teleterapia se contemplan riesgos relacionados con la irradiación externa.",
-      whyCorrect: "La opción A es correcta porque la presencia de personal en sala durante la irradiación es un suceso de emergencia.",
-      whyWrong: {
-        B: "Corresponde más a medicina nuclear.",
-        C: "Corresponde a contaminación por material radiactivo.",
-        D: "Se relaciona con implantes radiactivos."
-      }
-    }
-  },
-  {
-    q: "Es un residuo producido en radioterapia:",
-    options: [
-      "Fuentes encapsuladas",
-      "Sólidos radiactivos de iridio-192",
-      "Semillas de yodo y paladio",
-      "Todas son correctas"
-    ],
-    correct: 3,
-    explain: {
-      detail: "Radioterapia puede generar residuos asociados a fuentes encapsuladas.",
-      whyCorrect: "La opción D es correcta porque todos son residuos posibles en radioterapia.",
-      whyWrong: {
-        A: "Es correcta, pero incompleta.",
-        B: "Es correcta, pero incompleta.",
-        C: "Es correcta, pero incompleta."
-      }
-    }
-  },
-  {
-    q: "Este símbolo significa:",
-    options: [
-      "Zona de permanencia limitada",
-      "Zona de permanencia reglamentada",
-      "Zona controlada",
-      "Zona de acceso prohibido"
-    ],
-    correct: 2,
-    explain: {
-      detail: "La señalización permite identificar el nivel de riesgo radiológico.",
-      whyCorrect: "La opción C es correcta porque el símbolo corresponde a zona controlada.",
-      whyWrong: {
-        A: "No corresponde a permanencia limitada.",
-        B: "No corresponde a permanencia reglamentada.",
-        D: "No indica acceso prohibido."
-      }
-    }
-  },
-  {
-    q: "La alteración de genes o proteínas que regulan el crecimiento y la división celular pueden ser causa de:",
-    options: [
-      "Cáncer",
-      "Anomalías hereditarias",
-      "Síndrome gastrointestinal",
-      "Cataratas"
-    ],
-    correct: 0,
-    explain: {
-      detail: "El cáncer puede aparecer por alteraciones en genes reguladores del ciclo celular.",
-      whyCorrect: "La opción A es correcta porque estas alteraciones pueden producir crecimiento celular descontrolado.",
-      whyWrong: {
-        B: "Las anomalías hereditarias afectan a células germinales.",
-        C: "Es un síndrome agudo por alta dosis.",
-        D: "Las cataratas son un efecto tardío específico."
-      }
-    }
-  },
-  {
-    q: "La clasificación de los tipos de residuos radiactivos se puede realizar en base a:",
-    options: [
-      "Peligrosidad de la fuente",
-      "Periodo de semidesintegración",
-      "Actividad específica",
-      "Todas son correctas"
-    ],
-    correct: 3,
-    explain: {
-      detail: "Los residuos se clasifican según criterios físicos, radiológicos y de gestión.",
-      whyCorrect: "La opción D es correcta porque todos esos criterios son válidos.",
-      whyWrong: {
-        A: "Es correcta, pero incompleta.",
-        B: "Es correcta, pero incompleta.",
-        C: "Es correcta, pero incompleta."
-      }
-    }
-  },
-  {
-    q: "La directiva europea que garantiza la calidad en el ámbito sanitario es:",
-    options: [
-      "2013/59/Euratom",
-      "1997/43/Euratom",
-      "2003/122/Euratom",
-      "1996/29/Euratom"
-    ],
-    correct: 0,
-    explain: {
-      detail: "La normativa europea establece estándares de protección frente a radiaciones ionizantes.",
-      whyCorrect: "La opción A es correcta porque la Directiva 2013/59/Euratom establece normas básicas de seguridad.",
-      whyWrong: {
-        B: "No es la directiva correcta en este test.",
-        C: "No es la opción correcta.",
-        D: "No corresponde a la respuesta esperada."
-      }
-    }
-  },
-  {
-    q: "La medida de protección radiológica que hace referencia a la presencia de un material que actúa de barrera frente a las radiaciones ionizantes es:",
-    options: [
-      "Blindaje",
-      "Distancia",
-      "Tiempo de exposición",
-      "Ninguna es correcta"
-    ],
-    correct: 0,
-    explain: {
-      detail: "El blindaje reduce la radiación mediante barreras materiales.",
-      whyCorrect: "La opción A es correcta porque el blindaje actúa como barrera frente a la radiación.",
-      whyWrong: {
-        B: "La distancia reduce dosis, pero no es una barrera material.",
-        C: "El tiempo reduce exposición, pero no es una barrera.",
-        D: "Sí hay una respuesta correcta."
-      }
-    }
-  },
-  {
-    q: "La radiación puede afectar al embrión de una de las siguientes maneras:",
-    options: [
-      "Anomalías congénitas",
-      "Muerte del organismo",
-      "Cáncer embrionario",
-      "Dos respuestas son correctas"
-    ],
-    correct: 3,
-    explain: {
-      detail: "El embrión es especialmente sensible por su elevada división celular.",
-      whyCorrect: "La opción D es correcta porque la radiación puede causar anomalías congénitas y muerte embrionaria o fetal.",
-      whyWrong: {
-        A: "Es correcta, pero incompleta.",
-        B: "Es correcta, pero incompleta.",
-        C: "No es la respuesta esperada en este test."
-      }
-    }
-  },
-  {
-    q: "La siguiente etiqueta hace referencia a:",
-    options: [
-      "Categoría II",
-      "Material fisible",
-      "Categoría V",
-      "Categoría 7"
-    ],
-    correct: 0,
-    explain: {
-      detail: "Las etiquetas de transporte indican el nivel de radiación del bulto.",
-      whyCorrect: "La opción A es correcta porque la etiqueta corresponde a Categoría II.",
-      whyWrong: {
-        B: "Material fisible tiene otra identificación.",
-        C: "No existe categoría V en este contexto.",
-        D: "No es la denominación correcta."
-      }
-    }
-  },
-  {
-    q: "La vigencia de los informes sobre dosis y niveles de radiación de una instalación se han de almacenar al menos:",
-    options: [
-      "2 años",
-      "No hay que guardarlos",
-      "30 años",
-      "80 años"
-    ],
-    correct: 2,
-    explain: {
-      detail: "Los registros de dosis y niveles de radiación deben conservarse durante largo tiempo.",
-      whyCorrect: "La opción C es correcta porque deben almacenarse al menos 30 años.",
-      whyWrong: {
-        A: "2 años es insuficiente.",
-        B: "Sí deben conservarse.",
-        D: "80 años no es el plazo indicado."
-      }
-    }
-  },
-  {
-    q: "Las fases de actuación ante una emergencia en una exploración con radiaciones ionizantes son:",
-    options: [
-      "Parada de control desde la consola",
-      "Botón de parada de emergencia",
-      "Corte de la corriente eléctrica",
-      "Todas son correctas"
-    ],
-    correct: 3,
-    explain: {
-      detail: "Ante una emergencia deben aplicarse medidas de parada y seguridad.",
-      whyCorrect: "La opción D es correcta porque todas son fases o acciones posibles.",
-      whyWrong: {
-        A: "Es correcta, pero incompleta.",
-        B: "Es correcta, pero incompleta.",
-        C: "Es correcta, pero incompleta."
-      }
-    }
-  },
-  {
-    q: "Los efectos deterministas son:",
-    options: [
-      "Aquellos en los que la dosis de radiación recibida se relaciona directamente y de manera lineal con el daño o el efecto causado",
-      "Aquellos en los que la dosis de radiación recibida no se relaciona directamente y de manera lineal con el daño o el efecto causado",
-      "Aquellos que dependen de la probabilidad",
-      "Ninguna de las anteriores"
-    ],
-    correct: 0,
-    explain: {
-      detail: "Los efectos deterministas tienen umbral y gravedad relacionada con la dosis.",
-      whyCorrect: "La opción A es correcta porque la dosis se relaciona directamente con el daño.",
-      whyWrong: {
-        B: "Eso no define los deterministas.",
-        C: "Eso define mejor los estocásticos.",
-        D: "Sí hay una respuesta correcta."
-      }
-    }
-  },
-  {
-    q: "Los principios básicos de la protección radiológica son:",
-    options: [
-      "Justificación, exposición y limitación de dosis",
-      "Justificación, optimización y limitación de la exposición",
-      "Optimización, blindaje y exposición",
-      "Optimización, limitación de la exposición e historial dosimétrico"
-    ],
-    correct: 1,
-    explain: {
-      detail: "La protección radiológica se basa en tres principios fundamentales.",
-      whyCorrect: "La opción B es correcta porque son justificación, optimización y limitación.",
-      whyWrong: {
-        A: "Exposición no es uno de los tres principios.",
-        C: "Blindaje es una medida, no un principio básico.",
-        D: "Historial dosimétrico no es un principio básico."
-      }
-    }
-  },
-  {
-    q: "No es un suceso inmediato:",
-    options: [
-      "Pérdida o robo de fuentes radiactivas",
-      "Aparición de fuentes radiactivas de categoría 1, 2 o 3",
-      "Amenaza de bomba",
-      "Derrames de material radiactivo"
-    ],
-    correct: 3,
-    explain: {
-      detail: "Algunos sucesos requieren comunicación inmediata y otros en plazos más amplios.",
-      whyCorrect: "La opción D es correcta porque los derrames se notifican normalmente en un plazo máximo de 24 horas, no como aviso inmediato.",
-      whyWrong: {
-        A: "La pérdida o robo sí es inmediata.",
-        B: "La aparición de fuentes peligrosas sí requiere aviso inmediato.",
-        C: "Una amenaza de bomba requiere aviso inmediato."
-      }
-    }
-  },
-  {
-    q: "Para el inicio de la actividad de una instalación radiactiva se requiere:",
-    options: [
-      "Diario de operaciones",
-      "Informes de accidentes",
-      "Protocolos generales de descontaminación",
-      "Autorización de funcionamiento"
-    ],
-    correct: 3,
-    explain: {
-      detail: "Una instalación radiactiva no puede iniciar su actividad sin autorización.",
-      whyCorrect: "La opción D es correcta porque se requiere autorización de funcionamiento.",
-      whyWrong: {
-        A: "El diario es necesario, pero no autoriza el inicio.",
-        B: "Los informes de accidentes no permiten iniciar actividad.",
-        C: "Los protocolos no sustituyen la autorización."
-      }
-    }
-  },
-  {
-    q: "Se define como cualquier elemento de desecho que está contaminado o contiene radioisótopos en niveles superiores a los establecidos por normativa a:",
-    options: [
-      "Residuo urbano",
-      "Residuo radiactivo",
-      "Residuo desechable",
-      "Residuo residual"
-    ],
-    correct: 1,
-    explain: {
-      detail: "Los residuos radiactivos contienen radioisótopos por encima de niveles permitidos.",
-      whyCorrect: "La opción B es correcta porque define un residuo radiactivo.",
-      whyWrong: {
-        A: "Un residuo urbano no tiene por qué contener radioisótopos.",
-        C: "Desechable no implica radiactivo.",
-        D: "No es una categoría técnica adecuada."
-      }
-    }
-  },
-  {
-    q: "Se define como instalación radiactiva:",
-    options: [
-      "Todo lugar en el que hay una fuente o equipos de radiación ionizante",
-      "La radiación ionizante tiene una diferencia de potencial mayor a 5 kV",
-      "A y B son correctas",
-      "Todas son incorrectas"
-    ],
-    correct: 2,
-    explain: {
-      detail: "La instalación radiactiva se define por la presencia de fuentes o equipos productores de radiación.",
-      whyCorrect: "La opción C es correcta porque ambas afirmaciones forman parte de la definición.",
-      whyWrong: {
-        A: "Es correcta, pero incompleta.",
-        B: "Es correcta, pero incompleta.",
-        D: "Sí hay respuestas correctas."
-      }
-    }
-  },
-  {
-    q: "Se define como toda prueba que se realiza sobre un equipo tras una modificación o reparación para comprobar si es apto para el uso clínico:",
-    options: [
-      "Pruebas de verificación",
-      "Pruebas de aceptación",
-      "Programa de mantenimiento",
-      "Pruebas de comprobación"
-    ],
-    correct: 0,
-    explain: {
-      detail: "Tras una reparación o modificación se comprueba que el equipo sigue siendo apto.",
-      whyCorrect: "La opción A es correcta porque eso corresponde a pruebas de verificación.",
-      whyWrong: {
-        B: "Las pruebas de aceptación se hacen antes del primer uso.",
-        C: "El mantenimiento es un programa general.",
-        D: "No es el término técnico correcto."
-      }
-    }
-  },
-  {
-    q: "Un dosímetro activo:",
-    options: [
-      "Permite medir en tiempo real",
-      "Requiere de una fuente de electricidad para funcionar",
-      "Todas son correctas",
-      "Son las cámaras de ionización de gases y los detectores de centelleo"
-    ],
-    correct: 2,
-    explain: {
-      detail: "Los dosímetros activos permiten lectura inmediata y requieren alimentación.",
-      whyCorrect: "La opción C es correcta porque todas las afirmaciones son verdaderas.",
-      whyWrong: {
-        A: "Es correcta, pero incompleta.",
-        B: "Es correcta, pero incompleta.",
-        D: "Es correcta, pero incompleta."
-      }
-    }
-  },
-  {
-    q: "Un equipo o dispositivo utilizado para medir la dosis de radiación se denomina:",
-    options: [
-      "Dosímetro",
-      "Medidómetro",
-      "Magnitudómetro",
-      "Radiómetro"
-    ],
-    correct: 0,
-    explain: {
-      detail: "La dosis de radiación se mide con dosímetros.",
-      whyCorrect: "La opción A es correcta porque el dispositivo se denomina dosímetro.",
-      whyWrong: {
-        B: "No es un término técnico.",
-        C: "No existe como equipo real.",
-        D: "No es la respuesta correcta para medir dosis."
-      }
-    }
-  },
-  {
-    q: "Un plan de emergencia interior hace referencia a un:",
-    options: [
-      "Documento obligatorio",
-      "Documento con las medidas ante situaciones de emergencia",
-      "Plan para reducir las consecuencias sobre personas, bienes materiales y medio ambiente ante una emergencia",
-      "Todas son correctas"
-    ],
-    correct: 3,
-    explain: {
-      detail: "El PEI organiza la respuesta ante emergencias en instalaciones radiactivas.",
-      whyCorrect: "La opción D es correcta porque todas las afirmaciones describen el Plan de Emergencia Interior.",
-      whyWrong: {
-        A: "Es correcta, pero incompleta.",
-        B: "Es correcta, pero incompleta.",
-        C: "Es correcta, pero incompleta."
-      }
-    }
-  },
-  {
-    q: "Un posible efecto a largo plazo de las radiaciones ionizantes puede ser:",
-    options: [
-      "Cataratas en el cristalino",
-      "Diarrea",
-      "Síndrome hematológico",
-      "Vértigo"
-    ],
-    correct: 0,
-    explain: {
-      detail: "Algunos efectos de la radiación pueden aparecer tiempo después de la exposición.",
-      whyCorrect: "La opción A es correcta porque las cataratas pueden ser un efecto tardío de la radiación.",
-      whyWrong: {
-        B: "La diarrea es más propia de efectos agudos gastrointestinales.",
-        C: "El síndrome hematológico es efecto agudo por alta dosis.",
-        D: "El vértigo no es el efecto tardío típico esperado."
-      }
-    }
-  }
-],
     },
-
-    /* ================== ATENCIÓN AL PACIENTE ================== */
-
-     /* ================== ATENCIÓN AL PACIENTE ================== */
-
+    {
+      q: "¿A qué hace referencia este símbolo?",
+      image: "/images/IMAGE2.png",
+      options: [
+        "Zona vigilada",
+        "Zona de permanencia reglamentada",
+        "Zona controlada",
+        "Zona de acceso prohibido"
+      ],
+      correct: 0,
+      explain: {
+        detail: "Los símbolos de señalización radiológica identifican el tipo de zona según el riesgo.",
+        whyCorrect: "La opción A es correcta porque el símbolo corresponde a una zona vigilada.",
+        whyWrong: {
+          B: "No corresponde a permanencia reglamentada.",
+          C: "La zona controlada tiene otra señalización.",
+          D: "La zona de acceso prohibido indica mayor riesgo."
+        }
+      }
+    },
+    {
+      q: "Ante contaminación radiactiva externa en medicina nuclear se recomienda:",
+      options: [
+        "Proteger al personal que realice la descontaminación",
+        "Medir los niveles de contaminación",
+        "Delimitar y marcar la zona del accidente",
+        "Todas son correctas"
+      ],
+      correct: 3,
+      explain: {
+        detail: "Ante contaminación externa se debe actuar de forma organizada y segura.",
+        whyCorrect: "La opción D es correcta porque hay que proteger al personal, medir niveles y delimitar la zona.",
+        whyWrong: {
+          A: "Es correcta, pero incompleta.",
+          B: "Es correcta, pero incompleta.",
+          C: "Es correcta, pero incompleta."
+        }
+      }
+    },
+    {
+      q: "Antes de exponer a una persona a una radiación ionizante estas deben firmar:",
+      options: [
+        "Consentimiento informado",
+        "Consentimiento formado",
+        "Desconsentimiento informado",
+        "Información básica"
+      ],
+      correct: 0,
+      explain: {
+        detail: "Antes de una exposición médica debe informarse al paciente de riesgos y beneficios.",
+        whyCorrect: "La opción A es correcta porque debe firmarse el consentimiento informado.",
+        whyWrong: {
+          B: "No es el término correcto.",
+          C: "No existe como documento válido.",
+          D: "La información básica no sustituye al consentimiento."
+        }
+      }
+    },
+    {
+      q: "El criterio ALARA (As Low As Reasonably Achievable) se relaciona con:",
+      options: [
+        "Justificación",
+        "Blindaje",
+        "Limitación de dosis",
+        "Optimización"
+      ],
+      correct: 3,
+      explain: {
+        detail: "ALARA significa mantener las dosis tan bajas como sea razonablemente posible.",
+        whyCorrect: "La opción D es correcta porque ALARA se relaciona con la optimización.",
+        whyWrong: {
+          A: "La justificación valora si la práctica está indicada.",
+          B: "El blindaje es una medida de protección.",
+          C: "La limitación fija máximos de dosis."
+        }
+      }
+    },
+    {
+      q: "El equipo de la imagen es:",
+      image: "/images/IMAGE3.png",
+      options: [
+        "Detector de fluorescencia",
+        "Dosímetro",
+        "Detector de termoradiactividad",
+        "Radiactivímetro"
+      ],
+      correct: 1,
+      explain: {
+        detail: "El equipo mostrado sirve para medir dosis de radiación.",
+        whyCorrect: "La opción B es correcta porque se trata de un dosímetro.",
+        whyWrong: {
+          A: "No corresponde a un detector de fluorescencia.",
+          C: "No es un término técnico adecuado.",
+          D: "No es un radiactivímetro."
+        }
+      }
+    },
+    {
+      q: "El personal técnico de imagen (TSID) se clasifica como:",
+      options: [
+        "Categoría A",
+        "Categoría B",
+        "Categoría C",
+        "Categoría D"
+      ],
+      correct: 1,
+      explain: {
+        detail: "El personal expuesto se clasifica según la dosis que puede recibir.",
+        whyCorrect: "La opción B es correcta porque el TSID se clasifica como categoría B.",
+        whyWrong: {
+          A: "Categoría A implica mayor nivel de exposición.",
+          C: "No existe esta categoría en este contexto.",
+          D: "No existe esta categoría en este contexto."
+        }
+      }
+    },
+    {
+      q: "El proceso de gestión de los materiales radiactivos está formado por diferentes etapas:",
+      options: [
+        "Protección, separación, transporte y evacuación",
+        "Segregación, transporte y almacenamiento",
+        "Segregación, caracterización, transporte, almacenamiento y evacuación",
+        "Caracterización, transporte y almacenamiento"
+      ],
+      correct: 2,
+      explain: {
+        detail: "La gestión de residuos radiactivos sigue varias fases ordenadas.",
+        whyCorrect: "La opción C es correcta porque incluye segregación, caracterización, transporte, almacenamiento y evacuación.",
+        whyWrong: {
+          A: "Faltan fases importantes.",
+          B: "Falta caracterización y evacuación.",
+          D: "Falta segregación y evacuación."
+        }
+      }
+    },
+    {
+      q: "El siguiente plano hace referencia a la unidad de:",
+      image: "/images/IMAGE4.png",
+      options: [
+        "Radiodiagnóstico",
+        "Medicina nuclear",
+        "Teleterapia",
+        "Braquiterapia"
+      ],
+      correct: 0,
+      explain: {
+        detail: "El plano corresponde a la distribución típica de una unidad de imagen diagnóstica.",
+        whyCorrect: "La opción A es correcta porque hace referencia a radiodiagnóstico.",
+        whyWrong: {
+          B: "Medicina nuclear requiere zonas activas y radiofarmacia.",
+          C: "Teleterapia incluye búnker y sala de tratamiento.",
+          D: "Braquiterapia tiene áreas específicas para fuentes."
+        }
+      }
+    },
+    {
+      q: "En el programa de garantía de calidad en imagen para el diagnóstico es cierto:",
+      options: [
+        "Se han de aplicar protocolos de control de calidad",
+        "Cada procedimiento en cada equipo tiene un protocolo establecido",
+        "Se ha de formar en protección radiológica al personal que use los equipos",
+        "Todas son correctas"
+      ],
+      correct: 3,
+      explain: {
+        detail: "La garantía de calidad asegura imágenes útiles con la menor dosis posible.",
+        whyCorrect: "La opción D es correcta porque todas forman parte del programa de garantía de calidad.",
+        whyWrong: {
+          A: "Es correcta, pero incompleta.",
+          B: "Es correcta, pero incompleta.",
+          C: "Es correcta, pero incompleta."
+        }
+      }
+    },
+    {
+      q: "En España, los sucesos de emergencia que ocurran en las instalaciones radiactivas se han de notificar a:",
+      options: [
+        "Dirección General de Política Energética y Minas (DGPEM)",
+        "Consejo de Seguridad Nacional (CSN)",
+        "Consejo de cada Comunidad Autónoma",
+        "A y B son correctas"
+      ],
+      correct: 3,
+      explain: {
+        detail: "Los sucesos relevantes deben notificarse a organismos competentes.",
+        whyCorrect: "La opción D es correcta porque se notifican a la DGPEM y al CSN.",
+        whyWrong: {
+          A: "Es correcta, pero incompleta.",
+          B: "Es correcta, pero incompleta.",
+          C: "No es la opción marcada como correcta en este test."
+        }
+      }
+    },
+    {
+      q: "En esta imagen se muestran:",
+      image: "/images/IMAGE5.png",
+      options: [
+        "Equipos de teleterapia",
+        "Equipos de braquiterapia",
+        "Equipos de radiología convencional",
+        "Equipos de radiología especial"
+      ],
+      correct: 1,
+      explain: {
+        detail: "La braquiterapia utiliza equipos y fuentes para tratamientos próximos o internos.",
+        whyCorrect: "La opción B es correcta porque la imagen corresponde a equipos de braquiterapia.",
+        whyWrong: {
+          A: "Teleterapia usa haces externos.",
+          C: "Radiología convencional es diagnóstica.",
+          D: "Radiología especial no corresponde a la imagen."
+        }
+      }
+    },
+    {
+      q: "En la siguiente imagen se muestra un tipo de bulto para el transporte de material radiactivo para lo que es cierto:",
+      image: "/images/6.png",
+      options: [
+        "Se denominan bulto de tipo A",
+        "Permite el transporte de elevadísimas cantidades de material radiactivo",
+        "Son mejores que los bultos de tipo B y C",
+        "No se etiquetan"
+      ],
+      correct: 0,
+      explain: {
+        detail: "Los bultos de transporte se clasifican según el riesgo y la actividad transportada.",
+        whyCorrect: "La opción A es correcta porque se trata de un bulto tipo A.",
+        whyWrong: {
+          B: "Las elevadísimas cantidades requieren otros tipos de bulto.",
+          C: "No se clasifican como mejores, sino según uso y resistencia.",
+          D: "Sí deben etiquetarse."
+        }
+      }
+    },
+    {
+      q: "En la siguiente imagen se muestra un:",
+      image: "/images/IMAGE7.png",
+      options: [
+        "Dosímetro de neutrones",
+        "Dosímetro termoluminiscente",
+        "Detector de centelleo",
+        "Contador proporcional"
+      ],
+      correct: 1,
+      explain: {
+        detail: "Los dosímetros termoluminiscentes son frecuentes en dosimetría personal.",
+        whyCorrect: "La opción B es correcta porque corresponde a un dosímetro termoluminiscente.",
+        whyWrong: {
+          A: "No corresponde específicamente a neutrones.",
+          C: "Un detector de centelleo tiene otra finalidad.",
+          D: "Un contador proporcional es un detector gaseoso."
+        }
+      }
+    },
+    {
+      q: "En relación con el diario de operaciones:",
+      options: [
+        "Documento de registro de toda actividad de la instalación radiactiva",
+        "Ha de estar autorizado, sellado y registrado por el CSN",
+        "Completado por el personal titular o supervisor",
+        "Todas son correctas"
+      ],
+      correct: 3,
+      explain: {
+        detail: "El diario de operaciones registra la actividad de la instalación.",
+        whyCorrect: "La opción D es correcta porque todas las afirmaciones son verdaderas.",
+        whyWrong: {
+          A: "Es correcta, pero incompleta.",
+          B: "Es correcta, pero incompleta.",
+          C: "Es correcta, pero incompleta."
+        }
+      }
+    },
+    {
+      q: "Entre las magnitudes radiológicas encontramos:",
+      options: [
+        "Magnitudes físicas fundamentales",
+        "Magnitudes de radioprotección",
+        "Magnitudes operacionales",
+        "Todas son correctas"
+      ],
+      correct: 3,
+      explain: {
+        detail: "Las magnitudes radiológicas se agrupan en varias categorías.",
+        whyCorrect: "La opción D es correcta porque existen magnitudes físicas, de radioprotección y operacionales.",
+        whyWrong: {
+          A: "Es correcta, pero incompleta.",
+          B: "Es correcta, pero incompleta.",
+          C: "Es correcta, pero incompleta."
+        }
+      }
+    },
+    {
+      q: "Entre los factores que afectan a la sensibilidad celular encontramos:",
+      options: [
+        "Fase del ciclo celular",
+        "Edad biológica",
+        "Nivel de diferenciación celular",
+        "Todas son correctas"
+      ],
+      correct: 3,
+      explain: {
+        detail: "La radiosensibilidad depende de factores biológicos y técnicos.",
+        whyCorrect: "La opción D es correcta porque todos afectan a la sensibilidad celular.",
+        whyWrong: {
+          A: "Es correcta, pero incompleta.",
+          B: "Es correcta, pero incompleta.",
+          C: "Es correcta, pero incompleta."
+        }
+      }
+    },
+    {
+      q: "Es un control de calidad en el ámbito sanitario:",
+      options: [
+        "Control de calidad técnica",
+        "Control del riesgo",
+        "Control de optimización",
+        "Todas son correctas"
+      ],
+      correct: 3,
+      explain: {
+        detail: "La calidad sanitaria incluye controles técnicos, de riesgo y de optimización.",
+        whyCorrect: "La opción D es correcta porque todas forman parte del control de calidad.",
+        whyWrong: {
+          A: "Es correcta, pero incompleta.",
+          B: "Es correcta, pero incompleta.",
+          C: "Es correcta, pero incompleta."
+        }
+      }
+    },
+    {
+      q: "Es un plan de emergencia en teleterapia:",
+      options: [
+        "Presencia de personal en la sala de exploración",
+        "Errores en la administración de radiofármacos",
+        "Derrame de material radiactivo",
+        "Fallecimiento de persona con implantes"
+      ],
+      correct: 0,
+      explain: {
+        detail: "En teleterapia se contemplan riesgos relacionados con la irradiación externa.",
+        whyCorrect: "La opción A es correcta porque la presencia de personal en sala durante la irradiación es un suceso de emergencia.",
+        whyWrong: {
+          B: "Corresponde más a medicina nuclear.",
+          C: "Corresponde a contaminación por material radiactivo.",
+          D: "Se relaciona con implantes radiactivos."
+        }
+      }
+    },
+    {
+      q: "Es un residuo producido en radioterapia:",
+      options: [
+        "Fuentes encapsuladas",
+        "Sólidos radiactivos de iridio-192",
+        "Semillas de yodo y paladio",
+        "Todas son correctas"
+      ],
+      correct: 3,
+      explain: {
+        detail: "Radioterapia puede generar residuos asociados a fuentes encapsuladas.",
+        whyCorrect: "La opción D es correcta porque todos son residuos posibles en radioterapia.",
+        whyWrong: {
+          A: "Es correcta, pero incompleta.",
+          B: "Es correcta, pero incompleta.",
+          C: "Es correcta, pero incompleta."
+        }
+      }
+    },
+    {
+      q: "Este símbolo significa:",
+      image: "/images/IMAGE8.png",
+      options: [
+        "Zona de permanencia limitada",
+        "Zona de permanencia reglamentada",
+        "Zona controlada",
+        "Zona de acceso prohibido"
+      ],
+      correct: 2,
+      explain: {
+        detail: "La señalización permite identificar el nivel de riesgo radiológico.",
+        whyCorrect: "La opción C es correcta porque el símbolo corresponde a zona controlada.",
+        whyWrong: {
+          A: "No corresponde a permanencia limitada.",
+          B: "No corresponde a permanencia reglamentada.",
+          D: "No indica acceso prohibido."
+        }
+      }
+    },
+    {
+      q: "La alteración de genes o proteínas que regulan el crecimiento y la división celular pueden ser causa de:",
+      options: [
+        "Cáncer",
+        "Anomalías hereditarias",
+        "Síndrome gastrointestinal",
+        "Cataratas"
+      ],
+      correct: 0,
+      explain: {
+        detail: "El cáncer puede aparecer por alteraciones en genes reguladores del ciclo celular.",
+        whyCorrect: "La opción A es correcta porque estas alteraciones pueden producir crecimiento celular descontrolado.",
+        whyWrong: {
+          B: "Las anomalías hereditarias afectan a células germinales.",
+          C: "Es un síndrome agudo por alta dosis.",
+          D: "Las cataratas son un efecto tardío específico."
+        }
+      }
+    },
+    {
+      q: "La clasificación de los tipos de residuos radiactivos se puede realizar en base a:",
+      options: [
+        "Peligrosidad de la fuente",
+        "Periodo de semidesintegración",
+        "Actividad específica",
+        "Todas son correctas"
+      ],
+      correct: 3,
+      explain: {
+        detail: "Los residuos se clasifican según criterios físicos, radiológicos y de gestión.",
+        whyCorrect: "La opción D es correcta porque todos esos criterios son válidos.",
+        whyWrong: {
+          A: "Es correcta, pero incompleta.",
+          B: "Es correcta, pero incompleta.",
+          C: "Es correcta, pero incompleta."
+        }
+      }
+    },
+    {
+      q: "La directiva europea que garantiza la calidad en el ámbito sanitario es:",
+      options: [
+        "2013/59/Euratom",
+        "1997/43/Euratom",
+        "2003/122/Euratom",
+        "1996/29/Euratom"
+      ],
+      correct: 0,
+      explain: {
+        detail: "La normativa europea establece estándares de protección frente a radiaciones ionizantes.",
+        whyCorrect: "La opción A es correcta porque la Directiva 2013/59/Euratom establece normas básicas de seguridad.",
+        whyWrong: {
+          B: "No es la directiva correcta en este test.",
+          C: "No es la opción correcta.",
+          D: "No corresponde a la respuesta esperada."
+        }
+      }
+    },
+    {
+      q: "La medida de protección radiológica que hace referencia a la presencia de un material que actúa de barrera frente a las radiaciones ionizantes es:",
+      options: [
+        "Blindaje",
+        "Distancia",
+        "Tiempo de exposición",
+        "Ninguna es correcta"
+      ],
+      correct: 0,
+      explain: {
+        detail: "El blindaje reduce la radiación mediante barreras materiales.",
+        whyCorrect: "La opción A es correcta porque el blindaje actúa como barrera frente a la radiación.",
+        whyWrong: {
+          B: "La distancia reduce dosis, pero no es una barrera material.",
+          C: "El tiempo reduce exposición, pero no es una barrera.",
+          D: "Sí hay una respuesta correcta."
+        }
+      }
+    },
+    {
+      q: "La radiación puede afectar al embrión de una de las siguientes maneras:",
+      options: [
+        "Anomalías congénitas",
+        "Muerte del organismo",
+        "Cáncer embrionario",
+        "Dos respuestas son correctas"
+      ],
+      correct: 3,
+      explain: {
+        detail: "El embrión es especialmente sensible por su elevada división celular.",
+        whyCorrect: "La opción D es correcta porque la radiación puede causar anomalías congénitas y muerte embrionaria o fetal.",
+        whyWrong: {
+          A: "Es correcta, pero incompleta.",
+          B: "Es correcta, pero incompleta.",
+          C: "No es la respuesta esperada en este test."
+        }
+      }
+    },
+    {
+      q: "La siguiente etiqueta hace referencia a:",
+      image: "/images/IMAGE9.png",
+      options: [
+        "Categoría II",
+        "Material fisible",
+        "Categoría V",
+        "Categoría 7"
+      ],
+      correct: 0,
+      explain: {
+        detail: "Las etiquetas de transporte indican el nivel de radiación del bulto.",
+        whyCorrect: "La opción A es correcta porque la etiqueta corresponde a Categoría II.",
+        whyWrong: {
+          B: "Material fisible tiene otra identificación.",
+          C: "No existe categoría V en este contexto.",
+          D: "No es la denominación correcta."
+        }
+      }
+    },
+    {
+      q: "La vigencia de los informes sobre dosis y niveles de radiación de una instalación se han de almacenar al menos:",
+      options: [
+        "2 años",
+        "No hay que guardarlos",
+        "30 años",
+        "80 años"
+      ],
+      correct: 2,
+      explain: {
+        detail: "Los registros de dosis y niveles de radiación deben conservarse durante largo tiempo.",
+        whyCorrect: "La opción C es correcta porque deben almacenarse al menos 30 años.",
+        whyWrong: {
+          A: "2 años es insuficiente.",
+          B: "Sí deben conservarse.",
+          D: "80 años no es el plazo indicado."
+        }
+      }
+    },
+    {
+      q: "Las fases de actuación ante una emergencia en una exploración con radiaciones ionizantes son:",
+      options: [
+        "Parada de control desde la consola",
+        "Botón de parada de emergencia",
+        "Corte de la corriente eléctrica",
+        "Todas son correctas"
+      ],
+      correct: 3,
+      explain: {
+        detail: "Ante una emergencia deben aplicarse medidas de parada y seguridad.",
+        whyCorrect: "La opción D es correcta porque todas son fases o acciones posibles.",
+        whyWrong: {
+          A: "Es correcta, pero incompleta.",
+          B: "Es correcta, pero incompleta.",
+          C: "Es correcta, pero incompleta."
+        }
+      }
+    },
+    {
+      q: "Los efectos deterministas son:",
+      options: [
+        "Aquellos en los que la dosis de radiación recibida se relaciona directamente y de manera lineal con el daño o el efecto causado",
+        "Aquellos en los que la dosis de radiación recibida no se relaciona directamente y de manera lineal con el daño o el efecto causado",
+        "Aquellos que dependen de la probabilidad",
+        "Ninguna de las anteriores"
+      ],
+      correct: 0,
+      explain: {
+        detail: "Los efectos deterministas tienen umbral y gravedad relacionada con la dosis.",
+        whyCorrect: "La opción A es correcta porque la dosis se relaciona directamente con el daño.",
+        whyWrong: {
+          B: "Eso no define los deterministas.",
+          C: "Eso define mejor los estocásticos.",
+          D: "Sí hay una respuesta correcta."
+        }
+      }
+    },
+    {
+      q: "Los principios básicos de la protección radiológica son:",
+      options: [
+        "Justificación, exposición y limitación de dosis",
+        "Justificación, optimización y limitación de la exposición",
+        "Optimización, blindaje y exposición",
+        "Optimización, limitación de la exposición e historial dosimétrico"
+      ],
+      correct: 1,
+      explain: {
+        detail: "La protección radiológica se basa en tres principios fundamentales.",
+        whyCorrect: "La opción B es correcta porque son justificación, optimización y limitación.",
+        whyWrong: {
+          A: "Exposición no es uno de los tres principios.",
+          C: "Blindaje es una medida, no un principio básico.",
+          D: "Historial dosimétrico no es un principio básico."
+        }
+      }
+    },
+    {
+      q: "No es un suceso inmediato:",
+      options: [
+        "Pérdida o robo de fuentes radiactivas",
+        "Aparición de fuentes radiactivas de categoría 1, 2 o 3",
+        "Amenaza de bomba",
+        "Derrames de material radiactivo"
+      ],
+      correct: 3,
+      explain: {
+        detail: "Algunos sucesos requieren comunicación inmediata y otros en plazos más amplios.",
+        whyCorrect: "La opción D es correcta porque los derrames se notifican normalmente en un plazo máximo de 24 horas, no como aviso inmediato.",
+        whyWrong: {
+          A: "La pérdida o robo sí es inmediata.",
+          B: "La aparición de fuentes peligrosas sí requiere aviso inmediato.",
+          C: "Una amenaza de bomba requiere aviso inmediato."
+        }
+      }
+    },
+    {
+      q: "Para el inicio de la actividad de una instalación radiactiva se requiere:",
+      options: [
+        "Diario de operaciones",
+        "Informes de accidentes",
+        "Protocolos generales de descontaminación",
+        "Autorización de funcionamiento"
+      ],
+      correct: 3,
+      explain: {
+        detail: "Una instalación radiactiva no puede iniciar su actividad sin autorización.",
+        whyCorrect: "La opción D es correcta porque se requiere autorización de funcionamiento.",
+        whyWrong: {
+          A: "El diario es necesario, pero no autoriza el inicio.",
+          B: "Los informes de accidentes no permiten iniciar actividad.",
+          C: "Los protocolos no sustituyen la autorización."
+        }
+      }
+    },
+    {
+      q: "Se define como cualquier elemento de desecho que está contaminado o contiene radioisótopos en niveles superiores a los establecidos por normativa a:",
+      options: [
+        "Residuo urbano",
+        "Residuo radiactivo",
+        "Residuo desechable",
+        "Residuo residual"
+      ],
+      correct: 1,
+      explain: {
+        detail: "Los residuos radiactivos contienen radioisótopos por encima de niveles permitidos.",
+        whyCorrect: "La opción B es correcta porque define un residuo radiactivo.",
+        whyWrong: {
+          A: "Un residuo urbano no tiene por qué contener radioisótopos.",
+          C: "Desechable no implica radiactivo.",
+          D: "No es una categoría técnica adecuada."
+        }
+      }
+    },
+    {
+      q: "Se define como instalación radiactiva:",
+      options: [
+        "Todo lugar en el que hay una fuente o equipos de radiación ionizante",
+        "La radiación ionizante tiene una diferencia de potencial mayor a 5 kV",
+        "A y B son correctas",
+        "Todas son incorrectas"
+      ],
+      correct: 2,
+      explain: {
+        detail: "La instalación radiactiva se define por la presencia de fuentes o equipos productores de radiación.",
+        whyCorrect: "La opción C es correcta porque ambas afirmaciones forman parte de la definición.",
+        whyWrong: {
+          A: "Es correcta, pero incompleta.",
+          B: "Es correcta, pero incompleta.",
+          D: "Sí hay respuestas correctas."
+        }
+      }
+    },
+    {
+      q: "Se define como toda prueba que se realiza sobre un equipo tras una modificación o reparación para comprobar si es apto para el uso clínico:",
+      options: [
+        "Pruebas de verificación",
+        "Pruebas de aceptación",
+        "Programa de mantenimiento",
+        "Pruebas de comprobación"
+      ],
+      correct: 0,
+      explain: {
+        detail: "Tras una reparación o modificación se comprueba que el equipo sigue siendo apto.",
+        whyCorrect: "La opción A es correcta porque eso corresponde a pruebas de verificación.",
+        whyWrong: {
+          B: "Las pruebas de aceptación se hacen antes del primer uso.",
+          C: "El mantenimiento es un programa general.",
+          D: "No es el término técnico correcto."
+        }
+      }
+    },
+    {
+      q: "Un dosímetro activo:",
+      options: [
+        "Permite medir en tiempo real",
+        "Requiere de una fuente de electricidad para funcionar",
+        "Todas son correctas",
+        "Son las cámaras de ionización de gases y los detectores de centelleo"
+      ],
+      correct: 2,
+      explain: {
+        detail: "Los dosímetros activos permiten lectura inmediata y requieren alimentación.",
+        whyCorrect: "La opción C es correcta porque todas las afirmaciones son verdaderas.",
+        whyWrong: {
+          A: "Es correcta, pero incompleta.",
+          B: "Es correcta, pero incompleta.",
+          D: "Es correcta, pero incompleta."
+        }
+      }
+    },
+    {
+      q: "Un equipo o dispositivo utilizado para medir la dosis de radiación se denomina:",
+      options: [
+        "Dosímetro",
+        "Medidómetro",
+        "Magnitudómetro",
+        "Radiómetro"
+      ],
+      correct: 0,
+      explain: {
+        detail: "La dosis de radiación se mide con dosímetros.",
+        whyCorrect: "La opción A es correcta porque el dispositivo se denomina dosímetro.",
+        whyWrong: {
+          B: "No es un término técnico.",
+          C: "No existe como equipo real.",
+          D: "No es la respuesta correcta para medir dosis."
+        }
+      }
+    },
+    {
+      q: "Un plan de emergencia interior hace referencia a un:",
+      options: [
+        "Documento obligatorio",
+        "Documento con las medidas ante situaciones de emergencia",
+        "Plan para reducir las consecuencias sobre personas, bienes materiales y medio ambiente ante una emergencia",
+        "Todas son correctas"
+      ],
+      correct: 3,
+      explain: {
+        detail: "El PEI organiza la respuesta ante emergencias en instalaciones radiactivas.",
+        whyCorrect: "La opción D es correcta porque todas las afirmaciones describen el Plan de Emergencia Interior.",
+        whyWrong: {
+          A: "Es correcta, pero incompleta.",
+          B: "Es correcta, pero incompleta.",
+          C: "Es correcta, pero incompleta."
+        }
+      }
+    },
+    {
+      q: "Un posible efecto a largo plazo de las radiaciones ionizantes puede ser:",
+      options: [
+        "Cataratas en el cristalino",
+        "Diarrea",
+        "Síndrome hematológico",
+        "Vértigo"
+      ],
+      correct: 0,
+      explain: {
+        detail: "Algunos efectos de la radiación pueden aparecer tiempo después de la exposición.",
+        whyCorrect: "La opción A es correcta porque las cataratas pueden ser un efecto tardío de la radiación.",
+        whyWrong: {
+          B: "La diarrea es más propia de efectos agudos gastrointestinales.",
+          C: "El síndrome hematológico es efecto agudo por alta dosis.",
+          D: "El vértigo no es el efecto tardío típico esperado."
+        }
+      }
+    }
+  ],
+},
 {
   id: "ap-u1",
 title: "AP · U1 · Economía y administración básica",
