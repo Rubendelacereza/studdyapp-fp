@@ -3225,35 +3225,54 @@ questions: [
   }
 ]
 },
-
-{
+  {
   id: "ap-final",
   title: "⭐ AP · Prueba final · 40 preguntas",
   isFinal: true,
   questions: [
     {
       q: "¿Cuál de las siguientes es una tendencia actual relativa a la comunicación interna?",
-      options: ["Motor de digitalización.", "Employer Branding.", "Apps internas.", "Todas son correctas."],
+      options: [
+        "Motor de digitalización.",
+        "Employer Branding.",
+        "Apps internas.",
+        "Todas son correctas."
+      ],
       correct: 3,
-      explain: "Las tendencias actuales incluyen digitalización, employer branding y apps internas, por lo que todas son correctas."
+      explain: "Todas son correctas porque la comunicación interna actual se apoya cada vez más en herramientas digitales, aplicaciones internas y estrategias de employer branding para mejorar la conexión entre empresa y trabajadores."
     },
     {
       q: "¿Cuál de las siguientes no es una de las 5 fuerzas de Porter?",
-      options: ["El flujo del proceso de compraventa.", "La amenaza de productos sustitutivos.", "El poder de negociación de los proveedores.", "Las barreras de entrada."],
+      options: [
+        "El flujo del proceso de compraventa.",
+        "La amenaza de productos sustitutivos.",
+        "El poder de negociación de los proveedores.",
+        "Las barreras de entrada."
+      ],
       correct: 0,
-      explain: "Las 5 fuerzas no incluyen el flujo de compraventa."
+      explain: "El flujo del proceso de compraventa no forma parte de las 5 fuerzas de Porter. Las fuerzas analizan la competencia del sector: nuevos competidores, productos sustitutivos, poder de clientes, poder de proveedores y rivalidad entre competidores."
     },
     {
       q: "¿Cuál de las siguientes no sería una estrategia del plan de marketing en función del producto?",
-      options: ["Estrategia de penetración.", "Estrategia de desarrollo de producto.", "Estrategia de enraizamiento.", "Estrategia de diversificación."],
+      options: [
+        "Estrategia de penetración.",
+        "Estrategia de desarrollo de producto.",
+        "Estrategia de enraizamiento.",
+        "Estrategia de diversificación."
+      ],
       correct: 2,
-      explain: "La estrategia de enraizamiento no existe como estrategia de marketing."
+      explain: "La estrategia de enraizamiento no es una estrategia reconocida dentro del plan de marketing en función del producto. Sí lo son la penetración, el desarrollo de producto, el desarrollo de mercado y la diversificación."
     },
     {
       q: "¿Cuál es el objetivo principal del marketing relacional?",
-      options: ["Incrementar las ventas a corto plazo.", "Mantener una relación significativa a largo plazo con el público objetivo.", "Realizar promociones y descuentos.", "Atraer nuevos clientes a través de la publicidad masiva."],
+      options: [
+        "Incrementar las ventas a corto plazo.",
+        "Mantener una relación significativa a largo plazo con el público objetivo.",
+        "Realizar promociones y descuentos.",
+        "Atraer nuevos clientes a través de la publicidad masiva."
+      ],
       correct: 1,
-      explain: "Busca relaciones duraderas con clientes."
+      explain: "El marketing relacional busca crear vínculos duraderos con los clientes, fomentando la confianza, la fidelización y una relación estable más allá de una venta puntual."
     },
     {
       q: "¿Cuál es la definición más completa de marketing?",
@@ -3264,229 +3283,395 @@ questions: [
         "La planificación y ejecución de la concepción del producto, fijación de precios, promoción y distribución de ideas, bienes y servicios para crear relaciones de intercambio que satisfagan objetivos individuales y organizacionales."
       ],
       correct: 3,
-      explain: "Es la definición completa del marketing."
+      explain: "La opción D es la más completa porque el marketing no se limita a vender o hacer publicidad, sino que incluye el diseño del producto, el precio, la comunicación y la distribución para satisfacer necesidades."
     },
     {
       q: "¿Cuál es la principal diferencia entre marketing estratégico y marketing operativo?",
       options: [
-        "El marketing estratégico se centra en el corto plazo.",
-        "El marketing estratégico ejecuta acciones.",
-        "El marketing estratégico se ocupa de la publicidad.",
-        "El marketing estratégico analiza necesidades y el operativo ejecuta acciones."
+        "El marketing estratégico se centra en el corto plazo, mientras que el operativo se centra en el largo plazo.",
+        "El marketing estratégico se ocupa de la implementación de acciones, mientras que el operativo se ocupa del análisis de necesidades del público objetivo.",
+        "El marketing estratégico se ocupa de la publicidad, mientras que el marketing operativo se centra en las ventas.",
+        "El marketing estratégico se centra en el análisis continuo y la identificación de necesidades del público objetivo, mientras que el marketing operativo se focaliza en la puesta en marcha de medidas para aprovechar oportunidades."
       ],
       correct: 3,
-      explain: "El estratégico analiza y el operativo ejecuta."
+      explain: "El marketing estratégico analiza el mercado, las necesidades y las oportunidades a medio y largo plazo. El marketing operativo transforma ese análisis en acciones concretas como campañas, precios, distribución y comunicación."
     },
     {
       q: "¿Cuál es la principal herramienta del marketing estratégico?",
-      options: ["Análisis DAFO.", "Plan de marketing.", "Investigación de mercado.", "Estrategia de precios."],
+      options: [
+        "Análisis DAFO.",
+        "Plan de marketing.",
+        "Investigación de mercado.",
+        "Estrategia de precios."
+      ],
       correct: 1,
-      explain: "El plan de marketing es la base."
+      explain: "El plan de marketing es la herramienta principal porque organiza el análisis, los objetivos, las estrategias, la ejecución y el control de las acciones comerciales."
     },
     {
       q: "¿En qué se basa la decisión que se toma para cubrir necesidades?",
-      options: ["En un impulso.", "En una comparativa.", "En una encuesta.", "En una imitación."],
+      options: [
+        "En un impulso.",
+        "En una comparativa.",
+        "En una encuesta.",
+        "En una imitación de lo que hace la sociedad."
+      ],
       correct: 1,
-      explain: "Se basa en comparar costes y beneficios."
+      explain: "Las decisiones económicas racionales se basan en una comparativa entre costes, beneficios, alternativas e incentivos para escoger la opción más conveniente."
     },
     {
-      q: "¿Qué análisis no forma parte del análisis de la situación?",
-      options: ["Demanda.", "Competencia.", "Producto.", "Interno."],
+      q: "¿Qué análisis no forma parte del análisis de la situación en el plan de marketing?",
+      options: [
+        "Análisis de la demanda.",
+        "Análisis de la competencia.",
+        "Análisis del producto.",
+        "Análisis interno de la empresa."
+      ],
       correct: 2,
-      explain: "El producto se analiza después."
+      explain: "El análisis de la situación se centra en estudiar la demanda, la competencia, el entorno y la situación interna de la empresa. El análisis del producto pertenece más a la fase de estrategia y marketing mix."
     },
     {
-      q: "¿Qué herramienta permite analizar debilidades, amenazas, fortalezas y oportunidades?",
-      options: ["Análisis PEST.", "Análisis DAFO.", "Investigación de mercado.", "Matriz de crecimiento."],
+      q: "¿Qué herramienta permite analizar las debilidades, amenazas, fortalezas y oportunidades de una empresa?",
+      options: [
+        "Análisis PEST.",
+        "Análisis DAFO.",
+        "Investigación de mercado.",
+        "Matriz de crecimiento."
+      ],
       correct: 1,
-      explain: "El DAFO evalúa factores internos y externos."
+      explain: "El análisis DAFO estudia factores internos, como fortalezas y debilidades, y factores externos, como oportunidades y amenazas."
     },
-
     {
-      q: "A las personas que influyen sin autoridad se les denomina:",
-      options: ["Líderes.", "Directores.", "Jefes.", "Mandos."],
+      q: "A las personas que, sin haber sido dotadas de autoridad, tienen la capacidad de influenciar sobre los demás por su carisma y personalidad, se les denomina:",
+      options: [
+        "Líderes.",
+        "Directores.",
+        "Jefes.",
+        "Mandos."
+      ],
       correct: 0,
-      explain: "Los líderes influyen sin jerarquía."
+      explain: "Los líderes influyen en los demás por su carisma, ejemplo, capacidad de motivación o confianza, aunque no tengan autoridad formal dentro de la organización."
     },
     {
-      q: "Habilidades del responsable de RRHH:",
-      options: ["Motivar.", "Comunicar.", "Decidir.", "Todas son correctas."],
+      q: "Al responsable de recursos humanos se le presuponen varias habilidades, entre ellas:",
+      options: [
+        "Tener motivación y ser capaz de trasmitirla al equipo.",
+        "Comunicar efectivamente.",
+        "Ser resolutivo y determinado en la toma de decisiones.",
+        "Todas son correctas."
+      ],
       correct: 3,
-      explain: "Debe tener todas esas habilidades."
+      explain: "El responsable de RRHH debe motivar, comunicar bien, negociar, resolver problemas y tomar decisiones, por eso todas las opciones son correctas."
     },
     {
-      q: "Estrategia de expansión de mercado:",
-      options: ["Un producto varios segmentos.", "Un segmento un producto.", "Varios productos un segmento.", "Adaptación total."],
+      q: "Cuando hablamos de segmentación, la estrategia de expansión de mercado:",
+      options: [
+        "Se centrará en más de un segmento, pero con un solo producto.",
+        "Actuará en un solo segmento con un solo producto.",
+        "Ofrecerá distintos productos a un solo segmento.",
+        "Adaptará el producto a las particularidades de cada segmento."
+      ],
       correct: 0,
-      explain: "Un producto para varios segmentos."
+      explain: "La expansión de mercado consiste en vender un mismo producto a varios segmentos de consumidores, ampliando el público objetivo sin cambiar necesariamente el producto."
     },
     {
-      q: "Teoría del gran hombre:",
-      options: ["Rasgos innatos.", "Depende subordinados.", "Un líder único.", "Malla gerencial."],
+      q: "Dentro de las teorías del liderazgo, la teoría del gran hombre afirma que:",
+      options: [
+        "Los rasgos del líder son innatos y no se pueden adquirir ni con entrenamiento ni con experiencia.",
+        "El comportamiento del líder depende de la percepción que tenga de la naturaleza de sus subordinados.",
+        "Solo puede existir un líder en la organización, que ejercerá su mando con mano de hierro.",
+        "El líder teje una malla gerencial para desarrollar sus funciones."
+      ],
       correct: 0,
-      explain: "El liderazgo es innato."
+      explain: "La teoría del gran hombre defiende que los líderes nacen con cualidades especiales innatas y que esas características no se aprenden mediante formación o experiencia."
     },
     {
-      q: "Documento con orden de pago:",
-      options: ["Cheque.", "Letra de cambio.", "Recibo.", "Transferencia."],
+      q: "Documento formal que incorpora una orden de pago, por la que una persona ordena pagar una determinada cantidad de dinero al poseedor de esta a su vencimiento:",
+      options: [
+        "Cheque.",
+        "Letra de cambio.",
+        "Recibo normalizado.",
+        "Transferencia bancaria."
+      ],
       correct: 1,
-      explain: "La letra de cambio es una orden de pago."
+      explain: "La letra de cambio es un documento mercantil mediante el cual una persona ordena a otra pagar una cantidad determinada en una fecha de vencimiento."
     },
     {
-      q: "El Estado obtiene ingresos de:",
-      options: ["Donaciones.", "Expropiación.", "Contractuales.", "Todas son correctas."],
+      q: "El Estado puede conseguir los ingresos públicos de:",
+      options: [
+        "Las donaciones y la deuda pública.",
+        "La extracción o expropiación.",
+        "Los ingresos contractuales.",
+        "Todas son correctas."
+      ],
       correct: 3,
-      explain: "Todas son fuentes válidas."
+      explain: "El Estado puede obtener ingresos de distintas formas: tributos, deuda pública, donaciones, ingresos contractuales o incluso expropiaciones en los casos legalmente previstos."
     },
     {
-      q: "Liderazgo con mínima intervención:",
-      options: ["Laissez faire.", "Democrático.", "Paternalista.", "Visionario."],
+      q: "El estilo de liderazgo en el que el líder interviene solo cuando lo cree conveniente, dejando máxima libertad a sus empleados y controlando lo mínimo imprescindible, se denomina:",
+      options: [
+        "Liderazgo laissez faire.",
+        "Liderazgo democrático.",
+        "Liderazgo paternalista.",
+        "Liderazgo visionario."
+      ],
       correct: 0,
-      explain: "Da libertad total al equipo."
+      explain: "El liderazgo laissez faire se caracteriza por una intervención mínima del líder, dejando mucha autonomía al equipo."
     },
     {
-      q: "Liderazgo con visión clara:",
-      options: ["Laissez faire.", "Democrático.", "Paternalista.", "Visionario."],
+      q: "El estilo de liderazgo en el que el líder tiene claro dónde quiere ir e intenta que el equipo visualice su meta y la comparta, se denomina:",
+      options: [
+        "Liderazgo laissez faire.",
+        "Liderazgo democrático.",
+        "Liderazgo paternalista.",
+        "Liderazgo visionario."
+      ],
       correct: 3,
-      explain: "El visionario guía al equipo."
+      explain: "El liderazgo visionario se basa en transmitir una meta clara y conseguir que el equipo la comparta, generando motivación y dirección común."
     },
     {
-      q: "Factor que impulsa comportamiento:",
-      options: ["Motivación.", "Pirámide.", "Autoestima.", "Higiénico."],
+      q: "El factor que impulsa a las personas a iniciar, mantener o terminar una actividad, un comportamiento o una actitud se denomina:",
+      options: [
+        "Motivación.",
+        "Pirámide de necesidades.",
+        "Autoestima.",
+        "Higiénico."
+      ],
       correct: 0,
-      explain: "Es la motivación."
+      explain: "La motivación es el impulso interno o externo que lleva a una persona a actuar, mantener una conducta o abandonarla."
     },
     {
-      q: "Impuesto sobre consumo:",
-      options: ["IVA.", "IRPF.", "IS.", "Declaración censal."],
+      q: "El impuesto que se encarga de gravar el consumo es:",
+      options: [
+        "El IVA.",
+        "El IRPF.",
+        "El Impuesto sobre Sociedades.",
+        "La declaración censal."
+      ],
       correct: 0,
-      explain: "El IVA grava el consumo."
+      explain: "El IVA es un impuesto indirecto que grava el consumo de bienes y servicios. Lo paga el consumidor final y las empresas actúan como recaudadoras."
     },
-
     {
       q: "El Impuesto sobre Sociedades:",
-      options: ["Indirecto.", "Rentas físicas.", "Personal.", "Ninguna."],
+      options: [
+        "Tiene carácter indirecto.",
+        "Grava la ganancia de rentas por parte de personas físicas y entidades públicas.",
+        "Es de naturaleza personal porque tiene en cuenta determinadas circunstancias particulares de cada contribuyente.",
+        "Ninguna es correcta."
+      ],
       correct: 2,
-      explain: "Es de naturaleza personal."
+      explain: "El Impuesto sobre Sociedades grava la renta de las personas jurídicas. Se considera personal porque se aplica atendiendo al sujeto pasivo y a sus circunstancias fiscales."
     },
     {
-      q: "El presupuesto familiar incluye:",
-      options: ["Fijos.", "Corrientes.", "Ocasionales.", "Todas son correctas."],
+      q: "El presupuesto familiar se compone de:",
+      options: [
+        "Gastos fijos.",
+        "Gastos corrientes.",
+        "Gastos ocasionales.",
+        "Todas son correctas."
+      ],
       correct: 3,
-      explain: "Incluye todos los gastos."
+      explain: "Un presupuesto familiar debe recoger gastos fijos, corrientes y ocasionales para reflejar de forma realista la situación económica del hogar."
     },
     {
-      q: "Proceso de actividad empresarial:",
-      options: ["Ciclo de explotación.", "Sistema de mercado.", "Aprovisionamiento.", "Marketing relacional."],
+      q: "Engloba todas las tareas dirigidas a la obtención y transformación de los recursos que permiten desarrollar la actividad de la empresa y aprovechar las oportunidades de mercado, delimitando el plan de actuación que llevará a la generación de beneficios económicos:",
+      options: [
+        "Ciclo de explotación.",
+        "Sistema de mercado.",
+        "Aprovisionamiento.",
+        "Marketing relacional."
+      ],
       correct: 0,
-      explain: "Define la actividad económica."
+      explain: "El ciclo de explotación recoge las operaciones necesarias para que la empresa obtenga recursos, los transforme y genere bienes o servicios que produzcan beneficios."
     },
     {
-      q: "Objetivos análisis puestos:",
-      options: ["Selección.", "Formación.", "Costes.", "Todas son correctas."],
+      q: "Entre los objetivos del análisis de los puestos de trabajo se encuentra:",
+      options: [
+        "Ayudar al reclutamiento y selección de personal.",
+        "Detectar necesidades de formación.",
+        "Prever los costes salariales.",
+        "Todas son correctas."
+      ],
       correct: 3,
-      explain: "Sirve para todo eso."
+      explain: "El análisis de puestos permite seleccionar mejor, detectar formación necesaria, valorar salarios y conocer las exigencias reales de cada puesto."
     },
     {
-      q: "Teoría ERG:",
-      options: ["McGregor.", "Tres esquinas.", "ERG.", "Adams."],
+      q: "Es una modificación de la jerarquía de Maslow que clasifica las necesidades básicas en tres subgrupos (existencia, relación y crecimiento):",
+      options: [
+        "Teoría de McGregor.",
+        "Pirámide de las tres esquinas.",
+        "Teoría ERG.",
+        "Jerarquía de Adams."
+      ],
       correct: 2,
-      explain: "Clasifica necesidades en 3."
+      explain: "La teoría ERG de Alderfer reorganiza las necesidades de Maslow en tres grupos: existencia, relación y crecimiento."
     },
     {
-      q: "Agencia Tributaria:",
-      options: ["Entidad pública.", "Aplica sistema.", "Creada 1992.", "Todas son correctas."],
+      q: "La Agencia Tributaria:",
+      options: [
+        "Es una entidad de derecho público adscrita al Ministerio de Hacienda.",
+        "Su misión es aplicar el sistema tributario y hacer cumplir el artículo 31 de la Constitución.",
+        "Se creó en 1992.",
+        "Todas son correctas."
+      ],
       correct: 3,
-      explain: "Todas son correctas."
+      explain: "Todas son correctas: la Agencia Tributaria es una entidad pública adscrita a Hacienda, creada en 1992 y encargada de aplicar el sistema tributario."
     },
     {
-      q: "La demanda depende de:",
-      options: ["Consumidor.", "Precio.", "Renta.", "Todas son correctas."],
+      q: "La demanda dependerá, entre otros, de:",
+      options: [
+        "El comportamiento del consumidor.",
+        "El precio del producto.",
+        "La renta disponible y su distribución.",
+        "Todas son correctas."
+      ],
       correct: 3,
-      explain: "Depende de múltiples factores."
+      explain: "La demanda depende de muchos factores, como la renta disponible, el precio, las preferencias del consumidor y el comportamiento del mercado."
     },
     {
-      q: "Organización formal:",
-      options: ["Estructura oficial.", "Relaciones personales.", "Plantilla completa.", "Digital."],
+      q: "La organización formal:",
+      options: [
+        "Es aquella donde la estructura organizativa la definen los directivos y se refleja en un organigrama con los puestos de trabajo, relaciones jerárquicas y funciones.",
+        "Es aquella donde la estructura organizativa está conformada según las relaciones personales que surgen de forma natural entre los trabajadores.",
+        "Es aquella que procura que su estructura esté en todo momento provista de personal, en sentido tanto cuantitativo como cualitativo.",
+        "Es aquella que impulsa la transformación digital implicando a todos los integrantes en el uso de la tecnología para fomentar un ecosistema abierto y digitalizado."
+      ],
       correct: 0,
-      explain: "La define la dirección."
+      explain: "La organización formal es la estructura oficial definida por la dirección. Se refleja en organigramas, puestos, jerarquías, responsabilidades y funciones."
     },
     {
-      q: "Organización informal:",
-      options: ["Oficial.", "Relaciones personales.", "Plantilla.", "Digital."],
+      q: "La organización informal:",
+      options: [
+        "Es aquella donde la estructura organizativa la define la dirección y se refleja en un organigrama con los puestos de trabajo, relaciones jerárquicas y funciones.",
+        "Es aquella donde la estructura organizativa está conformada según las relaciones personales que surgen de forma natural entre los trabajadores.",
+        "Es aquella que procura que su estructura esté en todo momento provista de personal, en sentido tanto cuantitativo como cualitativo.",
+        "Es aquella que impulsa la transformación digital implicando a todos los integrantes en el uso de la tecnología para fomentar un ecosistema abierto y digitalizado."
+      ],
       correct: 1,
-      explain: "Surge de relaciones espontáneas."
+      explain: "La organización informal surge espontáneamente por las relaciones personales, afinidades, confianza y comunicación natural entre trabajadores."
     },
     {
-      q: "Planificación RRHH:",
-      options: ["Expansión.", "Aumento y reducción.", "Reciclaje.", "No existe."],
+      q: "La planificación para establecer el personal de una organización se realiza en dos direcciones:",
+      options: [
+        "Expansión laboral y fusión de centros.",
+        "Aumento de personal y reducción de personal.",
+        "Renovación de puestos y reciclaje de puestos actuales.",
+        "Ninguna empresa realiza ya planificaciones de los recursos humanos."
+      ],
       correct: 1,
-      explain: "Se basa en ajustar plantilla."
+      explain: "La planificación de RRHH puede orientarse a aumentar plantilla cuando se necesita más personal o a reducirla cuando sobran recursos humanos respecto a los objetivos."
     },
-
     {
-      q: "TAE incluye:",
-      options: ["Comisiones.", "Interés + gastos.", "Amortización.", "Tipos."],
+      q: "La T.A.E. (Tasa Anual Equivalente) es la suma de:",
+      options: [
+        "Comisión de apertura, comisión de estudio y comisión por cancelación.",
+        "Interés nominal, comisiones y gastos.",
+        "Amortización fija, amortización permanente e impuestos.",
+        "Préstamos, créditos y sus correspondientes tipos de interés."
+      ],
       correct: 1,
-      explain: "Incluye interés, comisiones y gastos."
+      explain: "La TAE refleja el coste real anual de una operación financiera porque incluye el interés nominal, las comisiones y otros gastos asociados."
     },
     {
-      q: "Normas comunicación empresa:",
-      options: ["Plan RRHH.", "Política de comunicación.", "Vertical.", "Flujo."],
+      q: "Las normas internas que son establecidas por la dirección para determinar objetivos y prácticas de comunicación comunes para toda la empresa son lo que se denomina:",
+      options: [
+        "Planificación de RRHH.",
+        "Política de comunicación.",
+        "Comunicación vertical.",
+        "Flujo comunicativo."
+      ],
       correct: 1,
-      explain: "Es política de comunicación."
+      explain: "La política de comunicación recoge las normas, objetivos, canales y prácticas que guían cómo debe comunicarse internamente la empresa."
     },
     {
-      q: "Prestaciones obligatorias:",
-      options: ["Tesorerías.", "Recibos.", "Tributos.", "Letras."],
+      q: "Las prestaciones pecuniarias exigidas por una Administración pública, como consecuencia de la realización del supuesto de hecho al que la ley vincula el deber de contribuir, se denominan:",
+      options: [
+        "Tesorerías.",
+        "Recibos.",
+        "Tributos.",
+        "Letras de cambio."
+      ],
       correct: 2,
-      explain: "Son tributos."
+      explain: "Los tributos son prestaciones económicas obligatorias exigidas por la Administración para financiar el gasto público cuando se realiza un hecho imponible previsto por la ley."
     },
     {
-      q: "Grupos profesionales:",
-      options: ["Características.", "Titulación.", "Aptitudes.", "Todas son correctas."],
+      q: "Los grupos profesionales se definen por:",
+      options: [
+        "Las características del trabajador.",
+        "La titulación del trabajador.",
+        "Las aptitudes del trabajador.",
+        "Todas son correctas."
+      ],
       correct: 3,
-      explain: "Se definen por todos."
+      explain: "Los grupos profesionales tienen en cuenta características, titulaciones, aptitudes y contenido general de la prestación laboral."
     },
     {
-      q: "Indicadores balance social:",
-      options: ["Variables.", "Eficiencia.", "Inputs.", "Locales."],
+      q: "Los indicadores más habituales en el balance social son:",
+      options: [
+        "Las variables, los tipos y las consecuencias.",
+        "La eficiencia, la eficacia y el impacto.",
+        "Inputs, outputs e insiders.",
+        "Locales, regionales, nacionales e internacionales."
+      ],
       correct: 1,
-      explain: "Se mide eficiencia, eficacia e impacto."
+      explain: "El balance social suele valorar la eficiencia, la eficacia y el impacto de las acciones sociales de la empresa."
     },
     {
-      q: "Préstamos personales:",
-      options: ["15 años.", "Interés menor.", "Consumo.", "Todas."],
+      q: "Los préstamos personales:",
+      options: [
+        "Suelen tener un plazo máximo de amortización de hasta 15 años.",
+        "Sus intereses siempre son inferiores a los de los créditos hipotecarios.",
+        "Se conocen normalmente como préstamos al consumo.",
+        "Todas son correctas."
+      ],
       correct: 2,
-      explain: "Son préstamos al consumo."
+      explain: "Los préstamos personales suelen llamarse préstamos al consumo porque se destinan a financiar compras o necesidades personales, como vehículos, reformas o bienes de consumo."
     },
     {
-      q: "Enfoques RRHH:",
-      options: ["Político.", "Personal.", "Administrativo.", "Actitudinal."],
+      q: "Los recursos humanos se conciben desde tres enfoques:",
+      options: [
+        "Político-legal, socioeconómico y laboral.",
+        "Personal, empresarial y social.",
+        "Administrativo-legal, contable-costes y de gestión.",
+        "Actitudinal, competencial y aptitudinal."
+      ],
       correct: 2,
-      explain: "Administrativo, costes y gestión."
+      explain: "Los RRHH se pueden estudiar desde el enfoque administrativo-legal, el enfoque contable-costes y el enfoque de gestión de personas."
     },
     {
-      q: "Planificación RRHH implica:",
-      options: ["Aumentos.", "Objetivos.", "Desviaciones.", "Todas."],
+      q: "Para la planificación de los recursos humanos:",
+      options: [
+        "Es necesario plantear constantes aumentos de personal.",
+        "Se marcan objetivos logísticos y estratégicos.",
+        "Las desviaciones tienen siempre motivos extraordinarios.",
+        "Todas son correctas."
+      ],
       correct: 1,
-      explain: "Se basa en objetivos."
+      explain: "La planificación de RRHH fija objetivos organizativos y estratégicos para ajustar la plantilla a las necesidades presentes y futuras de la empresa."
     },
     {
-      q: "Primer paso presupuesto:",
-      options: ["Identificar ingresos/gastos.", "Asesor.", "Ahorro.", "Excel."],
+      q: "Para poder elaborar un presupuesto familiar lo más fiel posible a la realidad, el primer paso es:",
+      options: [
+        "Identificar gastos e ingresos.",
+        "Contactar con un asesor fiscal.",
+        "Establecer el ahorro con un ingreso fijo.",
+        "Descargar el programa Excel."
+      ],
       correct: 0,
-      explain: "Siempre identificar ingresos y gastos."
+      explain: "El primer paso es identificar todos los ingresos y gastos, porque sin conocer la situación real no se puede planificar correctamente el presupuesto."
     },
     {
-      q: "Renunciar consumo actual:",
-      options: ["Consumo.", "Financiación.", "Planificación.", "Ahorro."],
+      q: "Renunciar a consumir hoy para consumir más en el futuro, ¿a qué concepto hace referencia?",
+      options: [
+        "Consumo.",
+        "Financiación.",
+        "Planificación.",
+        "Ahorro."
+      ],
       correct: 3,
-      explain: "Eso es el ahorro."
+      explain: "El ahorro consiste en no gastar una parte de los recursos actuales para poder utilizarlos en el futuro."
     }
   ]
 },
-
 
   
     /* ================== ANATOMÍA ================== */
